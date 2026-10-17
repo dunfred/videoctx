@@ -94,10 +94,11 @@ def extract_on_demand(
     index so repeat questions reuse them."""
     from .frames import extract_frame
 
-    start_s = max(0.0, start_s)
-    end_s = min(ctx.video.duration_s, end_s)
-    if end_s <= start_s:
-        end_s = min(ctx.video.duration_s, start_s + 1.0)
+    # Clamp the whole range inside the video; models sometimes request
+    # timestamps past the end (hallucinated durations, off-by-one math).
+    duration = ctx.video.duration_s
+    start_s = min(max(0.0, start_s), max(0.0, duration - 1.0))
+    end_s = min(max(end_s, start_s + 0.5), duration)
     span = end_s - start_s
     times = [start_s + (i + 0.5) * span / max_frames for i in range(max_frames)]
 

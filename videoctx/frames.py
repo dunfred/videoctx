@@ -23,6 +23,7 @@ def extract_frame(
             "ffmpeg", "-v", "error", "-y",
             "-ss", f"{t_s:.3f}", "-i", str(video_path),
             "-frames:v", "1", "-vf", scale, "-q:v", str(quality),
+            "-strict", "unofficial",  # ffmpeg 9 mjpeg rejects non-full-range YUV otherwise
             str(out_path),
         ],
         check=True,
