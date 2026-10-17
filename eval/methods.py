@@ -107,18 +107,58 @@ def method_naive(video_path: Path, question: str, options: list[str],
 
 # ---------------------------------------------------------------- gemini native
 
-def method_gemini(video_path: Path, question: str, options: list[str],
-                  model: str = "gemini-2.5-pro") -> MethodResult:
-    """Native video ingestion baseline. Requires GEMINI_API_KEY."""
-    from google import genai  # requires `pip install google-genai` and an API key
+# USD per million tokens (input, output). Pro rate verified Oct 2026
+# (<=200k prompt); flash rate is an estimate — verify before publishing.
+GEMINI_PRICES = {
+    "gemini-3.1-pro-preview": (2.00, 12.00),
+    "gemini-3-flash-preview": (0.50, 3.00),  # TODO verify
+}
 
-    client = genai.Client()
+
+def method_gemini(video_path: Path, question: str, options: list[str],
+                  model: str = "gemini-3-flash-preview") -> MethodResult:
+    """Native video ingestion baseline. Key from GEMINI_API_KEY, GOOGLE_API_KEY,
+    or AISTUDIO_API_KEY. Free-tier aware: waits for upload processing and backs
+    off on rate limits."""
+    import os
+    import time
+
+    from google import genai
+    from google.genai import errors as genai_errors
+
+    api_key = (os.environ.get("GEMINI_API_KEY") or os.environ.get("GOOGLE_API_KEY")
+               or os.environ.get("AISTUDIO_API_KEY"))
+    client = genai.Client(api_key=api_key)
+
     uploaded = client.files.upload(file=str(video_path))
+    # Video uploads are processed asynchronously; generate_content rejects
+    # files that are not ACTIVE yet.
+    for _ in range(60):
+        if uploaded.state and uploaded.state.name == "ACTIVE":
+            break
+        if uploaded.state and uploaded.state.name == "FAILED":
+            raise RuntimeError(f"gemini upload failed for {video_path.name}")
+        time.sleep(5)
+        uploaded = client.files.get(name=uploaded.name)
+
     prompt = MC_PROMPT.format(question=question, options=_format_options(options))
-    response = client.models.generate_content(model=model, contents=[uploaded, prompt])
+    response = None
+    for attempt in range(5):
+        try:
+            response = client.models.generate_content(model=model, contents=[uploaded, prompt])
+            break
+        except genai_errors.APIError as e:
+            if e.code in (429, 503) and attempt < 4:
+                wait = 20 * (attempt + 1)
+                print(f"  gemini {e.code}, backing off {wait}s")
+                time.sleep(wait)
+            else:
+                raise
+    assert response is not None
     usage = response.usage_metadata
-    # Gemini 2.5 Pro pricing (<=200k prompt): $1.25/M input, $10/M output.
-    usd = (usage.prompt_token_count * 1.25 + (usage.candidates_token_count or 0) * 10) / 1_000_000
+    inp_rate, out_rate = GEMINI_PRICES.get(model, (0.0, 0.0))
+    usd = (usage.prompt_token_count * inp_rate
+           + (usage.candidates_token_count or 0) * out_rate) / 1_000_000
     return MethodResult(
         answer_text=response.text or "",
         predicted_letter=_extract_letter(response.text or "", len(options)),
