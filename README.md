@@ -53,3 +53,16 @@ See `eval/run.py` for the question file format.
 ## License
 
 Apache-2.0
+
+## MCP server
+
+Expose videoctx to any MCP client — the calling agent's own model reads the
+text layer and frames directly (no API key needed by the server):
+
+```
+claude mcp add videoctx -- $(pwd)/.venv/bin/videoctx-mcp
+```
+
+Tools: `index_video`, `video_overview` (cheap text layer), `survey_video`
+(one thumbnail per shot), `get_frames(path, start_s, end_s)`,
+`transcript_search`.

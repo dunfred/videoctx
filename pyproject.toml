@@ -12,6 +12,7 @@ dependencies = [
     "scenedetect[opencv]>=0.6.4",
     "anthropic>=0.60",
     "pydantic>=2.7",
+    "mcp>=2.0",
 ]
 
 [project.optional-dependencies]
@@ -23,6 +24,7 @@ eval = [
 
 [project.scripts]
 videoctx = "videoctx.cli:main"
+videoctx-mcp = "videoctx.mcp_server:main"
 
 [build-system]
 requires = ["hatchling"]

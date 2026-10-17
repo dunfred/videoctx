@@ -70,6 +70,7 @@ def build_index(
         },
         "source": {
             "filename": video_path.name,
+            "path": str(video_path),  # hint only; consumers must tolerate it moving
             "sha256": _sha256(video_path),
             "size_bytes": video_path.stat().st_size,
         },
