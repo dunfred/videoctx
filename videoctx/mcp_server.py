@@ -110,17 +110,21 @@ def survey_video(path: str) -> list:
 
 
 @server.tool()
-def get_frames(path: str, start_s: float, end_s: float, max_frames: int = 4) -> list:
-    """Full-resolution frames evenly spaced across [start_s, end_s]. Frames
-    are expensive: use the narrowest range the question allows, and raise
-    max_frames (up to 8) only when a sparse sample missed the moment."""
+def get_frames(path: str, start_s: float, end_s: float, max_frames: int = 4,
+               detail: str = "standard") -> list:
+    """Frames evenly spaced across [start_s, end_s]. Frames are expensive: use
+    the narrowest range the question allows, and raise max_frames (up to 8)
+    only when a sparse sample missed the moment. Set detail='high' (2x
+    resolution, ~4x token cost) when small text, colors, patterns, or fine
+    object details matter."""
     from .query import extract_on_demand, select_frames
 
     index_dir, ctx = _resolve(path)
     max_frames = max(1, min(int(max_frames), 8))
+    edge = 1536 if detail == "high" else 768
     video = _source_video(index_dir)
     if video is not None:
-        frames = extract_on_demand(index_dir, video, ctx, start_s, end_s, max_frames)
+        frames = extract_on_demand(index_dir, video, ctx, start_s, end_s, max_frames, max_edge=edge)
     else:
         frames = select_frames(ctx, start_s, end_s, max_frames)
     out: list = []

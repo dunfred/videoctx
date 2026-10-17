@@ -28,6 +28,15 @@ GET_FRAMES_TOOL = {
                 "type": "integer",
                 "description": "Maximum frames to return (default 4, max 8)",
             },
+            "detail": {
+                "type": "string",
+                "enum": ["standard", "high"],
+                "description": (
+                    "Use 'high' (2x resolution, ~4x token cost) when the "
+                    "question hinges on small text, colors, patterns, or "
+                    "fine object details; pair it with a narrow time range."
+                ),
+            },
         },
         "required": ["start_s", "end_s"],
     },
@@ -49,14 +58,23 @@ SYSTEM = (
     "timestamps and visual captions, interleaved with the speech transcript.\n"
     "Strategy:\n"
     "1. Answer from the text index alone when it is sufficient.\n"
-    "2. If the question is visual and you don't know where to look, call "
+    "2. CAPTIONS ARE LOSSY one-line summaries. Never answer questions about "
+    "counts, colors, patterns, on-screen text, or fine visual details from "
+    "captions alone; verify with frames.\n"
+    "3. If the question is visual and you don't know where to look, call "
     "survey to sweep the whole video cheaply, then get_frames to zoom into "
-    "the relevant range at full resolution.\n"
-    "3. EVIDENCE RULE: for visual questions, your answer must be supported by "
+    "the relevant range. Use detail='high' when small text, colors, or "
+    "patterns matter.\n"
+    "4. ENUMERATION: for 'how many', 'first/second time', or ordering "
+    "questions, sweep systematically: survey, identify every candidate "
+    "occurrence, then verify each with frames before counting or ordering. "
+    "For 'which option is incorrect/true' questions, check each option "
+    "against evidence, not just the first plausible one.\n"
+    "5. EVIDENCE RULE: for visual questions, your answer must be supported by "
     "something you actually saw in a fetched frame or thumbnail; cite its "
     "timestamp. If the frames you fetched do not show the answer, fetch a "
-    "different range or higher density instead of guessing. Never substitute "
-    "general world knowledge for missing visual evidence.\n"
+    "different range, higher density, or higher detail instead of guessing. "
+    "Never substitute general world knowledge for missing visual evidence.\n"
     "Give the final answer directly and cite timestamps."
 )
 
@@ -86,7 +104,7 @@ def extract_on_demand(
     frames_dir = index_dir / "frames"
     out: list[Keyframe] = []
     for t in times:
-        path = frames_dir / f"ondemand_t{t:08.2f}.jpg"
+        path = frames_dir / f"ondemand_e{max_edge}_t{t:08.2f}.jpg"
         if path.exists():
             from .frames import _image_size
             w, h = _image_size(path)
@@ -225,9 +243,11 @@ def ask(
                 continue
             args = block.input
             max_frames = min(int(args.get("max_frames", 4)), 8)
+            edge = 1536 if args.get("detail") == "high" else 768
             start, end = float(args["start_s"]), float(args["end_s"])
             if video_path is not None and video_path.exists():
-                frames = extract_on_demand(index_dir, video_path, ctx, start, end, max_frames)
+                frames = extract_on_demand(
+                    index_dir, video_path, ctx, start, end, max_frames, max_edge=edge)
             else:
                 frames = select_frames(ctx, start, end, max_frames)
             frames_fetched += len(frames)
