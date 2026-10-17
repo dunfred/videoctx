@@ -3,7 +3,7 @@ questions.jsonl that eval/run.py consumes.
 
 Requires: pip install datasets   and   yt-dlp on PATH.
 HF dataset: lmms-lab/Video-MME (test split). Videos are YouTube-hosted; some
-will be unavailable (removed/region-locked) — those are skipped and reported.
+will be unavailable (removed/region-locked): those are skipped and reported.
 
 Usage:
     python eval/prepare_videomme.py --duration short --videos 10 --out eval/data

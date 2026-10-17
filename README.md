@@ -56,7 +56,7 @@ Apache-2.0
 
 ## MCP server
 
-Expose videoctx to any MCP client — the calling agent's own model reads the
+Expose videoctx to any MCP client: the calling agent's own model reads the
 text layer and frames directly (no API key needed by the server):
 
 ```

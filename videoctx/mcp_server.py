@@ -2,7 +2,7 @@
 
 Gives any MCP client (Claude Code, Cursor, ...) the ability to read videos the
 way it reads images: index once, then work from the cheap text layer and pull
-frames only when needed. The calling agent's own model does the reasoning —
+frames only when needed. The calling agent's own model does the reasoning -
 the core tools below require no API key and make no model calls.
 
 Install into Claude Code:
@@ -26,7 +26,7 @@ from .textview import text_view
 server = MCPServer(
     "videoctx",
     instructions=(
-        "Tools for reading video files. Call video_overview first — its text "
+        "Tools for reading video files. Call video_overview first: its text "
         "layer (shots, captions, transcript) answers most questions without "
         "any frames. Fetch frames only for visual details the text does not "
         "cover, on the narrowest time range possible. Evidence rule: answer "
@@ -67,7 +67,7 @@ def _source_video(index_dir: Path) -> Path | None:
 @server.tool()
 def index_video(path: str) -> str:
     """Index a video file for querying (shots, keyframes, speech transcript).
-    Runs locally; takes roughly 10-20% of the video's duration. Idempotent —
+    Runs locally; takes roughly 10-20% of the video's duration. Idempotent -
     returns immediately if the video is already indexed. The other tools
     auto-index too, so calling this first is only needed to control when the
     wait happens."""
@@ -84,7 +84,7 @@ def index_video(path: str) -> str:
 def video_overview(path: str) -> str:
     """The cheap text layer of a video: shot list with timestamps and visual
     captions (when present), interleaved with the speech transcript. Read this
-    before fetching any frames — it answers most questions by itself."""
+    before fetching any frames: it answers most questions by itself."""
     _, ctx = _resolve(path)
     return text_view(ctx)
 
@@ -112,7 +112,7 @@ def survey_video(path: str) -> list:
 @server.tool()
 def get_frames(path: str, start_s: float, end_s: float, max_frames: int = 4) -> list:
     """Full-resolution frames evenly spaced across [start_s, end_s]. Frames
-    are expensive — use the narrowest range the question allows, and raise
+    are expensive: use the narrowest range the question allows, and raise
     max_frames (up to 8) only when a sparse sample missed the moment."""
     from .query import extract_on_demand, select_frames
 
@@ -133,7 +133,7 @@ def get_frames(path: str, start_s: float, end_s: float, max_frames: int = 4) -> 
 @server.tool()
 def transcript_search(path: str, query: str, context_s: float = 15.0) -> str:
     """Case-insensitive search over the transcript. Returns matching segments
-    with surrounding context and timestamps — use the timestamps to target
+    with surrounding context and timestamps: use the timestamps to target
     get_frames."""
     _, ctx = _resolve(path)
     q = query.lower()

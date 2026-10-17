@@ -123,7 +123,7 @@ def method_naive(video_path: Path, question: str, options: list[str],
 # ---------------------------------------------------------------- gemini native
 
 # USD per million tokens (input, output). Pro rate verified Oct 2026
-# (<=200k prompt); flash rate is an estimate — verify before publishing.
+# (<=200k prompt); flash rate is an estimate: verify before publishing.
 GEMINI_PRICES = {
     "gemini-3.1-pro-preview": (2.00, 12.00),
     "gemini-3-flash-preview": (0.50, 3.00),  # TODO verify

@@ -1,4 +1,4 @@
-# Video Context Format — Spec v0.1 (draft)
+# Video Context Format: Spec v0.1 (draft)
 
 Status: draft. Everything here may change until v1.0.
 
@@ -61,13 +61,13 @@ duration.
 |---|---|---|
 | `id` | int | 0-based |
 | `start_s`, `end_s` | float | seconds |
-| `keyframes[]` | array | `{t_s, file, width, height}` — `file` relative to index root |
+| `keyframes[]` | array | `{t_s, file, width, height}`: `file` relative to index root |
 | `caption` | string? | optional, one-line visual description |
 | `caption_model` | string? | model that produced `caption`, if any |
 
 ### `transcript`
 
-`{language, model, segments: [{start_s, end_s, text}]}` — empty `segments` if
+`{language, model, segments: [{start_s, end_s, text}]}`: empty `segments` if
 the video has no speech or no audio.
 
 ### Reserved for later versions
