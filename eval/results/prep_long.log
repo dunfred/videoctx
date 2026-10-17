@@ -19,3 +19,9 @@ objc[42319]: Class AVFFrameReceiver is implemented in both /Users/dunfred/Projec
 objc[42319]: Class AVFAudioReceiver is implemented in both /Users/dunfred/Projects/videoctx/.venv/lib/python3.12/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x1068303f8) and /Users/dunfred/Projects/videoctx/.venv/lib/python3.12/site-packages/av/.dylibs/libavdevice.63.1.102.dylib (0x128b183f8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
 [1/10] 541 shots, captions $0.123, 704s
 [2/10] indexing 7D-gxaie6UI.mp4
+[2/10] 472 shots, captions $0.128, 865s
+[3/10] indexing BoBapnk6TB8.mp4
+[3/10] 556 shots, captions $0.115, 986s
+[4/10] indexing HProiNnmGwI.mp4
+[4/10] 686 shots, captions $0.119, 1052s
+[5/10] indexing O7zcPvQDIMU.mp4
