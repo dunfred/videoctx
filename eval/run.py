@@ -46,7 +46,10 @@ def main(questions_file: Path, methods_csv: str, out: Path, limit: int | None,
         results = [r for r in results if "error" not in r]
         done = {(r["qid"], r["method"]) for r in results}
         click.echo(f"resuming: {len(done)} completed rows kept")
+    quota_exhausted = False
     for qi, q in enumerate(questions):
+        if quota_exhausted:
+            break
         video = Path(q["video"])
         for name in method_names:
             if (q.get("id", qi), name) in done:
@@ -73,6 +76,10 @@ def main(questions_file: Path, methods_csv: str, out: Path, limit: int | None,
                        f"{'ERR ' + row.get('error', '') if 'error' in row else ('OK' if row['correct'] else 'WRONG')} "
                        f"(${row['usd']:.4f}, {row['wall_s']}s)")
             results.append(row)
+            if "RESOURCE_EXHAUSTED" in row.get("error", ""):
+                click.echo("daily quota exhausted; stopping this sweep")
+                quota_exhausted = True
+                break
             # Write incrementally so a killed run keeps its completed rows.
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(json.dumps(results, indent=2))

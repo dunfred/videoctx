@@ -163,7 +163,9 @@ def method_gemini(video_path: Path, question: str, options: list[str],
             response = client.models.generate_content(model=model, contents=[uploaded, prompt])
             break
         except genai_errors.APIError as e:
-            if e.code in (429, 503) and attempt < 4:
+            # 429s on the free tier consume daily-quota slots per ATTEMPT —
+            # never retry them here; the outer drip loop is the retry.
+            if e.code == 503 and attempt < 4:
                 wait = 20 * (attempt + 1)
                 print(f"  gemini {e.code}, backing off {wait}s")
                 time.sleep(wait)
