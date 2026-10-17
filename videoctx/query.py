@@ -202,15 +202,16 @@ def ask(
     # The text view is a stable prefix across every question about the same
     # video: mark it cacheable so repeat questions bill at ~0.1x input price.
     # (Prefixes under the model's minimum, ~4k tokens on Opus, silently skip
-    # caching; harmless for short videos.)
+    # caching; harmless for short videos.) Large views get the 1-hour TTL:
+    # the 2x write premium is paid once per video, and the cache then survives
+    # rate-limit stalls and whole question batches, where the default 5-minute
+    # TTL was observed to lapse and force premium re-writes.
+    tv = text_view(ctx)
+    cache_ctl = {"type": "ephemeral", "ttl": "1h"} if len(tv) > 20000 else {"type": "ephemeral"}
     messages: list[dict] = [{
         "role": "user",
         "content": [
-            {
-                "type": "text",
-                "text": f"VIDEO INDEX:\n{text_view(ctx)}",
-                "cache_control": {"type": "ephemeral"},
-            },
+            {"type": "text", "text": f"VIDEO INDEX:\n{tv}", "cache_control": cache_ctl},
             {"type": "text", "text": f"QUESTION: {question}"},
         ],
     }]
