@@ -21,16 +21,24 @@ def caption_shots(
     ctx: VideoContext,
     model: str = CAPTION_MODEL,
     client: anthropic.Anthropic | None = None,
+    max_captions: int = 150,
     progress=lambda *_: None,
 ) -> CostMeter:
-    """Caption each shot's middle keyframe with a cheap VLM and write the
-    captions back into index.json. One-time cost, amortized over all queries."""
+    """Caption shots' middle keyframes with a cheap VLM and write the captions
+    back into index.json. One-time cost, amortized over all queries.
+
+    Long fast-cut videos can have many hundreds of shots; captioning is capped
+    at max_captions, subsampled evenly, to bound both the one-time cost and
+    the text-view size."""
     client = client or anthropic.Anthropic()
     meter = CostMeter(model=model)
 
-    for shot in ctx.shots:
-        if shot.caption or not shot.keyframes:
-            continue
+    todo = [s for s in ctx.shots if not s.caption and s.keyframes]
+    if len(todo) > max_captions:
+        step = (len(todo) - 1) / (max_captions - 1)
+        todo = [todo[round(i * step)] for i in range(max_captions)]
+
+    for shot in todo:
         kf = shot.keyframes[len(shot.keyframes) // 2]
         data = base64.standard_b64encode((index_dir / kf.file).read_bytes()).decode()
         response = client.messages.create(

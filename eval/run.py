@@ -29,16 +29,28 @@ from eval.methods import METHODS  # noqa: E402
 @click.option("--methods", "methods_csv", default="videoctx,naive", show_default=True)
 @click.option("--out", type=click.Path(path_type=Path), default=Path("eval/results/run.json"))
 @click.option("--limit", type=int, default=None, help="Only run the first N questions")
-def main(questions_file: Path, methods_csv: str, out: Path, limit: int | None):
+@click.option("--skip-existing", is_flag=True,
+              help="Resume: skip (question, method) pairs already in the out file")
+def main(questions_file: Path, methods_csv: str, out: Path, limit: int | None,
+         skip_existing: bool):
     questions = [json.loads(line) for line in questions_file.read_text().splitlines() if line.strip()]
     if limit:
         questions = questions[:limit]
     method_names = [m.strip() for m in methods_csv.split(",")]
 
     results = []
+    done: set[tuple] = set()
+    if skip_existing and out.exists():
+        results = json.loads(out.read_text())
+        # Errored rows are retried; completed rows are kept.
+        results = [r for r in results if "error" not in r]
+        done = {(r["qid"], r["method"]) for r in results}
+        click.echo(f"resuming: {len(done)} completed rows kept")
     for qi, q in enumerate(questions):
         video = Path(q["video"])
         for name in method_names:
+            if (q.get("id", qi), name) in done:
+                continue
             fn = METHODS[name]
             t0 = time.monotonic()
             try:
