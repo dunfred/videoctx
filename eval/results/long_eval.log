@@ -1,0 +1,19 @@
+long prep finished; waiting for short300
+starting long eval
+[1/30] videoctx: WRONG ($0.0026, 427.0s)
+[2/30] videoctx: OK ($0.0028, 249.6s)
+[3/30] videoctx: OK ($0.0026, 233.9s)
+[4/30] videoctx: OK ($0.0027, 3.6s)
+[5/30] videoctx: OK ($0.0155, 4.5s)
+[6/30] videoctx: OK ($0.0144, 2.2s)
+[7/30] videoctx: OK ($0.0023, 271.4s)
+[8/30] videoctx: OK ($0.0026, 273.0s)
+[9/30] videoctx: WRONG ($0.0035, 60.7s)
+[10/30] videoctx: OK ($0.0025, 373.5s)
+[11/30] videoctx: WRONG ($0.0033, 257.4s)
+[12/30] videoctx: OK ($0.0033, 158.9s)
+[13/30] videoctx: OK ($0.0024, 2.2s)
+[14/30] videoctx: WRONG ($0.0138, 3.4s)
+[15/30] videoctx: OK ($0.0265, 8.9s)
+[16/30] videoctx: OK ($0.0027, 294.7s)
+eval/run_long_after_prep.sh: line 14:  6051 Terminated: 15          $PY eval/run.py eval/data/videomme_long.jsonl --methods videoctx --out eval/results/long_videoctx.json --skip-existing
