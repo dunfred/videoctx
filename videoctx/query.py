@@ -128,11 +128,18 @@ def _thumb(index_dir: Path, kf: Keyframe, edge: int = 256) -> Path:
     return dst
 
 
+MAX_SURVEY_THUMBS = 24
+
+
 def _survey_blocks(index_dir: Path, ctx: VideoContext) -> list[dict]:
+    shots = [s for s in ctx.shots if s.keyframes]
+    # Fast-cut videos can have hundreds of shots; subsample evenly so a survey
+    # stays ~1-2k tokens instead of blowing up the context.
+    if len(shots) > MAX_SURVEY_THUMBS:
+        step = (len(shots) - 1) / (MAX_SURVEY_THUMBS - 1)
+        shots = [shots[round(i * step)] for i in range(MAX_SURVEY_THUMBS)]
     blocks: list[dict] = []
-    for shot in ctx.shots:
-        if not shot.keyframes:
-            continue
+    for shot in shots:
         kf = shot.keyframes[len(shot.keyframes) // 2]
         thumb = _thumb(index_dir, kf)
         data = base64.standard_b64encode(thumb.read_bytes()).decode()
@@ -229,6 +236,14 @@ def ask(
                 "tool_use_id": block.id,
                 "content": _frame_blocks(index_dir, frames),
             })
+        # Keep one moving cache breakpoint on the newest tool result so each
+        # loop iteration reads the prior history (incl. images) from cache.
+        for msg in messages:
+            if msg["role"] == "user" and isinstance(msg["content"], list):
+                for blk in msg["content"]:
+                    if isinstance(blk, dict) and blk.get("type") == "tool_result":
+                        blk.pop("cache_control", None)
+        results[-1]["cache_control"] = {"type": "ephemeral"}
         messages.append({"role": "user", "content": results})
 
     return "(no final answer: tool-turn limit reached)", meter, frames_fetched

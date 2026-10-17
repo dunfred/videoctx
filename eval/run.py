@@ -61,9 +61,9 @@ def main(questions_file: Path, methods_csv: str, out: Path, limit: int | None):
                        f"{'ERR ' + row.get('error', '') if 'error' in row else ('OK' if row['correct'] else 'WRONG')} "
                        f"(${row['usd']:.4f}, {row['wall_s']}s)")
             results.append(row)
-
-    out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(results, indent=2))
+            # Write incrementally so a killed run keeps its completed rows.
+            out.parent.mkdir(parents=True, exist_ok=True)
+            out.write_text(json.dumps(results, indent=2))
 
     click.echo("\n== accuracy per dollar ==")
     for name in method_names:
