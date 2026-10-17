@@ -23,19 +23,26 @@ class CostMeter:
     calls: int = 0
     notes: list[str] = field(default_factory=list)
 
+    cache_write_1h_tokens: int = 0  # 1h-TTL writes bill at 2x, not 1.25x
+
     def add(self, usage) -> None:
         self.calls += 1
         self.input_tokens += usage.input_tokens
         self.output_tokens += usage.output_tokens
         self.cache_read_tokens += getattr(usage, "cache_read_input_tokens", 0) or 0
-        self.cache_write_tokens += getattr(usage, "cache_creation_input_tokens", 0) or 0
+        total_write = getattr(usage, "cache_creation_input_tokens", 0) or 0
+        breakdown = getattr(usage, "cache_creation", None)
+        h1 = (getattr(breakdown, "ephemeral_1h_input_tokens", 0) or 0) if breakdown else 0
+        self.cache_write_1h_tokens += h1
+        self.cache_write_tokens += total_write - h1
 
     @property
     def usd(self) -> float:
         inp, out = PRICES.get(self.model, (0.0, 0.0))
         cost = (self.input_tokens * inp + self.output_tokens * out) / 1_000_000
         cost += self.cache_read_tokens * inp * 0.1 / 1_000_000
-        cost += self.cache_write_tokens * inp * 1.25 / 1_000_000  # 5m-TTL write premium
+        cost += self.cache_write_tokens * inp * 1.25 / 1_000_000   # 5m-TTL write premium
+        cost += self.cache_write_1h_tokens * inp * 2.0 / 1_000_000  # 1h-TTL write premium
         return cost
 
     def summary(self) -> dict:
@@ -46,5 +53,6 @@ class CostMeter:
             "output_tokens": self.output_tokens,
             "cache_read_tokens": self.cache_read_tokens,
             "cache_write_tokens": self.cache_write_tokens,
+            "cache_write_1h_tokens": self.cache_write_1h_tokens,
             "usd": round(self.usd, 6),
         }

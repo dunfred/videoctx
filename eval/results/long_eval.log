@@ -88,3 +88,39 @@ results written to eval/results/long_videoctx.json
 
 results written to eval/results/long_naive.json
 LONG EVAL COMPLETE
+[1/30] videoctx: WRONG ($0.5359, 4.5s)
+[2/30] videoctx: OK ($0.0454, 3.8s)
+[3/30] videoctx: OK ($0.0455, 4.7s)
+[4/30] videoctx: OK ($0.1523, 2.2s)
+[5/30] videoctx: OK ($0.0152, 2.5s)
+[6/30] videoctx: OK ($0.0151, 2.7s)
+[7/30] videoctx: OK ($0.4740, 4.3s)
+[8/30] videoctx: OK ($0.0407, 3.6s)
+[9/30] videoctx: WRONG ($0.0416, 3.8s)
+[10/30] videoctx: OK ($0.4626, 3.6s)
+[11/30] videoctx: WRONG ($0.0399, 3.0s)
+[12/30] videoctx: OK ($0.0396, 4.2s)
+[13/30] videoctx: OK ($0.1283, 2.2s)
+[14/30] videoctx: WRONG ($0.0139, 3.8s)
+[15/30] videoctx: OK ($0.0437, 5.7s)
+[16/30] videoctx: OK ($0.4531, 3.9s)
+[17/30] videoctx: OK ($0.0407, 4.4s)
+[18/30] videoctx: WRONG ($0.1974, 19.3s)
+[19/30] videoctx: OK ($0.4294, 3.7s)
+[20/30] videoctx: OK ($0.0367, 2.5s)
+[21/30] videoctx: OK ($0.0372, 3.5s)
+[22/30] videoctx: OK ($0.4547, 9.2s)
+[23/30] videoctx: OK ($0.0383, 3.7s)
+[24/30] videoctx: WRONG ($0.0390, 3.7s)
+[25/30] videoctx: OK ($0.5079, 137.3s)
+[26/30] videoctx: OK ($0.0437, 2.9s)
+[27/30] videoctx: OK ($0.0430, 2.8s)
+[28/30] videoctx: OK ($0.1544, 6.8s)
+[29/30] videoctx: OK ($0.0145, 2.3s)
+[30/30] videoctx: OK ($0.0149, 2.8s)
+
+== accuracy per dollar ==
+  videoctx: acc=80.0% (24/30, 0 errors)  total=$4.5986  acc/$ = 0.2
+
+results written to eval/results/long_videoctx_v2.json
+LONG V2 COMPLETE

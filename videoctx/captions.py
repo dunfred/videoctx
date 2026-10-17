@@ -33,10 +33,15 @@ def caption_shots(
     client = client or anthropic.Anthropic()
     meter = CostMeter(model=model)
 
+    # max_captions is a per-INDEX total, not per-call: repeat calls must not
+    # keep adding captions past the cap (bloats the text view).
+    budget = max_captions - sum(1 for s in ctx.shots if s.caption)
+    if budget <= 0:
+        return meter
     todo = [s for s in ctx.shots if not s.caption and s.keyframes]
-    if len(todo) > max_captions:
-        step = (len(todo) - 1) / (max_captions - 1)
-        todo = [todo[round(i * step)] for i in range(max_captions)]
+    if len(todo) > budget:
+        step = (len(todo) - 1) / (budget - 1) if budget > 1 else 0
+        todo = [todo[round(i * step)] for i in range(budget)]
 
     for shot in todo:
         kf = shot.keyframes[len(shot.keyframes) // 2]
