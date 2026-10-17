@@ -88,9 +88,20 @@ def ask(
     meter = CostMeter(model=model)
     frames_fetched = 0
 
+    # The text view is a stable prefix across every question about the same
+    # video: mark it cacheable so repeat questions bill at ~0.1x input price.
+    # (Prefixes under the model's minimum, ~4k tokens on Opus, silently skip
+    # caching; harmless for short videos.)
     messages: list[dict] = [{
         "role": "user",
-        "content": f"VIDEO INDEX:\n{text_view(ctx)}\n\nQUESTION: {question}",
+        "content": [
+            {
+                "type": "text",
+                "text": f"VIDEO INDEX:\n{text_view(ctx)}",
+                "cache_control": {"type": "ephemeral"},
+            },
+            {"type": "text", "text": f"QUESTION: {question}"},
+        ],
     }]
 
     for _ in range(MAX_TOOL_TURNS):
