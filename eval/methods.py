@@ -54,6 +54,7 @@ def _extract_letter(text: str, n_options: int) -> str | None:
 def method_videoctx(video_path: Path, question: str, options: list[str],
                     model: str = "claude-opus-4-8", index_cache: Path | None = None) -> MethodResult:
     """Index once (cached on disk), then query via the frames-on-demand loop."""
+    from videoctx.captions import caption_shots
     from videoctx.indexer import build_index, load_index
     from videoctx.query import ask
 
@@ -62,6 +63,8 @@ def method_videoctx(video_path: Path, question: str, options: list[str],
         build_index(video_path, out_dir=index_dir, progress=lambda *_: None)
 
     ctx = load_index(index_dir)
+    if any(s.caption is None for s in ctx.shots):
+        caption_shots(index_dir, ctx)  # one-time; written back into the index
     prompt = MC_PROMPT.format(question=question, options=_format_options(options))
     answer, meter, frames = ask(index_dir, ctx, prompt, model=model, video_path=video_path)
     return MethodResult(

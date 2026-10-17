@@ -33,12 +33,30 @@ GET_FRAMES_TOOL = {
     },
 }
 
+SURVEY_TOOL = {
+    "name": "survey",
+    "description": (
+        "Get a low-resolution thumbnail of every shot in the video, in order, "
+        "each labeled with its timestamp. Cheap (~50 tokens per shot). Use this "
+        "to visually locate the relevant moment before calling get_frames, "
+        "whenever the text index does not tell you where to look."
+    ),
+    "input_schema": {"type": "object", "properties": {}},
+}
+
 SYSTEM = (
     "You answer questions about a video using its index: a shot list with "
-    "timestamps, interleaved with the speech transcript. Answer from the text "
-    "index alone when it is sufficient. When the question depends on visual "
-    "content the text does not capture, call get_frames on the narrowest "
-    "relevant time range. Be decisive; do not fetch frames you do not need. "
+    "timestamps and visual captions, interleaved with the speech transcript.\n"
+    "Strategy:\n"
+    "1. Answer from the text index alone when it is sufficient.\n"
+    "2. If the question is visual and you don't know where to look, call "
+    "survey to sweep the whole video cheaply, then get_frames to zoom into "
+    "the relevant range at full resolution.\n"
+    "3. EVIDENCE RULE: for visual questions, your answer must be supported by "
+    "something you actually saw in a fetched frame or thumbnail; cite its "
+    "timestamp. If the frames you fetched do not show the answer, fetch a "
+    "different range or higher density instead of guessing. Never substitute "
+    "general world knowledge for missing visual evidence.\n"
     "Give the final answer directly and cite timestamps."
 )
 
@@ -95,6 +113,37 @@ def select_frames(ctx: VideoContext, start_s: float, end_s: float, max_frames: i
     return [candidates[round(i * step)] for i in range(max_frames)]
 
 
+def _thumb(index_dir: Path, kf: Keyframe, edge: int = 256) -> Path:
+    """Downscaled cached copy of a keyframe for cheap surveying."""
+    import subprocess
+
+    src = index_dir / kf.file
+    dst = src.with_name(f"thumb_{src.name}")
+    if not dst.exists():
+        subprocess.run(
+            ["ffmpeg", "-v", "error", "-y", "-i", str(src),
+             "-vf", f"scale='min(iw,{edge})':-2", "-q:v", "6", str(dst)],
+            check=True,
+        )
+    return dst
+
+
+def _survey_blocks(index_dir: Path, ctx: VideoContext) -> list[dict]:
+    blocks: list[dict] = []
+    for shot in ctx.shots:
+        if not shot.keyframes:
+            continue
+        kf = shot.keyframes[len(shot.keyframes) // 2]
+        thumb = _thumb(index_dir, kf)
+        data = base64.standard_b64encode(thumb.read_bytes()).decode()
+        blocks.append({"type": "text", "text": f"shot {shot.id} @ {kf.t_s:.1f}s:"})
+        blocks.append({
+            "type": "image",
+            "source": {"type": "base64", "media_type": "image/jpeg", "data": data},
+        })
+    return blocks or [{"type": "text", "text": "No keyframes available."}]
+
+
 def _frame_blocks(index_dir: Path, frames: list[Keyframe]) -> list[dict]:
     blocks: list[dict] = []
     for kf in frames:
@@ -145,7 +194,7 @@ def ask(
             model=model,
             max_tokens=8192,
             system=SYSTEM,
-            tools=[GET_FRAMES_TOOL],
+            tools=[GET_FRAMES_TOOL, SURVEY_TOOL],
             messages=messages,
         )
         meter.add(response.usage)
@@ -158,6 +207,14 @@ def ask(
         results = []
         for block in response.content:
             if block.type != "tool_use":
+                continue
+            if block.name == "survey":
+                frames_fetched += len(ctx.shots)
+                results.append({
+                    "type": "tool_result",
+                    "tool_use_id": block.id,
+                    "content": _survey_blocks(index_dir, ctx),
+                })
                 continue
             args = block.input
             max_frames = min(int(args.get("max_frames", 4)), 8)

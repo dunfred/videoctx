@@ -30,6 +30,18 @@ def index(video: Path, out: Path | None, max_edge: int, whisper_model: str, no_t
 
 @main.command()
 @click.argument("index_dir", type=click.Path(exists=True, path_type=Path))
+def caption(index_dir: Path):
+    """Add visual captions to an index's shots (one cheap VLM call per shot)."""
+    from .captions import caption_shots
+    from .indexer import load_index
+
+    ctx = load_index(index_dir)
+    meter = caption_shots(index_dir, ctx, progress=click.echo)
+    click.echo(f"captioned; cost: {json.dumps(meter.summary())}")
+
+
+@main.command()
+@click.argument("index_dir", type=click.Path(exists=True, path_type=Path))
 def show(index_dir: Path):
     """Print the text view of an index (what the model reads)."""
     from .indexer import load_index
