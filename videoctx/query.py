@@ -43,6 +43,41 @@ SYSTEM = (
 )
 
 
+def extract_on_demand(
+    index_dir: Path,
+    video_path: Path,
+    ctx: VideoContext,
+    start_s: float,
+    end_s: float,
+    max_frames: int,
+    max_edge: int = 768,
+) -> list[Keyframe]:
+    """Extract evenly spaced frames across [start_s, end_s] from the source
+    video at query time. Unlike select_frames (pre-extracted shot midpoints),
+    this reaches any moment at any density. Extracted frames are cached in the
+    index so repeat questions reuse them."""
+    from .frames import extract_frame
+
+    start_s = max(0.0, start_s)
+    end_s = min(ctx.video.duration_s, end_s)
+    if end_s <= start_s:
+        end_s = min(ctx.video.duration_s, start_s + 1.0)
+    span = end_s - start_s
+    times = [start_s + (i + 0.5) * span / max_frames for i in range(max_frames)]
+
+    frames_dir = index_dir / "frames"
+    out: list[Keyframe] = []
+    for t in times:
+        path = frames_dir / f"ondemand_t{t:08.2f}.jpg"
+        if path.exists():
+            from .frames import _image_size
+            w, h = _image_size(path)
+            out.append(Keyframe(t_s=round(t, 3), file=f"frames/{path.name}", width=w, height=h))
+        else:
+            out.append(extract_frame(video_path, t, path, max_edge=max_edge))
+    return out
+
+
 def select_frames(ctx: VideoContext, start_s: float, end_s: float, max_frames: int) -> list[Keyframe]:
     candidates = [
         kf for shot in ctx.shots for kf in shot.keyframes if start_s <= kf.t_s <= end_s
@@ -80,6 +115,7 @@ def ask(
     question: str,
     model: str = DEFAULT_MODEL,
     client: anthropic.Anthropic | None = None,
+    video_path: Path | None = None,
 ) -> tuple[str, CostMeter, int]:
     """Answer a question about an indexed video.
 
@@ -125,7 +161,11 @@ def ask(
                 continue
             args = block.input
             max_frames = min(int(args.get("max_frames", 4)), 8)
-            frames = select_frames(ctx, float(args["start_s"]), float(args["end_s"]), max_frames)
+            start, end = float(args["start_s"]), float(args["end_s"])
+            if video_path is not None and video_path.exists():
+                frames = extract_on_demand(index_dir, video_path, ctx, start, end, max_frames)
+            else:
+                frames = select_frames(ctx, start, end, max_frames)
             frames_fetched += len(frames)
             results.append({
                 "type": "tool_result",

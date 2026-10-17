@@ -13,7 +13,8 @@ from pathlib import Path
 
 MC_PROMPT = (
     "{question}\n\nOptions:\n{options}\n\n"
-    "Answer with the single letter of the best option, then one sentence of justification."
+    "The FIRST character of your reply must be the letter of the best option "
+    "(A, B, C, or D), followed by a period and one sentence of justification."
 )
 
 
@@ -30,11 +31,22 @@ def _format_options(options: list[str]) -> str:
 
 
 def _extract_letter(text: str, n_options: int) -> str | None:
-    valid = {chr(65 + i) for i in range(n_options)}
-    for ch in text.strip().upper():
-        if ch in valid:
-            return ch
-    return None
+    import re
+
+    valid = "".join(chr(65 + i) for i in range(n_options))
+    text = text.strip()
+    # 1. Leading letter ("B." / "**B**" / "(B)").
+    m = re.match(rf"^\W{{0,2}}([{valid}])(?![A-Za-z])", text)
+    if m:
+        return m.group(1)
+    # 2. Explicit verdict ("the answer is C", "option B", "Answer: D").
+    m = re.search(rf"(?:answer|option|choice)\s*(?:is\s*)?:?\s*\**([{valid}])(?![A-Za-z])",
+                  text, re.IGNORECASE)
+    if m:
+        return m.group(1).upper()
+    # 3. Last standalone letter followed by option punctuation ("B. Black").
+    hits = re.findall(rf"(?<![A-Za-z])([{valid}])[\.\):]", text)
+    return hits[-1] if hits else None
 
 
 # ---------------------------------------------------------------- videoctx
@@ -51,7 +63,7 @@ def method_videoctx(video_path: Path, question: str, options: list[str],
 
     ctx = load_index(index_dir)
     prompt = MC_PROMPT.format(question=question, options=_format_options(options))
-    answer, meter, frames = ask(index_dir, ctx, prompt, model=model)
+    answer, meter, frames = ask(index_dir, ctx, prompt, model=model, video_path=video_path)
     return MethodResult(
         answer_text=answer,
         predicted_letter=_extract_letter(answer, len(options)),
