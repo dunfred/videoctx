@@ -1,29 +1,21 @@
 #!/bin/sh
-# Waits for the Gemini free-tier daily quota to reset, then completes the
-# remaining short-subset questions (resume via --skip-existing).
+# Gemini free-tier quota frees up on a ROLLING 24h window (not a daily reset),
+# so drip-complete: sweep the remaining errored questions every 45 min; each
+# sweep fills however many request slots have freed. Converges within ~12h.
 set -e
 cd "$(dirname "$0")/.."
 set -a; . ./.env; set +a
 PY=.venv/bin/python
+OUT=eval/results/pilot_short_gemini_partial.json
 
-probe() {
-  $PY - <<'EOF'
-import os, sys
-from google import genai
-client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or os.environ.get("AISTUDIO_API_KEY"))
-try:
-    client.models.generate_content(model="gemini-3-flash-preview", contents="ok")
-    sys.exit(0)
-except Exception as e:
-    sys.exit(1)
-EOF
-}
-
-until probe; do
-  echo "quota still exhausted; sleeping 1h"
-  sleep 3600
+while :; do
+  n_err=$($PY -c "import json; print(sum('error' in r for r in json.load(open('$OUT'))))")
+  if [ "$n_err" -eq 0 ]; then break; fi
+  echo "sweep: $n_err questions remaining"
+  $PY eval/run.py eval/data/videomme_short_pilot30.jsonl --methods gemini \
+    --out "$OUT" --skip-existing || true
+  n_err=$($PY -c "import json; print(sum('error' in r for r in json.load(open('$OUT'))))")
+  [ "$n_err" -eq 0 ] && break
+  sleep 2700
 done
-echo "quota available; completing gemini run"
-$PY eval/run.py eval/data/videomme_short_pilot30.jsonl --methods gemini \
-  --out eval/results/pilot_short_gemini_partial.json --skip-existing
-echo "GEMINI SHORT COMPLETE"
+echo "GEMINI SHORT FINAL"
