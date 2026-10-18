@@ -18,13 +18,16 @@ questions without fetched visual evidence. We also introduce an
 **accuracy-per-dollar** evaluation protocol for video QA that charges every
 token honestly, including prompt-cache write premiums, and measures cost as a
 function of questions asked per video. On Video-MME short videos (held-out
-test half, n=150), vctx with Claude Opus 4.8 reaches 83.3% accuracy at ~$0.019
-per question, 9.3 points above a uniform frame-sampling baseline (74.0% at
-$0.0172) at comparable cost. On Video-MME long videos (n=30), vctx reaches
-80.0% at $0.096 per
-question versus 70.0% at $0.133 for sampling; follow-up questions on an
-already-warm index cost $0.024, roughly 20x below the estimated cost of
-native ingestion of the same hour-long video. The format specification,
+test half, n=150), the frozen vctx configuration with Claude Opus 4.8 scores
+80.7% at $0.025 per question (equivalent configurations ranged 80.7-85.3%
+across runs), versus 74.0% at $0.0172 for a uniform frame-sampling baseline.
+On Video-MME long videos (n=30), vctx reaches 80.0% (replicated exactly
+across runs) at $0.098 per question versus 70.0% at $0.133 for sampling;
+follow-up questions on an already-warm index cost $0.019, roughly 25x below
+the estimated cost of native ingestion of the same hour-long video. We also
+quantify run-to-run variance and locate it almost entirely in the
+frame-fetching path, with consequences for how small accuracy deltas on this
+benchmark should be read. The format specification,
 reference implementation, MCP server, and evaluation harness are released
 under Apache-2.0.
 
@@ -173,7 +176,7 @@ once.
 
 | Method | Dev (150q) | Test (150q) | $/question (test) |
 |---|---|---|---|
-| vctx (ours) | 85.3% | **83.3%** | ~$0.019 (corrected) |
+| vctx (frozen v0.2, one touch) | 84.0-86.0% band | **80.7%** | $0.025 |
 | Naive sampling | n/a | 74.0% | $0.0172 |
 | Native (Gemini 3 Flash)* | n/a | 53.3% | $0.0047 paid-equiv |
 
@@ -267,7 +270,21 @@ $0.0067 to ~$0.019 per question after remetering, a correction we record
 here rather than erase. Every one of these distorted either cost or accuracy
 before being caught by per-question audits.
 
-### 7.4 Label quality
+### 7.4 Run-to-run variance lives in the frame path
+
+Re-running identical or near-identical configurations moved short-video
+(n=150) accuracy by 2-5 questions and medium (n=30) accuracy by up to 3
+questions (10 points). Diffing flipped questions shows the instability is
+concentrated almost entirely in frame-path questions (8-9 of 9 test-half
+flips), where the model's fetch choices are stochastic; text-path-dominated
+cells replicated exactly (long: 80.0% twice). Two consequences: (1) accuracy
+deltas under ~3 points on n=150, or under ~10 points on n=30, should be
+treated as noise on this benchmark, a bar several published comparisons do
+not clear; (2) stabilizing frame selection (e.g., retrieval-based targeting
+instead of model-chosen ranges) is a variance intervention as much as an
+accuracy one.
+
+### 7.5 Label quality
 
 In at least 2 of 30 long-video pilot failures, the model's cited frame
 evidence plausibly contradicts the gold label. We do not re-adjudicate labels

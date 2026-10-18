@@ -229,5 +229,194 @@
       "frames_fetched": 0
     },
     "answer_text": "D. At 0:22 the narration lists \"the pony express, the semaphore flag,\" so the pony express comes immediately before the semaphore."
+  },
+  {
+    "qid": "007-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003256,
+    "wall_s": 2.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 47,
+      "cache_read_tokens": 2732,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003256,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The screen at [1:01] shows \"BTW...you got something in your teeth!\", which is the embarrassing message displayed on the phone."
+  },
+  {
+    "qid": "008-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.042509,
+    "wall_s": 8.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 112,
+      "output_tokens": 190,
+      "cache_read_tokens": 4048,
+      "cache_write_tokens": 5628,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.042509,
+      "frames_fetched": 4
+    },
+    "answer_text": "C. At 1:15 the word \"GUITAR\" is being written in black marker beneath the Smule guitar app icon."
+  },
+  {
+    "qid": "008-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.004269,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 99,
+      "output_tokens": 70,
+      "cache_read_tokens": 4048,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004269,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video shows three distinct guitar-shaped instruments: a black electric guitar, a dark red semi-hollow electric guitar, and an acoustic guitar (seen in the Smule app and drawings)."
+  },
+  {
+    "qid": "008-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.004199,
+    "wall_s": 4.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 135,
+      "output_tokens": 60,
+      "cache_read_tokens": 4048,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004199,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The second half (from ~1:14) promotes \"Guitar by Smule,\" showing the app on a tablet and urging viewers to download it for free, which is an advertisement for music software."
+  },
+  {
+    "qid": "009-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.037401,
+    "wall_s": 5.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 105,
+      "output_tokens": 204,
+      "cache_read_tokens": 2952,
+      "cache_write_tokens": 4848,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.037401,
+      "frames_fetched": 5
+    },
+    "answer_text": "A. QuYuan, the elevated patriotic poet figure with the red ribbon, is shown wearing white/light-colored robes in the crowd scene (0:13\u20130:17)."
+  },
+  {
+    "qid": "009-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003731,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 111,
+      "output_tokens": 68,
+      "cache_read_tokens": 2952,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003731,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript states \"people named the fifth day of May as Dragon Boat Festival\" and that Qiyun drowned \"on the fifth day of the fifth lunar month\" [0:20, 0:38]."
+  },
+  {
+    "qid": "009-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.004026,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 150,
+      "output_tokens": 72,
+      "cache_read_tokens": 2952,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004026,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video describes Qu Yuan as \"upright, loyal, and highly esteemed for his wise counsel that brought peace and prosperity to the state\" (0:01), identifying that as the reason he is commemorated."
+  },
+  {
+    "qid": "010-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.01955,
+    "wall_s": 2.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 155,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2716,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.01955,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video introduces fundamentals of navigating cultural differences\u2014how cultures trade, communicate, and manage people\u2014to help viewers develop cultural intelligence quickly, as described throughout (0:44\u20131:12)."
+  },
+  {
+    "qid": "010-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.023971,
+    "wall_s": 5.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 121,
+      "output_tokens": 177,
+      "cache_read_tokens": 5432,
+      "cache_write_tokens": 2596,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.023971,
+      "frames_fetched": 4
+    },
+    "answer_text": "B. The informally-dressed staff on the left wears casual clothing with a palm/coconut tree pattern, contrasting with the two formally uniformed staff on the right."
   }
 ]
