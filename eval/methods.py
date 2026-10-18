@@ -126,7 +126,8 @@ def method_naive(video_path: Path, question: str, options: list[str],
 # (<=200k prompt); flash rate is an estimate: verify before publishing.
 GEMINI_PRICES = {
     "gemini-3.1-pro-preview": (2.00, 12.00),
-    "gemini-3-flash-preview": (0.50, 3.00),  # TODO verify
+    "gemini-3-flash-preview": (0.50, 3.00),   # TODO verify
+    "gemini-3.1-flash-lite": (0.10, 0.40),    # TODO verify
 }
 
 
@@ -187,8 +188,14 @@ def method_gemini(video_path: Path, question: str, options: list[str],
     )
 
 
+def method_gemini_lite(video_path: Path, question: str, options: list[str]) -> MethodResult:
+    """Native ingestion on the free 500-requests/day lite tier."""
+    return method_gemini(video_path, question, options, model="gemini-3.1-flash-lite")
+
+
 METHODS = {
     "videoctx": method_videoctx,
     "naive": method_naive,
     "gemini": method_gemini,
+    "gemini-lite": method_gemini_lite,
 }
