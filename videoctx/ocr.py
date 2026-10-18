@@ -8,7 +8,8 @@ MIN_CONFIDENCE = 0.8
 MAX_CHARS_PER_SHOT = 400
 
 
-def ocr_shots(index_dir: Path, ctx: VideoContext, progress=lambda *_: None) -> int:
+def ocr_shots(index_dir: Path, ctx: VideoContext, max_shots: int = 150,
+              progress=lambda *_: None) -> int:
     """Run local OCR over each shot's middle keyframe and store the detected
     on-screen text in the index. Free, offline, one-time; makes verbatim
     screen text part of the cheap text layer.
@@ -19,10 +20,16 @@ def ocr_shots(index_dir: Path, ctx: VideoContext, progress=lambda *_: None) -> i
     from rapidocr_onnxruntime import RapidOCR
 
     engine = RapidOCR()
+    # Per-INDEX cap, like captions: bounded text views are an index invariant.
+    budget = max_shots - sum(1 for s in ctx.shots if s.ocr is not None)
+    todo = [s for s in ctx.shots if s.ocr is None and s.keyframes]
+    if budget <= 0:
+        return 0
+    if len(todo) > budget:
+        step = (len(todo) - 1) / (budget - 1) if budget > 1 else 0
+        todo = [todo[round(i * step)] for i in range(budget)]
     done = 0
-    for shot in ctx.shots:
-        if shot.ocr is not None or not shot.keyframes:
-            continue
+    for shot in todo:
         kf = shot.keyframes[len(shot.keyframes) // 2]
         result, _ = engine(str(index_dir / kf.file))
         lines = []
