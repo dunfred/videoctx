@@ -362,5 +362,19 @@
       "output_tokens": 31
     },
     "answer_text": "D. The video explicitly states that when the Crusaders arrived, the Islamic world was weakened by internal political and demographic divisions, which facilitated the Crusaders' victories."
+  },
+  {
+    "qid": "609-3",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.025776,
+    "wall_s": 549.5,
+    "detail": {
+      "input_tokens": 257623,
+      "output_tokens": 34
+    },
+    "answer_text": "D. After taking control of Antioch in 1097, the Crusaders marched south in January 1099 to Jerusalem, which was their main goal."
   }
 ]

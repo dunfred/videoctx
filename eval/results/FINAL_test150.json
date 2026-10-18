@@ -2875,5 +2875,278 @@
       "frames_fetched": 6
     },
     "answer_text": "D. When the safe is opened a handgun (seen at 0:23\u20130:24, consistent with the pistol shot at 0:24) is produced, indicating a gun was inside the safe."
+  },
+  {
+    "qid": "105-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.035051,
+    "wall_s": 9.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 95,
+      "output_tokens": 360,
+      "cache_read_tokens": 13377,
+      "cache_write_tokens": 3022,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.035051,
+      "frames_fetched": 8
+    },
+    "answer_text": "C. In the room scene (e.g. t=28.9s), I count seven individuals: the gunman on the left, Sherlock being grabbed, and several agents struggling in the foreground/right, totaling about seven people."
+  },
+  {
+    "qid": "106-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.068457,
+    "wall_s": 9.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 98,
+      "output_tokens": 216,
+      "cache_read_tokens": 10922,
+      "cache_write_tokens": 9137,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.068457,
+      "frames_fetched": 34
+    },
+    "answer_text": "A. The mug held by the man at 10.7s\u201311.1s is predominantly white with a small crest emblem on it."
+  },
+  {
+    "qid": "106-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.044266,
+    "wall_s": 7.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 120,
+      "output_tokens": 307,
+      "cache_read_tokens": 8544,
+      "cache_write_tokens": 5075,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.044266,
+      "frames_fetched": 8
+    },
+    "answer_text": "The frame at 17.2s shows the woman's face pressed close to the man's face, with her lips touching/near his cheek \u2014 a kiss to his face.\n\nD. She kisses his face, as seen at 17.2s where the woman's lips are pressed against the side of the man's face in an intimate close-up."
+  },
+  {
+    "qid": "106-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.004316,
+    "wall_s": 2.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 111,
+      "output_tokens": 65,
+      "cache_read_tokens": 4272,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004316,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The man with dark curly hair (Sherlock) delivers the long deductive monologue about the flight seat allocations and other extended speech throughout, as seen at [0:47]\u2013[1:12]."
+  },
+  {
+    "qid": "107-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.048938,
+    "wall_s": 5.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 108,
+      "output_tokens": 183,
+      "cache_read_tokens": 3620,
+      "cache_write_tokens": 6722,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.048938,
+      "frames_fetched": 6
+    },
+    "answer_text": "D. The man in the gray T-shirt is gripping and holding back a helicopter's skid/landing gear (visible at t=29-33s), straining to pull the helicopter down."
+  },
+  {
+    "qid": "107-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.00332,
+    "wall_s": 1.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 97,
+      "output_tokens": 41,
+      "cache_read_tokens": 3620,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.00332,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The helicopter is described as blue in multiple shots (e.g., [0:01], [0:13], [0:21])."
+  },
+  {
+    "qid": "107-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.034382,
+    "wall_s": 7.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 120,
+      "output_tokens": 187,
+      "cache_read_tokens": 7240,
+      "cache_write_tokens": 4078,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.034382,
+      "frames_fetched": 8
+    },
+    "answer_text": "A. The frames show the helicopter being pulled/forced down onto the helipad, crashing with debris and smoke on the ground (t=47.4s\u201353.6s)."
+  },
+  {
+    "qid": "108-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.03889,
+    "wall_s": 5.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 106,
+      "output_tokens": 181,
+      "cache_read_tokens": 2583,
+      "cache_write_tokens": 5207,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.03889,
+      "frames_fetched": 5
+    },
+    "answer_text": "C. The helicopter takes off and flies through a dark, heavily overcast sky with thick gray storm clouds and misty rain conditions (0:20\u20130:25)."
+  },
+  {
+    "qid": "108-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.039581,
+    "wall_s": 8.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 113,
+      "output_tokens": 314,
+      "cache_read_tokens": 9894,
+      "cache_write_tokens": 4195,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.039581,
+      "frames_fetched": 8
+    },
+    "answer_text": "B. In the helicopter cabin he begins suiting up into the Iron Man armor (red/metallic mech with a glowing arc reactor), visible at [0:41]\u2013[0:42]."
+  },
+  {
+    "qid": "108-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.046257,
+    "wall_s": 8.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 106,
+      "output_tokens": 288,
+      "cache_read_tokens": 9204,
+      "cache_write_tokens": 5428,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.046257,
+      "frames_fetched": 22
+    },
+    "answer_text": "As Iron-Man flies away through the clouds (t=48s), he banks upward and the sun's glow appears behind/above him in the cloudy sky.\n\nD. As Iron-Man flies off through the stormy clouds (~48s), sunlight/sun glare breaks through behind him in the sky."
+  },
+  {
+    "qid": "109-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.041943,
+    "wall_s": 5.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 105,
+      "output_tokens": 201,
+      "cache_read_tokens": 3336,
+      "cache_write_tokens": 5556,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.041943,
+      "frames_fetched": 6
+    },
+    "answer_text": "A. The seated man at the desk is bent over papers with a pen/pencil in hand, writing while the others talk to him (visible at 14.4s, 25.8s, and 28.6s)."
+  },
+  {
+    "qid": "109-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.051129,
+    "wall_s": 14.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 99,
+      "output_tokens": 504,
+      "cache_read_tokens": 19242,
+      "cache_write_tokens": 4546,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.051129,
+      "frames_fetched": 28
+    },
+    "answer_text": "The men in the video all have golden/light brown hair. No distinct smoking is clearly visible, but the men have golden/blond hair.\n\nB. Golden \u2014 the men in the scene have golden/light-brown hair, as seen clearly at 9.0s and 18.9s."
+  },
+  {
+    "qid": "109-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.004173,
+    "wall_s": 2.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 106,
+      "output_tokens": 79,
+      "cache_read_tokens": 3336,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004173,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The seated man (Alan) repeatedly ignores and dismisses the lunch invitation (\"I don't like sandwiches,\" \"Never mind\"), showing an indifferent, careless attitude toward the others speaking to him (0:21)."
   }
 ]

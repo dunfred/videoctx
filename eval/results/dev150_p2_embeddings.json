@@ -1,0 +1,233 @@
+[
+  {
+    "qid": "002-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.024037,
+    "wall_s": 3.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 115,
+      "output_tokens": 77,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3446,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.024037,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. Jade is never mentioned; the transcript discusses inkstones (0:00), sacrificial tables (0:00), and niches (0:43), but jade only appears as a pigment color in a caption, not as an item in the tomb."
+  },
+  {
+    "qid": "002-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.003788,
+    "wall_s": 4.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 153,
+      "output_tokens": 52,
+      "cache_read_tokens": 3446,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003788,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:20 states the excavation was \"To coordinate with the National Highway Realignment Project,\" making highway realignment the motivating reason."
+  },
+  {
+    "qid": "002-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003523,
+    "wall_s": 2.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 50,
+      "cache_read_tokens": 3446,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003523,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The southern niche contained four porcelain jars and the northern niche contained five porcelain jars (4+5=9), per the narration at 0:43."
+  },
+  {
+    "qid": "005-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.045918,
+    "wall_s": 5.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 115,
+      "output_tokens": 139,
+      "cache_read_tokens": 4236,
+      "cache_write_tokens": 6360,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.045918,
+      "frames_fetched": 4
+    },
+    "answer_text": "A. The green car shows three people: a driver in front plus Franz Ferdinand and his wife in the back (0:09\u20130:11)."
+  },
+  {
+    "qid": "005-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.004033,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 48,
+      "cache_read_tokens": 4236,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004033,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video states the assassination of Archduke Franz Ferdinand \"was, in fact, the trigger which set off the war\" at 0:01."
+  },
+  {
+    "qid": "005-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.051988,
+    "wall_s": 26.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 163,
+      "output_tokens": 386,
+      "cache_read_tokens": 13447,
+      "cache_write_tokens": 5568,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.051988,
+      "frames_fetched": 13
+    },
+    "answer_text": "Looking at the car scene (9.5s-11.5s): Ferdinand is the figure wearing a white hat sitting on the RIGHT side of the car (passenger with white uniform and white hat), while the driver is on the left wearing a cap. Ferdinand is NOT on the left side.\n\nB. Ferdinand was sitting on the right side (passenger seat) of the car, not the left, as shown at 9.5s\u201311.5s where the white-hatted figure is on the right while the capped driver is on the left."
+  },
+  {
+    "qid": "006-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.019762,
+    "wall_s": 4.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 70,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2794,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.019762,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The shamrock symbol appears prominently in the video's graphics (e.g., the \"MARCH 17\" calendar tile at 0:03 and the U.S. map filled with shamrocks at 1:30)."
+  },
+  {
+    "qid": "006-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003907,
+    "wall_s": 2.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 157,
+      "output_tokens": 69,
+      "cache_read_tokens": 2794,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003907,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript (1:11), when Irish immigrants brought the tradition to America in the early 1700s, it \"devolved into a secular holiday often centered around drinking and celebrating all things Irish.\""
+  },
+  {
+    "qid": "006-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003072,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 125,
+      "output_tokens": 42,
+      "cache_read_tokens": 2794,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003072,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript at 1:11, New York City's annual parade is the largest in the world with an estimated two million spectators."
+  },
+  {
+    "qid": "007-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.082352,
+    "wall_s": 12.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 126,
+      "output_tokens": 420,
+      "cache_read_tokens": 12545,
+      "cache_write_tokens": 10392,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.082352,
+      "frames_fetched": 19
+    },
+    "answer_text": "D. In \"The Smoke Signal\" scene (9.6s\u201314.1s), the Native American man generates smoke by fanning a bonfire (burning logs on the ground) with a blanket."
+  },
+  {
+    "qid": "007-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.003056,
+    "wall_s": 1.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 108,
+      "output_tokens": 46,
+      "cache_read_tokens": 2732,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003056,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At 0:22 the narration lists \"the pony express, the semaphore flag,\" so the pony express comes immediately before the semaphore."
+  }
+]

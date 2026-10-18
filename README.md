@@ -53,36 +53,46 @@ hour-long video is about **$0.02**.
 Full protocol and honest cost accounting (including prompt-cache write
 premiums) in [paper/draft.md](https://github.com/dunfred/videoctx/blob/main/paper/draft.md). Query model: Claude Opus 4.8.
 
+Numbers below are single-touch runs of the frozen v0.2 config (captions +
+OCR + evidence rules, Opus 4.8 loop) under full cost accounting. Where we
+measured the same configuration more than once, we report the observed range:
+on n=150, single runs wobble by 2-3 questions; on n=30, by 2-3 questions
+(= 7-10 points). Treat sub-3-point deltas on this benchmark as noise.
+
 **Short videos, held-out test half (n=150):**
 
 | Method | Accuracy | $/question |
 |---|---|---|
-| **videoctx** | **83.3%** | $0.019* |
+| **videoctx** | **80.7%** (equivalent configs ranged 80.7-85.3%) | $0.025 |
 | Uniform frame sampling | 74.0% | $0.0172 |
+| Gemini Flash-Lite native (pilot 30) | 70.0% | $0.0009 |
+| Gemini Flash native (pilot 30) | 53.3% | $0.0047 |
 
-*Correction 2026-10-18: videoctx short-video costs originally published as
-$0.0067/question undercounted prompt-cache write premiums (a metering bug,
-since fixed); $0.019 is the honestly-metered dev-split figure. Accuracy
-figures and baseline costs were unaffected. Long/medium figures were measured
-after the fix and stand as published.
+**Medium videos, 4-15 min (n=30, wide error bars):**
 
-**Identical 30-question subset, all methods:**
-
-| Method | Accuracy | Latency/question |
+| Method | Accuracy | $/question |
 |---|---|---|
-| **videoctx** | **76.7%** | 2-20s |
-| Uniform frame sampling | 60.0% | ~5s |
-| Gemini Flash native ingestion | 53.3% | ~40s |
+| Uniform frame sampling | 80.0% | $0.081 |
+| videoctx | 66.7% (earlier run: 76.7%) | $0.053 |
+| Gemini Flash-Lite native | 70.0% | $0.0034 |
+
+Medium is our weakest, most variance-dominated cell and a named target for
+the next iteration.
 
 **Long videos, 30-60 minutes (n=30):**
 
 | Method | Accuracy | $/question | Follow-up $/question |
 |---|---|---|---|
-| **videoctx** | **80.0%** | **$0.096** | **$0.024** |
+| **videoctx** | **80.0%** (replicated exactly across runs) | $0.098 | **$0.019** |
 | Uniform frame sampling (60-frame cap) | 70.0% | $0.133 | $0.133 |
 | Native ingestion (published Pro rates, est.) | pending | ~$0.50 | ~$0.50 |
 
-One-time index cost: ~$0.10 per hour of video (captions), pennies otherwise.
+One-time index cost: ~$0.10-0.25 per hour of video (captions + local OCR +
+local embeddings), pennies otherwise.
+
+*Cost correction history: early short-video figures ($0.0067/q) undercounted
+prompt-cache write premiums; the metering was fixed 2026-10-18 and all
+figures above are fully loaded. Details in the paper's Section 7.3.*
 
 ## Install
 
