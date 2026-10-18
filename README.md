@@ -17,6 +17,28 @@ videoctx show  lecture.vctx         # the text view the model reads
 videoctx ask   lecture.vctx "What diagram is shown when she explains backprop?"
 ```
 
+## What people use it for
+
+Ask questions about videos the way you'd ask about a document:
+
+- **Lectures and courses:** "Summarize this 50-minute lecture." "Where does
+  she explain backpropagation, and what's on the slide at that moment?"
+- **Meetings and interviews:** "List the action items with timestamps."
+  "Find the moment the client pushed back on pricing."
+- **Screen recordings:** "At what time does the error appear, and what does
+  the dialog say?"
+- **Content creation:** "Find the three strongest moments for short clips."
+  "Generate chapter markers."
+- **Video archives:** index a folder of talks once, then every future
+  question across all of them costs pennies and answers in seconds.
+- **AI agents:** give any MCP-capable agent (Claude Code, Cursor, ...) the
+  ability to read video at all.
+
+**Who this is for:** developers and anyone comfortable running a few
+terminal commands. You'll need Python, ffmpeg, and an Anthropic API key for
+question-answering (indexing itself is free and offline). If that's not you
+yet, star/watch the repo: a no-install version is on the roadmap.
+
 ## Why
 
 Native video ingestion re-tokenizes the whole video on every question: an
