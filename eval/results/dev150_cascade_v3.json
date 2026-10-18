@@ -1,0 +1,212 @@
+[
+  {
+    "qid": "002-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.026141,
+    "wall_s": 6.2,
+    "detail": {
+      "usd": 0.026141,
+      "calls": 3,
+      "input_tokens": 3228,
+      "output_tokens": 193,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3246,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-haiku-4-5",
+          "calls": 2,
+          "input_tokens": 3113,
+          "output_tokens": 133,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003778
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 115,
+          "output_tokens": 60,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3246,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.022363
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The transcript mentions inkstones (0:00), wooden sacrificial tables (0:00), and niches (0:43), but jade is never discussed in relation to the tomb."
+  },
+  {
+    "qid": "002-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.007657,
+    "wall_s": 4.3,
+    "detail": {
+      "usd": 0.007657,
+      "calls": 3,
+      "input_tokens": 3312,
+      "output_tokens": 202,
+      "cache_read_tokens": 3246,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-haiku-4-5",
+          "calls": 2,
+          "input_tokens": 3159,
+          "output_tokens": 147,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003894
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 153,
+          "output_tokens": 55,
+          "cache_read_tokens": 3246,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003763
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:20 states the excavation was done \"To coordinate with the National Highway Realignment Project,\" confirming highway realignment motivated the dig."
+  },
+  {
+    "qid": "002-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.008434,
+    "wall_s": 6.3,
+    "detail": {
+      "usd": 0.008434,
+      "calls": 3,
+      "input_tokens": 3426,
+      "output_tokens": 369,
+      "cache_read_tokens": 3246,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-haiku-4-5",
+          "calls": 2,
+          "input_tokens": 3316,
+          "output_tokens": 314,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004886
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 110,
+          "output_tokens": 55,
+          "cache_read_tokens": 3246,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003548
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The southern niche contained four porcelain jars and the northern niche contained five porcelain jars, totaling nine (4+5=9), as stated at 0:43."
+  },
+  {
+    "qid": "005-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.047894,
+    "wall_s": 8.0,
+    "detail": {
+      "usd": 0.047894,
+      "calls": 3,
+      "input_tokens": 2201,
+      "output_tokens": 290,
+      "cache_read_tokens": 4036,
+      "cache_write_tokens": 6164,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-haiku-4-5",
+          "calls": 1,
+          "input_tokens": 2086,
+          "output_tokens": 128,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002726
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 115,
+          "output_tokens": 162,
+          "cache_read_tokens": 4036,
+          "cache_write_tokens": 6164,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.045168
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. The green car at [0:09]\u2013[0:11] shows three occupants: a driver in front, and Franz Ferdinand (in the plumed hat) with a passenger beside him in the back."
+  },
+  {
+    "qid": "005-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.009576,
+    "wall_s": 4.8,
+    "detail": {
+      "usd": 0.009576,
+      "calls": 3,
+      "input_tokens": 4401,
+      "output_tokens": 217,
+      "cache_read_tokens": 4036,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-haiku-4-5",
+          "calls": 2,
+          "input_tokens": 4258,
+          "output_tokens": 142,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004968
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 143,
+          "output_tokens": 75,
+          "cache_read_tokens": 4036,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004608
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The narration at 0:01 states the assassination of Archduke Franz Ferdinand \"was, in fact, the trigger which set off the war\" from underlying causes like militarism, alliances, imperialism, and nationalism."
+  }
+]
