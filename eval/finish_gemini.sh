@@ -8,14 +8,18 @@ set -a; . ./.env; set +a
 PY=.venv/bin/python
 OUT=eval/results/pilot_short_gemini_partial.json
 
+done_count() {
+  $PY -c "import json; print(sum('error' not in r for r in json.load(open('$OUT'))))"
+}
+
 while :; do
-  n_err=$($PY -c "import json; print(sum('error' in r for r in json.load(open('$OUT'))))")
-  if [ "$n_err" -eq 0 ]; then break; fi
-  echo "sweep: $n_err questions remaining"
+  n_ok=$(done_count)
+  if [ "$n_ok" -ge 30 ]; then break; fi
+  echo "sweep: $n_ok/30 complete"
   $PY eval/run.py eval/data/videomme_short_pilot30.jsonl --methods gemini \
     --out "$OUT" --skip-existing || true
-  n_err=$($PY -c "import json; print(sum('error' in r for r in json.load(open('$OUT'))))")
-  [ "$n_err" -eq 0 ] && break
+  n_ok=$(done_count)
+  [ "$n_ok" -ge 30 ] && break
   sleep 2700
 done
 echo "GEMINI SHORT FINAL"
