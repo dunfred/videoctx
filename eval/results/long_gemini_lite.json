@@ -376,5 +376,47 @@
       "output_tokens": 34
     },
     "answer_text": "D. After taking control of Antioch in 1097, the Crusaders marched south in January 1099 to Jerusalem, which was their main goal."
+  },
+  {
+    "qid": "610-1",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.025469,
+    "wall_s": 454.2,
+    "detail": {
+      "input_tokens": 254525,
+      "output_tokens": 41
+    },
+    "answer_text": "B. This video provides a detailed historical account of both the Battle of Stamford Bridge, where Harold defeated the Norwegian invaders, and the Battle of Hastings, which marked the beginning of the Norman Conquest of England."
+  },
+  {
+    "qid": "610-2",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.025462,
+    "wall_s": 288.7,
+    "detail": {
+      "input_tokens": 254525,
+      "output_tokens": 25
+    },
+    "answer_text": "C. The video explains that after the battle at Stamford Bridge, the Norman army landed in Hastings to establish their base camp."
+  },
+  {
+    "qid": "610-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.02547,
+    "wall_s": 538.3,
+    "detail": {
+      "input_tokens": 254532,
+      "output_tokens": 43
+    },
+    "answer_text": "B. The video explicitly states that he died in the summer of 1087, but during the credits and narration, it mentions his death occurred on September 9th, 1087."
   }
 ]

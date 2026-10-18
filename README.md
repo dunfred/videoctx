@@ -85,6 +85,7 @@ the next iteration.
 |---|---|---|---|
 | **videoctx** | **80.0%** (replicated exactly across runs) | $0.098 | **$0.019** |
 | Uniform frame sampling (60-frame cap) | 70.0% | $0.133 | $0.133 |
+| Gemini Flash-Lite native | 76.7% | $0.022 | $0.022 (5-9 min latency/q) |
 | Native ingestion (published Pro rates, est.) | pending | ~$0.50 | ~$0.50 |
 
 One-time index cost: ~$0.10-0.25 per hour of video (captions + local OCR +
