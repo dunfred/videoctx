@@ -41,6 +41,17 @@ def ocr(index_dir: Path):
 
 
 @main.command()
+@click.argument("index_dir", type=click.Path(exists=True, path_type=Path))
+def embed(index_dir: Path):
+    """Add per-shot visual embeddings (local CLIP) for find_moments search."""
+    from .embeddings import embed_shots
+    from .indexer import load_index
+
+    n = embed_shots(index_dir, load_index(index_dir), progress=click.echo)
+    click.echo(f"embedded {n} shots" if n else "already embedded")
+
+
+@main.command()
 def mcp():
     """Run the videoctx MCP server over stdio (same as the videoctx-mcp binary)."""
     from .mcp_server import main as mcp_main

@@ -334,5 +334,33 @@
       "output_tokens": 30
     },
     "answer_text": "A. The video explicitly mentions that sediment makes the waters of Lake Nasser impenetrable to cameras, which prevents archaeologists from viewing the ruins on the lakebed."
+  },
+  {
+    "qid": "609-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.025779,
+    "wall_s": 712.6,
+    "detail": {
+      "input_tokens": 257626,
+      "output_tokens": 40
+    },
+    "answer_text": "C. The video primarily focuses on the events surrounding the First Crusade, beginning with the call to action, the march to the East, the siege of Antioch, and culminating in the conquest of Jerusalem."
+  },
+  {
+    "qid": "609-2",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.025776,
+    "wall_s": 239.3,
+    "detail": {
+      "input_tokens": 257635,
+      "output_tokens": 31
+    },
+    "answer_text": "D. The video explicitly states that when the Crusaders arrived, the Islamic world was weakened by internal political and demographic divisions, which facilitated the Crusaders' victories."
   }
 ]

@@ -53,6 +53,26 @@ SURVEY_TOOL = {
     "input_schema": {"type": "object", "properties": {}},
 }
 
+FIND_MOMENTS_TOOL = {
+    "name": "find_moments",
+    "description": (
+        "Visual search over the whole video: describe what you are looking "
+        "for in plain language (an object, scene, action, or visual style) "
+        "and get the timestamps of the best-matching shots plus their "
+        "thumbnails. Much cheaper than scanning with get_frames; use it to "
+        "locate the right moment, then zoom with get_frames."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "description": {"type": "string",
+                            "description": "What to look for, visually"},
+            "top_k": {"type": "integer", "description": "Matches to return (default 5)"},
+        },
+        "required": ["description"],
+    },
+}
+
 SYSTEM = (
     "You answer questions about a video using its index: a shot list with "
     "timestamps and visual captions, interleaved with the speech transcript "
@@ -340,12 +360,16 @@ def ask(
         ],
     }]
 
+    tools = [GET_FRAMES_TOOL, SURVEY_TOOL]
+    if (index_dir / "embeddings.npz").exists():
+        tools.append(FIND_MOMENTS_TOOL)
+
     for _ in range(MAX_TOOL_TURNS):
         response = client.messages.create(
             model=model,
             max_tokens=8192,
             system=SYSTEM,
-            tools=[GET_FRAMES_TOOL, SURVEY_TOOL],
+            tools=tools,
             messages=messages,
         )
         meter.add(response.usage)
@@ -358,6 +382,27 @@ def ask(
         results = []
         for block in response.content:
             if block.type != "tool_use":
+                continue
+            if block.name == "find_moments":
+                from .embeddings import find_moments
+                hits = find_moments(index_dir, str(block.input["description"]),
+                                    top_k=min(int(block.input.get("top_k", 5)), 10))
+                content: list = []
+                shot_by_id = {s.id: s for s in ctx.shots}
+                for h in hits:
+                    shot = shot_by_id.get(h["shot_id"])
+                    if not shot or not shot.keyframes:
+                        continue
+                    kf = shot.keyframes[len(shot.keyframes) // 2]
+                    content.append({"type": "text", "text":
+                                    f"match @ {h['t_s']:.1f}s (score {h['score']:.2f}):"})
+                    data = base64.standard_b64encode(
+                        _thumb(index_dir, kf).read_bytes()).decode()
+                    content.append({"type": "image", "source": {
+                        "type": "base64", "media_type": "image/jpeg", "data": data}})
+                frames_fetched += len(hits)
+                results.append({"type": "tool_result", "tool_use_id": block.id,
+                                "content": content or [{"type": "text", "text": "no matches"}]})
                 continue
             if block.name == "survey":
                 frames_fetched += len(ctx.shots)

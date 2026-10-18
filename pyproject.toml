@@ -16,6 +16,9 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+embed = [
+    "sentence-transformers>=3.0",
+]
 ocr = [
     "rapidocr-onnxruntime>=1.3",
 ]
