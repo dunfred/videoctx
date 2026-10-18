@@ -250,5 +250,89 @@
       "output_tokens": 30
     },
     "answer_text": "B. There are three distinct scholars throughout the video who provide commentary: Dr. Michael Rowe, Professor David Andress, and Professor Pamela Pilbeam."
+  },
+  {
+    "qid": "607-1",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.025885,
+    "wall_s": 441.6,
+    "detail": {
+      "input_tokens": 258712,
+      "output_tokens": 34
+    },
+    "answer_text": "A. The video focuses on using advanced technology and underwater archaeology to uncover sunken ships and lost harbors, which provide insights into the Roman Empire's maritime history and logistics."
+  },
+  {
+    "qid": "607-2",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.025893,
+    "wall_s": 490.6,
+    "detail": {
+      "input_tokens": 258768,
+      "output_tokens": 41
+    },
+    "answer_text": "A. The video explicitly states that the Tiber River is too shallow for merchant vessels to transport heavy cargo to Rome, meaning the city needed the port at Portus as a crucial link in its supply chain."
+  },
+  {
+    "qid": "607-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.025888,
+    "wall_s": 442.9,
+    "detail": {
+      "input_tokens": 258734,
+      "output_tokens": 36
+    },
+    "answer_text": "B. The video explicitly states that the discovered metal ingots are not made of gold or silver, but are made of lead and stamped with symbols indicating they belonged to the emperor."
+  },
+  {
+    "qid": "608-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.02589,
+    "wall_s": 262.5,
+    "detail": {
+      "input_tokens": 258731,
+      "output_tokens": 41
+    },
+    "answer_text": "C. The video mentions that the two ancient wonders in Egypt (the Great Pyramids and the Lighthouse of Alexandria) have both been located and studied, contradicting the claim that they have not been found."
+  },
+  {
+    "qid": "608-2",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.025885,
+    "wall_s": 257.0,
+    "detail": {
+      "input_tokens": 258734,
+      "output_tokens": 28
+    },
+    "answer_text": "C. The video states that the lighthouse was estimated to be the size of a 32-story building, not 30."
+  },
+  {
+    "qid": "608-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.025885,
+    "wall_s": 407.1,
+    "detail": {
+      "input_tokens": 258727,
+      "output_tokens": 30
+    },
+    "answer_text": "A. The video explicitly mentions that sediment makes the waters of Lake Nasser impenetrable to cameras, which prevents archaeologists from viewing the ruins on the lakebed."
   }
 ]

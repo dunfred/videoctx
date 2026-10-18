@@ -121,6 +121,20 @@ def extract_on_demand(
     return out
 
 
+def _parse_ts(value) -> float:
+    """Models pass timestamps as numbers or clock strings ('1:12', '0:01:05')."""
+    if isinstance(value, (int, float)):
+        return float(value)
+    s = str(value).strip()
+    if ":" in s:
+        parts = [float(p) for p in s.split(":")]
+        total = 0.0
+        for p in parts:
+            total = total * 60 + p
+        return total
+    return float(s)
+
+
 def select_frames(ctx: VideoContext, start_s: float, end_s: float, max_frames: int) -> list[Keyframe]:
     candidates = [
         kf for shot in ctx.shots for kf in shot.keyframes if start_s <= kf.t_s <= end_s
@@ -356,7 +370,7 @@ def ask(
             args = block.input
             max_frames = min(int(args.get("max_frames", 4)), 8)
             edge = 1536 if args.get("detail") == "high" else 768
-            start, end = float(args["start_s"]), float(args["end_s"])
+            start, end = _parse_ts(args["start_s"]), _parse_ts(args["end_s"])
             if video_path is not None and video_path.exists():
                 frames = extract_on_demand(
                     index_dir, video_path, ctx, start, end, max_frames, max_edge=edge)
