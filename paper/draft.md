@@ -174,18 +174,21 @@ once.
 |---|---|---|---|
 | vctx (ours) | 85.3% | **83.3%** | **$0.0067** |
 | Naive sampling | n/a | 74.0% | $0.0172 |
-| Native (Gemini 3 Flash) | n/a | [PENDING: 18/30 pilot answered, 55.6%] | ~$0.0026 paid-equiv |
+| Native (Gemini 3 Flash)* | n/a | 53.3% | $0.0047 paid-equiv |
+
+*Native column measured on the 30-question pilot subset (free-tier quota
+limits); on those same 30 questions vctx scores 76.7% and naive 60.0%. The
+native row uses Gemini's budget tier; the Pro-tier column remains [PENDING]
+on paid access.
 
 One-time corpus cost (index + captions, all 100 videos): $0.99. Dev and test
 agree within 2 points; nothing was tuned on the test half.
 
-On the 17-question subset all methods completed in the pilot, vctx scored
-88.2%, naive 70.6%, native Flash 52.9%. The native column uses Gemini's
-budget tier (its Pro tier is unavailable on the free tier we had access to);
-the Pro-tier column is [PENDING] on paid access. Note that even if Pro-tier
-native matches vctx accuracy on short videos, short clips are native
-ingestion's *best* cost case, ~2k tokens per clip, and its economics collapse
-on long video (6.3).
+Note that even if Pro-tier native matches vctx accuracy on short videos,
+short clips are native ingestion's *best* cost case, ~2k tokens per clip, and
+its economics collapse on long video (6.3). Native ingestion also paid a
+measured ~40s of upload + processing latency per question versus vctx's 2-4s
+text-path answers.
 
 ### 6.2 Long videos (Video-MME long, 10 videos of 30-60 min, 30 questions)
 
