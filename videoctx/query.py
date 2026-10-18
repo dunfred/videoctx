@@ -190,16 +190,23 @@ def _frame_blocks(index_dir: Path, frames: list[Keyframe]) -> list[dict]:
     return blocks
 
 
-CASCADE_MODEL = "claude-haiku-4-5"
+import os as _os
+
+CASCADE_MODEL = _os.environ.get("VIDEOCTX_CASCADE_MODEL", "claude-haiku-4-5")
 
 CASCADE_SYSTEM = (
     "You answer questions about a video using its index: shot captions, "
     "verbatim on-screen text (OCR), and the speech transcript, interleaved by "
     "timestamp. You cannot view frames. If the index gives you enough "
     "evidence to answer confidently, answer directly (follow any format the "
-    "question requests) and cite timestamps. If the question requires seeing "
-    "frames, depends on visual details the index does not capture, or you "
-    "are not confident, reply with exactly: ESCALATE\n"
+    "question requests) and cite timestamps.\n"
+    "MANDATORY ESCALATION: you must escalate, regardless of how suggestive "
+    "the captions are, when the question concerns colors, counts, patterns, "
+    "spatial positions, object identification from appearance, or anything "
+    "whose answer lives in pixels rather than words. Captions are lossy "
+    "one-line summaries, never sufficient evidence for those. Also escalate "
+    "when the question requires seeing frames or you are not fully "
+    "confident.\n"
     "Your reply MUST begin with either 'ANSWER:' followed by your answer, or "
     "the single word 'ESCALATE'. Never hedge in prose; if you would hedge, "
     "escalate."

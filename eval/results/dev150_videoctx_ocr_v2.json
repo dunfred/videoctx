@@ -2820,5 +2820,320 @@
       "frames_fetched": 8
     },
     "answer_text": "The only three-dimensional rendered graphic is the bipyramid/diamond gem (seen at 0:12 and 0:27), which repeats but is a single 3D object type; the other shapes (pottery fragments) are flat 2D illustrations.\n\nA. The only genuine 3D-rendered graphic is the diamond/octahedral gem shown at 0:12 and 0:27, which is the same single three-dimensional object."
+  },
+  {
+    "qid": "095-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.042502,
+    "wall_s": 5.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 122,
+      "output_tokens": 180,
+      "cache_read_tokens": 2660,
+      "cache_write_tokens": 5770,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.042502,
+      "frames_fetched": 6
+    },
+    "answer_text": "C. At t=39.3s\u201340.7s the two ghost cowboys ride their horses with open, singing mouths (shown emitting notes/droplets), indicating they are singing while riding."
+  },
+  {
+    "qid": "095-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.024371,
+    "wall_s": 5.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 116,
+      "output_tokens": 220,
+      "cache_read_tokens": 5320,
+      "cache_write_tokens": 2501,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.024371,
+      "frames_fetched": 4
+    },
+    "answer_text": "D. The dark four-legged creature with pointed ears, glowing red eyes, and sharp teeth chasing the two ghost cowboys is a wolf (seen at 0:45\u20130:52)."
+  },
+  {
+    "qid": "095-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.003475,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 114,
+      "output_tokens": 63,
+      "cache_read_tokens": 2660,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003475,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The two ghost cowboys are shown riding across the desert on horse-headed mounts in a whimsical, musical Western theme, indicating they like to sing while riding (around 0:36)."
+  },
+  {
+    "qid": "096-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.015198,
+    "wall_s": 1.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 102,
+      "output_tokens": 44,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2174,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.015198,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The character is consistently depicted as a dragon throughout the video (e.g., [0:00], [0:12], [0:18])."
+  },
+  {
+    "qid": "096-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003512,
+    "wall_s": 2.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 100,
+      "output_tokens": 77,
+      "cache_read_tokens": 2174,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003512,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. Throughout the video the creature appears on snowy mountain ridges, rocky mountain cliffs, and basalt formations against the sky (e.g., [0:00], [0:11], [0:18]), indicating a mountain location."
+  },
+  {
+    "qid": "096-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.002357,
+    "wall_s": 1.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 104,
+      "output_tokens": 30,
+      "cache_read_tokens": 2174,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.002357,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At 0:03 the creature holds a blue revolver/pistol in its hand."
+  },
+  {
+    "qid": "099-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.068829,
+    "wall_s": 12.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 99,
+      "output_tokens": 452,
+      "cache_read_tokens": 12068,
+      "cache_write_tokens": 8160,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.068829,
+      "frames_fetched": 8
+    },
+    "answer_text": "C. Four distinct Spider-Men appear: Pavitr Prabhakar (red/gold Indian Spider-Man, [13.5s]), Miles Morales (black suit, [18.7s]), Spider-Gwen (white/black, [10.9s]), and Spider-Man 2099/Miguel (red mask, [6.3s])."
+  },
+  {
+    "qid": "099-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.004324,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 101,
+      "output_tokens": 51,
+      "cache_read_tokens": 5087,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004324,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. At [1:13] the narrator repeatedly says \"This is where the traffic is,\" indicating heavy congestion throughout the city of Mumbai."
+  },
+  {
+    "qid": "099-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.024946,
+    "wall_s": 6.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 133,
+      "output_tokens": 207,
+      "cache_read_tokens": 10174,
+      "cache_write_tokens": 2243,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.024946,
+      "frames_fetched": 6
+    },
+    "answer_text": "C. When the black-suited Spider-Man (Miles) is corrected/blamed for saying \"chai tea,\" he keeps pouring and the tea overflows from the cup onto the table (visible around 0:49\u20130:51)."
+  },
+  {
+    "qid": "101-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.023746,
+    "wall_s": 2.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 103,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3469,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.023746,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The man answering the phone (\"Hey, Penny, it's Leonard\") is seated with the other men at a table in what appears to be a train cabin with red seats and large windows [0:00]."
+  },
+  {
+    "qid": "101-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.00403,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 149,
+      "output_tokens": 62,
+      "cache_read_tokens": 3469,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.00403,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. From the transcript, Penny calls him \"Moon Pie\" and he snaps \"No one calls me Moon Pie but me, ma,\" showing he's upset at being called \"moonpie.\""
+  },
+  {
+    "qid": "101-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.003679,
+    "wall_s": 2.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 99,
+      "output_tokens": 58,
+      "cache_read_tokens": 3469,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003679,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript shows Leonard handing the phone to Sheldon once (\"What up, Moon Pie?\") after talking to Penny, indicating a single phone transfer."
+  },
+  {
+    "qid": "103-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.049207,
+    "wall_s": 5.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 118,
+      "output_tokens": 187,
+      "cache_read_tokens": 2934,
+      "cache_write_tokens": 6796,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.049207,
+      "frames_fetched": 8
+    },
+    "answer_text": "A. The man holds a fork (4.8s\u20135.8s) and then tosses it, leading into the trash bag shot at 0:06."
+  },
+  {
+    "qid": "103-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.023244,
+    "wall_s": 5.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 102,
+      "output_tokens": 173,
+      "cache_read_tokens": 5868,
+      "cache_write_tokens": 2476,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.023244,
+      "frames_fetched": 5
+    },
+    "answer_text": "C. The man eats from a white Chinese takeout container with chopsticks, lifting up noodle strands (visible at 28.6s and 35.8s)."
+  },
+  {
+    "qid": "103-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.032296,
+    "wall_s": 5.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 145,
+      "output_tokens": 179,
+      "cache_read_tokens": 5868,
+      "cache_write_tokens": 3866,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.032296,
+      "frames_fetched": 8
+    },
+    "answer_text": "D. Based on the frames, the man is eating takeout with chopsticks and smiling, but nothing in the video indicates a specific reason for his laughter, so it cannot be determined."
   }
 ]

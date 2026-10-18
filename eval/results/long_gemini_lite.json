@@ -110,5 +110,61 @@
       "output_tokens": null
     },
     "answer_text": ""
+  },
+  {
+    "qid": "603-3",
+    "method": "gemini-lite",
+    "predicted": null,
+    "gold": "B",
+    "correct": false,
+    "usd": 1.3e-05,
+    "wall_s": 344.9,
+    "detail": {
+      "input_tokens": 130,
+      "output_tokens": null
+    },
+    "answer_text": ""
+  },
+  {
+    "qid": "604-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.016684,
+    "wall_s": 165.8,
+    "detail": {
+      "input_tokens": 166710,
+      "output_tokens": 33
+    },
+    "answer_text": "C. The video chronicles the complex and tragic history of the Roma people, detailing their origins, migrations, and the systemic discrimination and slavery they endured throughout European history."
+  },
+  {
+    "qid": "604-2",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.016687,
+    "wall_s": 280.9,
+    "detail": {
+      "input_tokens": 166719,
+      "output_tokens": 37
+    },
+    "answer_text": "B. The video explains that as the Ottoman Empire expanded its territory, it increasingly utilized the Romani people as slaves, a situation that became deeply entrenched within the region's institutions."
+  },
+  {
+    "qid": "604-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.016692,
+    "wall_s": 157.7,
+    "detail": {
+      "input_tokens": 166759,
+      "output_tokens": 40
+    },
+    "answer_text": "B. The video explains that 'V' stood for the initial brand for enslaved Gypsies, whereas the letter 'S' indicated a re-captured escapee who would then be enslaved for life."
   }
 ]
