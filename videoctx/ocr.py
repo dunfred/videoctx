@@ -30,7 +30,7 @@ def ocr_shots(index_dir: Path, ctx: VideoContext, progress=lambda *_: None) -> i
         for _box, text, conf in result or []:
             text = text.strip()
             key = text.lower()
-            if conf >= MIN_CONFIDENCE and text and key not in seen:
+            if conf >= MIN_CONFIDENCE and len(text) >= 3 and key not in seen:
                 seen.add(key)
                 lines.append(text)
         joined = " | ".join(lines)

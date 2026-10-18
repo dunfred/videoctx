@@ -9,7 +9,7 @@ def _ts(seconds: float) -> str:
     return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
 
 
-def text_view(ctx: VideoContext) -> str:
+def text_view(ctx: VideoContext, include_ocr: bool = True) -> str:
     """Compact plain-text rendering of an index: shot structure interleaved
     with transcript segments by timestamp. This is the cheap path an agent
     reads before deciding whether it needs frames."""
@@ -35,7 +35,7 @@ def text_view(ctx: VideoContext) -> str:
     # same text for many consecutive shots; show each line when it first
     # appears or reappears after an absence.
     prev_lines: set = set()
-    for shot in ctx.shots:
+    for shot in (ctx.shots if include_ocr else []):
         if not shot.ocr:
             prev_lines = prev_lines if shot.ocr is None else set()
             continue

@@ -56,8 +56,12 @@ SURVEY_TOOL = {
 SYSTEM = (
     "You answer questions about a video using its index: a shot list with "
     "timestamps and visual captions, interleaved with the speech transcript "
-    "and 'screen text' lines (verbatim on-screen text captured by OCR; treat "
-    "it as reliable evidence for questions about text shown on screen).\n"
+    "and 'screen text' lines (verbatim on-screen text captured by OCR). "
+    "Screen text is RELIABLE but NOT EXHAUSTIVE: it samples one frame per "
+    "shot, so treat it as proof of what it contains, never as proof of "
+    "absence or completeness. Enumeration, absence ('which does NOT appear'), "
+    "and visual-causation questions still require frames, even when screen "
+    "text seems relevant.\n"
     "Strategy:\n"
     "1. Answer from the text index alone when it is sufficient.\n"
     "2. CAPTIONS ARE LOSSY one-line summaries. Never answer questions about "
@@ -208,7 +212,9 @@ def ask(
     # the 2x write premium is paid once per video, and the cache then survives
     # rate-limit stalls and whole question batches, where the default 5-minute
     # TTL was observed to lapse and force premium re-writes.
-    tv = text_view(ctx)
+    import os
+
+    tv = text_view(ctx, include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1")
     cache_ctl = {"type": "ephemeral", "ttl": "1h"} if len(tv) > 20000 else {"type": "ephemeral"}
     messages: list[dict] = [{
         "role": "user",

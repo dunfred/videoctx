@@ -12,5 +12,47 @@
       "output_tokens": 36
     },
     "answer_text": "C. The video explores the controversy surrounding the invention of the first motorized flight, specifically investigating claims that the German-born inventor Gustave Whitehead may have achieved flight before the Wright Brothers."
+  },
+  {
+    "qid": "601-2",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.028862,
+    "wall_s": 341.6,
+    "detail": {
+      "input_tokens": 288473,
+      "output_tokens": 36
+    },
+    "answer_text": "D. John Brown is an aviation expert and historical researcher who leads an investigation into Whitehead's potential first flight and argues that history needs to be re-evaluated in his favor."
+  },
+  {
+    "qid": "601-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.028874,
+    "wall_s": 155.0,
+    "detail": {
+      "input_tokens": 288499,
+      "output_tokens": 60
+    },
+    "answer_text": "A. The documentary suggests that Gustave Whitehead's claims of early flight are a point of historical contention, and many of the reported test flights, including a 1899 flight in Pittsburgh, were considered failures or unsupported by verifiable evidence, contrary to the option's assertion of confirmed success."
+  },
+  {
+    "qid": "602-1",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.025685,
+    "wall_s": 342.4,
+    "detail": {
+      "input_tokens": 256752,
+      "output_tokens": 25
+    },
+    "answer_text": "D. The video states that the only record left by these nomadic tribes and Bronze Age cultures were their graves, not murals."
   }
 ]

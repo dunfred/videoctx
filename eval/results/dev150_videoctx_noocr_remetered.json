@@ -1,0 +1,338 @@
+[
+  {
+    "qid": "002-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.018925,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 115,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2716,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.018925,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. Jade is not mentioned; the transcript discusses inkstones (0:00), sacrificial tables (0:00), and niches (0:43), but never jade."
+  },
+  {
+    "qid": "002-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.003448,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 153,
+      "output_tokens": 53,
+      "cache_read_tokens": 2716,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003448,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:20 states the excavation was done \"to coordinate with the National Highway Realignment Project,\" making highway realignment the motivating reason."
+  },
+  {
+    "qid": "002-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003133,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 49,
+      "cache_read_tokens": 2716,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003133,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript at 0:43 states the southern niche had four porcelain jars and the northern niche had five porcelain jars, totaling nine."
+  },
+  {
+    "qid": "005-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.041493,
+    "wall_s": 5.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 115,
+      "output_tokens": 168,
+      "cache_read_tokens": 3462,
+      "cache_write_tokens": 5598,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.041493,
+      "frames_fetched": 4
+    },
+    "answer_text": "The car scene shows three people: a driver in front, and two passengers in the back seat.\n\nA. The car contains three individuals\u2014a driver and two passengers in the back\u2014as shown at 0:10."
+  },
+  {
+    "qid": "005-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003696,
+    "wall_s": 2.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 50,
+      "cache_read_tokens": 3462,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003696,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript at 0:01 states the assassination of Archduke Franz Ferdinand \"was, in fact, the trigger which set off the war.\""
+  },
+  {
+    "qid": "005-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.044767,
+    "wall_s": 7.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 161,
+      "output_tokens": 365,
+      "cache_read_tokens": 6924,
+      "cache_write_tokens": 5020,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.044767,
+      "frames_fetched": 8
+    },
+    "answer_text": "Looking at the car scene (9.6s-10.7s): Ferdinand is in the passenger seat wearing a white/light military hat with plumes, sitting on the right side of the car. The driver is on the left. The person with green hair appears to be the one pointing. The killer wears a dark/black suit (16.3s). Ferdinand wears a white hat (visible at 9.6s).\n\nFerdinand is seated on the RIGHT side of the car, not the left.\n\nB. Ferdinand was sitting on the right side of the car (at 9.6s-10.7s he is in the passenger seat on the right), so the claim he was on the left side is incorrect."
+  },
+  {
+    "qid": "006-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.016975,
+    "wall_s": 1.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 57,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2400,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.016975,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. Shamrocks appear as symbols throughout the video, including on the \"MARCH 17\" calendar tile (0:03) and filling the US map graphic (1:30)."
+  },
+  {
+    "qid": "006-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003685,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 157,
+      "output_tokens": 68,
+      "cache_read_tokens": 2400,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003685,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript states Irish immigrants brought the tradition to America in the early 1700s, where it \"devolved into a secular holiday often centered around drinking and celebrating all things Irish\" (1:11)."
+  },
+  {
+    "qid": "006-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.0029,
+    "wall_s": 1.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 125,
+      "output_tokens": 43,
+      "cache_read_tokens": 2400,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.0029,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video states that New York City's annual parade is the largest in the world, with an estimated two million spectators (1:11\u20131:30)."
+  },
+  {
+    "qid": "007-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.055477,
+    "wall_s": 8.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 124,
+      "output_tokens": 244,
+      "cache_read_tokens": 5664,
+      "cache_write_tokens": 7348,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.055477,
+      "frames_fetched": 18
+    },
+    "answer_text": "D. In \"THE SMOKE SIGNAL\" scene (8.9s\u201313.7s), the man generates smoke by waving a blanket over a burning bonfire of logs."
+  },
+  {
+    "qid": "007-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.00283,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 108,
+      "output_tokens": 46,
+      "cache_read_tokens": 2279,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.00283,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:22 lists \"the pony express, the semaphore flag,\" so pony express comes immediately before the semaphore."
+  },
+  {
+    "qid": "007-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.00288,
+    "wall_s": 1.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 41,
+      "cache_read_tokens": 2279,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.00288,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The screen at [1:01] shows \"BTW...you got something in your teeth!\", which is what embarrasses the man."
+  },
+  {
+    "qid": "008-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.039267,
+    "wall_s": 4.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 112,
+      "output_tokens": 171,
+      "cache_read_tokens": 3652,
+      "cache_write_tokens": 5217,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.039267,
+      "frames_fetched": 4
+    },
+    "answer_text": "C. At [1:15] the author writes \"GUITAR\" beneath the Smule icon using a black marker."
+  },
+  {
+    "qid": "008-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.004446,
+    "wall_s": 2.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 99,
+      "output_tokens": 85,
+      "cache_read_tokens": 3652,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004446,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video shows three distinct guitar-shaped instruments: a black electric guitar (0:05\u20130:08), a dark red semi-hollow electric guitar with checkered pickguard (0:55), and an acoustic guitar (1:14\u20131:17)."
+  },
+  {
+    "qid": "008-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003976,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 135,
+      "output_tokens": 59,
+      "cache_read_tokens": 3652,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003976,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The second half (from ~1:14) promotes \"Guitar by Smule,\" showing the app on tablets and urging viewers to download it for free, making it an advertisement for music software."
+  },
+  {
+    "qid": "009-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.032002,
+    "wall_s": 4.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 105,
+      "output_tokens": 199,
+      "cache_read_tokens": 2478,
+      "cache_write_tokens": 4042,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.032002,
+      "frames_fetched": 4
+    },
+    "answer_text": "A. Qu Yuan, the elevated figure on the platform with a red ribbon in his hair, is wearing a white robe as seen clearly at 0:12\u20130:17."
+  }
+]
