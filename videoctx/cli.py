@@ -29,6 +29,18 @@ def index(video: Path, out: Path | None, max_edge: int, whisper_model: str, no_t
 
 
 @main.command()
+@click.argument("index_dir", type=click.Path(exists=True, path_type=Path))
+def ocr(index_dir: Path):
+    """Add on-screen text (local OCR) to an index's shots. Free and offline."""
+    from .indexer import load_index
+    from .ocr import ocr_shots
+
+    ctx = load_index(index_dir)
+    n = ocr_shots(index_dir, ctx, progress=click.echo)
+    click.echo(f"ocr complete: {n} shots processed")
+
+
+@main.command()
 def mcp():
     """Run the videoctx MCP server over stdio (same as the videoctx-mcp binary)."""
     from .mcp_server import main as mcp_main

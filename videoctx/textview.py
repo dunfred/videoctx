@@ -31,6 +31,21 @@ def text_view(ctx: VideoContext) -> str:
     for shot in captioned:
         events.append((shot.start_s, f"[{_ts(shot.start_s)}] {shot.caption}"))
 
+    # On-screen text (OCR), deduped across shots: screen recordings repeat the
+    # same text for many consecutive shots; show each line when it first
+    # appears or reappears after an absence.
+    prev_lines: set = set()
+    for shot in ctx.shots:
+        if not shot.ocr:
+            prev_lines = prev_lines if shot.ocr is None else set()
+            continue
+        lines = [l.strip() for l in shot.ocr.split(" | ") if l.strip()]
+        fresh = [l for l in lines if l.lower() not in prev_lines]
+        prev_lines = {l.lower() for l in lines}
+        if fresh:
+            events.append((shot.start_s,
+                           f"[{_ts(shot.start_s)}] screen text: {' | '.join(fresh)}"))
+
     # Silence+uncaptioned gaps (so the model knows the span is accounted for).
     cap_or_speech: list[tuple[float, float]] = [(s.start_s, s.end_s) for s in captioned]
     cap_or_speech += [(seg.start_s, seg.end_s) for seg in ctx.transcript.segments]

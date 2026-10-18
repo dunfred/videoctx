@@ -1,0 +1,422 @@
+[
+  {
+    "qid": "301-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.003787,
+    "wall_s": 63.1,
+    "detail": {
+      "input_tokens": 37752,
+      "output_tokens": 29
+    },
+    "answer_text": "C. The video explicitly showcases three distinct shapes of man-made, geometrically-formed ditches: a circle, a square, and a polygon."
+  },
+  {
+    "qid": "301-2",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003793,
+    "wall_s": 40.7,
+    "detail": {
+      "input_tokens": 37782,
+      "output_tokens": 38
+    },
+    "answer_text": "A. Unlike the stone-built cities of the Inca and Aztec civilizations, Amazonian settlements were constructed with organic materials like wood and earth, which decomposed over time and left few visible remains."
+  },
+  {
+    "qid": "301-3",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.003794,
+    "wall_s": 65.7,
+    "detail": {
+      "input_tokens": 37748,
+      "output_tokens": 47
+    },
+    "answer_text": "D. Dr. Michael Heckenberger and his team of archaeologists discovered that the long-lost cities were once home to millions of people by mapping the ruins of settlements near the Xingu River in the 1990s."
+  },
+  {
+    "qid": "302-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.004629,
+    "wall_s": 67.9,
+    "detail": {
+      "input_tokens": 46144,
+      "output_tokens": 37
+    },
+    "answer_text": "C. The video mentions Victor Garber because he is the actor who portrayed the ship's actual architect, Thomas Andrews, in the 1997 *Titanic* film."
+  },
+  {
+    "qid": "302-2",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.004628,
+    "wall_s": 59.4,
+    "detail": {
+      "input_tokens": 46155,
+      "output_tokens": 32
+    },
+    "answer_text": "C. The video explains that it was the RMS Californian's wireless operator who had turned off the radio for the night, not the Titanic's operator."
+  },
+  {
+    "qid": "302-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.004635,
+    "wall_s": 81.0,
+    "detail": {
+      "input_tokens": 46123,
+      "output_tokens": 58
+    },
+    "answer_text": "B. There are 8 ships depicted in the diagram (the Titanic, the Californian, the Carpathia, the Virginian, the Prinz Frederick Vilhelm, the Prinz Adalbert, the Baltic, and the Parisian) surrounding the Titanic while it sends out its distress signals."
+  },
+  {
+    "qid": "303-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.00262,
+    "wall_s": 44.4,
+    "detail": {
+      "input_tokens": 26057,
+      "output_tokens": 36
+    },
+    "answer_text": "C. The timeline displayed in the video starts at 1300 BC and ends at 2016 AD, indicating the range of the sea level change mentioned."
+  },
+  {
+    "qid": "303-2",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.002623,
+    "wall_s": 42.2,
+    "detail": {
+      "input_tokens": 26057,
+      "output_tokens": 44
+    },
+    "answer_text": "A. The video begins by explaining how underwater archaeology helps us learn about ancient civilizations, moves on to discuss how sunken ships provide information about their era, and concludes with an examination of sunken cities and how they were formed."
+  },
+  {
+    "qid": "303-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.002618,
+    "wall_s": 45.3,
+    "detail": {
+      "input_tokens": 26050,
+      "output_tokens": 33
+    },
+    "answer_text": "B. The video primarily discusses how artifacts, shipwrecks, and remnants of sunken cities found through underwater archaeology provide valuable information about ancient cultures and human history."
+  },
+  {
+    "qid": "304-1",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.004583,
+    "wall_s": 47.0,
+    "detail": {
+      "input_tokens": 45678,
+      "output_tokens": 38
+    },
+    "answer_text": "B. The video explains that although there were rumors about a deformed hand or stomach pain, the true reason for the pose was to maintain a deliberate public image associated with modesty and steady leadership."
+  },
+  {
+    "qid": "304-2",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.004578,
+    "wall_s": 73.9,
+    "detail": {
+      "input_tokens": 45667,
+      "output_tokens": 28
+    },
+    "answer_text": "B. Aeschines is identified as the orator whose ancient Greek teachings established the pose of restraining one's hand while speaking in public."
+  },
+  {
+    "qid": "304-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.004586,
+    "wall_s": 80.2,
+    "detail": {
+      "input_tokens": 45695,
+      "output_tokens": 41
+    },
+    "answer_text": "A. The video explicitly mentions that the candles on the desk are burned down, but it never mentions a lamp on the desk in the painting \"The Emperor Napoleon in His Study at the Tuileries.\""
+  },
+  {
+    "qid": "305-1",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.00305,
+    "wall_s": 67.6,
+    "detail": {
+      "input_tokens": 30380,
+      "output_tokens": 30
+    },
+    "answer_text": "B. The video explicitly shows a large, illustrated figure of the goddess Athena hugging and embracing the Parthenon temple, representing its dedication to her."
+  },
+  {
+    "qid": "305-2",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.003054,
+    "wall_s": 75.8,
+    "detail": {
+      "input_tokens": 30410,
+      "output_tokens": 33
+    },
+    "answer_text": "C. The video explains that the design was considered radical for Athenian standards because it broke with the traditional Doric style, rather than integrating those traditional elements harmoniously."
+  },
+  {
+    "qid": "305-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.003071,
+    "wall_s": 60.8,
+    "detail": {
+      "input_tokens": 30512,
+      "output_tokens": 50
+    },
+    "answer_text": "B. The video depicts the initial accusation by city officials occurring when Pheidias first arrives at the construction site, followed by his efforts to account for spending, the completion of the temple, and finally his departure after the project's successful conclusion."
+  },
+  {
+    "qid": "306-1",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.002834,
+    "wall_s": 34.6,
+    "detail": {
+      "input_tokens": 28189,
+      "output_tokens": 38
+    },
+    "answer_text": "B. The video explicitly states that there were seven princesses in the Jade Emperor's celestial court, and the visuals show all of them fleeing together when the cowherd approaches the riverbank."
+  },
+  {
+    "qid": "306-2",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.002834,
+    "wall_s": 29.6,
+    "detail": {
+      "input_tokens": 28208,
+      "output_tokens": 33
+    },
+    "answer_text": "B. The video shows the weaver sitting on a rock in the middle of a stream, brushing her hair with a small comb when the cowherd first spots her."
+  },
+  {
+    "qid": "306-3",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.002837,
+    "wall_s": 38.0,
+    "detail": {
+      "input_tokens": 28222,
+      "output_tokens": 38
+    },
+    "answer_text": "D. When the cowherd had to escape the wrath of the weaver's mother, he placed his two children in baskets and used the bull's hide to fly up toward them."
+  },
+  {
+    "qid": "308-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.003279,
+    "wall_s": 46.8,
+    "detail": {
+      "input_tokens": 32646,
+      "output_tokens": 37
+    },
+    "answer_text": "C. The video primarily centers on the motivations and internal conflicts of Marcus Junius Brutus, as he debates the morality of assassinating the leader who served as his father figure and benefactor."
+  },
+  {
+    "qid": "308-2",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.003275,
+    "wall_s": 44.0,
+    "detail": {
+      "input_tokens": 32658,
+      "output_tokens": 23
+    },
+    "answer_text": "C. The video explicitly states that as many as 60 conspirators surrounded Caesar to carry out his assassination."
+  },
+  {
+    "qid": "308-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.003289,
+    "wall_s": 33.1,
+    "detail": {
+      "input_tokens": 32669,
+      "output_tokens": 54
+    },
+    "answer_text": "A. In Dante's *Inferno*, Brutus is placed in the center of Hell as a punishment for his betrayal, which directly contrasts with the claim that he was a \"selfless fighter\" and highlights the complexity of his historical reputation mentioned in the video."
+  },
+  {
+    "qid": "310-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.003537,
+    "wall_s": 36.7,
+    "detail": {
+      "input_tokens": 35211,
+      "output_tokens": 40
+    },
+    "answer_text": "C. The video mentions that the initial barrier consisted of a barbed wire and mesh fence, and a parallel fence in the rear was then added to create the \"death strip,\" indicating two defensive layers."
+  },
+  {
+    "qid": "310-2",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003537,
+    "wall_s": 57.3,
+    "detail": {
+      "input_tokens": 35233,
+      "output_tokens": 35
+    },
+    "answer_text": "B. The video explicitly states that the Soviet Union fell soon after Germany was officially reunified in October 1990, which occurred after the wall's destruction."
+  },
+  {
+    "qid": "310-3",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.003537,
+    "wall_s": 53.8,
+    "detail": {
+      "input_tokens": 35215,
+      "output_tokens": 40
+    },
+    "answer_text": "C. According to the video, by 1961, approximately 3.5 million people, or nearly 20% of the East German population, had fled to West Germany."
+  },
+  {
+    "qid": "311-1",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003137,
+    "wall_s": 97.8,
+    "detail": {
+      "input_tokens": 31207,
+      "output_tokens": 41
+    },
+    "answer_text": "B. The narrator explicitly states that after the statue was rediscovered in the 1860s, it was determined that its tunic was crimson, its armor was yellow, and its mantle was purple."
+  },
+  {
+    "qid": "311-2",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.003139,
+    "wall_s": 44.0,
+    "detail": {
+      "input_tokens": 31232,
+      "output_tokens": 40
+    },
+    "answer_text": "A. The colors did not fade away during the Renaissance; rather, Renaissance artists intentionally copied the white appearance of the Classical sculptures they had unearthed, which had already lost their original paint over the centuries."
+  },
+  {
+    "qid": "311-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003137,
+    "wall_s": 50.6,
+    "detail": {
+      "input_tokens": 31220,
+      "output_tokens": 37
+    },
+    "answer_text": "A. The video explicitly states that historians have shifted to believing that accuracy is what matters, not what people think looks better, and it details specific scientific methods rather than relying on imagination."
+  },
+  {
+    "qid": "312-1",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.002612,
+    "wall_s": 42.6,
+    "detail": {
+      "input_tokens": 26020,
+      "output_tokens": 26
+    },
+    "answer_text": "D. Michael Bierut uses the Apple logo as an example when discussing pictorial logos at 0:54 in the video."
+  },
+  {
+    "qid": "312-2",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.002618,
+    "wall_s": 26.7,
+    "detail": {
+      "input_tokens": 26039,
+      "output_tokens": 34
+    },
+    "answer_text": "C. He mentions them to illustrate that the true power of a logo is not the visual design itself, but the meaning that the audience projects onto the symbol over time."
+  },
+  {
+    "qid": "312-3",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.002618,
+    "wall_s": 37.2,
+    "detail": {
+      "input_tokens": 26036,
+      "output_tokens": 35
+    },
+    "answer_text": "C. The video explicitly states that the Nike founders didn't really like the initial ideas submitted by the student, Carolyn Davidson, but eventually decided to use one of them."
+  }
+]

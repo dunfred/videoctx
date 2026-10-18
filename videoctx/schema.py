@@ -25,6 +25,8 @@ class Shot(BaseModel):
     keyframes: list[Keyframe] = Field(default_factory=list)
     caption: str | None = None
     caption_model: str | None = None
+    # On-screen text from local OCR. None = not run; "" = ran, nothing found.
+    ocr: str | None = None
 
 
 class TranscriptSegment(BaseModel):

@@ -1,0 +1,16 @@
+[
+  {
+    "qid": "601-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.028863,
+    "wall_s": 211.3,
+    "detail": {
+      "input_tokens": 288481,
+      "output_tokens": 36
+    },
+    "answer_text": "C. The video explores the controversy surrounding the invention of the first motorized flight, specifically investigating claims that the German-born inventor Gustave Whitehead may have achieved flight before the Wright Brothers."
+  }
+]

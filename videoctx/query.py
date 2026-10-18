@@ -55,7 +55,9 @@ SURVEY_TOOL = {
 
 SYSTEM = (
     "You answer questions about a video using its index: a shot list with "
-    "timestamps and visual captions, interleaved with the speech transcript.\n"
+    "timestamps and visual captions, interleaved with the speech transcript "
+    "and 'screen text' lines (verbatim on-screen text captured by OCR; treat "
+    "it as reliable evidence for questions about text shown on screen).\n"
     "Strategy:\n"
     "1. Answer from the text index alone when it is sufficient.\n"
     "2. CAPTIONS ARE LOSSY one-line summaries. Never answer questions about "

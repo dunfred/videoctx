@@ -1,0 +1,422 @@
+[
+  {
+    "qid": "001-1",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.000695,
+    "wall_s": 20.5,
+    "detail": {
+      "input_tokens": 6828,
+      "output_tokens": 31
+    },
+    "answer_text": "D. The three kinds of decorations, apples, candles, and berries, are all represented by the same quantity on the animated tree shown in the video."
+  },
+  {
+    "qid": "001-2",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.000696,
+    "wall_s": 15.2,
+    "detail": {
+      "input_tokens": 6840,
+      "output_tokens": 29
+    },
+    "answer_text": "A. The video features news anchors introducing the segment, followed by a report that provides a historical overview of how Christmas tree decorations evolved over time."
+  },
+  {
+    "qid": "001-3",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.000691,
+    "wall_s": 45.6,
+    "detail": {
+      "input_tokens": 6812,
+      "output_tokens": 25
+    },
+    "answer_text": "D. There are three red socks hanging on the mantle above the fireplace in the shot shown at the end of the video."
+  },
+  {
+    "qid": "002-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.000806,
+    "wall_s": 16.4,
+    "detail": {
+      "input_tokens": 7909,
+      "output_tokens": 37
+    },
+    "answer_text": "C. The video mentions that archaeologists found wooden sacrificial tables, desks, chairs, writing tools like inkstones, Chinese calligraphy brush pens, and pen holders, but it never mentions jade."
+  },
+  {
+    "qid": "002-2",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.0008,
+    "wall_s": 14.7,
+    "detail": {
+      "input_tokens": 7925,
+      "output_tokens": 20
+    },
+    "answer_text": "D. The video states that the excavation was conducted \"to coordinate with the national highway realignment project.\""
+  },
+  {
+    "qid": "002-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.000802,
+    "wall_s": 16.7,
+    "detail": {
+      "input_tokens": 7908,
+      "output_tokens": 28
+    },
+    "answer_text": "B. The text states that the southern niche contained four porcelain jars and the northern niche contained five, making a total of nine porcelain jars."
+  },
+  {
+    "qid": "003-1",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.001053,
+    "wall_s": 24.5,
+    "detail": {
+      "input_tokens": 10355,
+      "output_tokens": 45
+    },
+    "answer_text": "A. The video shows the national flags of Mongolia, Russia, Germany, and the United States, but since Germany and the USA are shown together in one scene, there are 3 distinct flag types used in the animations."
+  },
+  {
+    "qid": "003-2",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.001055,
+    "wall_s": 21.6,
+    "detail": {
+      "input_tokens": 10391,
+      "output_tokens": 40
+    },
+    "answer_text": "A. The video segment featuring the burger in the upper right corner describes the transition of minced raw beef with spices from Russia to Germany, which occurred 300 years after its origin in Mongolia."
+  },
+  {
+    "qid": "003-3",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.001045,
+    "wall_s": 57.0,
+    "detail": {
+      "input_tokens": 10356,
+      "output_tokens": 23
+    },
+    "answer_text": "D. The narrator explicitly states that a patty between two buns became recognized around the world as a distinctly American dish."
+  },
+  {
+    "qid": "005-1",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.001027,
+    "wall_s": 17.8,
+    "detail": {
+      "input_tokens": 10180,
+      "output_tokens": 23
+    },
+    "answer_text": "A. The video shows three individuals sitting in the vehicle: the driver, the Archduke, and his wife."
+  },
+  {
+    "qid": "005-2",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.00103,
+    "wall_s": 17.6,
+    "detail": {
+      "input_tokens": 10204,
+      "output_tokens": 24
+    },
+    "answer_text": "B. The video explicitly states that the assassination of Archduke Franz Ferdinand was the trigger that set off World War I."
+  },
+  {
+    "qid": "005-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.001033,
+    "wall_s": 12.9,
+    "detail": {
+      "input_tokens": 10204,
+      "output_tokens": 32
+    },
+    "answer_text": "B. In the animation at 01:35, the archduke is clearly depicted sitting on the right side of the car, not the left."
+  },
+  {
+    "qid": "006-1",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.000995,
+    "wall_s": 22.5,
+    "detail": {
+      "input_tokens": 9813,
+      "output_tokens": 33
+    },
+    "answer_text": "D. The video explicitly mentions that St. Patrick used the shamrock as a symbol when converting the Irish to Christianity, and it is featured throughout the visual presentation."
+  },
+  {
+    "qid": "006-2",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.000997,
+    "wall_s": 17.0,
+    "detail": {
+      "input_tokens": 9846,
+      "output_tokens": 31
+    },
+    "answer_text": "A. The video states that when Irish immigrants brought the tradition to America, it evolved into a secular holiday often centered around drinking and celebrating all things Irish."
+  },
+  {
+    "qid": "006-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.000995,
+    "wall_s": 31.9,
+    "detail": {
+      "input_tokens": 9824,
+      "output_tokens": 31
+    },
+    "answer_text": "A. The video mentions that the New York City St. Patrick's Day parade is the largest in the world, with an estimated two million spectators."
+  },
+  {
+    "qid": "007-1",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.00071,
+    "wall_s": 28.3,
+    "detail": {
+      "input_tokens": 7001,
+      "output_tokens": 24
+    },
+    "answer_text": "A. The video clearly shows the character waving a piece of cloth over a small fire to manipulate the release of smoke."
+  },
+  {
+    "qid": "007-2",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.000705,
+    "wall_s": 30.5,
+    "detail": {
+      "input_tokens": 6987,
+      "output_tokens": 16
+    },
+    "answer_text": "D. The animation shows the Pony Express followed immediately by the semaphore flag demonstration."
+  },
+  {
+    "qid": "007-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.000719,
+    "wall_s": 17.3,
+    "detail": {
+      "input_tokens": 7014,
+      "output_tokens": 45
+    },
+    "answer_text": "A. The text message \"BTW...you got something in your teeth!\" causes the man to check his reflection on his phone and realize he has something stuck in his teeth, which makes him embarrassed in front of his friends."
+  },
+  {
+    "qid": "008-1",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.001066,
+    "wall_s": 22.8,
+    "detail": {
+      "input_tokens": 10539,
+      "output_tokens": 31
+    },
+    "answer_text": "D. The video shows the author using a pink marker to write the word \"Guitar\" underneath \"The History of\" at the beginning of the video."
+  },
+  {
+    "qid": "008-2",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.00111,
+    "wall_s": 20.5,
+    "detail": {
+      "input_tokens": 10535,
+      "output_tokens": 141
+    },
+    "answer_text": "D. There are 11 distinct guitar-shaped instruments shown throughout the video: the electric guitar icon (0:04), the illustrated electric guitar (0:14), the tanbur (0:29), the sitar (0:30), the acoustic guitar illustration (0:53), the red electric guitar (0:56), the electric guitar held by the stick figure (0:58), the other stick figure's electric guitar (1:02), the acoustic guitar held by the stick figure (1:03), the ukulele/small guitar (1:05), and the Smule Guitar app icon (1:14)."
+  },
+  {
+    "qid": "008-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.001069,
+    "wall_s": 14.1,
+    "detail": {
+      "input_tokens": 10553,
+      "output_tokens": 35
+    },
+    "answer_text": "A. The second half of the video serves as a promotional advertisement for the \"Guitar!\" mobile app by Smule, demonstrating how users can play the instrument on a tablet."
+  },
+  {
+    "qid": "009-1",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.000715,
+    "wall_s": 25.4,
+    "detail": {
+      "input_tokens": 7072,
+      "output_tokens": 20
+    },
+    "answer_text": "A. The video depicts Qu Yuan as wearing a white traditional robe with red accents throughout the animation."
+  },
+  {
+    "qid": "009-2",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.000721,
+    "wall_s": 18.2,
+    "detail": {
+      "input_tokens": 7088,
+      "output_tokens": 31
+    },
+    "answer_text": "B. The video explicitly mentions that Qu Yuan committed suicide on the fifth day of the fifth lunar month, which is the day the Dragon Boat Festival commemorates."
+  },
+  {
+    "qid": "009-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.000728,
+    "wall_s": 21.4,
+    "detail": {
+      "input_tokens": 7106,
+      "output_tokens": 44
+    },
+    "answer_text": "B. The video explicitly states that in order to commemorate Qu Yuan, people named the fifth day of the fifth lunar month, when he committed suicide by drowning himself in the Miluo River, as the Dragon Boat Festival."
+  },
+  {
+    "qid": "010-1",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.001068,
+    "wall_s": 22.1,
+    "detail": {
+      "input_tokens": 10564,
+      "output_tokens": 29
+    },
+    "answer_text": "B. The video emphasizes the importance of developing cultural intelligence and provides key frameworks for understanding how different cultures communicate and conduct business in a global environment."
+  },
+  {
+    "qid": "010-2",
+    "method": "gemini-lite",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.001068,
+    "wall_s": 27.2,
+    "detail": {
+      "input_tokens": 10551,
+      "output_tokens": 32
+    },
+    "answer_text": "D. None of the above. The staff member at the airline counter is wearing a shirt with a palm tree pattern, which is not listed as an option."
+  },
+  {
+    "qid": "010-3",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.001067,
+    "wall_s": 18.6,
+    "detail": {
+      "input_tokens": 10551,
+      "output_tokens": 29
+    },
+    "answer_text": "B. The Big Ben is not depicted as one of the landmarks the plane flies over at the end of the video, unlike the others listed."
+  },
+  {
+    "qid": "011-1",
+    "method": "gemini-lite",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.001091,
+    "wall_s": 21.4,
+    "detail": {
+      "input_tokens": 10810,
+      "output_tokens": 26
+    },
+    "answer_text": "C. The video shows performers in tutus and pointe shoes executing precise, classical movements and poses, which are hallmarks of ballet."
+  },
+  {
+    "qid": "011-2",
+    "method": "gemini-lite",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.001089,
+    "wall_s": 25.0,
+    "detail": {
+      "input_tokens": 10812,
+      "output_tokens": 19
+    },
+    "answer_text": "B. The video begins with a black background to introduce the title and the following performance details."
+  },
+  {
+    "qid": "011-3",
+    "method": "gemini-lite",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.001093,
+    "wall_s": 22.0,
+    "detail": {
+      "input_tokens": 10830,
+      "output_tokens": 26
+    },
+    "answer_text": "A. The dancers perform a series of steps before finally kneeling down on one knee and leaning back in unison to finish their performance."
+  }
+]
