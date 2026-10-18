@@ -1,0 +1,34 @@
+name: ci
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - uses: astral-sh/setup-uv@v5
+      - name: Install package
+        run: uv venv && uv pip install -e .
+      - name: Generate test video (3 scenes, no audio)
+        run: |
+          mkdir -p samples
+          ffmpeg -v error -f lavfi -i testsrc2=duration=8:size=640x360:rate=30 -pix_fmt yuv420p s1.mp4
+          ffmpeg -v error -f lavfi -i mandelbrot=size=640x360:rate=30 -t 8 -pix_fmt yuv420p s2.mp4
+          ffmpeg -v error -f lavfi -i smptebars=duration=8:size=640x360:rate=30 -pix_fmt yuv420p s3.mp4
+          printf "file 's1.mp4'\nfile 's2.mp4'\nfile 's3.mp4'\n" > list.txt
+          ffmpeg -v error -f concat -safe 0 -i list.txt -c copy samples/ci.mp4
+      - name: Index it
+        run: .venv/bin/videoctx index samples/ci.mp4 --out indexes/ci.vctx
+      - name: Smoke test
+        run: .venv/bin/python tests/smoke.py indexes/ci.vctx
+      - name: MCP server starts
+        run: |
+          (.venv/bin/videoctx-mcp < /dev/null > /dev/null 2> mcp_err.txt &)
+          sleep 3
+          if grep -qiE "traceback" mcp_err.txt; then cat mcp_err.txt; exit 1; fi

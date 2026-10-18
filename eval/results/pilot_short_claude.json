@@ -1,0 +1,1142 @@
+[
+  {
+    "qid": "001-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.060323,
+    "wall_s": 37.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 6,
+      "input_tokens": 7607,
+      "output_tokens": 747,
+      "cache_read_tokens": 7225,
+      "usd": 0.060323,
+      "frames_fetched": 5
+    },
+    "answer_text": "The frames available consistently show a plain evergreen tree without visible decorations in this segment.\n\nA. Apples \u2014 among apples, candles, and berries on such illustrative holiday displays, apples typically appear as the most prominent and numerous decoration, though the available frames show only an undecorated tree so this is the most reasonable inference."
+  },
+  {
+    "qid": "001-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.012675,
+    "wall_s": 3.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2230,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "usd": 0.012675,
+      "frames_sent": 7
+    },
+    "answer_text": "C\n\nLooking at the traditional German Christmas tree images, the berries (blue berry clusters) appear scattered more abundantly throughout the branches compared to the countable apples and candles."
+  },
+  {
+    "qid": "001-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.002737,
+    "wall_s": 2.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 52,
+      "cache_read_tokens": 1445,
+      "usd": 0.002737,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video is a 13 News Now segment where anchor Phillip Townsend reports on the history behind Christmas ornaments (0:08-0:11)."
+  },
+  {
+    "qid": "001-2",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.01325,
+    "wall_s": 4.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2255,
+      "output_tokens": 79,
+      "cache_read_tokens": 0,
+      "usd": 0.01325,
+      "frames_sent": 7
+    },
+    "answer_text": "A\n\nThe video features news anchors in a studio (13newsnow branding) followed by footage of Christmas trees and decorations, indicating a news segment about Christmas decorations rather than a documentary, travel vlog, or DIY tutorial."
+  },
+  {
+    "qid": "001-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.00903,
+    "wall_s": 24.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 612,
+      "output_tokens": 181,
+      "cache_read_tokens": 2890,
+      "usd": 0.00903,
+      "frames_fetched": 1
+    },
+    "answer_text": "A. There is no fireplace with red socks at the end of the video\u2014just a decorated Christmas tree with ornaments\u2014so the premise is false and the closest answer is 1 (none shown)."
+  },
+  {
+    "qid": "001-3",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.012275,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2190,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "usd": 0.012275,
+      "frames_sent": 7
+    },
+    "answer_text": "D\n\nLooking at the fireplace background in the image with the Christmas tree in the doorway, there appear to be 3 red stockings hanging above the fireplace."
+  },
+  {
+    "qid": "002-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.00177,
+    "wall_s": 19.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 94,
+      "output_tokens": 52,
+      "cache_read_tokens": 0,
+      "usd": 0.00177,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. Jade is never mentioned, whereas inkstones (0:13), sacrificial tables (0:09), and niches (0:56) are all discussed."
+  },
+  {
+    "qid": "002-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.01469,
+    "wall_s": 8.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2508,
+      "output_tokens": 86,
+      "cache_read_tokens": 0,
+      "usd": 0.01469,
+      "frames_sent": 8
+    },
+    "answer_text": "C. Jade.\n\nThe images show an inkstone (A, in the first tomb), a niche/arched alcove (B, visible in the brick walls), and a sacrificial table with offerings (D, the furniture with dishes), but no jade items are depicted or discussed."
+  },
+  {
+    "qid": "002-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.002338,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 132,
+      "output_tokens": 40,
+      "cache_read_tokens": 1355,
+      "usd": 0.002338,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:20 states the excavation was done \"to coordinate with the National Highway Realignment Project.\""
+  },
+  {
+    "qid": "002-2",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.018255,
+    "wall_s": 5.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2546,
+      "output_tokens": 221,
+      "cache_read_tokens": 0,
+      "usd": 0.018255,
+      "frames_sent": 8
+    },
+    "answer_text": "I cannot determine the answer to this question from the images provided.\n\nThe images show tombs discovered at the Zhoujiazhuang site in Hebei Province and a well-preserved Ming Dynasty tomb in Xinzhou city, Shanxi province, along with their interiors and artifacts. However, none of the captions or visible content explains the *reason* or *motivation* for the excavation (such as construction projects, railway lines, or highway work).\n\nIf I had to guess based on common archaeological practice in China\u2014where many excavations are \"rescue excavations\" triggered by infrastructure projects\u2014the answer might be **B** or **D**, but there is no information in these specific images to confirm which one is correct."
+  },
+  {
+    "qid": "002-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.002223,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 89,
+      "output_tokens": 44,
+      "cache_read_tokens": 1355,
+      "usd": 0.002223,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The southern niche had four jars and the northern niche had five jars (0:59-1:03), totaling nine porcelain jars."
+  },
+  {
+    "qid": "002-3",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.01339,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2503,
+      "output_tokens": 35,
+      "cache_read_tokens": 0,
+      "usd": 0.01339,
+      "frames_sent": 8
+    },
+    "answer_text": "B. The second image clearly shows nine porcelain jars arranged in a row within the tomb's niche."
+  },
+  {
+    "qid": "003-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.022419,
+    "wall_s": 35.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 3147,
+      "output_tokens": 226,
+      "cache_read_tokens": 2068,
+      "usd": 0.022419,
+      "frames_fetched": 6
+    },
+    "answer_text": "I can see the German flag (color on the map), Russian flag (21.9s), the American flag and a German flag on the ship (29.1s).\n\n**A.** Three national flags appear: the German flag (0:21, 0:29), the Russian flag (0:21), and the American flag (0:29)."
+  },
+  {
+    "qid": "003-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.026395,
+    "wall_s": 3.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5029,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "usd": 0.026395,
+      "frames_sent": 11
+    },
+    "answer_text": "C\n\nThe only national flag visible is the Yemeni flag in the fourth image; based on the frames shown, there appear to be 2 flags total across the video."
+  },
+  {
+    "qid": "003-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.034717,
+    "wall_s": 11.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 3793,
+      "output_tokens": 506,
+      "cache_read_tokens": 6204,
+      "usd": 0.034717,
+      "frames_fetched": 4
+    },
+    "answer_text": "The upper-right burger is the sandwich-on-bread style. This corresponds to shot 14-15 (0:55-1:01) where the narration says it took 20-30 years for the Hamburg Steak to be served \"between two slices of bread.\"\n\n**B.** The upper-right burger is the one served between two slices of bread, which first appears in the segment (0:55\u20131:01) discussing the Hamburg Steak being placed between two slices of bread."
+  },
+  {
+    "qid": "003-2",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.02771,
+    "wall_s": 6.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5097,
+      "output_tokens": 89,
+      "cache_read_tokens": 0,
+      "usd": 0.02771,
+      "frames_sent": 11
+    },
+    "answer_text": "A\n\nThe burger in the upper right corner (visible in the final frame as a pita-like sandwich) corresponds to the scene with the Yemen flag and minced meat with spices, illustrating the origin of spiced beef traveling from Russia to Germany (Hamburg)."
+  },
+  {
+    "qid": "003-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.002674,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 83,
+      "output_tokens": 49,
+      "cache_read_tokens": 2068,
+      "usd": 0.002674,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 1:32\u20131:36 states the hamburger became \"recognized around the world as a distinctly American dish,\" indicating the United States."
+  },
+  {
+    "qid": "003-3",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.026935,
+    "wall_s": 3.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5042,
+      "output_tokens": 69,
+      "cache_read_tokens": 0,
+      "usd": 0.026935,
+      "frames_sent": 11
+    },
+    "answer_text": "D\n\nThe video is titled \"Hamburger History\" and features a food historian narrating the story of the hamburger, which is iconically recognized as an American food, with imagery showing Manhattan and NYmag.com branding."
+  },
+  {
+    "qid": "005-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.043923,
+    "wall_s": 29.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 6429,
+      "output_tokens": 409,
+      "cache_read_tokens": 3106,
+      "usd": 0.043923,
+      "frames_fetched": 7
+    },
+    "answer_text": "The video only covers the underlying causes and the planning of the assassination; it ends before showing the actual assassination scene (noting \"Click to see Part 2\"). The car at t=91.8s is too small to count occupants, and this video (Part 1) never depicts the assassination in the car itself.\n\nB. Two. The car scene shows the Archduke and his wife (two individuals) as traditionally depicted, though the video cuts off before the actual event."
+  },
+  {
+    "qid": "005-1",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.02658,
+    "wall_s": 4.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5051,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "usd": 0.02658,
+      "frames_sent": 11
+    },
+    "answer_text": "B\n\nThe assassination of Archduke Franz Ferdinand typically involved him and his wife Sophie in the car, making two individuals the commonly cited answer."
+  },
+  {
+    "qid": "005-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.002687,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 122,
+      "output_tokens": 52,
+      "cache_read_tokens": 1553,
+      "usd": 0.002687,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video states at 0:05 the assassination of Archduke Franz Ferdinand was \"in fact, the trigger which set off the war\" (0:10)."
+  },
+  {
+    "qid": "005-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.027255,
+    "wall_s": 4.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5081,
+      "output_tokens": 74,
+      "cache_read_tokens": 0,
+      "usd": 0.027255,
+      "frames_sent": 11
+    },
+    "answer_text": "B. The assassination of Archduke Franz Ferdinand was the immediate trigger that set off World War I, while the other elements shown (militarism, alliances, imperialism, nationalism) were the underlying long-term causes."
+  },
+  {
+    "qid": "005-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.053329,
+    "wall_s": 9.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 8010,
+      "output_tokens": 438,
+      "cache_read_tokens": 4659,
+      "usd": 0.053329,
+      "frames_fetched": 10
+    },
+    "answer_text": "The frame at 96.4s shows the killer wearing a white shirt/outfit (not a black suit), standing next to Ferdinand who is in military uniform with a green hat. The Black Hand plotters are shown in black suits earlier, but the assassin depicted at the moment is clearly in white.\n\n**D** \u2014 The killer is depicted wearing a white outfit, not a black suit, so the statement that the killer wore a black suit is incorrect (frame at 1:36 / 96.4s)."
+  },
+  {
+    "qid": "005-3",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.029035,
+    "wall_s": 8.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5097,
+      "output_tokens": 142,
+      "cache_read_tokens": 0,
+      "usd": 0.029035,
+      "frames_sent": 11
+    },
+    "answer_text": "I cannot see the Sarajevo assassination scene in detail from these frames, but based on the visible content:\n\n**C**\n\nThe figure shown wearing white (in the \"CLICK TO SEE PART 2\" frame) appears to have a white cap, but Archduke Franz Ferdinand is historically and typically depicted wearing a military hat with green plumed feathers, not a white hat\u2014so the claim about a white hat is the incorrect statement."
+  },
+  {
+    "qid": "006-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.001945,
+    "wall_s": 27.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 89,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "usd": 0.001945,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video covers St. Patrick's Day symbols, and the shamrock is the classic emblem associated with the holiday and St. Patrick, unlike the other unrelated options."
+  },
+  {
+    "qid": "006-1",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.01716,
+    "wall_s": 4.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3107,
+      "output_tokens": 65,
+      "cache_read_tokens": 0,
+      "usd": 0.01716,
+      "frames_sent": 10
+    },
+    "answer_text": "D. The shamrock (three-leaf clover) is shown in the final image as a symbol associated with St. Patrick's Day, famously used by St. Patrick to explain the Holy Trinity."
+  },
+  {
+    "qid": "006-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003077,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 136,
+      "output_tokens": 65,
+      "cache_read_tokens": 1543,
+      "usd": 0.003077,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript (1:05\u20131:11), Irish immigrants brought the tradition to America where it \"devolved into a secular holiday often centered around drinking and celebrating all things Irish.\""
+  },
+  {
+    "qid": "006-2",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.01802,
+    "wall_s": 3.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3154,
+      "output_tokens": 90,
+      "cache_read_tokens": 0,
+      "usd": 0.01802,
+      "frames_sent": 10
+    },
+    "answer_text": "A\n\nWhen Irish immigrants brought St. Patrick's Day to America, the celebrations evolved from solemn religious observances into larger public festivities centered around parades, drinking, and cultural celebration, as evidenced by the massive parades and widespread participation shown in the images."
+  },
+  {
+    "qid": "006-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.002391,
+    "wall_s": 2.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 104,
+      "output_tokens": 44,
+      "cache_read_tokens": 1543,
+      "usd": 0.002391,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the video (1:25-1:34), New York City's annual parade is the largest in the world, with an estimated two million spectators."
+  },
+  {
+    "qid": "006-3",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.016835,
+    "wall_s": 3.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3122,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "usd": 0.016835,
+      "frames_sent": 10
+    },
+    "answer_text": "A\n\nThe video highlights that 2 million spectators watch the NYC parade, emphasizing the large parades as the special aspect of New York's celebration."
+  },
+  {
+    "qid": "007-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.03211,
+    "wall_s": 20.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 4021,
+      "output_tokens": 416,
+      "cache_read_tokens": 3210,
+      "usd": 0.03211,
+      "frames_fetched": 3
+    },
+    "answer_text": "C. The man generates the smoke by smoking (e.g., a cigarette/cigar) rather than from a fire, playing on the \"smoke signal\" pun."
+  },
+  {
+    "qid": "007-1",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.018245,
+    "wall_s": 5.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3254,
+      "output_tokens": 79,
+      "cache_read_tokens": 0,
+      "usd": 0.018245,
+      "frames_sent": 7
+    },
+    "answer_text": "A\n\nThe video depicts smoke signals being created, and the imagery (such as the cloth/blanket shown over the smoke source) indicates the smoke is generated by covering and uncovering the fire with a piece of cloth to create signal puffs."
+  },
+  {
+    "qid": "007-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.00187,
+    "wall_s": 1.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 87,
+      "output_tokens": 36,
+      "cache_read_tokens": 1070,
+      "usd": 0.00187,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The pony express is mentioned at 0:22, immediately before the semaphore flag at 0:28."
+  },
+  {
+    "qid": "007-2",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.01776,
+    "wall_s": 4.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3242,
+      "output_tokens": 62,
+      "cache_read_tokens": 0,
+      "usd": 0.01776,
+      "frames_sent": 7
+    },
+    "answer_text": "D\n\nThe sequence shows \"The Pony Express\" (horse rider) before the subsequent communication methods, making it the answer that precedes Semaphore in this historical progression of communication technologies."
+  },
+  {
+    "qid": "007-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.02444,
+    "wall_s": 9.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 3117,
+      "output_tokens": 290,
+      "cache_read_tokens": 3210,
+      "usd": 0.02444,
+      "frames_fetched": 4
+    },
+    "answer_text": "A. The phone shows \"BTW...you got something in your teeth!\" (at ~1:02), and the next frame reveals the man with something green stuck in his teeth, embarrassing him."
+  },
+  {
+    "qid": "007-3",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.01756,
+    "wall_s": 3.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3277,
+      "output_tokens": 47,
+      "cache_read_tokens": 0,
+      "usd": 0.01756,
+      "frames_sent": 7
+    },
+    "answer_text": "B. The smartphone screen displays \"Dude! You gotta come to BigStuf Camps!\" as the text message shown in the sixth image."
+  },
+  {
+    "qid": "008-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.027629,
+    "wall_s": 31.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 3630,
+      "output_tokens": 307,
+      "cache_read_tokens": 3608,
+      "usd": 0.027629,
+      "frames_fetched": 6
+    },
+    "answer_text": "C. The second time \"Guitar\" is written (under the Smule logo at ~1:16), it's in black pen, unlike the brown title at the start."
+  },
+  {
+    "qid": "008-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.018495,
+    "wall_s": 6.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3409,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "usd": 0.018495,
+      "frames_sent": 11
+    },
+    "answer_text": "C\n\nThe word \"smule\" being written with a black pen suggests the author's second use of a guitar-related label was done in black, consistent with the black marker shown drawing text throughout the video."
+  },
+  {
+    "qid": "008-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.031823,
+    "wall_s": 9.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 3128,
+      "output_tokens": 503,
+      "cache_read_tokens": 7216,
+      "usd": 0.031823,
+      "frames_fetched": 3
+    },
+    "answer_text": "The frames available aren't resolving the individual instruments clearly. Based on the content, the video mentions guitar, tambour, and sitar as guitar-shaped chordophone instruments.\n\nC. 3 \u2014 The video shows the guitar along with its ancestors the tambour and the sitar, making three different guitar-shaped instruments."
+  },
+  {
+    "qid": "008-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.01884,
+    "wall_s": 3.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3398,
+      "output_tokens": 74,
+      "cache_read_tokens": 0,
+      "usd": 0.01884,
+      "frames_sent": 11
+    },
+    "answer_text": "B\n\nLooking at the images, I can identify three distinct guitar-shaped instruments: the electric guitar (SG), the acoustic guitar, and the sitar/tanbur string instruments, making three different types shown across the video."
+  },
+  {
+    "qid": "008-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003072,
+    "wall_s": 7.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 114,
+      "output_tokens": 64,
+      "cache_read_tokens": 1804,
+      "usd": 0.003072,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The second half (from ~1:14) promotes \"Guitar by Smule,\" an app that lets you play guitar on your mobile device and collaborate with singers, making it an advertisement for music software."
+  },
+  {
+    "qid": "008-3",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.018745,
+    "wall_s": 13.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3434,
+      "output_tokens": 63,
+      "cache_read_tokens": 0,
+      "usd": 0.018745,
+      "frames_sent": 11
+    },
+    "answer_text": "B\n\nThe second half shows someone using a music/rhythm game app on a tablet to practice guitar, demonstrating how to use electronic devices for guitar practice rather than advertising a specific product."
+  },
+  {
+    "qid": "009-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.01131,
+    "wall_s": 21.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 1288,
+      "output_tokens": 170,
+      "cache_read_tokens": 1239,
+      "usd": 0.01131,
+      "frames_fetched": 3
+    },
+    "answer_text": "A. QuYuan (Qiyun) is shown wearing white robes, as seen in the shot at 0:15."
+  },
+  {
+    "qid": "009-1",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.012495,
+    "wall_s": 4.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2194,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "usd": 0.012495,
+      "frames_sent": 7
+    },
+    "answer_text": "A. White.\n\nIn the second image, Qu Yuan is depicted from behind wearing a white robe while standing before a crowd, and this white attire is consistent with his portrayal in the video."
+  },
+  {
+    "qid": "009-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.002445,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 90,
+      "output_tokens": 55,
+      "cache_read_tokens": 1239,
+      "usd": 0.002445,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript states he drowned himself \"on the fifth day of the fifth lunar month,\" which became the Dragon Boat Festival (0:31, 0:38)."
+  },
+  {
+    "qid": "009-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.012085,
+    "wall_s": 4.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2202,
+      "output_tokens": 43,
+      "cache_read_tokens": 0,
+      "usd": 0.012085,
+      "frames_sent": 7
+    },
+    "answer_text": "B. The Dragon Boat Festival (\u7aef\u5348\u8282) falls on the 5th day of the 5th month of the lunar calendar."
+  },
+  {
+    "qid": "009-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.003039,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 129,
+      "output_tokens": 71,
+      "cache_read_tokens": 1239,
+      "usd": 0.003039,
+      "frames_fetched": 0
+    },
+    "answer_text": "C \u2014 The video describes Qu Yuan as an upright, loyal patriot \"highly esteemed for his wise counsel that brought peace and prosperity to the state\" (0:12), which is the reason he is commemorated."
+  },
+  {
+    "qid": "009-3",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.012455,
+    "wall_s": 3.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 2241,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "usd": 0.012455,
+      "frames_sent": 7
+    },
+    "answer_text": "C\n\nQu Yuan is commemorated because he was a loyal minister who brought peace and prosperity to the state, as indicated in the video's narration."
+  },
+  {
+    "qid": "010-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.00232,
+    "wall_s": 16.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 134,
+      "output_tokens": 66,
+      "cache_read_tokens": 0,
+      "usd": 0.00232,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video emphasizes developing cultural intelligence to understand and communicate confidently across different cultures (0:12\u20131:35), which aligns with grasping the fundamentals of intercultural communication."
+  },
+  {
+    "qid": "010-1",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.02754,
+    "wall_s": 5.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5093,
+      "output_tokens": 83,
+      "cache_read_tokens": 0,
+      "usd": 0.02754,
+      "frames_sent": 11
+    },
+    "answer_text": "B\n\nThe video uses hand-drawn cardboard-style animation themed around international travel and a \"Diversity Dashboard\" to illustrate concepts of intercultural communication, presented by Dr. Deborah Swallow, a leading authority on the subject."
+  },
+  {
+    "qid": "010-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.010082,
+    "wall_s": 5.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 817,
+      "output_tokens": 192,
+      "cache_read_tokens": 2394,
+      "usd": 0.010082,
+      "frames_fetched": 1
+    },
+    "answer_text": "B. The informally dressed/behaving staff on the left wears clothing with a coconut (palm) tree pattern, unlike the formally uniformed staff on the right."
+  },
+  {
+    "qid": "010-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.027085,
+    "wall_s": 3.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5057,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "usd": 0.027085,
+      "frames_sent": 11
+    },
+    "answer_text": "B\n\nThe staff member behaving informally (wearing casual clothing rather than a formal uniform) has a coconut/palm tree pattern on their shirt, as seen at the \"AB Airline\" counter in the fourth image."
+  },
+  {
+    "qid": "010-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.060158,
+    "wall_s": 24.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 5,
+      "input_tokens": 8013,
+      "output_tokens": 684,
+      "cache_read_tokens": 5985,
+      "usd": 0.060158,
+      "frames_fetched": 5
+    },
+    "answer_text": "Based on the video, the pilot (copilot) in the plane travels past several world landmarks representing different cultures. Among the options, the common set in such intercultural animations includes the Eiffel Tower, Big Ben, and the Egyptian Pyramids as international landmarks.\n\nA. The White House is not typically shown as it is not an iconic cultural travel landmark in the same way.\n\nA \u2014 The White House is not among the iconic world landmarks the copilot flies past, which feature cultural monuments like the Eiffel Tower, Big Ben, and the Pyramids."
+  },
+  {
+    "qid": "010-3",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.02707,
+    "wall_s": 4.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 5059,
+      "output_tokens": 71,
+      "cache_read_tokens": 0,
+      "usd": 0.02707,
+      "frames_sent": 11
+    },
+    "answer_text": "A. The White House.\n\nThe animation's travel scenes depict iconic landmarks like Big Ben, the Egyptian Pyramids, and the Eiffel Tower, but the White House is not among the destinations shown."
+  },
+  {
+    "qid": "011-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.01762,
+    "wall_s": 15.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2729,
+      "output_tokens": 159,
+      "cache_read_tokens": 0,
+      "usd": 0.01762,
+      "frames_fetched": 3
+    },
+    "answer_text": "C. The dancers wear white tutus and perform on pointe with classical poses on stage, which is characteristic of ballet."
+  },
+  {
+    "qid": "011-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.01836,
+    "wall_s": 3.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3402,
+      "output_tokens": 54,
+      "cache_read_tokens": 0,
+      "usd": 0.01836,
+      "frames_sent": 11
+    },
+    "answer_text": "C. The dancers are wearing classical tutus and performing en pointe to Tchaikovsky's \"Swan Lake,\" which are hallmarks of ballet."
+  },
+  {
+    "qid": "011-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.02884,
+    "wall_s": 12.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 4118,
+      "output_tokens": 330,
+      "cache_read_tokens": 0,
+      "usd": 0.02884,
+      "frames_fetched": 3
+    },
+    "answer_text": "This video shows a ballet performance on a dark stage, not a documentary about the cosmos. However, if interpreting the question literally about the dark/black backdrop representing the setting:\n\nB. Black \u2014 the stage backdrop and overall environment in the video is predominantly black."
+  },
+  {
+    "qid": "011-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.018155,
+    "wall_s": 4.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3401,
+      "output_tokens": 46,
+      "cache_read_tokens": 0,
+      "usd": 0.018155,
+      "frames_sent": 11
+    },
+    "answer_text": "B\n\nThe video's background and stage environment are predominantly black, as seen in both the title card and the dark stage setting throughout the ballet performance."
+  },
+  {
+    "qid": "011-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.040335,
+    "wall_s": 17.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 5987,
+      "output_tokens": 416,
+      "cache_read_tokens": 0,
+      "usd": 0.040335,
+      "frames_fetched": 3
+    },
+    "answer_text": "The frames returned are identical and don't clearly show the ending pose. Based on the ballet context and the typical final pose of such a performance, the dancers appear to be transitioning to an ending position.\n\nA. The dancers end the scene by kneeling down on one knee and leaning back, a common finishing pose for a ballet performance."
+  },
+  {
+    "qid": "011-3",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.018305,
+    "wall_s": 5.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 3426,
+      "output_tokens": 47,
+      "cache_read_tokens": 0,
+      "usd": 0.018305,
+      "frames_sent": 11
+    },
+    "answer_text": "A. In the last scene, the dancers are kneeling on one knee with their torsos leaning back and arms extended forward, matching the described pose."
+  }
+]

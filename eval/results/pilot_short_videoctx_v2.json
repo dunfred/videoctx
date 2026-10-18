@@ -1,0 +1,572 @@
+[
+  {
+    "qid": "001-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.020873,
+    "wall_s": 12.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2380,
+      "output_tokens": 330,
+      "cache_read_tokens": 1445,
+      "usd": 0.020873,
+      "frames_fetched": 6
+    },
+    "answer_text": "B. In the animation at 36.5s, before berries are added, the tree shows 5 candles versus 5 apples, but the candles are the most prominent/numerous decorations shown first; counting the clearest frame (36.5s) there are 5 candles and 5 apples, so reviewing the fuller frame at 37.5s the candles (5) outnumber apples (5) and berries tie \u2014 the candles appear as the dominant decoration.\n\nWait, let me recount from the 36.5s frame: 5 candles and 5 apples are equal. Given this, the most reliable answer is B. Candles, as they are the first and most prominent decorations shown."
+  },
+  {
+    "qid": "001-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.002767,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 164,
+      "output_tokens": 49,
+      "cache_read_tokens": 1445,
+      "usd": 0.002767,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. This is a 13 News Now report by anchor Phillip Townsend covering the history behind Christmas ornaments (0:00-0:11)."
+  },
+  {
+    "qid": "001-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.0169,
+    "wall_s": 6.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2296,
+      "output_tokens": 159,
+      "cache_read_tokens": 2890,
+      "usd": 0.0169,
+      "frames_fetched": 6
+    },
+    "answer_text": "D. The fireplace scene at 1:07 shows three red stockings (socks) hanging above the fireplace mantel."
+  },
+  {
+    "qid": "002-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.002,
+    "wall_s": 2.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 115,
+      "output_tokens": 57,
+      "cache_read_tokens": 0,
+      "usd": 0.002,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. Jade is never mentioned in the transcript, whereas inkstones (0:13), niches (0:56), and sacrificial tables (0:09) are all discussed."
+  },
+  {
+    "qid": "002-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.002443,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 153,
+      "output_tokens": 40,
+      "cache_read_tokens": 1355,
+      "usd": 0.002443,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:20 states the excavation was done \"to coordinate with the National Highway Realignment Project.\""
+  },
+  {
+    "qid": "002-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.002227,
+    "wall_s": 2.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 40,
+      "cache_read_tokens": 1355,
+      "usd": 0.002227,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The southern niche had four porcelain jars and the northern niche had five, totaling nine (0:59-1:03)."
+  },
+  {
+    "qid": "003-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.034994,
+    "wall_s": 7.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 5237,
+      "output_tokens": 311,
+      "cache_read_tokens": 2068,
+      "usd": 0.034994,
+      "frames_fetched": 10
+    },
+    "answer_text": "C. The video shows the Russian flag (0:17-0:23) and the American flag (0:38), making two distinct national flags\u2014the German and Egypt-style graphics shown are country/map shapes, not standard national flags appearing clearly throughout."
+  },
+  {
+    "qid": "003-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.046237,
+    "wall_s": 19.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 6672,
+      "output_tokens": 391,
+      "cache_read_tokens": 6204,
+      "usd": 0.046237,
+      "frames_fetched": 8
+    },
+    "answer_text": "B. The upper-right burger is the flat sandwich-style item (bread-slices with meat), which first appears around 0:59-1:00 (shots 14-15) when the narration describes the Hamburg Steak being served between two slices of bread."
+  },
+  {
+    "qid": "003-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.002704,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 104,
+      "output_tokens": 46,
+      "cache_read_tokens": 2068,
+      "usd": 0.002704,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At 1:36 the narration states the hamburger became recognized around the world as \"a distinctly American dish,\" identifying it with the United States."
+  },
+  {
+    "qid": "005-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.025947,
+    "wall_s": 5.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 4184,
+      "output_tokens": 170,
+      "cache_read_tokens": 1553,
+      "usd": 0.025947,
+      "frames_fetched": 8
+    },
+    "answer_text": "A. The frame at t=94.9s shows three individuals together in the car scene\u2014the Archduke, his wife, and a third man."
+  },
+  {
+    "qid": "005-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.002641,
+    "wall_s": 1.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 46,
+      "cache_read_tokens": 1553,
+      "usd": 0.002641,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video states the assassination of Archduke Franz Ferdinand was \"the trigger which set off the war\" (0:05\u20130:10)."
+  },
+  {
+    "qid": "005-3",
+    "method": "videoctx",
+    "predicted": null,
+    "gold": "C",
+    "correct": false,
+    "usd": 0.309259,
+    "wall_s": 32.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 6,
+      "input_tokens": 55055,
+      "output_tokens": 1173,
+      "cache_read_tokens": 9318,
+      "usd": 0.309259,
+      "frames_fetched": 42
+    },
+    "answer_text": "(no final answer: tool-turn limit reached)"
+  },
+  {
+    "qid": "006-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.001875,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "usd": 0.001875,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The shamrock is the classic symbol of St. Patrick's Day, the only option tied to this Irish festival among turkey, moose, and moon cake."
+  },
+  {
+    "qid": "006-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003181,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 157,
+      "output_tokens": 65,
+      "cache_read_tokens": 1543,
+      "usd": 0.003181,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript (1:05\u20131:15), Irish immigrants brought the tradition to America where it \"devolved into a secular holiday often centered around drinking and celebrating all things Irish.\""
+  },
+  {
+    "qid": "006-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.002497,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 125,
+      "output_tokens": 44,
+      "cache_read_tokens": 1543,
+      "usd": 0.002497,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the video (1:25-1:35), New York City's annual parade is the largest in the world, with an estimated two million spectators."
+  },
+  {
+    "qid": "007-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.014665,
+    "wall_s": 5.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2231,
+      "output_tokens": 119,
+      "cache_read_tokens": 1070,
+      "usd": 0.014665,
+      "frames_fetched": 4
+    },
+    "answer_text": "D. The man creates smoke signals by using a blanket/cloth to waft smoke rising from a small bonfire of logs on the ground."
+  },
+  {
+    "qid": "007-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.001875,
+    "wall_s": 3.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 108,
+      "output_tokens": 32,
+      "cache_read_tokens": 1070,
+      "usd": 0.001875,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The pony express (0:22) is listed immediately before the semaphore flag (0:28)."
+  },
+  {
+    "qid": "007-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.021245,
+    "wall_s": 8.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 3270,
+      "output_tokens": 153,
+      "cache_read_tokens": 2140,
+      "usd": 0.021245,
+      "frames_fetched": 6
+    },
+    "answer_text": "B. The smartphone message reads \"Dude! You gotta come to BigStuf Camps!\" (visible at ~0:58)."
+  },
+  {
+    "qid": "008-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.020942,
+    "wall_s": 6.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2973,
+      "output_tokens": 207,
+      "cache_read_tokens": 1804,
+      "usd": 0.020942,
+      "frames_fetched": 8
+    },
+    "answer_text": "The word \"Guitar\" in the title \"The History of Guitar\" appears to be the first and only written instance of \"guitar\" in these frames, written in pink/brown. Looking at the frames, \"Guitar\" was written in pink.\n\nD. The word \"Guitar\" in the title was written in pink."
+  },
+  {
+    "qid": "008-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.017709,
+    "wall_s": 5.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2306,
+      "output_tokens": 175,
+      "cache_read_tokens": 3608,
+      "usd": 0.017709,
+      "frames_fetched": 6
+    },
+    "answer_text": "C. The video shows three distinct guitar-shaped (chordophone) instruments: the tambour, the sitar, and the guitar itself."
+  },
+  {
+    "qid": "008-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003177,
+    "wall_s": 2.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 135,
+      "output_tokens": 64,
+      "cache_read_tokens": 1804,
+      "usd": 0.003177,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The second half (from ~1:14) promotes \"Guitar by Smule,\" a mobile app, inviting viewers to download it for free and collaborate musically, which is an advertisement for music software."
+  },
+  {
+    "qid": "009-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.016205,
+    "wall_s": 10.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2312,
+      "output_tokens": 161,
+      "cache_read_tokens": 1239,
+      "usd": 0.016205,
+      "frames_fetched": 6
+    },
+    "answer_text": "A. In the cartoon depiction (shots 1), QuYuan is shown wearing a white robe."
+  },
+  {
+    "qid": "009-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.002625,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 111,
+      "output_tokens": 58,
+      "cache_read_tokens": 1239,
+      "usd": 0.002625,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript states he drowned himself \"on the fifth day of the fifth lunar month\" and people named that day the Dragon Boat Festival (0:31, 0:38)."
+  },
+  {
+    "qid": "009-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.002895,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 150,
+      "output_tokens": 61,
+      "cache_read_tokens": 1239,
+      "usd": 0.002895,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video emphasizes he was upright, loyal, and esteemed for his wise counsel that brought peace and prosperity to the state (0:12), making him worthy of commemoration."
+  },
+  {
+    "qid": "010-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.002225,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 155,
+      "output_tokens": 58,
+      "cache_read_tokens": 0,
+      "usd": 0.002225,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video focuses on developing cultural intelligence to communicate confidently across cultures, covering how different cultures trade, communicate, and manage people (0:52-1:12)."
+  },
+  {
+    "qid": "010-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.017372,
+    "wall_s": 5.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 2290,
+      "output_tokens": 189,
+      "cache_read_tokens": 2394,
+      "usd": 0.017372,
+      "frames_fetched": 4
+    },
+    "answer_text": "B. The informally dressed/behaving staff on the left wears shirts with a coconut (palm) tree pattern, in contrast to the formal suited staff on the right."
+  },
+  {
+    "qid": "010-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.077915,
+    "wall_s": 14.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 12229,
+      "output_tokens": 599,
+      "cache_read_tokens": 3591,
+      "usd": 0.077915,
+      "frames_fetched": 16
+    },
+    "answer_text": "The pilot flies past the Taj Mahal (81s), Statue of Liberty (83s), and Egyptian Pyramids (86s). Among the options, the White House, Big Ben, and Eiffel Tower do not appear\u2014only the Egyptian Pyramids is shown.\n\nC. The Egyptian Pyramids is the only option that the copilot actually travels to, so the pyramids are visited while the White House, Big Ben, and Eiffel Tower are not\u2014wait, the question asks which place is NOT traveled to.\n\nLet me correct: Since the Pyramids ARE shown, the answer must be a place not shown. The White House, Big Ben, and Eiffel Tower are all absent. However, given only one answer is correct and the Pyramids clearly appear, the intended answer is the landmark not among the three shown (Taj Mahal, Statue of Liberty, Pyramids).\n\nA. The White House, because the copilot flies past the Taj Mahal, Statue of Liberty, and the Egyptian Pyramids but never the White House."
+  },
+  {
+    "qid": "011-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.0229,
+    "wall_s": 7.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 3755,
+      "output_tokens": 165,
+      "cache_read_tokens": 0,
+      "usd": 0.0229,
+      "frames_fetched": 6
+    },
+    "answer_text": "C. The dancers wear tutus and perform on pointe to Tchaikovsky's \"Swan Lake,\" clearly identifying this as ballet."
+  },
+  {
+    "qid": "011-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.022755,
+    "wall_s": 7.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 3761,
+      "output_tokens": 158,
+      "cache_read_tokens": 0,
+      "usd": 0.022755,
+      "frames_fetched": 6
+    },
+    "answer_text": "B. The video's intro screens (\"Symphony\" title and performance details) are displayed on a solid black background."
+  },
+  {
+    "qid": "011-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.026525,
+    "wall_s": 6.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 4465,
+      "output_tokens": 168,
+      "cache_read_tokens": 0,
+      "usd": 0.026525,
+      "frames_fetched": 8
+    },
+    "answer_text": "A. The dancers finish by kneeling down on one knee and leaning back/forward in a final pose at around 112.8s before the stage goes dark."
+  }
+]

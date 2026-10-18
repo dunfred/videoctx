@@ -1,0 +1,602 @@
+[
+  {
+    "qid": "601-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.535924,
+    "wall_s": 4.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 161,
+      "output_tokens": 57,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 85391,
+      "usd": 0.535924,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video investigates the dispute over who achieved the first powered flight, examining Gustav Whitehead's claim versus the Wright Brothers' recognized achievement."
+  },
+  {
+    "qid": "601-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.045355,
+    "wall_s": 3.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 137,
+      "output_tokens": 79,
+      "cache_read_tokens": 85391,
+      "cache_write_tokens": 0,
+      "usd": 0.045355,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. John Brown, the aviation expert and historical researcher, is shown throughout the video arguing that Gustav Whitehead\u2014not the Wright Brothers\u2014achieved the first powered flight (e.g., shots 24, 83, 568)."
+  },
+  {
+    "qid": "601-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.045455,
+    "wall_s": 4.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 192,
+      "output_tokens": 72,
+      "cache_read_tokens": 85391,
+      "cache_write_tokens": 0,
+      "usd": 0.045455,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video states Whitehead's 1899 Pittsburgh flight crashed into a building (regarded only as an \"attempt\"), so his first motorized flight attempt was not a clean success, making this statement incorrect."
+  },
+  {
+    "qid": "602-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.152266,
+    "wall_s": 2.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 217,
+      "output_tokens": 52,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 23981,
+      "usd": 0.152266,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video states the only record these nomadic tribes and Bronze Age cultures left was their graves (Kurgans), not murals (0:23-0:33)."
+  },
+  {
+    "qid": "602-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.01518,
+    "wall_s": 2.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 163,
+      "output_tokens": 95,
+      "cache_read_tokens": 23981,
+      "cache_write_tokens": 0,
+      "usd": 0.01518,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The Battle of the Ice against the Teutonic Knights (under Alexander Nevsky) occurred in the 13th century, while the Zemsky Sobor elected Mikhail Romanov in 1613, and Catherine and Peter came much later (1762 and early 1700s)."
+  },
+  {
+    "qid": "602-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.015095,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 141,
+      "output_tokens": 96,
+      "cache_read_tokens": 23981,
+      "cache_write_tokens": 0,
+      "usd": 0.015095,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The Trans-Siberian Railway was built by Russia (not jointly with China); it was completed in 1916 (shot 41, 37:36), French loans helped fund it (37:27), and its stated length of 5,772 miles equals ~9,289 km, so only option A is incorrect."
+  },
+  {
+    "qid": "603-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.47396,
+    "wall_s": 4.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 117,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 75452,
+      "usd": 0.47396,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video opens by calling tuberculosis \"the deadliest infectious disease of all time,\" noting that in 2022 it killed more people than malaria, typhoid, cholera, homicide, and war combined (0:26)."
+  },
+  {
+    "qid": "603-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.040746,
+    "wall_s": 3.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 179,
+      "output_tokens": 85,
+      "cache_read_tokens": 75452,
+      "cache_write_tokens": 0,
+      "usd": 0.040746,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript (shots 208\u2013223) explains the romanticization of consumption declined as it became obvious the disease primarily afflicted the poor and working class living in Industrial Revolution tenements, culminating in Koch's 1882 bacterial discovery."
+  },
+  {
+    "qid": "603-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.041556,
+    "wall_s": 3.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 176,
+      "output_tokens": 118,
+      "cache_read_tokens": 75452,
+      "cache_write_tokens": 0,
+      "usd": 0.041556,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. Southern California was called \"the Land of New Lungs\" because its dry air and open spaces were believed to heal the lungs (shots 285-286, ~29:38), whereas A misstates the statistics, B is only partially true (TB was broadly called \"the white man's plague\" but understood to affect everyone), and C is false since TB became curable in the mid-1950s."
+  },
+  {
+    "qid": "604-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.462648,
+    "wall_s": 3.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 127,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 73634,
+      "usd": 0.462648,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video traces the Gypsies/Roma from their Indian origins through migration, Balkan slavery, Nazi persecution, and communist-era treatment up to the present day, making it a comprehensive history of the group."
+  },
+  {
+    "qid": "604-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.039892,
+    "wall_s": 3.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 150,
+      "output_tokens": 93,
+      "cache_read_tokens": 73634,
+      "cache_write_tokens": 0,
+      "usd": 0.039892,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video describes how, as the Ottomans pushed westward and expanded into the Balkans, the Gypsies increasingly fell under their jurisdiction and were used as slave labor, with slavery becoming ever more enshrined in Ottoman institutions (shots 138\u2013185)."
+  },
+  {
+    "qid": "604-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.039632,
+    "wall_s": 4.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 188,
+      "output_tokens": 75,
+      "cache_read_tokens": 73634,
+      "cache_write_tokens": 0,
+      "usd": 0.039632,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video says captured gypsies in England were branded with \"V\" and enslaved for two years, while the letter \"S\" (not \"V\") was applied to those who escaped and were recaptured (shots 271-274, 16:51-17:03)."
+  },
+  {
+    "qid": "605-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.128331,
+    "wall_s": 2.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 135,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 20205,
+      "usd": 0.128331,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video traces both how Austria-Hungary rose to become one of the most powerful countries and how it eventually broke apart (0:56\u20131:02, 31:11)."
+  },
+  {
+    "qid": "605-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.013917,
+    "wall_s": 3.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 124,
+      "cache_read_tokens": 20205,
+      "cache_write_tokens": 0,
+      "usd": 0.013917,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video cites the lack of troops, foreign powers conspiring to break it apart (tied to the Russian revolution removing the need for a buffer), WW1's devastation, and the regional autonomy from minority rights\u2014but uneven economic growth, while mentioned as a difference between Austria and Hungary, is not given as a cause of the breakup (shots 30, 57, 62)."
+  },
+  {
+    "qid": "605-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.043733,
+    "wall_s": 5.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 158,
+      "output_tokens": 233,
+      "cache_read_tokens": 40410,
+      "cache_write_tokens": 2706,
+      "usd": 0.043733,
+      "frames_fetched": 5
+    },
+    "answer_text": "D. The shield appears over Austria-Hungary (positioned between Western Europe and the green Russia to the east) with the narration at 20:19 stating \"Austria-Hungary was therefore seen as a good buffer between Russia and Western Europe.\""
+  },
+  {
+    "qid": "606-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.453087,
+    "wall_s": 3.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 130,
+      "output_tokens": 105,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 71970,
+      "usd": 0.453087,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The first minute features historians praising Napoleon's record\u2014\"more documented victories than any other battlefield commander\" (0:20), being \"one of the most influential military leaders of all time\" (0:37), and rising to become \"master of Europe\" (0:49)\u2014commenting on his achievements rather than detailing specific battles or his path to success."
+  },
+  {
+    "qid": "606-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.04071,
+    "wall_s": 4.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 175,
+      "output_tokens": 154,
+      "cache_read_tokens": 71970,
+      "cache_write_tokens": 0,
+      "usd": 0.04071,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript (shots 417\u2013419) states the father/husband \"makes the decision where his wife is to live,\" confirming women had no right to decide their residence under the Napoleonic code; B is wrong (Corsica was acquired by France from Genoa, not controlled by Corsica), C is wrong (he became Brigadier General at 24 per shot 201), and D is wrong (his career stalled because he was *associated* with the Jacobins when they fell, not due to disagreement)."
+  },
+  {
+    "qid": "606-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.197358,
+    "wall_s": 19.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 114,
+      "output_tokens": 907,
+      "cache_read_tokens": 293902,
+      "cache_write_tokens": 4346,
+      "usd": 0.197358,
+      "frames_fetched": 7
+    },
+    "answer_text": "D. Four distinct scholars appear and comment: Professor David Andress (Portsmouth), Dr Michael Rowe (King's College London), Professor Pamela Pilbeam (Birkbeck), plus a fourth man in a plain light-blue shirt seated by the spotlight, distinct from the bald glasses-wearing Andress and gray-shirted Rowe."
+  },
+  {
+    "qid": "607-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.429426,
+    "wall_s": 3.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 134,
+      "output_tokens": 119,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 68125,
+      "usd": 0.429426,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video centers on draining the seas to reveal underwater secrets of Rome\u2014the lost port of Portus, the Bo Ferrer shipwreck, and the submerged harbor of Caesarea Maritima\u2014showing how Rome's power depended on the sea (per the opening narration at 0:20\u20130:53 and the \"Drain the Oceans\" title shots)."
+  },
+  {
+    "qid": "607-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.036653,
+    "wall_s": 2.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 213,
+      "output_tokens": 61,
+      "cache_read_tokens": 68125,
+      "cache_write_tokens": 0,
+      "usd": 0.036653,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video states the Tiber was \"too shallow for merchant vessels,\" so cargo reached Rome via a man-made canal system rather than the natural river channel (shots 161, 177)."
+  },
+  {
+    "qid": "607-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.037208,
+    "wall_s": 3.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 149,
+      "output_tokens": 96,
+      "cache_read_tokens": 68125,
+      "cache_write_tokens": 0,
+      "usd": 0.037208,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The narration explicitly states \"The hidden cargo is not gold or silver. It's lead\" (shots 328-329), while the ingots were stored on either side of the keel (shot 316), 22 were recovered (shot 319), and they were stamped IMP for emperor (shots 330-331)."
+  },
+  {
+    "qid": "608-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.45473,
+    "wall_s": 9.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 151,
+      "output_tokens": 125,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 72136,
+      "usd": 0.45473,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video says Egypt built two of the seven wonders\u2014the Giza pyramids (which survive) and the Lighthouse of Alexandria (whose remains ARE found underwater)\u2014so the claim that two Egyptian wonders \"have not been found yet\" is incorrect, while the Colossus of Rhodes (statue on an island) and \"only the pyramids survive\" are both stated."
+  },
+  {
+    "qid": "608-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.038298,
+    "wall_s": 3.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 156,
+      "output_tokens": 58,
+      "cache_read_tokens": 72136,
+      "cache_write_tokens": 0,
+      "usd": 0.038298,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video states the lighthouse (Pharos) reached almost 330 feet, the size of a 32-story building (shot 202, ~16:00), not a 30-story building."
+  },
+  {
+    "qid": "608-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.038973,
+    "wall_s": 3.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 151,
+      "output_tokens": 86,
+      "cache_read_tokens": 72136,
+      "cache_write_tokens": 0,
+      "usd": 0.038973,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript at shot 371 (32:04) states \"Sediment makes the waters impenetrable to cameras,\" and while diving is called fatal and crocodiles appear, the sediment is highlighted as the key element preventing viewing/diving to find the fort."
+  },
+  {
+    "qid": "609-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.507894,
+    "wall_s": 137.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 155,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 80883,
+      "usd": 0.507894,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video traces the origins and progress of the First Crusade, culminating in the capture of Jerusalem in 1099 (shots 599\u2013670), and ends \"to be continued\" before later crusades."
+  },
+  {
+    "qid": "609-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.043727,
+    "wall_s": 2.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 167,
+      "output_tokens": 98,
+      "cache_read_tokens": 80883,
+      "cache_write_tokens": 0,
+      "usd": 0.043727,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video repeatedly states the Islamic Empire was weakened by internal divisions (e.g., Abbasids vs. Fatimids) before the Crusaders arrived, and that the Crusaders succeeded because of these demographic and political divisions (shots 37, 40, 145, 589)."
+  },
+  {
+    "qid": "609-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.042996,
+    "wall_s": 2.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 141,
+      "output_tokens": 74,
+      "cache_read_tokens": 80883,
+      "cache_write_tokens": 0,
+      "usd": 0.042996,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. After taking Antioch, the Crusaders marched south toward their main goal, Jerusalem, which they then besieged (shots 570\u2013599, \"The rest of the armies set off south towards their main goal, Jerusalem\")."
+  },
+  {
+    "qid": "610-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.154409,
+    "wall_s": 6.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 312,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 23343,
+      "usd": 0.154409,
+      "frames_fetched": 0
+    },
+    "answer_text": "The video is a biography of William the Conqueror, but among the given options, the one that best captures its overall scope.\n\nLooking at the content: it traces William's entire life from birth through the conquest and his death, with the Battle of Hastings as a centerpiece but much more surrounding it.\n\nLet me evaluate:\n- A: Covers the broad medieval/Norman context the video emphasizes throughout (Viking origins, anarchy, the harrying of the north, oppression).\n- B: Too narrow\u2014Stamford Bridge is only briefly mentioned.\n- C: Too narrow\u2014only the battle, ignoring William's full life story.\n- D: Only partial focus.\n\nA. The terrifying reality of Medieval life during the Norman invasion, because the video spans William's whole life and repeatedly stresses the brutal, bloody nature of the era (Viking raids, Norman anarchy, assassinations, the harrying of the north) rather than confining itself to a single battle."
+  },
+  {
+    "qid": "610-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.014536,
+    "wall_s": 2.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 133,
+      "output_tokens": 88,
+      "cache_read_tokens": 23343,
+      "cache_write_tokens": 0,
+      "usd": 0.014536,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The Battle of Stamford Bridge (25 Sept 1066) came first, and only afterward did the Norman armada set sail and land near Pevensey/Hastings, while Harold's coronation, William's marriage, and Edward's death all occurred earlier."
+  },
+  {
+    "qid": "610-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.014861,
+    "wall_s": 2.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 99,
+      "cache_read_tokens": 23343,
+      "cache_write_tokens": 0,
+      "usd": 0.014861,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video states William \"breathe his last\" on the morning of September 9th, 1087 (shot 46, ~44:27\u201344:39), while his second son William Rufus (not his eldest) became King of England, Harold died at Hastings (not Stamford Bridge), and William won the Battle of Hastings."
+  }
+]

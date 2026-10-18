@@ -7,5 +7,5 @@ dist/
 samples/
 indexes/
 eval/data/
-eval/results/*.json
+# results are committed for reproducibility
 .env

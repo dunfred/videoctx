@@ -1,0 +1,602 @@
+[
+  {
+    "qid": "601-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.093495,
+    "wall_s": 12.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 18279,
+      "output_tokens": 84,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.093495,
+      "frames_sent": 60
+    },
+    "answer_text": "C. The video presents a historical investigation into whether Gustave Whitehead or the Wright Brothers actually achieved the first powered flight, featuring newspaper claims, aircraft replicas, and expert interviews debating who truly invented the first airplane."
+  },
+  {
+    "qid": "601-2",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.093975,
+    "wall_s": 7.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 18255,
+      "output_tokens": 108,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.093975,
+      "frames_sent": 60
+    },
+    "answer_text": "D. John Brown is identified as the \"Aviation Expert & Historical Researcher\" who, through his investigation of newspaper articles and evidence, advocates that Gustave Whitehead achieved motorized flight before the Wright brothers, whereas the Smithsonian contractually upholds the Wright 1903 flight as first."
+  },
+  {
+    "qid": "601-3",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.093375,
+    "wall_s": 10.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 18310,
+      "output_tokens": 73,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.093375,
+      "frames_sent": 60
+    },
+    "answer_text": "C. The video actually suggests the Smithsonian is biased by a contract with the Wright estate requiring it to credit the Wrights as first in flight, rather than merely claiming insufficient evidence for Brown's claims."
+  },
+  {
+    "qid": "602-1",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.13795,
+    "wall_s": 12.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27275,
+      "output_tokens": 63,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13795,
+      "frames_sent": 60
+    },
+    "answer_text": "D. The first image shows archaeological burial sites with skeletons, not murals, so we infer the nomadic tribes and Bronze Age culture from excavated graves rather than wall paintings."
+  },
+  {
+    "qid": "602-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.138105,
+    "wall_s": 11.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27221,
+      "output_tokens": 80,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.138105,
+      "frames_sent": 60
+    },
+    "answer_text": "B. The images show Mikhail I beginning his reign in 1613, meaning the Zemsky Sobor's election of Mikhail Romanov occurred in that year, while options C and D depict later events and the other option isn't supported by the timeline."
+  },
+  {
+    "qid": "602-3",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.137295,
+    "wall_s": 13.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27199,
+      "output_tokens": 52,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137295,
+      "frames_sent": 60
+    },
+    "answer_text": "A. The Trans-Siberian Railway was built by Russia (financed partly by French loans), not jointly by Russia and China, making this statement incorrect."
+  },
+  {
+    "qid": "603-1",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.137975,
+    "wall_s": 11.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27175,
+      "output_tokens": 84,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137975,
+      "frames_sent": 60
+    },
+    "answer_text": "A. The video is a Crash Course lecture focused entirely on tuberculosis (TB), featuring quotes like \"Zero people should die of TB\" and references to Mycobacterium tuberculosis, indicating TB as the central deadly disease discussed."
+  },
+  {
+    "qid": "603-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.13816,
+    "wall_s": 8.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27237,
+      "output_tokens": 79,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13816,
+      "frames_sent": 60
+    },
+    "answer_text": "B. Once TB spread to the working class and became associated with factory laborers and crowded conditions, it lost its romantic image as a refined, aristocratic \"disease of the master race\" and was reframed as a disease of poverty and industrial squalor."
+  },
+  {
+    "qid": "603-3",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.137695,
+    "wall_s": 8.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27234,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137695,
+      "frames_sent": 60
+    },
+    "answer_text": "B. The video references a historical belief that tuberculosis (consumption) was \"a disease of the master race not of the slave race,\" reflecting the mistaken notion that it primarily affected white people."
+  },
+  {
+    "qid": "604-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.138575,
+    "wall_s": 15.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27185,
+      "output_tokens": 106,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.138575,
+      "frames_sent": 60
+    },
+    "answer_text": "C. The video traces the Roma/Gypsy people's journey from their origins in India (shown via the map arrow pointing to the region), through their migration into Europe, enslavement in Wallachia and Moldavia, persecution including the Holocaust, and their present-day situation, making it a comprehensive history of the Gypsies."
+  },
+  {
+    "qid": "604-2",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.138165,
+    "wall_s": 8.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27208,
+      "output_tokens": 85,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.138165,
+      "frames_sent": 60
+    },
+    "answer_text": "B. The video shows the Gypsies/Roma migrating into the Balkans during Ottoman expansion, where they became increasingly enslaved, as depicted by the slavery-related imagery and historical references to their bondage in Wallachia and Moldavia."
+  },
+  {
+    "qid": "604-3",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.13803,
+    "wall_s": 7.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27246,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13803,
+      "frames_sent": 60
+    },
+    "answer_text": "C. The video shows that Gypsies were held in enslavement (particularly in Wallachia and Moldavia until the 1840s\u20131850s) rather than escaping it by living in the countryside, making this statement incorrect."
+  },
+  {
+    "qid": "605-1",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.137565,
+    "wall_s": 9.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27193,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137565,
+      "frames_sent": 60
+    },
+    "answer_text": "D. The video traces the Austro-Hungarian Empire's formation through revolutions and wars, its multi-ethnic composition, internal tensions, and eventual collapse and division into successor states."
+  },
+  {
+    "qid": "605-2",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.13883,
+    "wall_s": 8.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27201,
+      "output_tokens": 113,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13883,
+      "frames_sent": 60
+    },
+    "answer_text": "A. The video presents the empire's tolerance toward minorities (shown via equal-rights laws and the \"hearts\" imagery) as a strength and unifying factor, not a cause of the country's split, whereas WWI, the Russian communist revolution, and uneven economic growth between Austria and Hungary were all depicted as contributing to the breakup."
+  },
+  {
+    "qid": "605-3",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.137895,
+    "wall_s": 7.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27214,
+      "output_tokens": 73,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137895,
+      "frames_sent": 60
+    },
+    "answer_text": "D. The shield positioned on the mountain range separating Western Europe (red Britain, blue France) and Russia (green) represents Austria-Hungary acting as a buffer zone between these major powers, protecting and separating them."
+  },
+  {
+    "qid": "606-1",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.137465,
+    "wall_s": 13.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27188,
+      "output_tokens": 61,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137465,
+      "frames_sent": 60
+    },
+    "answer_text": "D. The opening frames show Napoleon's rise through battle scenes, his early years, the Siege of Toulon, and historian commentary setting up an exploration of how he achieved his success."
+  },
+  {
+    "qid": "606-2",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.13729,
+    "wall_s": 12.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27233,
+      "output_tokens": 45,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13729,
+      "frames_sent": 60
+    },
+    "answer_text": "A. The Napoleonic Code placed wives under their husband's authority, denying them the right to independently decide matters such as their place of residence."
+  },
+  {
+    "qid": "606-3",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.137705,
+    "wall_s": 13.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27166,
+      "output_tokens": 75,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137705,
+      "frames_sent": 60
+    },
+    "answer_text": "B. Three distinct scholars appear as talking-head commentators: the man in the white checkered shirt by the spotlight, the bald bearded man in glasses with the checkered shirt, and the white-haired woman in the navy top."
+  },
+  {
+    "qid": "607-1",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.13786,
+    "wall_s": 8.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27192,
+      "output_tokens": 76,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13786,
+      "frames_sent": 60
+    },
+    "answer_text": "A. The video showcases a National Geographic documentary focused on underwater archaeology revealing Roman secrets, including sunken ships, submerged harbors, amphorae, and ruins explored by divers and maritime archaeologists."
+  },
+  {
+    "qid": "607-2",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.13813,
+    "wall_s": 8.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27271,
+      "output_tokens": 71,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13813,
+      "frames_sent": 60
+    },
+    "answer_text": "A. The Tiber River is a natural river, but the footage emphasizes constructed harbors and canals for transporting cargo to Rome, so calling it a \"natural channel\" used for this transport is the incorrect statement."
+  },
+  {
+    "qid": "607-3",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.13726,
+    "wall_s": 7.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27207,
+      "output_tokens": 49,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13726,
+      "frames_sent": 60
+    },
+    "answer_text": "B. The ingots shown were lead ingots (not primarily silver and gold), making this statement incorrect about the metal cargo found in the wreck."
+  },
+  {
+    "qid": "608-1",
+    "method": "naive",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.137845,
+    "wall_s": 7.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27209,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137845,
+      "frames_sent": 60
+    },
+    "answer_text": "A. The video features the Lighthouse of Alexandria and the Pyramids of Giza (both in Egypt, with only Giza surviving), but it does not depict a huge statue on an island as one of the wonders shown."
+  },
+  {
+    "qid": "608-2",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.13777,
+    "wall_s": 8.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27214,
+      "output_tokens": 68,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13777,
+      "frames_sent": 60
+    },
+    "answer_text": "D. The video shows the lighthouse being reconstructed in 3D and discusses its height, role as a landmark, and the beautiful city, but it does not depict an accurately reconstructed door in 3D images."
+  },
+  {
+    "qid": "608-3",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.137295,
+    "wall_s": 10.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27209,
+      "output_tokens": 50,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137295,
+      "frames_sent": 60
+    },
+    "answer_text": "C. The presence of crocodiles in Lake Nasser poses the most significant danger and obstacle for divers attempting to search for the submerged fort."
+  },
+  {
+    "qid": "609-1",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.138165,
+    "wall_s": 8.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27213,
+      "output_tokens": 84,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.138165,
+      "frames_sent": 60
+    },
+    "answer_text": "C. The video traces the First Crusade chronologically from Pope Urban II's call at Clermont in 1095 through the Battle of Antioch in 1098 to the conquest of Jerusalem on 14 July 1099, told from an Arab perspective."
+  },
+  {
+    "qid": "609-2",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.137875,
+    "wall_s": 8.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27225,
+      "output_tokens": 70,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.137875,
+      "frames_sent": 60
+    },
+    "answer_text": "D. The video's final frames explicitly state that the Crusade \"punished the Muslims and Arabs for their divisions and infighting,\" indicating the Muslim empires experienced divisions before the Crusade arrived."
+  },
+  {
+    "qid": "609-3",
+    "method": "naive",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.138545,
+    "wall_s": 9.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27199,
+      "output_tokens": 102,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.138545,
+      "frames_sent": 60
+    },
+    "answer_text": "D. After conquering Antioch (June 1098), the Crusaders continued their campaign and marched on to besiege Jerusalem, which they reached and assaulted in June\u2013July 1099, as shown by the subsequent frames depicting the siege and brutal entrance into Jerusalem on 14 July 1099."
+  },
+  {
+    "qid": "610-1",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.13808,
+    "wall_s": 8.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27201,
+      "output_tokens": 83,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13808,
+      "frames_sent": 60
+    },
+    "answer_text": "B. The video depicts both the Battle of Stamford Bridge (with the Viking longship and shield walls) and the Battle of Hastings (with Norman cavalry and the Bayeux Tapestry), covering the full sequence of events in 1066."
+  },
+  {
+    "qid": "610-2",
+    "method": "naive",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.13758,
+    "wall_s": 8.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27191,
+      "output_tokens": 65,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13758,
+      "frames_sent": 60
+    },
+    "answer_text": "C. The Battle of Stamford Bridge (September 1066) was followed by the Norman army landing at Hastings, as William's forces came ashore in southern England while Harold's army was still in the north."
+  },
+  {
+    "qid": "610-3",
+    "method": "naive",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.13693,
+    "wall_s": 7.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 27201,
+      "output_tokens": 37,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "usd": 0.13693,
+      "frames_sent": 60
+    },
+    "answer_text": "B. William the Conqueror died on September 9th, 1087, making this the correct historical statement among the options presented."
+  }
+]

@@ -1,0 +1,320 @@
+[
+  {
+    "qid": "001-1",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.0035,
+    "wall_s": 19.7,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "001-2",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.0036,
+    "wall_s": 21.6,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "001-3",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.0035,
+    "wall_s": 23.9,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "002-1",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.0041,
+    "wall_s": 28.3,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "002-2",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.004,
+    "wall_s": 17.3,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "002-3",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.0041,
+    "wall_s": 42.3,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "003-1",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.0053,
+    "wall_s": 25.0,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "003-2",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.0054,
+    "wall_s": 75.9,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "003-3",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.0053,
+    "wall_s": 26.1,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "005-1",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.0052,
+    "wall_s": 23.1,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "005-2",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.0052,
+    "wall_s": 18.1,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "005-3",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.0054,
+    "wall_s": 145.5,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "006-1",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.005,
+    "wall_s": 25.8,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "006-2",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.005,
+    "wall_s": 29.3,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "006-3",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.005,
+    "wall_s": 27.6,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "007-1",
+    "method": "gemini",
+    "correct": false,
+    "usd": 0.0036,
+    "wall_s": 89.6,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "007-2",
+    "method": "gemini",
+    "correct": true,
+    "usd": 0.0035,
+    "wall_s": 80.4,
+    "note": "recovered from log; prediction text lost"
+  },
+  {
+    "qid": "007-3",
+    "method": "gemini",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003621,
+    "wall_s": 45.5,
+    "detail": {
+      "input_tokens": 7014,
+      "output_tokens": 38
+    },
+    "answer_text": "A. The message \"BTW...you got something in your teeth!\" causes the man to check his reflection and realize there is indeed something stuck in his teeth, leading to his visible embarrassment."
+  },
+  {
+    "qid": "008-3",
+    "method": "gemini",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.005333,
+    "wall_s": 82.5,
+    "detail": {
+      "input_tokens": 10552,
+      "output_tokens": 19
+    },
+    "answer_text": "A. The second half of the video is an advertisement for a guitar application named Smule."
+  },
+  {
+    "qid": "010-2",
+    "method": "gemini",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.005369,
+    "wall_s": 42.4,
+    "detail": {
+      "input_tokens": 10551,
+      "output_tokens": 31
+    },
+    "answer_text": "B. Around 0:33, the staff on the left, who is dressed informally, has a coconut tree pattern on their t-shirt."
+  },
+  {
+    "qid": "011-2",
+    "method": "gemini",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.00548,
+    "wall_s": 274.1,
+    "detail": {
+      "input_tokens": 10816,
+      "output_tokens": 24
+    },
+    "answer_text": "A. The dancers in the video are wearing white dresses, making white the correct choice for the color of the costumes."
+  },
+  {
+    "qid": "011-1",
+    "method": "gemini",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.005494,
+    "wall_s": 227.8,
+    "detail": {
+      "input_tokens": 10814,
+      "output_tokens": 29
+    },
+    "answer_text": "C. The video shows dancers in tutus and pointe shoes performing classical movements to music from Swan Lake, which is a classic example of ballet."
+  },
+  {
+    "qid": "008-1",
+    "method": "gemini",
+    "predicted": "B",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.00535,
+    "wall_s": 22.7,
+    "detail": {
+      "input_tokens": 10538,
+      "output_tokens": 27
+    },
+    "answer_text": "B. The author wrote \"guitar\" for the second time in blue at the 01:15 timestamp of the video."
+  },
+  {
+    "qid": "008-2",
+    "method": "gemini",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.005354,
+    "wall_s": 31.7,
+    "detail": {
+      "input_tokens": 10534,
+      "output_tokens": 29
+    },
+    "answer_text": "D. There are a total of 11 different guitar-shaped instruments shown throughout the video, including those illustrated and those displayed on the tablet."
+  },
+  {
+    "qid": "009-1",
+    "method": "gemini",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003599,
+    "wall_s": 20.8,
+    "detail": {
+      "input_tokens": 7071,
+      "output_tokens": 21
+    },
+    "answer_text": "A. Qu Yuan is depicted wearing a traditional long white robe throughout the historical narrative segments of the video."
+  },
+  {
+    "qid": "009-2",
+    "method": "gemini",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003609,
+    "wall_s": 20.8,
+    "detail": {
+      "input_tokens": 7087,
+      "output_tokens": 22
+    },
+    "answer_text": "B. According to the video, the Dragon Boat Festival falls on the fifth day of the fifth lunar month."
+  },
+  {
+    "qid": "009-3",
+    "method": "gemini",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.003642,
+    "wall_s": 21.1,
+    "detail": {
+      "input_tokens": 7105,
+      "output_tokens": 30
+    },
+    "answer_text": "C. Qu Yuan was highly esteemed for his wise counsels that brought peace and prosperity to the state, and the Dragon Boat Festival was created to commemorate him."
+  },
+  {
+    "qid": "010-1",
+    "method": "gemini",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.00536,
+    "wall_s": 23.7,
+    "detail": {
+      "input_tokens": 10564,
+      "output_tokens": 26
+    },
+    "answer_text": "B. This video introduces fundamental concepts of intercultural communication, such as diverse perspectives and the importance of cultural intelligence in a global business environment."
+  },
+  {
+    "qid": "010-3",
+    "method": "gemini",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.005411,
+    "wall_s": 25.4,
+    "detail": {
+      "input_tokens": 10551,
+      "output_tokens": 45
+    },
+    "answer_text": "A. The copilot travels over the Big Ben, the Taj Mahal, the Eiffel Tower, the Statue of Liberty, the Petronas Twin Towers, and the Egyptian Pyramids, but never flies past the White House."
+  },
+  {
+    "qid": "011-3",
+    "method": "gemini",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.005468,
+    "wall_s": 47.4,
+    "detail": {
+      "input_tokens": 10834,
+      "output_tokens": 17
+    },
+    "answer_text": "A. The dancers conclude their performance by kneeling on one knee and gracefully leaning back."
+  }
+]
