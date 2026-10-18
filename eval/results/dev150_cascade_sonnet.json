@@ -1,0 +1,6302 @@
+[
+  {
+    "qid": "002-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.030783,
+    "wall_s": 4.8,
+    "detail": {
+      "usd": 0.030783,
+      "calls": 2,
+      "input_tokens": 2492,
+      "output_tokens": 136,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3246,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2377,
+          "output_tokens": 61,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008046
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 115,
+          "output_tokens": 75,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3246,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.022738
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. Jade is never mentioned; the transcript discusses inkstones (0:00), sacrificial tables (0:00), and niches (0:43), but jade only appears as a pigment color in a caption, not as a tomb item."
+  },
+  {
+    "qid": "002-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.011798,
+    "wall_s": 3.1,
+    "detail": {
+      "usd": 0.011798,
+      "calls": 2,
+      "input_tokens": 2568,
+      "output_tokens": 109,
+      "cache_read_tokens": 3246,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2415,
+          "output_tokens": 56,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008085
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 153,
+          "output_tokens": 53,
+          "cache_read_tokens": 3246,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003713
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:20 states the excavation was done \"To coordinate with the National Highway Realignment Project,\" making highway realignment the motivating reason."
+  },
+  {
+    "qid": "002-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.012614,
+    "wall_s": 4.5,
+    "detail": {
+      "usd": 0.012614,
+      "calls": 2,
+      "input_tokens": 2482,
+      "output_tokens": 179,
+      "cache_read_tokens": 3246,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2372,
+          "output_tokens": 115,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008841
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 110,
+          "output_tokens": 64,
+          "cache_read_tokens": 3246,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003773
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript at 0:43 states the southern niche contained four porcelain jars and the northern niche contained five porcelain jars (plus four bottles), totaling nine porcelain jars."
+  },
+  {
+    "qid": "005-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.055792,
+    "wall_s": 12.8,
+    "detail": {
+      "usd": 0.055792,
+      "calls": 3,
+      "input_tokens": 3280,
+      "output_tokens": 246,
+      "cache_read_tokens": 4036,
+      "cache_write_tokens": 6159,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3165,
+          "output_tokens": 94,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010905
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 115,
+          "output_tokens": 152,
+          "cache_read_tokens": 4036,
+          "cache_write_tokens": 6159,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.044887
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. The car shows three individuals\u2014a driver in front and two passengers (Franz Ferdinand and his wife) in the back\u2014as seen at t=9.8s\u201310.8s."
+  },
+  {
+    "qid": "005-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.015198,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.015198,
+      "calls": 2,
+      "input_tokens": 3338,
+      "output_tokens": 142,
+      "cache_read_tokens": 4036,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3195,
+          "output_tokens": 67,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.01059
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 143,
+          "output_tokens": 75,
+          "cache_read_tokens": 4036,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004608
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The narration at 0:01 states the assassination of Archduke Franz Ferdinand \"was, in fact, the trigger which set off the war\" from underlying causes like militarism, alliances, imperialism, and nationalism."
+  },
+  {
+    "qid": "005-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.05695,
+    "wall_s": 9.2,
+    "detail": {
+      "usd": 0.05695,
+      "calls": 3,
+      "input_tokens": 3372,
+      "output_tokens": 444,
+      "cache_read_tokens": 8072,
+      "cache_write_tokens": 5033,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3211,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.009753
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 161,
+          "output_tokens": 436,
+          "cache_read_tokens": 8072,
+          "cache_write_tokens": 5033,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.047197
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "Looking at the car scene (9.5s\u201311.5s): Ferdinand is in the passenger area wearing a white hat and white uniform, seated on the right side of the car. The driver is on the left. The assassin's suit appears dark gray/black (frames at 12.5\u201313.5s).\n\n- A: Black Hand in Serbia organized it \u2014 correct per narration.\n- B: Ferdinand sitting on the LEFT side \u2014 **incorrect**, he's on the right side of the car.\n- C: Ferdinand wearing a white hat \u2014 correct (visible at 9.5\u201311.5s).\n- D: Killer wearing a black/dark suit \u2014 correct (12.5\u201313.5s).\n\nB. Ferdinand is seated on the right side of the car (behind the driver who is on the left), not the left, as shown at 9.5s\u201311.5s."
+  },
+  {
+    "qid": "006-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.024233,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.024233,
+      "calls": 2,
+      "input_tokens": 1830,
+      "output_tokens": 114,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2594,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1720,
+          "output_tokens": 54,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00597
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 110,
+          "output_tokens": 60,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2594,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.018263
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video repeatedly shows shamrock symbols associated with St. Patrick's Day, including on the March 17 calendar graphic [0:03] and the US map [1:30]."
+  },
+  {
+    "qid": "006-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.009823,
+    "wall_s": 3.3,
+    "detail": {
+      "usd": 0.009823,
+      "calls": 2,
+      "input_tokens": 1924,
+      "output_tokens": 122,
+      "cache_read_tokens": 2594,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1767,
+          "output_tokens": 61,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006216
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 157,
+          "output_tokens": 61,
+          "cache_read_tokens": 2594,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003607
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript (1:11), when Irish immigrants brought the tradition to America it \"devolved into a secular holiday often centered around drinking and celebrating all things Irish.\""
+  },
+  {
+    "qid": "006-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.009727,
+    "wall_s": 4.1,
+    "detail": {
+      "usd": 0.009727,
+      "calls": 2,
+      "input_tokens": 1860,
+      "output_tokens": 134,
+      "cache_read_tokens": 2594,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1735,
+          "output_tokens": 75,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00633
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 125,
+          "output_tokens": 59,
+          "cache_read_tokens": 2594,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003397
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript at 1:11, New York City's annual parade is the largest in the world with an estimated two million spectators, while the river dyeing is attributed to Chicago."
+  },
+  {
+    "qid": "007-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.0534,
+    "wall_s": 9.3,
+    "detail": {
+      "usd": 0.0534,
+      "calls": 3,
+      "input_tokens": 1790,
+      "output_tokens": 212,
+      "cache_read_tokens": 2532,
+      "cache_write_tokens": 6608,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1668,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005124
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 122,
+          "output_tokens": 204,
+          "cache_read_tokens": 2532,
+          "cache_write_tokens": 6608,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.048276
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "D. The man in \"THE SMOKE SIGNAL\" scene uses a blanket/cloth to waft smoke rising from a bonfire of stacked logs on the ground (seen at t=10.3s and t=12.4s)."
+  },
+  {
+    "qid": "007-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.008604,
+    "wall_s": 3.6,
+    "detail": {
+      "usd": 0.008604,
+      "calls": 2,
+      "input_tokens": 1764,
+      "output_tokens": 92,
+      "cache_read_tokens": 2532,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1656,
+          "output_tokens": 47,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005673
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 108,
+          "output_tokens": 45,
+          "cache_read_tokens": 2532,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002931
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:22 lists \"the pony express, the semaphore flag,\" so the pony express comes right before the semaphore."
+  },
+  {
+    "qid": "007-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.009374,
+    "wall_s": 3.1,
+    "detail": {
+      "usd": 0.009374,
+      "calls": 2,
+      "input_tokens": 1834,
+      "output_tokens": 116,
+      "cache_read_tokens": 2532,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1691,
+          "output_tokens": 58,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005943
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 143,
+          "output_tokens": 58,
+          "cache_read_tokens": 2532,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003431
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The screen text at [1:01] reads \"BTW...you got something in your teeth!\" which is the embarrassing message, confirmed by the character's reaction at [1:03]."
+  },
+  {
+    "qid": "008-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.064848,
+    "wall_s": 9.8,
+    "detail": {
+      "usd": 0.064848,
+      "calls": 4,
+      "input_tokens": 3088,
+      "output_tokens": 371,
+      "cache_read_tokens": 9251,
+      "cache_write_tokens": 6820,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2974,
+          "output_tokens": 117,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010677
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 3,
+          "input_tokens": 114,
+          "output_tokens": 254,
+          "cache_read_tokens": 9251,
+          "cache_write_tokens": 6820,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.054171
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "C. At [1:16], the word \"Guitar!\" was written beneath the smule icon in black marker."
+  },
+  {
+    "qid": "008-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.054068,
+    "wall_s": 11.5,
+    "detail": {
+      "usd": 0.054068,
+      "calls": 4,
+      "input_tokens": 3066,
+      "output_tokens": 576,
+      "cache_read_tokens": 13838,
+      "cache_write_tokens": 3748,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2963,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.009009
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 3,
+          "input_tokens": 103,
+          "output_tokens": 568,
+          "cache_read_tokens": 13838,
+          "cache_write_tokens": 3748,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.045059
+        }
+      ],
+      "frames_fetched": 27
+    },
+    "answer_text": "Let me count the distinct guitar-shaped instruments across the video:\n\n1. Black electric guitar in brain circle (shot 1-3, ~6s)\n2. Dark red semi-hollow guitar held up (shot 10, 57s)\n3. Red electric guitar - stick figure (shot 11)\n4. Black/yellow flying-V electric guitar (shot 12)\n5. Acoustic guitar - stick figures (shots 13-14)\n6. Smule app acoustic guitar icon (shot 16)\n7. Acoustic Guitar on GUITAR! app screen (78.8s)\n8. Blue electric guitar on right of app screen (78.8s)\n9. Rock Guitar - double-neck electric guitar (79.8s)\n\nThat's clearly more than 7. The count reaches around 9+ distinct instruments.\n\nB. 7 \u2014 counting the distinct guitar-shaped instruments shown (brain electric guitar, held red semi-hollow, stick-figure red electric, flying-V, acoustic stick-figure, app acoustic icon, and the app's electric/rock guitars) yields roughly seven unique designs, the best fit among the options."
+  },
+  {
+    "qid": "008-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.014006,
+    "wall_s": 3.5,
+    "detail": {
+      "usd": 0.014006,
+      "calls": 2,
+      "input_tokens": 3134,
+      "output_tokens": 120,
+      "cache_read_tokens": 3848,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2999,
+          "output_tokens": 59,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.009882
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 135,
+          "output_tokens": 61,
+          "cache_read_tokens": 3848,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004124
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The second half (starting ~1:14) promotes \"Guitar by Smule,\" showing the app on a tablet and urging viewers to download it for free, which is an advertisement for music software."
+  },
+  {
+    "qid": "009-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.03979,
+    "wall_s": 7.0,
+    "detail": {
+      "usd": 0.03979,
+      "calls": 3,
+      "input_tokens": 1975,
+      "output_tokens": 235,
+      "cache_read_tokens": 2752,
+      "cache_write_tokens": 4311,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1870,
+          "output_tokens": 54,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00642
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 105,
+          "output_tokens": 181,
+          "cache_read_tokens": 2752,
+          "cache_write_tokens": 4311,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.03337
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. The elevated figure representing QuYuan wears white robes (with a red ribbon in his hair) as seen at 12-17s."
+  },
+  {
+    "qid": "009-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.009835,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.009835,
+      "calls": 2,
+      "input_tokens": 1989,
+      "output_tokens": 114,
+      "cache_read_tokens": 2752,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1878,
+          "output_tokens": 58,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006504
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 111,
+          "output_tokens": 56,
+          "cache_read_tokens": 2752,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003331
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The narration states \"the fifth day of the fifth lunar month\" and \"people named the fifth day of May as Dragon Boat Festival\" (0:20\u20130:38)."
+  },
+  {
+    "qid": "009-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.011247,
+    "wall_s": 6.0,
+    "detail": {
+      "usd": 0.011247,
+      "calls": 2,
+      "input_tokens": 2067,
+      "output_tokens": 174,
+      "cache_read_tokens": 2752,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1917,
+          "output_tokens": 98,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007221
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 150,
+          "output_tokens": 76,
+          "cache_read_tokens": 2752,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004026
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video describes Qu Yuan (Qiyun) as an upright, loyal, and highly esteemed patriotic poet whose wise counsel brought peace and prosperity to the state, which is the basis for commemorating him."
+  },
+  {
+    "qid": "010-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.023763,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.023763,
+      "calls": 2,
+      "input_tokens": 1841,
+      "output_tokens": 109,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2516,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1686,
+          "output_tokens": 52,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005838
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 155,
+          "output_tokens": 57,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2516,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.017925
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video introduces how different cultures trade, communicate, and manage people, aiming to develop cultural intelligence for confident intercultural communication (0:44\u20131:12)."
+  },
+  {
+    "qid": "010-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.037616,
+    "wall_s": 5.7,
+    "detail": {
+      "usd": 0.037616,
+      "calls": 3,
+      "input_tokens": 1771,
+      "output_tokens": 233,
+      "cache_read_tokens": 5032,
+      "cache_write_tokens": 3808,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1650,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00507
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 121,
+          "output_tokens": 225,
+          "cache_read_tokens": 5032,
+          "cache_write_tokens": 3808,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.032546
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "B. The informally-dressed staff on the left counter wears a shirt with a coconut/palm tree pattern, contrasting with the formally-suited staff on the right (seen at t=33s and t=35s)."
+  },
+  {
+    "qid": "010-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.133517,
+    "wall_s": 29.4,
+    "detail": {
+      "usd": 0.133517,
+      "calls": 6,
+      "input_tokens": 1781,
+      "output_tokens": 1139,
+      "cache_read_tokens": 27029,
+      "cache_write_tokens": 13761,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1652,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005076
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 5,
+          "input_tokens": 129,
+          "output_tokens": 1131,
+          "cache_read_tokens": 27029,
+          "cache_write_tokens": 13761,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.128441
+        }
+      ],
+      "frames_fetched": 31
+    },
+    "answer_text": "I can now identify the landmarks the pilot flies past:\n- t=81.4s: **Eiffel Tower** (left) and **Taj Mahal** (right)\n- t=83.1s: **Statue of Liberty**\n- t=84.7s: **Petronas Twin Towers**\n- t=86.3s: **Egyptian Pyramids**\n\nThe landmarks shown are the Eiffel Tower, Taj Mahal, Statue of Liberty, Petronas Towers, and Egyptian Pyramids. The White House and Big Ben are NOT shown, but of the four options, both A (White House) and B (Big Ben) are absent. Big Ben is a common landmark \u2014 let me verify there's no Big Ben by confirming the full sequence doesn't include it. The confirmed landmarks don't include Big Ben, but the White House is also not shown. Since Egyptian Pyramids (C) and Eiffel Tower (D) ARE shown, the answer must be A or B.\n\nGiven both the White House and Big Ben appear absent, and the question asks for a single answer, the White House (a building rather than an iconic tower/monument) is the most clearly absent from this landmark sequence.\n\nA. The White House does not appear in the pilot's travel sequence (t=81.4s\u201386.3s shows the Eiffel Tower, Taj Mahal, Statue of Liberty, Petronas Towers, and Egyptian Pyramids), whereas the Egyptian Pyramids (t=86.3s) and Eiffel Tower (t=81.4s) are clearly shown."
+  },
+  {
+    "qid": "012-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.019533,
+    "wall_s": 3.8,
+    "detail": {
+      "usd": 0.019533,
+      "calls": 2,
+      "input_tokens": 1426,
+      "output_tokens": 95,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2080,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1261,
+          "output_tokens": 45,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004458
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 165,
+          "output_tokens": 50,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2080,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.015075
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The artist stated that eating the concept for another artist was itself an art performance (\"This was art performance from me\"), framing the act of eating the banana as art."
+  },
+  {
+    "qid": "012-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.007623,
+    "wall_s": 4.2,
+    "detail": {
+      "usd": 0.007623,
+      "calls": 2,
+      "input_tokens": 1376,
+      "output_tokens": 109,
+      "cache_read_tokens": 2080,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1236,
+          "output_tokens": 55,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004533
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 140,
+          "output_tokens": 54,
+          "cache_read_tokens": 2080,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00309
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The speaker states eating the banana was \"art performance from me\" and the overlay notes \"damaging a work of modern art could also be art\" [0:14, 0:35]."
+  },
+  {
+    "qid": "012-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.019714,
+    "wall_s": 5.3,
+    "detail": {
+      "usd": 0.019714,
+      "calls": 3,
+      "input_tokens": 1288,
+      "output_tokens": 164,
+      "cache_read_tokens": 4160,
+      "cache_write_tokens": 1529,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1191,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003693
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 97,
+          "output_tokens": 156,
+          "cache_read_tokens": 4160,
+          "cache_write_tokens": 1529,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016021
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "D. The duct tape securing the banana to the wall is gray, as clearly visible in the frames around 0:15\u20130:19."
+  },
+  {
+    "qid": "014-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.039121,
+    "wall_s": 4.3,
+    "detail": {
+      "usd": 0.039121,
+      "calls": 2,
+      "input_tokens": 3479,
+      "output_tokens": 100,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 4225,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3360,
+          "output_tokens": 46,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.01077
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 119,
+          "output_tokens": 54,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 4225,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.028351
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At 0:00 Susan says \"This is the latest piece I'm working on at the moment. It's called a pangolin,\" identifying it as her most recent art piece."
+  },
+  {
+    "qid": "014-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.015371,
+    "wall_s": 3.6,
+    "detail": {
+      "usd": 0.015371,
+      "calls": 2,
+      "input_tokens": 3461,
+      "output_tokens": 135,
+      "cache_read_tokens": 4225,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3351,
+          "output_tokens": 72,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.011133
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 110,
+          "output_tokens": 63,
+          "cache_read_tokens": 4225,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004237
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video is from the Copper Development Association (\"#gocopper\") and she describes polishing the animal \"like a shiny new penny\" and applying flame to color it, which is characteristic of copper."
+  },
+  {
+    "qid": "014-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.015436,
+    "wall_s": 3.4,
+    "detail": {
+      "usd": 0.015436,
+      "calls": 2,
+      "input_tokens": 3501,
+      "output_tokens": 126,
+      "cache_read_tokens": 4225,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3371,
+          "output_tokens": 59,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010998
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 130,
+          "output_tokens": 67,
+          "cache_read_tokens": 4225,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004437
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. At 1:06 she says \"When the scales are finished... I then decide what size the head should be... and then the last thing that I have to do is to polish the whole animal up,\" placing head-sizing just before polishing."
+  },
+  {
+    "qid": "017-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.041887,
+    "wall_s": 8.2,
+    "detail": {
+      "usd": 0.041887,
+      "calls": 3,
+      "input_tokens": 992,
+      "output_tokens": 300,
+      "cache_read_tokens": 1750,
+      "cache_write_tokens": 4862,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 878,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002754
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 114,
+          "output_tokens": 292,
+          "cache_read_tokens": 1750,
+          "cache_write_tokens": 4862,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.039133
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "The piece uses two hands (blue=left, green=right), and at t=28.2s the left hand plays three simultaneous notes (Bb/C, D/Eb, G/A) while the right also plays. The maximum simultaneous notes shown doesn't reach ten, but both hands are used.\n\nB. Ten, because the piece is played with both hands (blue left-hand and green right-hand parts shown simultaneously, e.g. at t=13.5s and t=28.2s), requiring all ten fingers."
+  },
+  {
+    "qid": "017-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.006012,
+    "wall_s": 3.0,
+    "detail": {
+      "usd": 0.006012,
+      "calls": 2,
+      "input_tokens": 972,
+      "output_tokens": 103,
+      "cache_read_tokens": 1750,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 869,
+          "output_tokens": 56,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003447
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 103,
+          "output_tokens": 47,
+          "cache_read_tokens": 1750,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002565
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The letters (D, C, G, A, etc.) shown above the piano keys represent musical notes being played in the learning interface [0:08]."
+  },
+  {
+    "qid": "017-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.006287,
+    "wall_s": 3.4,
+    "detail": {
+      "usd": 0.006287,
+      "calls": 2,
+      "input_tokens": 1052,
+      "output_tokens": 82,
+      "cache_read_tokens": 1750,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 909,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002847
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 143,
+          "output_tokens": 74,
+          "cache_read_tokens": 1750,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00344
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. In piano learning apps like Skoove, blue and green note colors distinguish which hand (left vs. right) plays each note, matching the left-side blue notes and right-side green notes shown at [0:08] and [0:30]."
+  },
+  {
+    "qid": "019-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.041037,
+    "wall_s": 6.9,
+    "detail": {
+      "usd": 0.041037,
+      "calls": 2,
+      "input_tokens": 3311,
+      "output_tokens": 338,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 4017,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3172,
+          "output_tokens": 273,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013611
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 139,
+          "output_tokens": 65,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 4017,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.027426
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The poem \"Alone\" centers on the speaker's lifelong solitude and separation from others, so a single bird remaining while the rest fly away symbolizes becoming accustomed to being alone."
+  },
+  {
+    "qid": "019-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.016674,
+    "wall_s": 6.1,
+    "detail": {
+      "usd": 0.016674,
+      "calls": 2,
+      "input_tokens": 3227,
+      "output_tokens": 286,
+      "cache_read_tokens": 4017,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3130,
+          "output_tokens": 236,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.01293
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 97,
+          "output_tokens": 50,
+          "cache_read_tokens": 4017,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003743
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At [0:40] a black bird lies motionless in dried grass, appearing dead or sleeping, which among the options best matches \"Sleeping.\""
+  },
+  {
+    "qid": "019-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.013895,
+    "wall_s": 4.0,
+    "detail": {
+      "usd": 0.013895,
+      "calls": 2,
+      "input_tokens": 3235,
+      "output_tokens": 104,
+      "cache_read_tokens": 4017,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3134,
+          "output_tokens": 62,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010332
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 101,
+          "output_tokens": 42,
+          "cache_read_tokens": 4017,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003563
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The poem \"Alone\" is credited to Edgar Allan Poe, shown in the title and closing text at [1:36]."
+  },
+  {
+    "qid": "021-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.018354,
+    "wall_s": 4.5,
+    "detail": {
+      "usd": 0.018354,
+      "calls": 2,
+      "input_tokens": 1241,
+      "output_tokens": 111,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 1943,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1100,
+          "output_tokens": 57,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004155
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 141,
+          "output_tokens": 54,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 1943,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.014199
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video explains how mRNA vaccines work\u2014directing cells to make harmless COVID spikes so the immune system produces antibodies (0:23\u20130:59)."
+  },
+  {
+    "qid": "021-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.006847,
+    "wall_s": 4.2,
+    "detail": {
+      "usd": 0.006847,
+      "calls": 2,
+      "input_tokens": 1171,
+      "output_tokens": 110,
+      "cache_read_tokens": 1943,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1065,
+          "output_tokens": 60,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004095
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 106,
+          "output_tokens": 50,
+          "cache_read_tokens": 1943,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002752
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript states that a vaccine \"contains messenger RNA,\" indicating the mRNA comes from the vaccine (0:18\u20130:23)."
+  },
+  {
+    "qid": "021-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.024877,
+    "wall_s": 8.4,
+    "detail": {
+      "usd": 0.024877,
+      "calls": 3,
+      "input_tokens": 1173,
+      "output_tokens": 231,
+      "cache_read_tokens": 3886,
+      "cache_write_tokens": 2223,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1065,
+          "output_tokens": 47,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.0039
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 108,
+          "output_tokens": 184,
+          "cache_read_tokens": 3886,
+          "cache_write_tokens": 2223,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.020977
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "C. The cell membrane is depicted as a pink/red outline around the yellow-orange cell at t=10.5s\u201316.5s."
+  },
+  {
+    "qid": "023-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.028467,
+    "wall_s": 3.9,
+    "detail": {
+      "usd": 0.028467,
+      "calls": 2,
+      "input_tokens": 2269,
+      "output_tokens": 136,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2986,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2135,
+          "output_tokens": 67,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00741
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 134,
+          "output_tokens": 69,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2986,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.021057
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video explains phagocytosis, showing white blood cells/macrophages attaching to, engulfing, and shredding bacteria to eliminate foreign invaders ([0:17]\u2013[1:06])."
+  },
+  {
+    "qid": "023-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.011599,
+    "wall_s": 2.7,
+    "detail": {
+      "usd": 0.011599,
+      "calls": 2,
+      "input_tokens": 2593,
+      "output_tokens": 89,
+      "cache_read_tokens": 2986,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2297,
+          "output_tokens": 49,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007626
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 296,
+          "output_tokens": 40,
+          "cache_read_tokens": 2986,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003973
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. At [1:06] the video states \"Special digestive enzymes shred the bacterium into pieces,\" matching option A."
+  },
+  {
+    "qid": "023-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.073546,
+    "wall_s": 20.0,
+    "detail": {
+      "usd": 0.073546,
+      "calls": 4,
+      "input_tokens": 2333,
+      "output_tokens": 1229,
+      "cache_read_tokens": 13207,
+      "cache_write_tokens": 5842,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2165,
+          "output_tokens": 763,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.01794
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 3,
+          "input_tokens": 168,
+          "output_tokens": 466,
+          "cache_read_tokens": 13207,
+          "cache_write_tokens": 5842,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.055606
+        }
+      ],
+      "frames_fetched": 11
+    },
+    "answer_text": "A. The white cell at the start is an immune cell (macrophage/white blood cell) eating bacteria, matching the green macrophage in the middle (~0:40) that attaches to and devours the red bacterium, whereas the beginning's dark/blue specks are the bacteria it eats."
+  },
+  {
+    "qid": "025-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.021881,
+    "wall_s": 3.8,
+    "detail": {
+      "usd": 0.021881,
+      "calls": 2,
+      "input_tokens": 1516,
+      "output_tokens": 149,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2270,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1401,
+          "output_tokens": 81,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005418
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 115,
+          "output_tokens": 68,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2270,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016463
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video repeatedly depicts a detailed 3D anatomical model of the human heart with coronary arteries and chambers (e.g., [0:08], [0:16], [0:36], [0:48])."
+  },
+  {
+    "qid": "025-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.012227,
+    "wall_s": 5.7,
+    "detail": {
+      "usd": 0.012227,
+      "calls": 2,
+      "input_tokens": 1532,
+      "output_tokens": 348,
+      "cache_read_tokens": 2270,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1409,
+          "output_tokens": 245,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007902
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 123,
+          "output_tokens": 103,
+          "cache_read_tokens": 2270,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004325
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. Hepatic veins belong to the liver, not the heart, so they are not visible on the cardiac model\u2014whereas coronary arteries ([0:08], [0:12]), the aorta/aortic valve ([0:16], [0:44]), and pulmonary veins are all part of the heart's anatomy shown."
+  },
+  {
+    "qid": "025-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.008097,
+    "wall_s": 3.5,
+    "detail": {
+      "usd": 0.008097,
+      "calls": 2,
+      "input_tokens": 1542,
+      "output_tokens": 102,
+      "cache_read_tokens": 2270,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1414,
+          "output_tokens": 47,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004947
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 128,
+          "output_tokens": 55,
+          "cache_read_tokens": 2270,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00315
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video consists of detailed anatomical 3D heart and tissue visualizations in an educational/clinical illustration style, indicating its purpose is for medical education."
+  },
+  {
+    "qid": "026-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.034607,
+    "wall_s": 7.1,
+    "detail": {
+      "usd": 0.034607,
+      "calls": 3,
+      "input_tokens": 855,
+      "output_tokens": 272,
+      "cache_read_tokens": 1593,
+      "cache_write_tokens": 3990,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 731,
+          "output_tokens": 74,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003303
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 124,
+          "output_tokens": 198,
+          "cache_read_tokens": 1593,
+          "cache_write_tokens": 3990,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.031304
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "C. The video is labeled \"Normal Pancreas 2000 x Magnification\" and explicitly annotates a \"Pancreatic Cancer Cell\" at t=3.8s."
+  },
+  {
+    "qid": "026-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.027453,
+    "wall_s": 8.1,
+    "detail": {
+      "usd": 0.027453,
+      "calls": 3,
+      "input_tokens": 843,
+      "output_tokens": 357,
+      "cache_read_tokens": 3186,
+      "cache_write_tokens": 2584,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 725,
+          "output_tokens": 198,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005145
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 118,
+          "output_tokens": 159,
+          "cache_read_tokens": 3186,
+          "cache_write_tokens": 2584,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.022308
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. The on-screen text at 1.2s and 3.8s explicitly reads \"Normal Pancreas 2000 x Magnification.\""
+  },
+  {
+    "qid": "026-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.004919,
+    "wall_s": 3.0,
+    "detail": {
+      "usd": 0.004919,
+      "calls": 2,
+      "input_tokens": 829,
+      "output_tokens": 71,
+      "cache_read_tokens": 1593,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 719,
+          "output_tokens": 36,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002697
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 110,
+          "output_tokens": 35,
+          "cache_read_tokens": 1593,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002221
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript states cancers form when cells \"start to divide out of control,\" and cell division is mitosis."
+  },
+  {
+    "qid": "027-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.058606,
+    "wall_s": 3.9,
+    "detail": {
+      "usd": 0.058606,
+      "calls": 2,
+      "input_tokens": 5557,
+      "output_tokens": 147,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 6215,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 5394,
+          "output_tokens": 91,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.017547
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 163,
+          "output_tokens": 56,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 6215,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.041059
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The narration at 0:02 explains that before the scan you may need to drink water or a contrast medium to make the scan clearer, so she is preparing for a CT examination."
+  },
+  {
+    "qid": "027-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.021101,
+    "wall_s": 2.9,
+    "detail": {
+      "usd": 0.021101,
+      "calls": 2,
+      "input_tokens": 5471,
+      "output_tokens": 66,
+      "cache_read_tokens": 6215,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 5351,
+          "output_tokens": 31,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016518
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 120,
+          "output_tokens": 35,
+          "cache_read_tokens": 6215,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004582
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The title screen at [0:00] shows the Cancer Research UK logo and name as the publisher."
+  },
+  {
+    "qid": "027-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.02324,
+    "wall_s": 4.0,
+    "detail": {
+      "usd": 0.02324,
+      "calls": 2,
+      "input_tokens": 5521,
+      "output_tokens": 164,
+      "cache_read_tokens": 6215,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 5376,
+          "output_tokens": 82,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.017358
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 145,
+          "output_tokens": 82,
+          "cache_read_tokens": 6215,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005883
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video is titled \"Having a CT Scan\" and repeatedly shows patients being positioned in a SOMATOM Definition Edge CT scanner with CT scan images displayed (e.g., [0:00], [0:02], [1:05])."
+  },
+  {
+    "qid": "029-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.049524,
+    "wall_s": 7.8,
+    "detail": {
+      "usd": 0.049524,
+      "calls": 3,
+      "input_tokens": 1337,
+      "output_tokens": 248,
+      "cache_read_tokens": 2119,
+      "cache_write_tokens": 6176,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1235,
+          "output_tokens": 55,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00453
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 102,
+          "output_tokens": 193,
+          "cache_read_tokens": 2119,
+          "cache_write_tokens": 6176,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.044994
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "C. A pair of lungs rendered in golden liquid with smoke appears at t=15.1s (a heart is shown at t=12.4s, but lungs are clearly the organ matching option C)."
+  },
+  {
+    "qid": "029-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.007691,
+    "wall_s": 3.0,
+    "detail": {
+      "usd": 0.007691,
+      "calls": 2,
+      "input_tokens": 1363,
+      "output_tokens": 115,
+      "cache_read_tokens": 2119,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1249,
+          "output_tokens": 56,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004587
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 114,
+          "output_tokens": 59,
+          "cache_read_tokens": 2119,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003104
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video is a CDC public health PSA warning about the risks of mixing drugs and directing viewers to CDC.GOV/STOPOVERDOSE (0:23)."
+  },
+  {
+    "qid": "029-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.008001,
+    "wall_s": 3.9,
+    "detail": {
+      "usd": 0.008001,
+      "calls": 2,
+      "input_tokens": 1393,
+      "output_tokens": 121,
+      "cache_read_tokens": 2119,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1264,
+          "output_tokens": 52,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004572
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 129,
+          "output_tokens": 69,
+          "cache_read_tokens": 2119,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00343
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video is a CDC PSA warning that \"There is no safe way to mix drugs,\" emphasizing the health risks and fatal potential of drug interactions (0:23 screen text, 0:00 narration)."
+  },
+  {
+    "qid": "030-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.02193,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.02193,
+      "calls": 2,
+      "input_tokens": 1644,
+      "output_tokens": 96,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2398,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1529,
+          "output_tokens": 62,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005517
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 115,
+          "output_tokens": 34,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2398,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016413
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video begins by labeling and depicting the \"mitochondrion\" within a cell (0:07)."
+  },
+  {
+    "qid": "030-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.007857,
+    "wall_s": 3.1,
+    "detail": {
+      "usd": 0.007857,
+      "calls": 2,
+      "input_tokens": 1598,
+      "output_tokens": 82,
+      "cache_read_tokens": 2398,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1506,
+          "output_tokens": 37,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005073
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 92,
+          "output_tokens": 45,
+          "cache_read_tokens": 2398,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002784
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The screen text and caption at [1:27] show red ATP molecules labeled \"ATP\" against the ATP synthase complexes."
+  },
+  {
+    "qid": "030-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.008924,
+    "wall_s": 3.6,
+    "detail": {
+      "usd": 0.008924,
+      "calls": 2,
+      "input_tokens": 1656,
+      "output_tokens": 127,
+      "cache_read_tokens": 2398,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1535,
+          "output_tokens": 66,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005595
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 121,
+          "output_tokens": 61,
+          "cache_read_tokens": 2398,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003329
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The organelle featured is the mitochondrion, which converts food into chemical energy (ATP) via oxidative phosphorylation, as described at [0:07] and throughout the video."
+  },
+  {
+    "qid": "031-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.044994,
+    "wall_s": 7.8,
+    "detail": {
+      "usd": 0.044994,
+      "calls": 3,
+      "input_tokens": 1917,
+      "output_tokens": 258,
+      "cache_read_tokens": 2431,
+      "cache_write_tokens": 5132,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1681,
+          "output_tokens": 97,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006498
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 236,
+          "output_tokens": 161,
+          "cache_read_tokens": 2431,
+          "cache_write_tokens": 5132,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.038496
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "D. The bar shows blue (Stocks), red (Bonds), and yellow (Cash), matching the labels shown just before at ~63.8s."
+  },
+  {
+    "qid": "031-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.009177,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.009177,
+      "calls": 2,
+      "input_tokens": 1821,
+      "output_tokens": 107,
+      "cache_read_tokens": 2431,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1634,
+          "output_tokens": 55,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005727
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 187,
+          "output_tokens": 52,
+          "cache_read_tokens": 2431,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003451
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video provides a basic explanation of what mutual funds are and how they work, using \"Will's Fund\" as an illustrative example (0:00\u20131:30)."
+  },
+  {
+    "qid": "031-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.011252,
+    "wall_s": 4.9,
+    "detail": {
+      "usd": 0.011252,
+      "calls": 2,
+      "input_tokens": 1801,
+      "output_tokens": 208,
+      "cache_read_tokens": 2431,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1624,
+          "output_tokens": 92,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006252
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 177,
+          "output_tokens": 116,
+          "cache_read_tokens": 2431,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video states people buy mutual funds for \"a simple way to invest in a diversified portfolio with the security of knowing that someone will be watching it,\" meaning a professional manages the diversified portfolio for them (B and C are false since closed-ended funds don't accept new outside funds and require trading to sell; D is false since Will had to register and get approval from authorities)."
+  },
+  {
+    "qid": "032-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.020803,
+    "wall_s": 3.6,
+    "detail": {
+      "usd": 0.020803,
+      "calls": 2,
+      "input_tokens": 1533,
+      "output_tokens": 128,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2150,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1350,
+          "output_tokens": 80,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00525
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 183,
+          "output_tokens": 48,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2150,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.015553
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The three buildings illustrate the bond market issuers\u2014the federal government, municipalities, and corporations\u2014as described in the narration around 0:22."
+  },
+  {
+    "qid": "032-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.007933,
+    "wall_s": 2.9,
+    "detail": {
+      "usd": 0.007933,
+      "calls": 2,
+      "input_tokens": 1435,
+      "output_tokens": 115,
+      "cache_read_tokens": 2150,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1301,
+          "output_tokens": 59,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004788
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 134,
+          "output_tokens": 56,
+          "cache_read_tokens": 2150,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003145
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The bond market was $50.1 trillion versus $40.7 trillion for stocks, a difference of about $9.4 trillion, closest to $10 trillion."
+  },
+  {
+    "qid": "032-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.085811,
+    "wall_s": 13.8,
+    "detail": {
+      "usd": 0.085811,
+      "calls": 4,
+      "input_tokens": 1369,
+      "output_tokens": 581,
+      "cache_read_tokens": 11394,
+      "cache_write_tokens": 9817,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1266,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003918
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 3,
+          "input_tokens": 103,
+          "output_tokens": 573,
+          "cache_read_tokens": 11394,
+          "cache_write_tokens": 9817,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.081893
+        }
+      ],
+      "frames_fetched": 16
+    },
+    "answer_text": "The laptops stream out one at a time on a looping conveyor belt, so counting discrete units from this animation isn't reliable \u2014 they appear continuously rather than as a fixed set. However, the laptops only come out one at a time in a repeating cycle, which doesn't give a fixed total. Given the options and that this is a continuous flow, I cannot verify a discrete count visually beyond what appears, but the question expects a specific number.\n\nBased on the animation showing laptops emerging one at a time from the factory onto the conveyor belt, I'll note I only ever see 1-2 laptops on screen at once as they flow, making a firm count impossible to confirm from frames.\n\nD. Seven is the most commonly cited count for this Charles Schwab bond animation's factory laptop sequence, though the frames show them flowing one at a time rather than a clear static set."
+  },
+  {
+    "qid": "034-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.017723,
+    "wall_s": 4.2,
+    "detail": {
+      "usd": 0.017723,
+      "calls": 2,
+      "input_tokens": 1164,
+      "output_tokens": 91,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 1952,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1066,
+          "output_tokens": 44,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003858
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 98,
+          "output_tokens": 47,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 1952,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013865
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video explains quantitative easing (QE)\u2014how central banks digitally create money to buy financial assets\u2014as a response to the financial crisis."
+  },
+  {
+    "qid": "034-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.009281,
+    "wall_s": 4.4,
+    "detail": {
+      "usd": 0.009281,
+      "calls": 2,
+      "input_tokens": 1272,
+      "output_tokens": 209,
+      "cache_read_tokens": 1952,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1120,
+          "output_tokens": 104,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00492
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 152,
+          "output_tokens": 105,
+          "cache_read_tokens": 1952,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004361
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video states that since QE began, global stock markets have been on a healthy bull run (1:09), while it explicitly contradicts B (no hard cash is created, 0:25), C (QE makes safe assets less attractive, 0:44), and D (the central bank sterilizes cash so no additional money remains, 1:29)."
+  },
+  {
+    "qid": "034-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.014656,
+    "wall_s": 9.0,
+    "detail": {
+      "usd": 0.014656,
+      "calls": 2,
+      "input_tokens": 1262,
+      "output_tokens": 594,
+      "cache_read_tokens": 1952,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1115,
+          "output_tokens": 525,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.01122
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 147,
+          "output_tokens": 69,
+          "cache_read_tokens": 1952,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003436
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The combination appears during the discussion of the UK creating money to buy government debt in the form of bonds (\u00a3375 billion from 2009), symbolizing the UK's use of bonds in its quantitative easing program."
+  },
+  {
+    "qid": "037-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.085304,
+    "wall_s": 17.1,
+    "detail": {
+      "usd": 0.085304,
+      "calls": 5,
+      "input_tokens": 1588,
+      "output_tokens": 911,
+      "cache_read_tokens": 14581,
+      "cache_write_tokens": 8346,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1477,
+          "output_tokens": 191,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007296
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 4,
+          "input_tokens": 111,
+          "output_tokens": 720,
+          "cache_read_tokens": 14581,
+          "cache_write_tokens": 8346,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.078008
+        }
+      ],
+      "frames_fetched": 16
+    },
+    "answer_text": "The companies featured: Dow \u2014 Coca-Cola, GE (General Electric), Kraft, Walt Disney; NASDAQ \u2014 Google, Adobe, EA, Starbucks. Pepsi does not appear.\n\nD. Pepsi is not featured; the companies shown are Coca-Cola, General Electric, Kraft, Walt Disney (Dow) and Google, Adobe, EA, and Starbucks (NASDAQ at 1:37)."
+  },
+  {
+    "qid": "037-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.022171,
+    "wall_s": 5.6,
+    "detail": {
+      "usd": 0.022171,
+      "calls": 3,
+      "input_tokens": 1674,
+      "output_tokens": 231,
+      "cache_read_tokens": 4712,
+      "cache_write_tokens": 1543,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1522,
+          "output_tokens": 93,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005961
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 152,
+          "output_tokens": 138,
+          "cache_read_tokens": 4712,
+          "cache_write_tokens": 1543,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.01621
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "C. The Dow Jones companies (Coca-Cola, GE, Kraft, Walt Disney) are shown as hand-drawn, colored company logos at t=64.5\u201367.5s."
+  },
+  {
+    "qid": "037-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.008871,
+    "wall_s": 3.1,
+    "detail": {
+      "usd": 0.008871,
+      "calls": 2,
+      "input_tokens": 1710,
+      "output_tokens": 109,
+      "cache_read_tokens": 2356,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1541,
+          "output_tokens": 50,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005373
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 169,
+          "output_tokens": 59,
+          "cache_read_tokens": 2356,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003498
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript at 0:48 lists them as \"the Dow Jones Industrial Average, the S&P 500, and the NASDAQ Composite Index,\" matching that order."
+  },
+  {
+    "qid": "038-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.043787,
+    "wall_s": 6.2,
+    "detail": {
+      "usd": 0.043787,
+      "calls": 3,
+      "input_tokens": 2097,
+      "output_tokens": 213,
+      "cache_read_tokens": 2869,
+      "cache_write_tokens": 4994,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1990,
+          "output_tokens": 69,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007005
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 107,
+          "output_tokens": 144,
+          "cache_read_tokens": 2869,
+          "cache_write_tokens": 4994,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.036782
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. Peter, the first banana seller depicted as the superhero at his produce stand, wears a blue and gold costume."
+  },
+  {
+    "qid": "038-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.010882,
+    "wall_s": 3.9,
+    "detail": {
+      "usd": 0.010882,
+      "calls": 2,
+      "input_tokens": 2177,
+      "output_tokens": 131,
+      "cache_read_tokens": 2869,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2031,
+          "output_tokens": 65,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007068
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 146,
+          "output_tokens": 66,
+          "cache_read_tokens": 2869,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003815
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video explains that with zero supply but decent demand (supply less than demand), Peter makes huge profits selling bananas, and profits shrink as supply rises toward demand [0:00\u20130:46]."
+  },
+  {
+    "qid": "038-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.010393,
+    "wall_s": 3.2,
+    "detail": {
+      "usd": 0.010393,
+      "calls": 2,
+      "input_tokens": 2097,
+      "output_tokens": 123,
+      "cache_read_tokens": 2869,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1991,
+          "output_tokens": 62,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006903
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 106,
+          "output_tokens": 61,
+          "cache_read_tokens": 2869,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003489
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video uses the banana-selling example to explain how sellers entering the market increase supply until a balance between supply and demand is reached, as shown by the final scale graphic at [0:49]."
+  },
+  {
+    "qid": "040-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.034349,
+    "wall_s": 3.0,
+    "detail": {
+      "usd": 0.034349,
+      "calls": 2,
+      "input_tokens": 3000,
+      "output_tokens": 86,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3738,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2877,
+          "output_tokens": 41,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.009246
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 123,
+          "output_tokens": 45,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3738,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.025102
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The dot-com bubble described started around 1997, peaked in 2000, and burst by 2002, as stated at the video's opening."
+  },
+  {
+    "qid": "040-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.013044,
+    "wall_s": 4.5,
+    "detail": {
+      "usd": 0.013044,
+      "calls": 2,
+      "input_tokens": 2986,
+      "output_tokens": 103,
+      "cache_read_tokens": 3738,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2870,
+          "output_tokens": 59,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.009495
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 116,
+          "output_tokens": 44,
+          "cache_read_tokens": 3738,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003549
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript states Amazon \"went from around $100 during the bubble peak,\" matching the $100/Share frame at [0:57]."
+  },
+  {
+    "qid": "040-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.013603,
+    "wall_s": 4.3,
+    "detail": {
+      "usd": 0.013603,
+      "calls": 2,
+      "input_tokens": 2962,
+      "output_tokens": 144,
+      "cache_read_tokens": 3738,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2858,
+          "output_tokens": 96,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010014
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 104,
+          "output_tokens": 48,
+          "cache_read_tokens": 3738,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003589
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video explains the dot-com bubble (1997\u20132002), its speculative rise and burst, and examples like Pets.com and Amazon."
+  },
+  {
+    "qid": "042-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.017308,
+    "wall_s": 4.2,
+    "detail": {
+      "usd": 0.017308,
+      "calls": 2,
+      "input_tokens": 1061,
+      "output_tokens": 120,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 1861,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 969,
+          "output_tokens": 69,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003942
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 92,
+          "output_tokens": 51,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 1861,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013366
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. At [0:51] the narration states \"The smaller of the two will become the Moon,\" indicating two bodies result from the collision\u2014Earth and the Moon."
+  },
+  {
+    "qid": "042-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.006764,
+    "wall_s": 3.0,
+    "detail": {
+      "usd": 0.006764,
+      "calls": 2,
+      "input_tokens": 1115,
+      "output_tokens": 114,
+      "cache_read_tokens": 1861,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 996,
+          "output_tokens": 60,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003888
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 119,
+          "output_tokens": 54,
+          "cache_read_tokens": 1861,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002876
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video explains the Moon's formation, noting \"the smaller of the two will become the Moon\" and understanding \"the intertwined history of Earth and the Moon.\""
+  },
+  {
+    "qid": "042-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.007206,
+    "wall_s": 4.2,
+    "detail": {
+      "usd": 0.007206,
+      "calls": 2,
+      "input_tokens": 1083,
+      "output_tokens": 144,
+      "cache_read_tokens": 1861,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 980,
+          "output_tokens": 78,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00411
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 103,
+          "output_tokens": 66,
+          "cache_read_tokens": 1861,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003095
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video depicts cosmic events like the Moon's formation and celestial bodies in deep space\u2014phenomena that cannot be filmed directly\u2014so it was most likely created using computer simulation/animation."
+  },
+  {
+    "qid": "045-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.029973,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.029973,
+      "calls": 2,
+      "input_tokens": 2381,
+      "output_tokens": 145,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3139,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2268,
+          "output_tokens": 64,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007764
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 113,
+          "output_tokens": 81,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3139,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.022209
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video repeatedly depicts a total solar eclipse, with the Moon blocking the Sun and its corona visible (e.g., [0:23], [0:36] \"TEMPERATURES MAY DROP DURING TOTALITY\")."
+  },
+  {
+    "qid": "045-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.011813,
+    "wall_s": 6.0,
+    "detail": {
+      "usd": 0.011813,
+      "calls": 2,
+      "input_tokens": 2427,
+      "output_tokens": 126,
+      "cache_read_tokens": 3139,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2291,
+          "output_tokens": 46,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007563
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 136,
+          "output_tokens": 80,
+          "cache_read_tokens": 3139,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004249
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video describes \"shadow bands\" also called \"shadow snakes\" (an optical phenomenon), not actual snakes, while temperature drops, planets/stars, and shadow bands are all explicitly mentioned [0:21\u20130:59]."
+  },
+  {
+    "qid": "045-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.024414,
+    "wall_s": 6.3,
+    "detail": {
+      "usd": 0.024414,
+      "calls": 3,
+      "input_tokens": 2373,
+      "output_tokens": 200,
+      "cache_read_tokens": 6278,
+      "cache_write_tokens": 1521,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2263,
+          "output_tokens": 57,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007644
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 110,
+          "output_tokens": 143,
+          "cache_read_tokens": 6278,
+          "cache_write_tokens": 1521,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.01677
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. The crowd is seated in tiered rows that appear to be stadium bleacher seating as they gaze upward at the eclipse (9-11s)."
+  },
+  {
+    "qid": "046-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.022149,
+    "wall_s": 3.7,
+    "detail": {
+      "usd": 0.022149,
+      "calls": 2,
+      "input_tokens": 1589,
+      "output_tokens": 133,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2315,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1460,
+          "output_tokens": 67,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005385
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 129,
+          "output_tokens": 66,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2315,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016764
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video calls on astronomers to make their disciplines sustainable and lead the way to a sustainable future (0:51\u20131:11), framing the role of astronomical disciplines in addressing climate change."
+  },
+  {
+    "qid": "046-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.007743,
+    "wall_s": 3.2,
+    "detail": {
+      "usd": 0.007743,
+      "calls": 2,
+      "input_tokens": 1533,
+      "output_tokens": 95,
+      "cache_read_tokens": 2315,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1432,
+          "output_tokens": 59,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005181
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 101,
+          "output_tokens": 36,
+          "cache_read_tokens": 2315,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002562
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The first celestial object shown is a stylized Earth with green continents and blue oceans at [0:10]."
+  },
+  {
+    "qid": "046-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.016737,
+    "wall_s": 6.5,
+    "detail": {
+      "usd": 0.016737,
+      "calls": 3,
+      "input_tokens": 1533,
+      "output_tokens": 244,
+      "cache_read_tokens": 4630,
+      "cache_write_tokens": 723,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1431,
+          "output_tokens": 100,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005793
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 102,
+          "output_tokens": 144,
+          "cache_read_tokens": 4630,
+          "cache_write_tokens": 723,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010944
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "D. The video shows no human instructor\u2014only an animated hand holding a photo (one scenario) and otherwise logos, Earth, and a banner\u2014so a person-like figure appears in essentially 2 distinct framings, with no multi-scenario instructor present."
+  },
+  {
+    "qid": "048-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.017906,
+    "wall_s": 4.3,
+    "detail": {
+      "usd": 0.017906,
+      "calls": 2,
+      "input_tokens": 1141,
+      "output_tokens": 148,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 1786,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 971,
+          "output_tokens": 72,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003993
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 170,
+          "output_tokens": 76,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 1786,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013913
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video depicts the well-known future collision between the Milky Way and the Andromeda Galaxy, which is projected to occur in roughly 4-5 billion years, matching the timeline and galaxy-collision visuals shown."
+  },
+  {
+    "qid": "048-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.00685,
+    "wall_s": 3.4,
+    "detail": {
+      "usd": 0.00685,
+      "calls": 2,
+      "input_tokens": 1087,
+      "output_tokens": 116,
+      "cache_read_tokens": 1786,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 944,
+          "output_tokens": 49,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003567
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 143,
+          "output_tokens": 67,
+          "cache_read_tokens": 1786,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003283
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video shows a countdown of billions of years culminating in two spiral galaxies colliding (visible at [0:28]), which depicts the predicted Andromeda\u2013Milky Way galactic collision."
+  },
+  {
+    "qid": "048-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.007964,
+    "wall_s": 4.1,
+    "detail": {
+      "usd": 0.007964,
+      "calls": 2,
+      "input_tokens": 1233,
+      "output_tokens": 150,
+      "cache_read_tokens": 1786,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1017,
+          "output_tokens": 81,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004266
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 216,
+          "output_tokens": 69,
+          "cache_read_tokens": 1786,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003698
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video depicts the Milky Way\u2013Andromeda collision timeline without directly describing M33, so the only inference is that Triangulum may be a companion galaxy influenced by Andromeda's gravity."
+  },
+  {
+    "qid": "049-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.015017,
+    "wall_s": 2.8,
+    "detail": {
+      "usd": 0.015017,
+      "calls": 2,
+      "input_tokens": 908,
+      "output_tokens": 105,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 1582,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 753,
+          "output_tokens": 53,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003054
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 155,
+          "output_tokens": 52,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 1582,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.011963
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The index consistently describes the astronaut performing a spacewalk (extravehicular activity) while tethered to the vessel, as noted at [0:00]."
+  },
+  {
+    "qid": "049-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.031383,
+    "wall_s": 8.0,
+    "detail": {
+      "usd": 0.031383,
+      "calls": 3,
+      "input_tokens": 934,
+      "output_tokens": 329,
+      "cache_read_tokens": 3164,
+      "cache_write_tokens": 3169,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 765,
+          "output_tokens": 137,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00435
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 169,
+          "output_tokens": 192,
+          "cache_read_tokens": 3164,
+          "cache_write_tokens": 3169,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.027033
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "B. The astronaut floats untethered with a Manned Maneuvering Unit (jetpack-like device) on their back, as seen at t=46\u201358s, which enables independent movement in space."
+  },
+  {
+    "qid": "049-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.039803,
+    "wall_s": 15.4,
+    "detail": {
+      "usd": 0.039803,
+      "calls": 3,
+      "input_tokens": 912,
+      "output_tokens": 891,
+      "cache_read_tokens": 3164,
+      "cache_write_tokens": 3159,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 754,
+          "output_tokens": 685,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.012537
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 158,
+          "output_tokens": 206,
+          "cache_read_tokens": 3164,
+          "cache_write_tokens": 3159,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.027266
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "D. The frames show an astronaut floating freely far from the spacecraft above Earth with no visible tether, wearing a Manned Maneuvering Unit\u2014depicting Bruce McCandless's first untethered spacewalk."
+  },
+  {
+    "qid": "052-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.025726,
+    "wall_s": 3.5,
+    "detail": {
+      "usd": 0.025726,
+      "calls": 2,
+      "input_tokens": 2025,
+      "output_tokens": 127,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2729,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1885,
+          "output_tokens": 86,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006945
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 140,
+          "output_tokens": 41,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2729,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.018781
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript states Mount Fuji \"can be seen from there [Tokyo] on a clear day\" (0:21)."
+  },
+  {
+    "qid": "052-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.029191,
+    "wall_s": 6.1,
+    "detail": {
+      "usd": 0.029191,
+      "calls": 3,
+      "input_tokens": 1929,
+      "output_tokens": 181,
+      "cache_read_tokens": 5458,
+      "cache_write_tokens": 2567,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1836,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005628
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 93,
+          "output_tokens": 173,
+          "cache_read_tokens": 5458,
+          "cache_write_tokens": 2567,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.023563
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. There are five climbers visible at 0:40\u2014the woman in front, and four others (two men and a woman with a pink top plus another) ascending the trail behind her."
+  },
+  {
+    "qid": "052-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.028696,
+    "wall_s": 7.7,
+    "detail": {
+      "usd": 0.028696,
+      "calls": 3,
+      "input_tokens": 1939,
+      "output_tokens": 278,
+      "cache_read_tokens": 5458,
+      "cache_write_tokens": 2151,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1841,
+          "output_tokens": 44,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006183
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 98,
+          "output_tokens": 234,
+          "cache_read_tokens": 5458,
+          "cache_write_tokens": 2151,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.022513
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "These are hikers, not painters. The question likely refers to the artist/woodblock print context, but there's no painter visible. Among the people shown, the central figure wears blue.\n\nA. The central hiker figure (the only figure that could be construed as a \"painter\" among visible people) is wearing a blue top."
+  },
+  {
+    "qid": "054-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.032696,
+    "wall_s": 4.5,
+    "detail": {
+      "usd": 0.032696,
+      "calls": 2,
+      "input_tokens": 2622,
+      "output_tokens": 204,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3281,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2460,
+          "output_tokens": 110,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00903
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 162,
+          "output_tokens": 94,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3281,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.023666
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video describes El Ni\u00f1o bringing flooding to the southern U.S. and warmer conditions in the north, while La Ni\u00f1a brings drought to the southern U.S. and cooler, wetter conditions in the Pacific Northwest\u2014opposite effects, not similar (0:29\u20131:27)."
+  },
+  {
+    "qid": "054-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.011628,
+    "wall_s": 3.8,
+    "detail": {
+      "usd": 0.011628,
+      "calls": 2,
+      "input_tokens": 2554,
+      "output_tokens": 102,
+      "cache_read_tokens": 3281,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2426,
+          "output_tokens": 48,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007998
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 128,
+          "output_tokens": 54,
+          "cache_read_tokens": 3281,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003631
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The transcript states that during El Ni\u00f1o \"the trade winds weaken,\" causing warm surface water to move eastward (0:06\u20130:29), which is the primary cause."
+  },
+  {
+    "qid": "054-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.011817,
+    "wall_s": 3.3,
+    "detail": {
+      "usd": 0.011817,
+      "calls": 2,
+      "input_tokens": 2580,
+      "output_tokens": 109,
+      "cache_read_tokens": 3281,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2439,
+          "output_tokens": 57,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008172
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 141,
+          "output_tokens": 52,
+          "cache_read_tokens": 3281,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003645
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript describes trade winds \"restart the upwelling of cool water towards the surface,\" meaning cold water rises from the deeper sea (0:52)."
+  },
+  {
+    "qid": "055-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.026427,
+    "wall_s": 6.9,
+    "detail": {
+      "usd": 0.026427,
+      "calls": 2,
+      "input_tokens": 1571,
+      "output_tokens": 415,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2355,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1471,
+          "output_tokens": 358,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.009783
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 100,
+          "output_tokens": 57,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2355,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016644
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The opening world map shows five white dashed oval outlines highlighting different geographic regions (North America, South America, Europe, Africa, and Asia) at 0:00."
+  },
+  {
+    "qid": "055-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.009357,
+    "wall_s": 3.9,
+    "detail": {
+      "usd": 0.009357,
+      "calls": 2,
+      "input_tokens": 1739,
+      "output_tokens": 131,
+      "cache_read_tokens": 2355,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1555,
+          "output_tokens": 68,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005685
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 184,
+          "output_tokens": 63,
+          "cache_read_tokens": 2355,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003672
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video explains that warm ocean currents carry water away from the equator to places where the air is colder than this warm water (0:21\u20130:46), meaning the current brings hot water from a warmer place."
+  },
+  {
+    "qid": "055-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.012842,
+    "wall_s": 6.8,
+    "detail": {
+      "usd": 0.012842,
+      "calls": 2,
+      "input_tokens": 1575,
+      "output_tokens": 413,
+      "cache_read_tokens": 2355,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1473,
+          "output_tokens": 359,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.009804
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 102,
+          "output_tokens": 54,
+          "cache_read_tokens": 2355,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003038
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video explains that ocean water is warmest near the equator and coldest near the poles, so the red segments in the circles most likely represent heat/warm water temperature."
+  },
+  {
+    "qid": "057-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.045926,
+    "wall_s": 10.1,
+    "detail": {
+      "usd": 0.045926,
+      "calls": 3,
+      "input_tokens": 1215,
+      "output_tokens": 426,
+      "cache_read_tokens": 1975,
+      "cache_write_tokens": 5190,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1102,
+          "output_tokens": 202,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006336
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 113,
+          "output_tokens": 224,
+          "cache_read_tokens": 1975,
+          "cache_write_tokens": 5190,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.03959
+        }
+      ],
+      "frames_fetched": 5
+    },
+    "answer_text": "C. The three curved lines rising from the ocean surface (visible at 0:24) represent water vapor from evaporation, as the sun warms the water turning it into water vapor that rises into the sky."
+  },
+  {
+    "qid": "057-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.007814,
+    "wall_s": 4.6,
+    "detail": {
+      "usd": 0.007814,
+      "calls": 2,
+      "input_tokens": 1303,
+      "output_tokens": 135,
+      "cache_read_tokens": 1975,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1147,
+          "output_tokens": 77,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004596
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 156,
+          "output_tokens": 58,
+          "cache_read_tokens": 1975,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003218
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript describes evaporation first (sun warms water into vapor), then condensation (vapor cools into droplets), and finally droplets grow and fall as raindrops."
+  },
+  {
+    "qid": "057-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.009247,
+    "wall_s": 4.1,
+    "detail": {
+      "usd": 0.009247,
+      "calls": 2,
+      "input_tokens": 1285,
+      "output_tokens": 232,
+      "cache_read_tokens": 1975,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1138,
+          "output_tokens": 169,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005949
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 147,
+          "output_tokens": 63,
+          "cache_read_tokens": 1975,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003298
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript at 0:50 states raindrops \"even grow as they bump into one another, on their journey from the cloud to the ground,\" confirming they continue to grow after leaving the cloud."
+  },
+  {
+    "qid": "058-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.024712,
+    "wall_s": 4.5,
+    "detail": {
+      "usd": 0.024712,
+      "calls": 2,
+      "input_tokens": 1866,
+      "output_tokens": 159,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2478,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1680,
+          "output_tokens": 72,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00612
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 186,
+          "output_tokens": 87,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2478,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.018592
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The lamp heats that end of the aquarium, creating warm/low-pressure air, and since wind (smoke) moves from high pressure to low pressure\u2014i.e., cool air toward where the warm air is\u2014the rising temperature near the lamp is the direct cause."
+  },
+  {
+    "qid": "058-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.009441,
+    "wall_s": 4.4,
+    "detail": {
+      "usd": 0.009441,
+      "calls": 2,
+      "input_tokens": 1684,
+      "output_tokens": 166,
+      "cache_read_tokens": 2478,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1589,
+          "output_tokens": 119,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006552
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 95,
+          "output_tokens": 47,
+          "cache_read_tokens": 2478,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002889
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The caption at [0:10] describes \"purple and blue rolling mountains,\" and purple is among the listed options, matching the mountains' color."
+  },
+  {
+    "qid": "058-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.009857,
+    "wall_s": 4.8,
+    "detail": {
+      "usd": 0.009857,
+      "calls": 2,
+      "input_tokens": 1808,
+      "output_tokens": 140,
+      "cache_read_tokens": 2478,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1651,
+          "output_tokens": 62,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005883
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 157,
+          "output_tokens": 78,
+          "cache_read_tokens": 2478,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003974
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. At 1:18 the video states that the rotation of the earth, the tilt of the earth relative to the Sun as it orbits, and friction all affect the movement and creation of wind, making the earth's rotation/orbit a stated cause."
+  },
+  {
+    "qid": "061-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.034752,
+    "wall_s": 6.6,
+    "detail": {
+      "usd": 0.034752,
+      "calls": 3,
+      "input_tokens": 2026,
+      "output_tokens": 172,
+      "cache_read_tokens": 2826,
+      "cache_write_tokens": 3716,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1933,
+          "output_tokens": 45,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006474
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 93,
+          "output_tokens": 127,
+          "cache_read_tokens": 2826,
+          "cache_write_tokens": 3716,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.028278
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "There are no red flags visible in any shot of this video. This appears to be an unanswerable/trick question since the video contains no red flags at all.\n\nB. The video is an educational slideshow on international law with no flags of any color appearing in any shot."
+  },
+  {
+    "qid": "061-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.0237,
+    "wall_s": 8.6,
+    "detail": {
+      "usd": 0.0237,
+      "calls": 3,
+      "input_tokens": 2052,
+      "output_tokens": 378,
+      "cache_read_tokens": 5652,
+      "cache_write_tokens": 937,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1946,
+          "output_tokens": 80,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.007038
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 106,
+          "output_tokens": 298,
+          "cache_read_tokens": 5652,
+          "cache_write_tokens": 937,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016662
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "A. The balance scale appears at 0:00, so it WAS featured\u2014wait, the question asks which was NOT; none of the shots show a traffic light, gavel, or magnifying glass, but the balance scale is clearly present, so the absent items are B, C, and D\u2014among these the only one truly tied to law iconography that could be mistaken is absent too; given only the scale is confirmed, the intended answer is B (traffic light).\n\nLet me correct: the balance scale is clearly present, so A is wrong. I need to pick the one not featured.\n\nB. A traffic light does not appear anywhere in the video, whereas the balance scale is clearly shown at 0:00."
+  },
+  {
+    "qid": "061-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.009586,
+    "wall_s": 2.9,
+    "detail": {
+      "usd": 0.009586,
+      "calls": 2,
+      "input_tokens": 2100,
+      "output_tokens": 83,
+      "cache_read_tokens": 2826,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1971,
+          "output_tokens": 46,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006603
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 129,
+          "output_tokens": 37,
+          "cache_read_tokens": 2826,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002983
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The final frame at [1:19] displays \"LEXANIMATA.COM\" at the top of the screen."
+  },
+  {
+    "qid": "062-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.020679,
+    "wall_s": 3.6,
+    "detail": {
+      "usd": 0.020679,
+      "calls": 2,
+      "input_tokens": 1647,
+      "output_tokens": 93,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2107,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1385,
+          "output_tokens": 28,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004575
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 262,
+          "output_tokens": 65,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2107,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016104
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The focused element moves from bottom left to top left, then center, then top right, then bottom right, and finally to center bottom, matching the displayed layout progression (e.g., 0:00\u20131:00)."
+  },
+  {
+    "qid": "062-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.013,
+    "wall_s": 7.3,
+    "detail": {
+      "usd": 0.013,
+      "calls": 2,
+      "input_tokens": 1325,
+      "output_tokens": 482,
+      "cache_read_tokens": 2107,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1224,
+          "output_tokens": 428,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010092
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 101,
+          "output_tokens": 54,
+          "cache_read_tokens": 2107,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002909
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video mentions \"World Law\" (0:00 screen text), an \"international police\" / World Police concept, and a single court/World Court (0:04), but never \"World War.\""
+  },
+  {
+    "qid": "062-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.029847,
+    "wall_s": 7.4,
+    "detail": {
+      "usd": 0.029847,
+      "calls": 3,
+      "input_tokens": 1493,
+      "output_tokens": 257,
+      "cache_read_tokens": 4214,
+      "cache_write_tokens": 2703,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1307,
+          "output_tokens": 43,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004566
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 186,
+          "output_tokens": 214,
+          "cache_read_tokens": 4214,
+          "cache_write_tokens": 2703,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.025281
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "C. The video displays no Portugal GDP figure at all\u2014only a Portuguese flag and general international-law content\u2014so none of the options are actually supported by the video."
+  },
+  {
+    "qid": "063-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.027289,
+    "wall_s": 6.9,
+    "detail": {
+      "usd": 0.027289,
+      "calls": 3,
+      "input_tokens": 1198,
+      "output_tokens": 205,
+      "cache_read_tokens": 1981,
+      "cache_write_tokens": 2854,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1097,
+          "output_tokens": 46,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003981
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 101,
+          "output_tokens": 159,
+          "cache_read_tokens": 1981,
+          "cache_write_tokens": 2854,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.023308
+        }
+      ],
+      "frames_fetched": 2
+    },
+    "answer_text": "A. The courtroom scene shows 5 individuals: the judge at the bench, a man at the podium, and three seated figures in the foreground."
+  },
+  {
+    "qid": "063-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.013492,
+    "wall_s": 7.6,
+    "detail": {
+      "usd": 0.013492,
+      "calls": 3,
+      "input_tokens": 1286,
+      "output_tokens": 201,
+      "cache_read_tokens": 3962,
+      "cache_write_tokens": 502,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1141,
+          "output_tokens": 80,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004623
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 145,
+          "output_tokens": 121,
+          "cache_read_tokens": 3962,
+          "cache_write_tokens": 502,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008868
+        }
+      ],
+      "frames_fetched": 3
+    },
+    "answer_text": "C. The video contains only documents, a geometric diagram, and a logo\u2014no double-story building appears, so nothing is happening to any such building."
+  },
+  {
+    "qid": "063-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.007432,
+    "wall_s": 4.3,
+    "detail": {
+      "usd": 0.007432,
+      "calls": 2,
+      "input_tokens": 1200,
+      "output_tokens": 128,
+      "cache_read_tokens": 1981,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1099,
+          "output_tokens": 56,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004137
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 101,
+          "output_tokens": 72,
+          "cache_read_tokens": 1981,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003296
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video introduces the Prize Cases, the first Civil War legal battle to reach the U.S. Supreme Court, involving the seizure of four vessels during Lincoln's blockade (0:00\u20131:18)."
+  },
+  {
+    "qid": "065-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.02352,
+    "wall_s": 3.6,
+    "detail": {
+      "usd": 0.02352,
+      "calls": 2,
+      "input_tokens": 1683,
+      "output_tokens": 154,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2437,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1568,
+          "output_tokens": 84,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005964
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 115,
+          "output_tokens": 70,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2437,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.017556
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video's opening title and narration introduce \"the roles of the different people in a courtroom\" (0:03), describing judges, clerks, lawyers, bailiffs, prosecutors, witnesses, and others."
+  },
+  {
+    "qid": "065-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.041739,
+    "wall_s": 9.6,
+    "detail": {
+      "usd": 0.041739,
+      "calls": 3,
+      "input_tokens": 1697,
+      "output_tokens": 521,
+      "cache_read_tokens": 4874,
+      "cache_write_tokens": 3792,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1574,
+          "output_tokens": 276,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008862
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 123,
+          "output_tokens": 245,
+          "cache_read_tokens": 4874,
+          "cache_write_tokens": 3792,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.032877
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "The woman with short brown hair, black robe, and white collar/scarf is seated at the elevated bench presiding over the courtroom.\n\nC. The woman with short hair, black top, and white scarf/collar sits at the elevated bench presiding over the courtroom (seen at 0:24\u20130:28), identifying her as the judge."
+  },
+  {
+    "qid": "065-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.028282,
+    "wall_s": 7.0,
+    "detail": {
+      "usd": 0.028282,
+      "calls": 3,
+      "input_tokens": 1647,
+      "output_tokens": 186,
+      "cache_read_tokens": 4874,
+      "cache_write_tokens": 2582,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1549,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004767
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 98,
+          "output_tokens": 178,
+          "cache_read_tokens": 4874,
+          "cache_write_tokens": 2582,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.023515
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "A. Two people are holding cameras\u2014the man in the striped suit (center-left) and the woman in red (center-right)\u2014as seen at [0:44]."
+  },
+  {
+    "qid": "067-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.023359,
+    "wall_s": 3.6,
+    "detail": {
+      "usd": 0.023359,
+      "calls": 2,
+      "input_tokens": 1793,
+      "output_tokens": 89,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2571,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1690,
+          "output_tokens": 52,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00585
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 103,
+          "output_tokens": 37,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2571,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.017509
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The opening frame at [0:00] shows a map of Ireland with Dublin and Tralee marked."
+  },
+  {
+    "qid": "067-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.008991,
+    "wall_s": 3.1,
+    "detail": {
+      "usd": 0.008991,
+      "calls": 2,
+      "input_tokens": 1803,
+      "output_tokens": 112,
+      "cache_read_tokens": 2571,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1695,
+          "output_tokens": 72,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006165
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 108,
+          "output_tokens": 40,
+          "cache_read_tokens": 2571,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002825
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The hand holds a blue crayon for drawing, as shown at [0:18], [0:19], and [1:12]."
+  },
+  {
+    "qid": "067-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.00819,
+    "wall_s": 3.0,
+    "detail": {
+      "usd": 0.00819,
+      "calls": 2,
+      "input_tokens": 1793,
+      "output_tokens": 56,
+      "cache_read_tokens": 2571,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1690,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00519
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 103,
+          "output_tokens": 48,
+          "cache_read_tokens": 2571,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. Only Dr. Niall Muldoon, the Ombudsman for Children, appears as an adult man in his headshot at [1:06]."
+  },
+  {
+    "qid": "069-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.021434,
+    "wall_s": 3.3,
+    "detail": {
+      "usd": 0.021434,
+      "calls": 2,
+      "input_tokens": 1528,
+      "output_tokens": 107,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2330,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1437,
+          "output_tokens": 57,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005166
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 91,
+          "output_tokens": 50,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2330,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.016268
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The narration repeatedly states employment laws fall into \"four areas of the regulatory environment,\" and the video sequentially numbers 1 through 4."
+  },
+  {
+    "qid": "069-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.027632,
+    "wall_s": 7.2,
+    "detail": {
+      "usd": 0.027632,
+      "calls": 3,
+      "input_tokens": 1560,
+      "output_tokens": 312,
+      "cache_read_tokens": 4660,
+      "cache_write_tokens": 2217,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1452,
+          "output_tokens": 125,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006231
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 108,
+          "output_tokens": 187,
+          "cache_read_tokens": 4660,
+          "cache_write_tokens": 2217,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.021401
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "C. At t=35.8s next to the number \"2,\" the illustration is a tied sack with a currency symbol, clearly depicting a money bag representing compensation laws."
+  },
+  {
+    "qid": "069-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.008553,
+    "wall_s": 3.8,
+    "detail": {
+      "usd": 0.008553,
+      "calls": 2,
+      "input_tokens": 1556,
+      "output_tokens": 134,
+      "cache_read_tokens": 2330,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1451,
+          "output_tokens": 84,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005613
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 105,
+          "output_tokens": 50,
+          "cache_read_tokens": 2330,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00294
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. At [0:01], the first thing drawn is two hands holding a house/building structure, which matches the \"two hands holding\" depiction better than the other options."
+  },
+  {
+    "qid": "072-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.044761,
+    "wall_s": 7.8,
+    "detail": {
+      "usd": 0.044761,
+      "calls": 3,
+      "input_tokens": 1277,
+      "output_tokens": 313,
+      "cache_read_tokens": 2051,
+      "cache_write_tokens": 5254,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1171,
+          "output_tokens": 97,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004968
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 106,
+          "output_tokens": 216,
+          "cache_read_tokens": 2051,
+          "cache_write_tokens": 5254,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.039793
+        }
+      ],
+      "frames_fetched": 5
+    },
+    "answer_text": "A. The cyclist wears a helmet, elbow pads, and knee pads (visible at 1:01 and 1:10), but his hands are bare on the handlebars\u2014no gloves."
+  },
+  {
+    "qid": "072-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.062352,
+    "wall_s": 12.6,
+    "detail": {
+      "usd": 0.062352,
+      "calls": 4,
+      "input_tokens": 1525,
+      "output_tokens": 534,
+      "cache_read_tokens": 8878,
+      "cache_write_tokens": 6425,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1294,
+          "output_tokens": 63,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004827
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 3,
+          "input_tokens": 231,
+          "output_tokens": 471,
+          "cache_read_tokens": 8878,
+          "cache_write_tokens": 6425,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.057525
+        }
+      ],
+      "frames_fetched": 10
+    },
+    "answer_text": "In the close-up (40.5s\u201346.5s), the cyclist faces right; the near foot (the left foot) is on the pedal/raised position area, and the rear foot (right) is on the ground. Looking at the arrows: the back foot (right) touches the ground while the front foot (left) rests on the pedal.\n\nD. The animation shows the cyclist seated with the right (rear) foot on the ground and the left (front) foot resting on the pedal (seen in the close-up at ~0:40\u20130:46)."
+  },
+  {
+    "qid": "072-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.009275,
+    "wall_s": 3.9,
+    "detail": {
+      "usd": 0.009275,
+      "calls": 2,
+      "input_tokens": 1493,
+      "output_tokens": 183,
+      "cache_read_tokens": 2051,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1280,
+          "output_tokens": 123,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005685
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 213,
+          "output_tokens": 60,
+          "cache_read_tokens": 2051,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00359
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video first finds a flat open area with safety gear (c), adjusts the seat (e), practices braking while walking (a), glides to balance (b), then starts pedaling (d)."
+  },
+  {
+    "qid": "073-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.033641,
+    "wall_s": 4.2,
+    "detail": {
+      "usd": 0.033641,
+      "calls": 2,
+      "input_tokens": 2749,
+      "output_tokens": 206,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3465,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2615,
+          "output_tokens": 168,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010365
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 134,
+          "output_tokens": 38,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3465,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.023276
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At [0:29], the laptop screen displays a product showcase with an iPhone 6(s) image visible."
+  },
+  {
+    "qid": "073-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.033844,
+    "wall_s": 6.6,
+    "detail": {
+      "usd": 0.033844,
+      "calls": 3,
+      "input_tokens": 2847,
+      "output_tokens": 211,
+      "cache_read_tokens": 6930,
+      "cache_write_tokens": 2660,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2663,
+          "output_tokens": 43,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008634
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 184,
+          "output_tokens": 168,
+          "cache_read_tokens": 6930,
+          "cache_write_tokens": 2660,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.02521
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "B. The Keyboard Cleaner icon at the bottom right (t=61.8s) shows the black letters \"kc\" on a light background."
+  },
+  {
+    "qid": "073-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.012529,
+    "wall_s": 3.1,
+    "detail": {
+      "usd": 0.012529,
+      "calls": 2,
+      "input_tokens": 2847,
+      "output_tokens": 98,
+      "cache_read_tokens": 3465,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2664,
+          "output_tokens": 56,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008832
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 183,
+          "output_tokens": 42,
+          "cache_read_tokens": 3465,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003698
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. At [0:29] and [1:03] he wipes the MacBook keyboard with a yellow microfiber cloth."
+  },
+  {
+    "qid": "079-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.0704,
+    "wall_s": 9.1,
+    "detail": {
+      "usd": 0.0704,
+      "calls": 3,
+      "input_tokens": 3269,
+      "output_tokens": 387,
+      "cache_read_tokens": 4035,
+      "cache_write_tokens": 8104,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3159,
+          "output_tokens": 197,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.012432
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 110,
+          "output_tokens": 190,
+          "cache_read_tokens": 4035,
+          "cache_write_tokens": 8104,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.057967
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "B. Potato is not visible \u2014 the intro shows peppers [0:00], green beans [0:00], and carrots [2.2s], but no potatoes among the displayed produce."
+  },
+  {
+    "qid": "079-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.040287,
+    "wall_s": 11.1,
+    "detail": {
+      "usd": 0.040287,
+      "calls": 3,
+      "input_tokens": 3327,
+      "output_tokens": 513,
+      "cache_read_tokens": 8070,
+      "cache_write_tokens": 2630,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3188,
+          "output_tokens": 327,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.014469
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 139,
+          "output_tokens": 186,
+          "cache_read_tokens": 8070,
+          "cache_write_tokens": 2630,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.025818
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "C. The tomatoes are displayed in boxes/baskets arranged in four distinct rows across the table, as seen at 0:37-0:38."
+  },
+  {
+    "qid": "079-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.016358,
+    "wall_s": 5.3,
+    "detail": {
+      "usd": 0.016358,
+      "calls": 2,
+      "input_tokens": 3503,
+      "output_tokens": 166,
+      "cache_read_tokens": 4035,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 3277,
+          "output_tokens": 77,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010986
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 226,
+          "output_tokens": 89,
+          "cache_read_tokens": 4035,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.005373
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript lists them as 1) eat at home, 2) meal plan, 3) cook once eat twice, 4) buy in bulk, 5) clip coupons, 6) freeze leftovers, matching (b)(e)(d)(f)(a)(c)."
+  },
+  {
+    "qid": "086-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.053487,
+    "wall_s": 5.0,
+    "detail": {
+      "usd": 0.053487,
+      "calls": 2,
+      "input_tokens": 4764,
+      "output_tokens": 241,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 5448,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 4614,
+          "output_tokens": 118,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.015612
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 150,
+          "output_tokens": 123,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 5448,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.037875
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video shows \"SAE Flexible Locking/Undocking Platform\" with \"Accurate positioning empowered by AI technology\" [0:27\u20130:29], indicating the machine moves the car to the precise position; options A (13 batteries, not 15), B (Power Swap Auto Park parks automatically), and D (self-service in-car without getting off) are all contradicted."
+  },
+  {
+    "qid": "086-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.019663,
+    "wall_s": 4.4,
+    "detail": {
+      "usd": 0.019663,
+      "calls": 2,
+      "input_tokens": 4692,
+      "output_tokens": 131,
+      "cache_read_tokens": 5448,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 4578,
+          "output_tokens": 64,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.014694
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 114,
+          "output_tokens": 67,
+          "cache_read_tokens": 5448,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004969
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video demonstrates NIO's automated battery swap process for the ES8, showing self-service in-car activation, the locking/undocking platform, and battery compartment swapping (0:08\u20131:03)."
+  },
+  {
+    "qid": "086-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.018462,
+    "wall_s": 3.0,
+    "detail": {
+      "usd": 0.018462,
+      "calls": 2,
+      "input_tokens": 4668,
+      "output_tokens": 80,
+      "cache_read_tokens": 5448,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 4566,
+          "output_tokens": 47,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.014403
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 102,
+          "output_tokens": 33,
+          "cache_read_tokens": 5448,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004059
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The registration plate reads \"es8\", as seen clearly at [0:25] and [1:10]."
+  },
+  {
+    "qid": "091-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.035187,
+    "wall_s": 4.8,
+    "detail": {
+      "usd": 0.035187,
+      "calls": 2,
+      "input_tokens": 2781,
+      "output_tokens": 236,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3575,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2686,
+          "output_tokens": 159,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010443
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 95,
+          "output_tokens": 77,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3575,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.024744
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video is titled \"EMOTIONS\" and repeatedly shows the girl with closed eyes, hands covering her face in distress [0:11, 0:26], and a concerned/sad expression [0:29], conveying sadness."
+  },
+  {
+    "qid": "091-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.06415,
+    "wall_s": 14.7,
+    "detail": {
+      "usd": 0.06415,
+      "calls": 4,
+      "input_tokens": 2785,
+      "output_tokens": 636,
+      "cache_read_tokens": 14780,
+      "cache_write_tokens": 5182,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2686,
+          "output_tokens": 8,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008178
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 3,
+          "input_tokens": 99,
+          "output_tokens": 628,
+          "cache_read_tokens": 14780,
+          "cache_write_tokens": 5182,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.055973
+        }
+      ],
+      "frames_fetched": 10
+    },
+    "answer_text": "The \"butterfly\" appears as a hair clip in the repeating girl scene. The scene (described as the girl with bow/flowing lines at 0:09 and 0:24) repeats. Let me verify the count more carefully by checking the first scene for a butterfly clip and whether these are the only occurrences.\n\nThe butterfly hair clip appears at 10.3s and the scene repeats around 24.5s. Given the repeating structure, I'll check the 0:00-0:05 region for a possible earlier butterfly occurrence and count distinct appearances.\n\nBased on my evidence: the girl-with-butterfly-clip scene appears at ~10s and ~24s. These animation scenes cycle through multiple characters. Given the loop structure and options, the butterfly appears a small number of times.\n\nB. 4. The butterfly (seen as the hair clip on the pink-haired girl at 10.3s and recurring in the looping scene set at ~24.5s) appears across the two cycle repetitions, totaling four occurrences."
+  },
+  {
+    "qid": "091-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.076205,
+    "wall_s": 16.1,
+    "detail": {
+      "usd": 0.076205,
+      "calls": 5,
+      "input_tokens": 2803,
+      "output_tokens": 701,
+      "cache_read_tokens": 21638,
+      "cache_write_tokens": 6359,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2694,
+          "output_tokens": 51,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008847
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 4,
+          "input_tokens": 109,
+          "output_tokens": 650,
+          "cache_read_tokens": 21638,
+          "cache_write_tokens": 6359,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.067358
+        }
+      ],
+      "frames_fetched": 35
+    },
+    "answer_text": "These objects (the organisms, shards) are hand-drawn 2D with line art, not true 3D-rendered graphics. The clock at shot 0 is the one with genuine 3D rendering (perspective, gradient shading, no outline). Among all shots, only the clock shows true 3D rendering.\n\nA. Only the opening clock (shot 0 @ ~1.9s) is a true three-dimensional rendered graphic with perspective and gradient shading, while the other objects are flat hand-drawn 2D anime art."
+  },
+  {
+    "qid": "095-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.048471,
+    "wall_s": 6.0,
+    "detail": {
+      "usd": 0.048471,
+      "calls": 3,
+      "input_tokens": 1918,
+      "output_tokens": 231,
+      "cache_read_tokens": 2660,
+      "cache_write_tokens": 5766,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1796,
+          "output_tokens": 67,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006393
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 122,
+          "output_tokens": 164,
+          "cache_read_tokens": 2660,
+          "cache_write_tokens": 5766,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.042078
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "C. At 39.3s\u201340.7s the two ghost cowboys ride their horses with open, singing mouths, depicting them singing while horse riding."
+  },
+  {
+    "qid": "095-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.034107,
+    "wall_s": 11.4,
+    "detail": {
+      "usd": 0.034107,
+      "calls": 3,
+      "input_tokens": 1906,
+      "output_tokens": 541,
+      "cache_read_tokens": 5320,
+      "cache_write_tokens": 2474,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1790,
+          "output_tokens": 349,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.010605
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 116,
+          "output_tokens": 192,
+          "cache_read_tokens": 5320,
+          "cache_write_tokens": 2474,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.023503
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "D. The dark creature with glowing red eyes, pointed ears, and fanged snout chasing the two ghost cowboys (seen clearly at 0:45\u20130:52) is a wolf."
+  },
+  {
+    "qid": "095-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.030006,
+    "wall_s": 9.4,
+    "detail": {
+      "usd": 0.030006,
+      "calls": 3,
+      "input_tokens": 1906,
+      "output_tokens": 349,
+      "cache_read_tokens": 5320,
+      "cache_write_tokens": 2125,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1790,
+          "output_tokens": 61,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006285
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 116,
+          "output_tokens": 288,
+          "cache_read_tokens": 5320,
+          "cache_write_tokens": 2125,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.023721
+        }
+      ],
+      "frames_fetched": 4
+    },
+    "answer_text": "The two ghost cowboys appear to be crying/distressed while riding, which suggests conflict. Given the WANTED poster and the chase, this appears to be a fight/quarrel context, but the riding scene itself shows them frightened. Let me rely on the given options and the visual\u2014they are crying with tears, suggesting they are not happy together.\n\nBased on the available evidence, the crying expressions during riding most align with quarrelling.\n\nD. During the horse-riding scene (0:39\u20130:41), both ghost cowboys ride with distressed, tearful expressions, indicating they quarrel while riding."
+  },
+  {
+    "qid": "096-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.020393,
+    "wall_s": 3.3,
+    "detail": {
+      "usd": 0.020393,
+      "calls": 2,
+      "input_tokens": 1394,
+      "output_tokens": 122,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2174,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1292,
+          "output_tokens": 63,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004821
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 102,
+          "output_tokens": 59,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 2174,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.015572
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video repeatedly depicts the character as a dragon with scales, wings, horns, and sharp teeth (e.g., [0:00], [0:12], [0:18])."
+  },
+  {
+    "qid": "096-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.007892,
+    "wall_s": 3.5,
+    "detail": {
+      "usd": 0.007892,
+      "calls": 2,
+      "input_tokens": 1390,
+      "output_tokens": 121,
+      "cache_read_tokens": 2174,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1290,
+          "output_tokens": 59,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004755
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 100,
+          "output_tokens": 62,
+          "cache_read_tokens": 2174,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003137
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The creature appears in mountainous settings throughout\u2014on snowy peaks, basalt formations, and rocky cliffs (e.g., 0:00, 0:11, 0:18)."
+  },
+  {
+    "qid": "096-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.007369,
+    "wall_s": 3.1,
+    "detail": {
+      "usd": 0.007369,
+      "calls": 2,
+      "input_tokens": 1398,
+      "output_tokens": 102,
+      "cache_read_tokens": 2174,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 1294,
+          "output_tokens": 67,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004887
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 104,
+          "output_tokens": 35,
+          "cache_read_tokens": 2174,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.002482
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At [0:03] the creature holds a blue revolver (a pistol) in a desert landscape."
+  },
+  {
+    "qid": "099-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.065351,
+    "wall_s": 7.6,
+    "detail": {
+      "usd": 0.065351,
+      "calls": 3,
+      "input_tokens": 4295,
+      "output_tokens": 269,
+      "cache_read_tokens": 5087,
+      "cache_write_tokens": 6959,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 4198,
+          "output_tokens": 49,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013329
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 97,
+          "output_tokens": 220,
+          "cache_read_tokens": 5087,
+          "cache_write_tokens": 6959,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.052022
+        }
+      ],
+      "frames_fetched": 5
+    },
+    "answer_text": "C. I can identify four distinct Spider-People: Spider-Gwen (10.9s), Pavitr/Spider-Man India (13.5s), Miles Morales (18.7s), plus a third swinger seen with Miles (8.3s) \u2014 four in total across the trailer."
+  },
+  {
+    "qid": "099-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.017966,
+    "wall_s": 4.5,
+    "detail": {
+      "usd": 0.017966,
+      "calls": 2,
+      "input_tokens": 4305,
+      "output_tokens": 119,
+      "cache_read_tokens": 5087,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 4204,
+          "output_tokens": 67,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013617
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 101,
+          "output_tokens": 52,
+          "cache_read_tokens": 5087,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.004348
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The narration repeatedly says \"This is where the traffic is\" (around 1:13), indicating heavy congestion throughout Mumbai in the scene."
+  },
+  {
+    "qid": "099-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.038369,
+    "wall_s": 7.0,
+    "detail": {
+      "usd": 0.038369,
+      "calls": 3,
+      "input_tokens": 4367,
+      "output_tokens": 264,
+      "cache_read_tokens": 10174,
+      "cache_write_tokens": 2236,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 4234,
+          "output_tokens": 66,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013692
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 133,
+          "output_tokens": 198,
+          "cache_read_tokens": 10174,
+          "cache_write_tokens": 2236,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.024677
+        }
+      ],
+      "frames_fetched": 6
+    },
+    "answer_text": "C. As the black Spider-Man (Miles) keeps pouring from the teapot after being corrected about the \"chai tea\" remark, the tea overflows the cup onto the table (visible around 0:53\u20130:57)."
+  },
+  {
+    "qid": "101-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.03295,
+    "wall_s": 5.5,
+    "detail": {
+      "usd": 0.03295,
+      "calls": 2,
+      "input_tokens": 2691,
+      "output_tokens": 146,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3469,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2588,
+          "output_tokens": 66,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008754
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 103,
+          "output_tokens": 80,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 3469,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.024196
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The man answering the phone (\"Hey, Penny, it's Leonard\") is seated with others around a table in what the captions repeatedly describe as a train with red seats and large windows (e.g., [0:00], [0:14], [0:32])."
+  },
+  {
+    "qid": "101-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.012696,
+    "wall_s": 5.1,
+    "detail": {
+      "usd": 0.012696,
+      "calls": 2,
+      "input_tokens": 2783,
+      "output_tokens": 113,
+      "cache_read_tokens": 3469,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2634,
+          "output_tokens": 51,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008667
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 149,
+          "output_tokens": 62,
+          "cache_read_tokens": 3469,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.00403
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At 0:25 he reacts to Penny by saying \"No one calls me Moon Pie but me, ma,\" showing he's upset that she called him \"Moon Pie\" on the phone."
+  },
+  {
+    "qid": "101-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.011961,
+    "wall_s": 4.9,
+    "detail": {
+      "usd": 0.011961,
+      "calls": 2,
+      "input_tokens": 2683,
+      "output_tokens": 98,
+      "cache_read_tokens": 3469,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2584,
+          "output_tokens": 47,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008457
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 99,
+          "output_tokens": 51,
+          "cache_read_tokens": 3469,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003504
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "A. Around 0:25 Leonard hands the phone back (\"Put them back on... I'm back\"), indicating a single phone transfer in the conversation."
+  },
+  {
+    "qid": "103-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.055524,
+    "wall_s": 7.0,
+    "detail": {
+      "usd": 0.055524,
+      "calls": 3,
+      "input_tokens": 2184,
+      "output_tokens": 207,
+      "cache_read_tokens": 2934,
+      "cache_write_tokens": 6783,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2066,
+          "output_tokens": 30,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.006648
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 118,
+          "output_tokens": 177,
+          "cache_read_tokens": 2934,
+          "cache_write_tokens": 6783,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.048876
+        }
+      ],
+      "frames_fetched": 8
+    },
+    "answer_text": "A. The man holds a fork (visible at 5.2s\u20135.8s) and throws it toward the trash bin (6.4s\u20137.1s)."
+  },
+  {
+    "qid": "103-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.033101,
+    "wall_s": 8.9,
+    "detail": {
+      "usd": 0.033101,
+      "calls": 3,
+      "input_tokens": 2152,
+      "output_tokens": 385,
+      "cache_read_tokens": 5868,
+      "cache_write_tokens": 2498,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2050,
+          "output_tokens": 173,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.008745
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 2,
+          "input_tokens": 102,
+          "output_tokens": 212,
+          "cache_read_tokens": 5868,
+          "cache_write_tokens": 2498,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.024356
+        }
+      ],
+      "frames_fetched": 5
+    },
+    "answer_text": "C. The man eats with chopsticks from a Chinese takeout box, lifting up long strands (noodles) at t=29.5s and eating from the pagoda-printed takeout container at t=38.5s."
+  },
+  {
+    "qid": "103-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.016731,
+    "wall_s": 8.9,
+    "detail": {
+      "usd": 0.016731,
+      "calls": 2,
+      "input_tokens": 2236,
+      "output_tokens": 512,
+      "cache_read_tokens": 2934,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "stages": [
+        {
+          "model": "claude-sonnet-5",
+          "calls": 1,
+          "input_tokens": 2093,
+          "output_tokens": 453,
+          "cache_read_tokens": 0,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.013074
+        },
+        {
+          "model": "claude-opus-4-8",
+          "calls": 1,
+          "input_tokens": 143,
+          "output_tokens": 59,
+          "cache_read_tokens": 2934,
+          "cache_write_tokens": 0,
+          "cache_write_1h_tokens": 0,
+          "usd": 0.003657
+        }
+      ],
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The index shows people eating and reacting at the end, but there is no audio transcript or visual evidence explaining the specific reason for any laughter, so the cause cannot be determined."
+  }
+]

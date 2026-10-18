@@ -200,13 +200,8 @@ CASCADE_SYSTEM = (
     "timestamp. You cannot view frames. If the index gives you enough "
     "evidence to answer confidently, answer directly (follow any format the "
     "question requests) and cite timestamps.\n"
-    "MANDATORY ESCALATION: you must escalate, regardless of how suggestive "
-    "the captions are, when the question concerns colors, counts, patterns, "
-    "spatial positions, object identification from appearance, or anything "
-    "whose answer lives in pixels rather than words. Captions are lossy "
-    "one-line summaries, never sufficient evidence for those. Also escalate "
-    "when the question requires seeing frames or you are not fully "
-    "confident.\n"
+    "Escalate when the question requires seeing frames, depends on visual "
+    "details the index does not capture, or you are not confident.\n"
     "Your reply MUST begin with either 'ANSWER:' followed by your answer, or "
     "the single word 'ESCALATE'. Never hedge in prose; if you would hedge, "
     "escalate."
@@ -265,7 +260,32 @@ def ask_cascade(
     # Accept only an explicit confident answer; anything else (ESCALATE,
     # prose hedging, format non-compliance) falls through to the full loop.
     if answer.startswith("ANSWER:"):
-        return answer[len("ANSWER:"):].strip(), CascadeMeter([stage1]), 0
+        candidate = answer[len("ANSWER:"):].strip()
+        if _os.environ.get("VIDEOCTX_CASCADE_VERIFY") != "1":
+            return candidate, CascadeMeter([stage1]), 0
+        # Cheap second opinion: audit the answer against the index; any doubt
+        # (unsupported claim, pixels-needed question) escalates.
+        verify = client.messages.create(
+            model=CASCADE_MODEL,
+            max_tokens=200,
+            system=(
+                "You audit an answer produced ONLY from a video's text index "
+                "(captions, OCR screen text, transcript), with no access to "
+                "frames. Reply PASS only if (a) the index lines quoted or "
+                "referenced genuinely support the answer, and (b) the "
+                "question is answerable without looking at pixels (not a "
+                "color/count/pattern/appearance question the captions merely "
+                "hint at). Otherwise reply FAIL. Reply with exactly one "
+                "word: PASS or FAIL."
+            ),
+            messages=[{"role": "user", "content":
+                       f"VIDEO INDEX:\n{tv}\n\nQUESTION: {question}\n\n"
+                       f"PROPOSED ANSWER: {candidate}"}],
+        )
+        stage1.add(verify.usage)
+        vtext = "".join(b.text for b in verify.content if b.type == "text").strip().upper()
+        if vtext.startswith("PASS"):
+            return candidate, CascadeMeter([stage1]), 0
 
     full_answer, stage2, frames = ask(
         index_dir, ctx, question, model=model, client=client, video_path=video_path)
