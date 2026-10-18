@@ -66,7 +66,13 @@ def method_videoctx(video_path: Path, question: str, options: list[str],
     if any(s.caption is None for s in ctx.shots):
         caption_shots(index_dir, ctx)  # one-time; written back into the index
     prompt = MC_PROMPT.format(question=question, options=_format_options(options))
-    answer, meter, frames = ask(index_dir, ctx, prompt, model=model, video_path=video_path)
+    import os
+
+    if os.environ.get("VIDEOCTX_CASCADE") == "1":
+        from videoctx.query import ask_cascade
+        answer, meter, frames = ask_cascade(index_dir, ctx, prompt, model=model, video_path=video_path)
+    else:
+        answer, meter, frames = ask(index_dir, ctx, prompt, model=model, video_path=video_path)
     return MethodResult(
         answer_text=answer,
         predicted_letter=_extract_letter(answer, len(options)),

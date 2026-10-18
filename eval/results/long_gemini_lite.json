@@ -82,5 +82,33 @@
       "output_tokens": 33
     },
     "answer_text": "A. The video states that the Trans-Siberian Railway was a Russian project connecting Moscow to Vladivostok, not a joint venture between Russia and China."
+  },
+  {
+    "qid": "603-1",
+    "method": "gemini-lite",
+    "predicted": null,
+    "gold": "A",
+    "correct": false,
+    "usd": 8e-06,
+    "wall_s": 375.8,
+    "detail": {
+      "input_tokens": 78,
+      "output_tokens": null
+    },
+    "answer_text": ""
+  },
+  {
+    "qid": "603-2",
+    "method": "gemini-lite",
+    "predicted": null,
+    "gold": "B",
+    "correct": false,
+    "usd": 1.2e-05,
+    "wall_s": 165.7,
+    "detail": {
+      "input_tokens": 121,
+      "output_tokens": null
+    },
+    "answer_text": ""
   }
 ]

@@ -190,6 +190,81 @@ def _frame_blocks(index_dir: Path, frames: list[Keyframe]) -> list[dict]:
     return blocks
 
 
+CASCADE_MODEL = "claude-haiku-4-5"
+
+CASCADE_SYSTEM = (
+    "You answer questions about a video using its index: shot captions, "
+    "verbatim on-screen text (OCR), and the speech transcript, interleaved by "
+    "timestamp. You cannot view frames. If the index gives you enough "
+    "evidence to answer confidently, answer directly (follow any format the "
+    "question requests) and cite timestamps. If the question requires seeing "
+    "frames, depends on visual details the index does not capture, or you "
+    "are not confident, reply with exactly: ESCALATE\n"
+    "Your reply MUST begin with either 'ANSWER:' followed by your answer, or "
+    "the single word 'ESCALATE'. Never hedge in prose; if you would hedge, "
+    "escalate."
+)
+
+
+class CascadeMeter:
+    """Combines per-stage CostMeters (different models bill differently)."""
+
+    def __init__(self, stages: list[CostMeter]):
+        self.stages = stages
+
+    @property
+    def usd(self) -> float:
+        return sum(m.usd for m in self.stages)
+
+    def summary(self) -> dict:
+        agg = {
+            "usd": round(self.usd, 6),
+            "calls": sum(m.calls for m in self.stages),
+            "input_tokens": sum(m.input_tokens for m in self.stages),
+            "output_tokens": sum(m.output_tokens for m in self.stages),
+            "cache_read_tokens": sum(m.cache_read_tokens for m in self.stages),
+            "cache_write_tokens": sum(m.cache_write_tokens for m in self.stages),
+            "cache_write_1h_tokens": sum(m.cache_write_1h_tokens for m in self.stages),
+            "stages": [m.summary() for m in self.stages],
+        }
+        return agg
+
+
+def ask_cascade(
+    index_dir: Path,
+    ctx: VideoContext,
+    question: str,
+    model: str = DEFAULT_MODEL,
+    client: anthropic.Anthropic | None = None,
+    video_path: Path | None = None,
+) -> tuple[str, CascadeMeter, int]:
+    """Two-stage answer: a cheap text-only model first; the full tool loop
+    only when it escalates. Returns the same shape as ask()."""
+    import os
+
+    client = client or anthropic.Anthropic()
+    stage1 = CostMeter(model=CASCADE_MODEL)
+    tv = text_view(ctx, include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1")
+    response = client.messages.create(
+        model=CASCADE_MODEL,
+        max_tokens=2048,
+        system=CASCADE_SYSTEM,
+        messages=[{"role": "user",
+                   "content": f"VIDEO INDEX:\n{tv}\n\nQUESTION: {question}"}],
+    )
+    stage1.add(response.usage)
+    answer = "".join(b.text for b in response.content if b.type == "text").strip()
+
+    # Accept only an explicit confident answer; anything else (ESCALATE,
+    # prose hedging, format non-compliance) falls through to the full loop.
+    if answer.startswith("ANSWER:"):
+        return answer[len("ANSWER:"):].strip(), CascadeMeter([stage1]), 0
+
+    full_answer, stage2, frames = ask(
+        index_dir, ctx, question, model=model, client=client, video_path=video_path)
+    return full_answer, CascadeMeter([stage1, stage2]), frames
+
+
 def ask(
     index_dir: Path,
     ctx: VideoContext,
