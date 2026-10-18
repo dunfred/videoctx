@@ -1,9 +1,11 @@
 # videoctx
 
+<!-- mcp-name: io.github.dunfred/videoctx -->
+
 **Index a video once. Query it cheaply, forever, with any LLM.**
 
 `videoctx` ("video context") turns any video into an open, portable **Video
-Context** index (`.vctx`, see [SPEC.md](SPEC.md)) using only local, model-free
+Context** index (`.vctx`, see [SPEC.md](https://github.com/dunfred/videoctx/blob/main/SPEC.md)) using only local, model-free
 tools: ffmpeg keyframes, PySceneDetect shot boundaries, faster-whisper
 transcripts, and optional one-line visual captions from any cheap VLM. An
 agent answers most questions from the index's text layer for fractions of a
@@ -27,7 +29,7 @@ hour-long video is about **$0.02**.
 ## Benchmark results (Video-MME, Oct 2026)
 
 Full protocol and honest cost accounting (including prompt-cache write
-premiums) in [paper/draft.md](paper/draft.md). Query model: Claude Opus 4.8.
+premiums) in [paper/draft.md](https://github.com/dunfred/videoctx/blob/main/paper/draft.md). Query model: Claude Opus 4.8.
 
 **Short videos, held-out test half (n=150):**
 
@@ -96,7 +98,7 @@ for the accounting traps this avoids.
 The `.vctx` directory is plain JSON + JPEG: `manifest.json` (provenance,
 parameters, source hash), `index.json` (shots, keyframes, transcript,
 captions), `frames/`. Consumers must ignore unknown keys; enrichment layers
-(OCR, embeddings) are reserved in [SPEC.md](SPEC.md) v0.1.
+(OCR, embeddings) are reserved in [SPEC.md](https://github.com/dunfred/videoctx/blob/main/SPEC.md) v0.1.
 
 ## Status and roadmap
 

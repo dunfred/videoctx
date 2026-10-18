@@ -1,0 +1,28 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.dunfred/videoctx",
+  "title": "videoctx",
+  "description": "Read videos like images: index once locally, query the text layer, fetch frames on demand.",
+  "repository": {
+    "url": "https://github.com/dunfred/videoctx",
+    "source": "github"
+  },
+  "version": "0.1.2",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "videoctx",
+      "version": "0.1.2",
+      "runtimeHint": "uvx",
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "mcp"
+        }
+      ],
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

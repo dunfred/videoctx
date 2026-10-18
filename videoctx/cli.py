@@ -29,6 +29,14 @@ def index(video: Path, out: Path | None, max_edge: int, whisper_model: str, no_t
 
 
 @main.command()
+def mcp():
+    """Run the videoctx MCP server over stdio (same as the videoctx-mcp binary)."""
+    from .mcp_server import main as mcp_main
+
+    mcp_main()
+
+
+@main.command()
 @click.argument("index_dir", type=click.Path(exists=True, path_type=Path))
 def caption(index_dir: Path):
     """Add visual captions to an index's shots (one cheap VLM call per shot)."""
