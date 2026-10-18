@@ -57,8 +57,14 @@ premiums) in [paper/draft.md](https://github.com/dunfred/videoctx/blob/main/pape
 
 | Method | Accuracy | $/question |
 |---|---|---|
-| **videoctx** | **83.3%** | **$0.0067** |
+| **videoctx** | **83.3%** | $0.019* |
 | Uniform frame sampling | 74.0% | $0.0172 |
+
+*Correction 2026-10-18: videoctx short-video costs originally published as
+$0.0067/question undercounted prompt-cache write premiums (a metering bug,
+since fixed); $0.019 is the honestly-metered dev-split figure. Accuracy
+figures and baseline costs were unaffected. Long/medium figures were measured
+after the fix and stand as published.
 
 **Identical 30-question subset, all methods:**
 

@@ -1,0 +1,262 @@
+[
+  {
+    "qid": "002-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.022738,
+    "wall_s": 3.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 115,
+      "output_tokens": 75,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3246,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.022738,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. Jade is never mentioned; the transcript discusses inkstones (0:00), niches (0:43), and wooden sacrificial tables (0:00), but jade only appears as a pigment color description, not as a tomb item."
+  },
+  {
+    "qid": "002-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.003688,
+    "wall_s": 1.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 153,
+      "output_tokens": 52,
+      "cache_read_tokens": 3246,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003688,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. At 0:20 the narration states the excavation was done \"To coordinate with the National Highway Realignment Project,\" making highway realignment the motivating reason."
+  },
+  {
+    "qid": "002-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.003448,
+    "wall_s": 1.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 51,
+      "cache_read_tokens": 3246,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003448,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The southern niche contained four porcelain jars and the northern niche contained five porcelain jars, totaling nine (per the 0:43 transcript)."
+  },
+  {
+    "qid": "005-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.06803,
+    "wall_s": 9.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 117,
+      "output_tokens": 342,
+      "cache_read_tokens": 10666,
+      "cache_write_tokens": 8570,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.06803,
+      "frames_fetched": 7
+    },
+    "answer_text": "A. The car contains three people: the driver in front wearing a cap, plus a man (with mustache) and a woman (in white) seated in the back."
+  },
+  {
+    "qid": "005-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.004008,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 51,
+      "cache_read_tokens": 4036,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.004008,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The narration at 0:01 states the assassination of Archduke Franz Ferdinand was \"the trigger which set off the war\" from underlying causes."
+  },
+  {
+    "qid": "005-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.095554,
+    "wall_s": 21.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 165,
+      "output_tokens": 1382,
+      "cache_read_tokens": 25233,
+      "cache_write_tokens": 7610,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.095554,
+      "frames_fetched": 11
+    },
+    "answer_text": "Now I can clearly see the killer at t=16.3s. He is wearing a dark gray/charcoal jacket with a white shirt underneath \u2014 not a black suit. The killer's attire is dark gray, not black. Let me re-verify the other facts.\n\nIn the car scene, Ferdinand (white hat, mustache) is on the LEFT side of the back seat \u2014 so B is TRUE. He wears a white hat \u2014 C is TRUE. The Black Hand in Serbia organized it (per narration) \u2014 A is TRUE.\n\nThe killer's jacket is clearly dark gray/charcoal, not black, and it's a jacket over a white shirt rather than a clearly \"black suit.\" However, \"dark gray suit\" could be loosely called black. Let me reconsider which is most clearly incorrect.\n\nLooking again carefully: the killer at t=16.3s wears a dark gray jacket (charcoal), which is arguably not \"black.\" Comparing all options, B, C, A are solidly confirmed true. The killer's suit being specifically \"black\" is the weakest \u2014 it's dark gray.\n\nD. The killer is wearing a dark gray suit, not a black suit \u2014 this is the incorrect statement, as his jacket is clearly charcoal/dark gray with a white shirt beneath (t=16.3s)."
+  },
+  {
+    "qid": "006-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.018087,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 110,
+      "output_tokens": 53,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 2594,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.018087,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The shamrock symbol appears throughout the video, including on the calendar graphic (0:03) and the map of the US filled with shamrocks (1:30)."
+  },
+  {
+    "qid": "006-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003607,
+    "wall_s": 1.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 157,
+      "output_tokens": 61,
+      "cache_read_tokens": 2594,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003607,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript (1:11), Irish immigrants brought the tradition to America where it \"devolved into a secular holiday often centered around drinking and celebrating all things Irish.\""
+  },
+  {
+    "qid": "006-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003322,
+    "wall_s": 1.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 125,
+      "output_tokens": 56,
+      "cache_read_tokens": 2594,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003322,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. According to the transcript (1:11), New York City's annual parade is described as the largest in the world with an estimated two million spectators, while the river dyeing was Chicago."
+  },
+  {
+    "qid": "007-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.089115,
+    "wall_s": 10.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 4,
+      "input_tokens": 126,
+      "output_tokens": 374,
+      "cache_read_tokens": 13758,
+      "cache_write_tokens": 11561,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.089115,
+      "frames_fetched": 26
+    },
+    "answer_text": "D. The man generates smoke from a bonfire (burning logs) at his feet, waving a blanket over it to create smoke signals, as shown from 7.9s\u201311.6s."
+  },
+  {
+    "qid": "007-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.002981,
+    "wall_s": 1.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 108,
+      "output_tokens": 47,
+      "cache_read_tokens": 2532,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.002981,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript lists \"the pony express, the semaphore flag\" at 0:22, so the pony express comes immediately before the semaphore."
+  },
+  {
+    "qid": "007-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.003456,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 59,
+      "cache_read_tokens": 2532,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "usd": 0.003456,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The screen text at [1:01] shows \"BTW...you got something in your teeth!\" which is the embarrassing message, followed by the character's anxious reaction at [1:07]."
+  },
+  {
+    "qid": "008-1",
+    "method": "videoctx",
+    "error": "ValueError(\"could not convert string to float: '1:13'\")",
+    "correct": false,
+    "usd": 0.0,
+    "wall_s": 2.7
+  }
+]

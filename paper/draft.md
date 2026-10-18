@@ -18,9 +18,10 @@ questions without fetched visual evidence. We also introduce an
 **accuracy-per-dollar** evaluation protocol for video QA that charges every
 token honestly, including prompt-cache write premiums, and measures cost as a
 function of questions asked per video. On Video-MME short videos (held-out
-test half, n=150), vctx with Claude Opus 4.8 reaches 83.3% accuracy at $0.0067
-per question, beating a uniform frame-sampling baseline (74.0% at $0.0172) on
-both axes. On Video-MME long videos (n=30), vctx reaches 80.0% at $0.096 per
+test half, n=150), vctx with Claude Opus 4.8 reaches 83.3% accuracy at ~$0.019
+per question, 9.3 points above a uniform frame-sampling baseline (74.0% at
+$0.0172) at comparable cost. On Video-MME long videos (n=30), vctx reaches
+80.0% at $0.096 per
 question versus 70.0% at $0.133 for sampling; follow-up questions on an
 already-warm index cost $0.024, roughly 20x below the estimated cost of
 native ingestion of the same hour-long video. The format specification,
@@ -172,7 +173,7 @@ once.
 
 | Method | Dev (150q) | Test (150q) | $/question (test) |
 |---|---|---|---|
-| vctx (ours) | 85.3% | **83.3%** | **$0.0067** |
+| vctx (ours) | 85.3% | **83.3%** | ~$0.019 (corrected) |
 | Naive sampling | n/a | 74.0% | $0.0172 |
 | Native (Gemini 3 Flash)* | n/a | 53.3% | $0.0047 paid-equiv |
 
@@ -260,8 +261,11 @@ large prefixes; (c) a per-call rather than per-index caption cap accumulated
 3x the intended captions and bloated text views to 50k+ tokens; (d) a naive
 answer-letter parser mis-scored ~20% of prose answers; (e) frame requests for
 timestamps beyond video duration crashed extraction until server-side
-clamping was added (models do hallucinate timestamps). Every one of these
-distorted either cost or accuracy before being caught by per-question audits.
+clamping was added (models do hallucinate timestamps); (f) our own first
+published short-video cost figure fell to trap (a) and was corrected from
+$0.0067 to ~$0.019 per question after remetering, a correction we record
+here rather than erase. Every one of these distorted either cost or accuracy
+before being caught by per-question audits.
 
 ### 7.4 Label quality
 
