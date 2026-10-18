@@ -20,6 +20,6 @@ while :; do
     --out "$OUT" --skip-existing || true
   n_ok=$(done_count)
   [ "$n_ok" -ge 30 ] && break
-  sleep 2700
+  sleep 10800
 done
 echo "GEMINI SHORT FINAL"
