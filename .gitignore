@@ -9,3 +9,4 @@ indexes/
 eval/data/
 # results are committed for reproducibility
 .env
+eval/results/*.log
