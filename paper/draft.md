@@ -337,7 +337,13 @@ short-video cells remains open.
 
 Sample sizes are modest (n=150 test short, n=30 medium, n=30 long); the
 medium cell is noisy enough (6.2) that its ranking should be treated as
-provisional; the native baseline currently uses the provider's
+provisional. Our subsets are also domain-skewed: videos were taken in
+dataset order, which in Video-MME clusters by domain, so the medium and
+long cells are entirely Knowledge-domain videos and the short cells are
+76-88% Knowledge (remainder Film & Television). Video-MME spans six
+domains; results here should be read as Knowledge-dominated subsets, and
+future splits will be domain-stratified. The native baseline currently uses
+the provider's
 budget tier; all query-side results use a single model family (Opus 4.8 for
 queries, Haiku 4.5 for captions), and cross-model portability of the format,
 while architecturally trivial, is empirically unverified in this draft; cost

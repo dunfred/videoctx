@@ -59,6 +59,12 @@ measured the same configuration more than once, we report the observed range:
 on n=150, single runs wobble by 2-3 questions; on n=30, by 2-3 questions
 (= 7-10 points). Treat sub-3-point deltas on this benchmark as noise.
 
+Subset composition caveat: videos were taken in Video-MME dataset order,
+which clusters by domain. The medium and long cells are entirely
+Knowledge-domain videos; the short cells are 76-88% Knowledge (remainder
+Film & Television). Read these as Knowledge-dominated subsets of Video-MME,
+not the full benchmark; future splits will be domain-stratified.
+
 **Short videos, held-out test half (n=150):**
 
 | Method | Accuracy | $/question |
