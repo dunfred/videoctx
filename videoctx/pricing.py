@@ -24,6 +24,10 @@ class CostMeter:
     notes: list[str] = field(default_factory=list)
 
     cache_write_1h_tokens: int = 0  # 1h-TTL writes bill at 2x, not 1.25x
+    tool_calls: dict[str, int] = field(default_factory=dict)
+
+    def count_tool(self, name: str) -> None:
+        self.tool_calls[name] = self.tool_calls.get(name, 0) + 1
 
     def add(self, usage) -> None:
         self.calls += 1
@@ -54,5 +58,6 @@ class CostMeter:
             "cache_read_tokens": self.cache_read_tokens,
             "cache_write_tokens": self.cache_write_tokens,
             "cache_write_1h_tokens": self.cache_write_1h_tokens,
+            "tool_calls": dict(self.tool_calls),
             "usd": round(self.usd, 6),
         }

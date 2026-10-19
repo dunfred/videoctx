@@ -261,6 +261,10 @@ class CascadeMeter:
             "cache_read_tokens": sum(m.cache_read_tokens for m in self.stages),
             "cache_write_tokens": sum(m.cache_write_tokens for m in self.stages),
             "cache_write_1h_tokens": sum(m.cache_write_1h_tokens for m in self.stages),
+            "tool_calls": {
+                name: sum(m.tool_calls.get(name, 0) for m in self.stages)
+                for m in self.stages for name in m.tool_calls
+            },
             "stages": [m.summary() for m in self.stages],
         }
         return agg
@@ -383,6 +387,7 @@ def ask(
         for block in response.content:
             if block.type != "tool_use":
                 continue
+            meter.count_tool(block.name)
             if block.name == "find_moments":
                 from .embeddings import find_moments
                 hits = find_moments(index_dir, str(block.input["description"]),
