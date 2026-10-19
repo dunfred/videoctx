@@ -361,7 +361,7 @@ def ask(
     }]
 
     tools = [GET_FRAMES_TOOL, SURVEY_TOOL]
-    if (index_dir / "embeddings.npz").exists():
+    if (index_dir / "embeddings.npz").exists() and os.environ.get("VIDEOCTX_NO_EMBED") != "1":
         tools.append(FIND_MOMENTS_TOOL)
 
     for _ in range(MAX_TOOL_TURNS):
