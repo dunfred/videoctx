@@ -135,6 +135,35 @@ def get_frames(path: str, start_s: float, end_s: float, max_frames: int = 4,
 
 
 @server.tool()
+def find_moments(path: str, description: str, top_k: int = 5) -> list:
+    """Semantic visual search: find the moments that best match a natural
+    language description (e.g. 'a red car at night'), using local CLIP
+    embeddings. Returns the top matches as timestamped thumbnails: use the
+    timestamps to zoom in with get_frames. Requires embeddings built once
+    with `videoctx embed <index>`; cheaper and more targeted than
+    survey_video when you know what you are looking for."""
+    from .query import _thumb
+
+    index_dir, ctx = _resolve(path)
+    if not (index_dir / "embeddings.npz").exists():
+        return [f"no embeddings for this index; build them once with: "
+                f"videoctx embed {index_dir}"]
+    from .embeddings import find_moments as _find
+
+    hits = _find(index_dir, description, top_k=max(1, min(int(top_k), 10)))
+    shot_by_id = {s.id: s for s in ctx.shots}
+    out: list = []
+    for h in hits:
+        shot = shot_by_id.get(h["shot_id"])
+        if not shot or not shot.keyframes:
+            continue
+        kf = shot.keyframes[len(shot.keyframes) // 2]
+        out.append(f"match @ {h['t_s']:.1f}s (score {h['score']:.2f}):")
+        out.append(Image(path=_thumb(index_dir, kf)))
+    return out or ["no matches"]
+
+
+@server.tool()
 def transcript_search(path: str, query: str, context_s: float = 15.0) -> str:
     """Case-insensitive search over the transcript. Returns matching segments
     with surrounding context and timestamps: use the timestamps to target

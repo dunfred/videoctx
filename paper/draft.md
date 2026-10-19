@@ -364,7 +364,8 @@ questions spread across days; for those, the first-question cost recurs.
 ## 9. Release
 
 Spec (v0.1), reference implementation (CLI + Python), MCP server exposing
-`video_overview` / `survey_video` / `get_frames` / `transcript_search`, and
+`video_overview` / `survey_video` / `get_frames` / `transcript_search` /
+`find_moments`, and
 the full evaluation harness including every result file referenced here.
 Apache-2.0. [Repository URL to be added.]
 

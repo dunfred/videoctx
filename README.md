@@ -121,7 +121,8 @@ claude mcp add videoctx -- $(pwd)/.venv/bin/videoctx-mcp
 The calling agent's own model reads the text layer and frames directly; the
 server makes no model calls and needs no key. Tools: `video_overview` (cheap
 text layer), `survey_video` (one thumbnail per shot), `get_frames(path, t0,
-t1, detail)`, `transcript_search`, `index_video`. The server's instructions
+t1, detail)`, `transcript_search`, `find_moments` (semantic visual search,
+needs `videoctx embed` once per index), `index_video`. The server's instructions
 carry the evidence rule: visual answers must cite fetched frames, never
 general knowledge.
 
