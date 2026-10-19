@@ -66,29 +66,32 @@ question per video.
 ## 2. Related Work
 
 **Native video ingestion.** Gemini ingests video directly at roughly one
-frame per second plus audio tokens; GPT-5 accepts video input. Both charge
-full ingestion per request. We treat native ingestion as the capability
-ceiling and price floor-antagonist: our question is how much of its accuracy
-survives at a fraction of its cost. [Citations to be added.]
+frame per second plus audio tokens [Gemini Team 2024] and charges full
+ingestion per request; as of this writing, OpenAI's GPT-5 model documentation
+lists text and image input only, with no video modality [OpenAI 2026]. We
+treat native ingestion as the capability ceiling and price floor-antagonist:
+our question is how much of its accuracy survives at a fraction of its cost.
 
-**Proprietary video platforms.** Twelve Labs (Marengo, Pegasus) exposes video
-foundation models, embeddings, and an MCP server as a hosted API priced per
-indexed minute. VideoDB and similar offer managed video RAG. vctx differs on
-two axes: the index is produced by free local tools rather than proprietary
-models, and the artifact is an open on-disk format rather than an API-side
-state. [Citations to be added.]
+**Proprietary video platforms.** Twelve Labs exposes video foundation models
+(Marengo for embeddings and retrieval, Pegasus for video-to-text), plus an
+MCP server, as a hosted API priced per indexed minute [Twelve Labs 2026].
+VideoDB offers managed video data infrastructure with natural-language
+retrieval [VideoDB 2026]. vctx differs on two axes: the index is produced by
+free local tools rather than proprietary models, and the artifact is an open
+on-disk format rather than an API-side state.
 
 **Video RAG research.** Retrieval-augmented approaches to long-video QA
-(VideoAgent, VideoTree, and successors) share our coarse-to-fine intuition.
-Most report accuracy only; none to our knowledge publish an honest
+share our coarse-to-fine intuition: VideoAgent iteratively selects frames
+with an LLM controller [Wang, X. et al. 2024]; VideoTree builds a
+query-adaptive hierarchical representation [Wang, Z. et al. 2024]. Most
+report accuracy only; none to our knowledge publish an honest
 cost-per-question accounting or an open interchange format. Our contribution
 is the format + benchmark pairing rather than a novel retrieval algorithm.
-[Citations to be added.]
 
-**Benchmarks.** We evaluate on Video-MME, the standard multi-duration video
-QA benchmark (short <=2 min, medium 4-15 min, long 30-60 min; 3 questions per
-video). Gold labels are multiple choice. We note observed label disputes in
-Section 7.4.
+**Benchmarks.** We evaluate on Video-MME [Fu et al. 2024], the standard
+multi-duration video QA benchmark (short <=2 min, medium 4-15 min, long
+30-60 min; 3 questions per video). Gold labels are multiple choice. We note
+observed label disputes in Section 7.4.
 
 ## 3. The vctx Format
 
@@ -102,9 +105,10 @@ video.vctx/
 ```
 
 Indexing uses only local tools: ffprobe (metadata), PySceneDetect
-(shot boundaries, with a fixed-window fallback for cut-free footage), ffmpeg
-(keyframes, one per shot plus one per 20s within long shots, long edge 768px),
-and faster-whisper (transcript with per-segment timestamps). An optional
+[Castellano] (shot boundaries, with a fixed-window fallback for cut-free
+footage), ffmpeg (keyframes, one per shot plus one per 20s within long
+shots, long edge 768px), and faster-whisper [SYSTRAN], a CTranslate2 port of
+Whisper [Radford et al. 2022] (transcript with per-segment timestamps). An optional
 caption pass annotates up to 150 shots per video with one-line visual
 descriptions from a cheap VLM (we use Claude Haiku 4.5; ~$0.10 per hour-long
 video, one time). The manifest records every parameter and model used.
@@ -147,7 +151,8 @@ Each method answers multiple-choice questions and reports its own fully
 loaded cost. Three accounting rules matter more than they appear:
 
 1. **Cache writes are charged at their premium** (1.25x for 5-minute TTL, 2x
-   for 1-hour TTL on the provider we use). In our logs, ignoring cache-write
+   for 1-hour TTL, with cache reads at 0.1x, on the provider we use
+   [Anthropic 2026]). In our logs, ignoring cache-write
    tokens understated long-video costs by up to 2.3x. Any cached-prefix
    system evaluated without this rule will report fantasy costs.
 2. **One-time index costs are reported separately and amortized explicitly.**
@@ -314,7 +319,8 @@ nontrivial fraction of residual error.
 
 ### 7.6 Visual retrieval embeddings are accuracy-neutral (dev sets)
 
-We added optional per-shot CLIP embeddings to the index and exposed a
+We added optional per-shot CLIP [Radford et al. 2021] embeddings to the
+index and exposed a
 `find_moments(description)` retrieval tool in the query loop, hypothesizing
 that semantic frame targeting would help most on long videos, where
 model-chosen time ranges have the most room to miss. A/B on held-out dev
@@ -361,6 +367,36 @@ Spec (v0.1), reference implementation (CLI + Python), MCP server exposing
 `video_overview` / `survey_video` / `get_frames` / `transcript_search`, and
 the full evaluation harness including every result file referenced here.
 Apache-2.0. [Repository URL to be added.]
+
+## References
+
+- [Anthropic 2026] Anthropic. Prompt caching. Claude Developer Platform
+  documentation. https://platform.claude.com/docs/en/build-with-claude/prompt-caching
+  (accessed 2026-10-19).
+- [Castellano] B. Castellano. PySceneDetect: scene cut and transition
+  detection (software). https://github.com/Breakthrough/PySceneDetect
+- [Fu et al. 2024] C. Fu et al. Video-MME: The First-Ever Comprehensive
+  Evaluation Benchmark of Multi-modal LLMs in Video Analysis.
+  arXiv:2405.21075, 2024.
+- [Gemini Team 2024] Gemini Team, Google. Gemini 1.5: Unlocking multimodal
+  understanding across millions of tokens of context. arXiv:2403.05530, 2024.
+- [OpenAI 2026] OpenAI. GPT-5.2 model documentation.
+  https://platform.openai.com/docs/models/gpt-5.2 (accessed 2026-10-19;
+  input modalities listed as text and image).
+- [Radford et al. 2021] A. Radford et al. Learning Transferable Visual
+  Models From Natural Language Supervision. arXiv:2103.00020, 2021.
+- [Radford et al. 2022] A. Radford et al. Robust Speech Recognition via
+  Large-Scale Weak Supervision. arXiv:2212.04356, 2022.
+- [SYSTRAN] SYSTRAN. faster-whisper: Whisper transcription with CTranslate2
+  (software). https://github.com/SYSTRAN/faster-whisper
+- [Twelve Labs 2026] Twelve Labs. Video foundation models: Marengo and
+  Pegasus. https://www.twelvelabs.io/product/models-overview
+  (accessed 2026-10-19).
+- [VideoDB 2026] VideoDB. https://videodb.io (accessed 2026-10-19).
+- [Wang, X. et al. 2024] X. Wang et al. VideoAgent: Long-form Video
+  Understanding with Large Language Model as Agent. arXiv:2403.10517, 2024.
+- [Wang, Z. et al. 2024] Z. Wang et al. VideoTree: Adaptive Tree-based Video
+  Representation for LLM Reasoning on Long Videos. arXiv:2405.19209, 2024.
 
 ---
 
