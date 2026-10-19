@@ -27,20 +27,32 @@ LETTER_PREFIX = re.compile(r"^[A-D][\.\)]\s*")
 @click.option("--videos", "n_videos", default=10, show_default=True, help="Number of videos")
 @click.option("--out", type=click.Path(path_type=Path), default=Path("eval/data"), show_default=True)
 @click.option("--max-height", default=480, show_default=True, help="Download resolution cap")
-def main(duration: str, n_videos: int, out: Path, max_height: int):
+@click.option("--exclude", "excludes", type=click.Path(path_type=Path), multiple=True,
+              help="questions.jsonl whose videos must be skipped (protects frozen splits)")
+@click.option("--qfile-name", default=None,
+              help="Output questions filename (default videomme_<duration>.jsonl)")
+def main(duration: str, n_videos: int, out: Path, max_height: int,
+         excludes: tuple[Path, ...], qfile_name: str | None):
     from datasets import load_dataset
 
     out.mkdir(parents=True, exist_ok=True)
     videos_dir = out / "videos"
     videos_dir.mkdir(exist_ok=True)
 
+    excluded_ids = set()
+    for ex in excludes:
+        for line in ex.read_text().splitlines():
+            if line.strip():
+                excluded_ids.add(Path(json.loads(line)["video"]).stem)
+
     ds = load_dataset("lmms-lab/Video-MME", split="test")
     by_video: dict[str, list] = defaultdict(list)
     for row in ds:
-        if row["duration"] == duration:
+        if row["duration"] == duration and row["videoID"] not in excluded_ids:
             by_video[row["videoID"]].append(row)
 
-    click.echo(f"{len(by_video)} {duration} videos available; taking up to {n_videos}")
+    click.echo(f"{len(by_video)} {duration} videos available"
+               f" ({len(excluded_ids)} excluded); taking up to {n_videos}")
 
     questions = []
     downloaded = 0
@@ -73,7 +85,7 @@ def main(duration: str, n_videos: int, out: Path, max_height: int):
                 "domain": row.get("domain"),
             })
 
-    qfile = out / f"videomme_{duration}.jsonl"
+    qfile = out / (qfile_name or f"videomme_{duration}.jsonl")
     qfile.write_text("\n".join(json.dumps(q) for q in questions) + "\n")
     click.echo(f"\n{downloaded} videos, {len(questions)} questions -> {qfile}")
     click.echo(f"run: python eval/run.py {qfile} --methods videoctx,naive")
