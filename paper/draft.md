@@ -216,7 +216,7 @@ on the medium dev split first.
 
 | Method | Accuracy | $/question | Wall-clock/question |
 |---|---|---|---|
-| vctx (ours) | **80.0%** | **$0.096** | median 4s |
+| vctx (ours) | **80.0%** | **$0.098** | median 4s |
 | Naive sampling (60-frame cap) | 70.0% | $0.133 | ~6s |
 | Native ingestion (Gemini 3.1 Pro, published rates) | [PENDING] | ~$0.50-0.70 est. | ~40s+ observed on Flash |
 
@@ -226,20 +226,23 @@ consistent with the index's size being decoupled from video duration.
 
 ### 6.4 Amortization: the central figure
 
-Measured from the long-video run: the **first** question on a video averages
-$0.239 (it pays the one-time cache write of the text view); every
-**follow-up** inside the cache window averages **$0.024**. Per-question cost
-at k questions per video:
+Measured from the frozen long-video run (FINAL_long30): the **first**
+question on a video averages $0.256 (it pays the one-time cache write of the
+text view); every **follow-up** inside the cache window averages **$0.019**.
+Per-question cost at k questions per video:
 
 | k (questions/video) | vctx | naive | native (est.) |
 |---|---|---|---|
-| 1 | $0.239 | $0.133 | ~$0.50 |
-| 3 | $0.096 | $0.133 | ~$0.50 |
-| 10 | $0.046 | $0.133 | ~$0.50 |
-| 30 | $0.031 | $0.133 | ~$0.50 |
+| 1 | $0.256 | $0.133 | ~$0.50 |
+| 3 | $0.098 | $0.133 | ~$0.50 |
+| 10 | $0.043 | $0.133 | ~$0.50 |
+| 30 | $0.027 | $0.133 | ~$0.50 |
+
+![Figure 1: per-question cost vs questions asked per video. vctx decays from $0.256 toward its $0.019 follow-up cost; stateless baselines are flat.](figures/amortization.png)
 
 Stateless methods are flat lines; vctx is a decaying curve that crosses naive
-at k=2 and sits an order of magnitude below native from k=3 onward. Agent
+between k=2 and k=3 and sits an order of magnitude below native from k=3
+onward (Figure 1). Agent
 workloads (an assistant discussing a lecture, a reviewer auditing a meeting
 recording) are precisely the k>>1 regime.
 
