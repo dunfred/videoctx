@@ -13,7 +13,19 @@ $PY eval/prepare_videomme.py --duration medium --videos 15 \
   --exclude eval/data/videomme_medium_dev.jsonl \
   --qfile-name videomme_medium_dev2.jsonl
 
-$PY eval/prep_indexes.py eval/data/videomme_medium_dev2.jsonl
+# Every step below is idempotent (indexes, captions, OCR, embeddings skip
+# existing work), so transient network failures are retried, not fatal.
+retry() {
+  local n=0
+  until "$@"; do
+    n=$((n+1))
+    [ $n -ge 5 ] && { echo "RETRY EXHAUSTED: $*"; exit 1; }
+    echo "attempt $n failed, sleeping 60s: $*"
+    sleep 60
+  done
+}
+
+retry $PY eval/prep_indexes.py eval/data/videomme_medium_dev2.jsonl
 
 for idx in $($PY -c "
 import json
@@ -23,12 +35,12 @@ for v in vids:
     p = Path(v)
     print(p.parent / (p.stem + '.vctx'))
 "); do
-  .venv/bin/videoctx ocr "$idx"
-  .venv/bin/videoctx embed "$idx"
+  retry .venv/bin/videoctx ocr "$idx"
+  retry .venv/bin/videoctx embed "$idx"
 done
 
 echo "ENRICHMENT DONE, running baseline (one-touch, embeddings off)"
-VIDEOCTX_NO_EMBED=1 $PY eval/run.py eval/data/videomme_medium_dev2.jsonl \
+retry env VIDEOCTX_NO_EMBED=1 $PY eval/run.py eval/data/videomme_medium_dev2.jsonl \
   --methods videoctx --skip-existing \
   --out eval/results/meddev2_base.json
 
