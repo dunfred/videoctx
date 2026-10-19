@@ -154,7 +154,7 @@ loaded cost. Three accounting rules matter more than they appear:
    Indexing + captioning a 100-video short corpus cost $0.99 total; we report
    it alongside, not hidden inside, per-question costs.
 3. **Cost is a function of questions-per-video.** We report first-question
-   and follow-up costs separately (Section 6.3). Single-question evaluation
+   and follow-up costs separately (Section 6.4). Single-question evaluation
    structurally favors stateless methods and hides the central advantage of
    indexed ones.
 
@@ -190,11 +190,29 @@ agree within 2 points; nothing was tuned on the test half.
 
 Note that even if Pro-tier native matches vctx accuracy on short videos,
 short clips are native ingestion's *best* cost case, ~2k tokens per clip, and
-its economics collapse on long video (6.3). Native ingestion also paid a
+its economics collapse on long video (6.4). Native ingestion also paid a
 measured ~40s of upload + processing latency per question versus vctx's 2-4s
 text-path answers.
 
-### 6.2 Long videos (Video-MME long, 10 videos of 30-60 min, 30 questions)
+### 6.2 Medium videos (Video-MME medium, 4-15 min, 30 questions)
+
+Our weakest cell, which we report rather than omit:
+
+| Method | Accuracy | $/question |
+|---|---|---|
+| Naive sampling | **80.0%** | $0.081 |
+| vctx (frozen v0.2, one touch) | 66.7% (earlier run: 76.7%) | $0.053 |
+| Native (Gemini Flash-Lite) | 70.0% | $0.0034 |
+
+At 4-15 minutes, a uniform frame grid still covers the video densely enough
+to answer most questions while the vctx text view is already summarizing
+away detail; the one-touch run and an earlier equivalent run differ by 10
+points (3 questions), making this the most variance-dominated cell (7.4).
+Medium is the named target for the next iteration; candidate levers are
+caption density and retrieval-stabilized frame targeting, to be evaluated
+on the medium dev split first.
+
+### 6.3 Long videos (Video-MME long, 10 videos of 30-60 min, 30 questions)
 
 | Method | Accuracy | $/question | Wall-clock/question |
 |---|---|---|---|
@@ -206,7 +224,7 @@ vctx's text layer alone answered 28 of 30 questions (23 correct); the frame
 path handled 2. Accuracy on long videos (80.0%) matches short (83.3%),
 consistent with the index's size being decoupled from video duration.
 
-### 6.3 Amortization: the central figure
+### 6.4 Amortization: the central figure
 
 Measured from the long-video run: the **first** question on a video averages
 $0.239 (it pays the one-time cache write of the text view); every
@@ -225,7 +243,7 @@ at k=2 and sits an order of magnitude below native from k=3 onward. Agent
 workloads (an assistant discussing a lecture, a reviewer auditing a meeting
 recording) are precisely the k>>1 regime.
 
-### 6.4 Latency
+### 6.5 Latency
 
 Native ingestion re-uploads and re-processes the video per question (observed
 ~40s+ per question on short clips). vctx's text-path answers return in ~2-4s.
@@ -291,10 +309,35 @@ evidence plausibly contradicts the gold label. We do not re-adjudicate labels
 in this draft; we note that at the 80%+ regime, Video-MME label noise is a
 nontrivial fraction of residual error.
 
+### 7.6 Visual retrieval embeddings are accuracy-neutral (dev sets)
+
+We added optional per-shot CLIP embeddings to the index and exposed a
+`find_moments(description)` retrieval tool in the query loop, hypothesizing
+that semantic frame targeting would help most on long videos, where
+model-chosen time ranges have the most room to miss. A/B on held-out dev
+sets (tool available vs. disabled, identical config otherwise):
+
+| Dev set | Without retrieval | With retrieval | $/question |
+|---|---|---|---|
+| Long dev (18q) | 88.9% (16/18) | 94.4% (17/18) | $0.121 vs $0.117 |
+| Medium dev (30q) | 93.3% (28/30) | 90.0% (27/30) | $0.037 vs $0.036 |
+
+Each delta is a single question flipping, inside the noise bar of 7.4, and
+cost is unchanged. The mechanism is visible in the receipts: only 2-7
+questions per run invoked any visual tool at all; the text layer answered
+the rest directly, leaving retrieval almost no surface to act on. This is
+the same pattern as 7.1 from the other side: interventions on the frame
+path are capped by how rarely the frame path is exercised. Embeddings
+therefore ship as an optional, provenance-recorded enrichment layer (useful
+for interactive moment search), with no accuracy claim attached. Whether
+retrieval-based targeting reduces frame-path *variance* (7.4) on the dense
+short-video cells remains open.
+
 ## 8. Limitations
 
-Sample sizes are modest (n=150 test short, n=30 long); medium-duration videos
-are unevaluated [PENDING]; the native baseline currently uses the provider's
+Sample sizes are modest (n=150 test short, n=30 medium, n=30 long); the
+medium cell is noisy enough (6.2) that its ranking should be treated as
+provisional; the native baseline currently uses the provider's
 budget tier; all query-side results use a single model family (Opus 4.8 for
 queries, Haiku 4.5 for captions), and cross-model portability of the format,
 while architecturally trivial, is empirically unverified in this draft; cost
