@@ -31,8 +31,11 @@ LETTER_PREFIX = re.compile(r"^[A-D][\.\)]\s*")
               help="questions.jsonl whose videos must be skipped (protects frozen splits)")
 @click.option("--qfile-name", default=None,
               help="Output questions filename (default videomme_<duration>.jsonl)")
+@click.option("--stratify", is_flag=True,
+              help="Round-robin across domains instead of dataset order "
+                   "(dataset order clusters by domain)")
 def main(duration: str, n_videos: int, out: Path, max_height: int,
-         excludes: tuple[Path, ...], qfile_name: str | None):
+         excludes: tuple[Path, ...], qfile_name: str | None, stratify: bool):
     from datasets import load_dataset
 
     out.mkdir(parents=True, exist_ok=True)
@@ -54,9 +57,18 @@ def main(duration: str, n_videos: int, out: Path, max_height: int,
     click.echo(f"{len(by_video)} {duration} videos available"
                f" ({len(excluded_ids)} excluded); taking up to {n_videos}")
 
+    order = list(by_video)
+    if stratify:
+        by_domain: dict[str, list[str]] = defaultdict(list)
+        for yt_id in order:
+            by_domain[by_video[yt_id][0].get("domain", "?")].append(yt_id)
+        queues = [by_domain[d] for d in sorted(by_domain)]
+        order = [q[i] for i in range(max(map(len, queues))) for q in queues if i < len(q)]
+
     questions = []
     downloaded = 0
-    for yt_id, rows in by_video.items():
+    for yt_id in order:
+        rows = by_video[yt_id]
         if downloaded >= n_videos:
             break
         video_path = videos_dir / f"{yt_id}.mp4"
