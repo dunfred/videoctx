@@ -83,15 +83,16 @@ not the full benchmark; future splits will be domain-stratified.
 | Method | Accuracy | $/question |
 |---|---|---|
 | Uniform frame sampling | 80.0% | $0.081 |
-| videoctx v0.2 / v0.3 / v0.4 | 66.7% (identical failure set across all three) | $0.051-0.058 |
+| videoctx v0.2 through v0.5 | 66.7% (identical failure set across all four) | $0.051-0.058 |
 | Gemini Flash-Lite native | 70.0% | $0.0034 |
 
 Medium is our weakest cell and the named target. The same 10 questions
-fail across three frozen configs (text-evidence rules, text-view header
-fix); 7 of the 10 are answered correctly by naive's dense uniform frames.
-The receipts localize the failure to a text layer too sparse for these
-videos combined with no frame escalation; the lever under evaluation is
-denser keyframe captioning.
+fail across four frozen configs (text-evidence rules, text-view header
+fix, dense keyframe captions); 7 of the 10 are answered correctly by
+naive, whose structural edge is unconditional visual input. The loop
+answers 26/30 medium questions text-only, so the stable failure point is
+escalation judgment, not text quality; the lever under evaluation puts a
+subsampled visual contact sheet into the cached prefix.
 
 Correction (2026-10-21): a text-view bug had been dropping the header
 line (duration, shot count) on every OCR-enriched index since OCR
@@ -103,7 +104,8 @@ unchanged).
 
 | Method | Accuracy | $/question | Follow-up $/question |
 |---|---|---|---|
-| **videoctx v0.4** | **80.0%** | $0.099 | **$0.019** |
+| **videoctx v0.5 (dense captions)** | **83.3%** | **$0.047** | **$0.019** |
+| videoctx v0.4 | 80.0% | $0.099 | $0.019 |
 | videoctx v0.2 / v0.3 | 80.0% / 76.7% (n=30 noise band) | $0.098 | $0.019 |
 | Uniform frame sampling (60-frame cap) | 70.0% | $0.133 | $0.133 |
 | Gemini Flash-Lite native | 76.7% | $0.022 | $0.022 (5-9 min latency/q) |
