@@ -71,7 +71,8 @@ not the full benchmark; future splits will be domain-stratified.
 
 | Method | Accuracy | $/question |
 |---|---|---|
-| **videoctx v0.3** | **82.0%** | $0.025 |
+| **videoctx v0.4** | **84.7%** | $0.025 |
+| videoctx v0.3 | 82.0% | $0.025 |
 | videoctx v0.2 | 80.7% (equivalent configs ranged 80.7-85.3%) | $0.025 |
 | Uniform frame sampling | 74.0% | $0.0172 |
 | Gemini Flash-Lite native (pilot 30) | 70.0% | $0.0009 |
@@ -82,22 +83,28 @@ not the full benchmark; future splits will be domain-stratified.
 | Method | Accuracy | $/question |
 |---|---|---|
 | Uniform frame sampling | 80.0% | $0.081 |
-| videoctx v0.3 | 66.7% (zero flips vs v0.2) | $0.058 |
-| videoctx v0.2 | 66.7% (earlier run: 76.7%) | $0.053 |
+| videoctx v0.2 / v0.3 / v0.4 | 66.7% (identical failure set across all three) | $0.051-0.058 |
 | Gemini Flash-Lite native | 70.0% | $0.0034 |
 
-Medium is our weakest cell and the named target. The v0.3 text-evidence
-rules gained 4-7 points on a same-domain dev split (replicated three
-times) yet changed zero answers here; per-question receipts show this
-cell's failures concentrate in questions answered from the text layer
-without frame escalation, a class the dev split does not reproduce.
+Medium is our weakest cell and the named target. The same 10 questions
+fail across three frozen configs (text-evidence rules, text-view header
+fix); 7 of the 10 are answered correctly by naive's dense uniform frames.
+The receipts localize the failure to a text layer too sparse for these
+videos combined with no frame escalation; the lever under evaluation is
+denser keyframe captioning.
+
+Correction (2026-10-21): a text-view bug had been dropping the header
+line (duration, shot count) on every OCR-enriched index since OCR
+shipped; all v0.2/v0.3 numbers were measured under that bug. v0.4 is the
+corrected configuration (short +2.7 points, long back to 80.0%, medium
+unchanged).
 
 **Long videos, 30-60 minutes (n=30):**
 
 | Method | Accuracy | $/question | Follow-up $/question |
 |---|---|---|---|
-| **videoctx v0.2** | **80.0%** (replicated exactly across runs) | $0.098 | **$0.019** |
-| videoctx v0.3 | 76.7% (one question below v0.2, n=30 noise band) | $0.098 | $0.019 |
+| **videoctx v0.4** | **80.0%** | $0.099 | **$0.019** |
+| videoctx v0.2 / v0.3 | 80.0% / 76.7% (n=30 noise band) | $0.098 | $0.019 |
 | Uniform frame sampling (60-frame cap) | 70.0% | $0.133 | $0.133 |
 | Gemini Flash-Lite native | 76.7% | $0.022 | $0.022 (5-9 min latency/q) |
 | Native ingestion (published Pro rates, est.) | pending | ~$0.50 | ~$0.50 |
