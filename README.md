@@ -83,16 +83,18 @@ not the full benchmark; future splits will be domain-stratified.
 | Method | Accuracy | $/question |
 |---|---|---|
 | Uniform frame sampling | 80.0% | $0.081 |
-| videoctx v0.2 through v0.5 | 66.7% (identical failure set across all four) | $0.051-0.058 |
+| videoctx v0.7 (contact sheet 60@512 in cached prefix) | 70.0% | $0.092 first-touch, ~$0.02 follow-up |
+| videoctx v0.2 through v0.6 | 66.7% (near-identical failure set) | $0.051-0.062 |
 | Gemini Flash-Lite native | 70.0% | $0.0034 |
 
-Medium is our weakest cell and the named target. The same 10 questions
-fail across four frozen configs (text-evidence rules, text-view header
-fix, dense keyframe captions); 7 of the 10 are answered correctly by
-naive, whose structural edge is unconditional visual input. The loop
-answers 26/30 medium questions text-only, so the stable failure point is
-escalation judgment, not text quality; the lever under evaluation puts a
-subsampled visual contact sheet into the cached prefix.
+Medium is our weakest cell and remains the named target: naive leads on
+raw accuracy. Ten questions failed identically across five configs
+(prompt rules, a text-view bug fix, dense captions, a 24-thumb contact
+sheet); the sixth config, a 60-thumbnail 512px contact sheet baked into
+the cached prefix, recovered one. The receipts tell a consistent story:
+these videos are fast-cut and fully captioned, and the remaining gap is
+visual detail bandwidth at question time, naive's one structural
+advantage. We publish the ladder rather than only its best rung.
 
 Correction (2026-10-21): a text-view bug had been dropping the header
 line (duration, shot count) on every OCR-enriched index since OCR
