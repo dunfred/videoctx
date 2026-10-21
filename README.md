@@ -53,11 +53,13 @@ hour-long video is about **$0.02**.
 Full protocol and honest cost accounting (including prompt-cache write
 premiums) in [paper/draft.md](https://github.com/dunfred/videoctx/blob/main/paper/draft.md). Query model: Claude Opus 4.8.
 
-Numbers below are single-touch runs of the frozen v0.2 config (captions +
-OCR + evidence rules, Opus 4.8 loop) under full cost accounting. Where we
-measured the same configuration more than once, we report the observed range:
-on n=150, single runs wobble by 2-3 questions; on n=30, by 2-3 questions
-(= 7-10 points). Treat sub-3-point deltas on this benchmark as noise.
+Numbers below are single-touch runs of the frozen configs (v0.2: captions +
+OCR + evidence rules, Opus 4.8 loop; v0.3, 2026-10-21: adds text-evidence
+rules, verbatim transcript quotes and a final letter-vs-evidence check)
+under full cost accounting. Where we measured the same configuration more
+than once, we report the observed range: on n=150, single runs wobble by
+2-3 questions; on n=30, by 2-3 questions (= 7-10 points). Treat
+sub-3-point deltas on this benchmark as noise.
 
 Subset composition caveat: videos were taken in Video-MME dataset order,
 which clusters by domain. The medium and long cells are entirely
@@ -69,7 +71,8 @@ not the full benchmark; future splits will be domain-stratified.
 
 | Method | Accuracy | $/question |
 |---|---|---|
-| **videoctx** | **80.7%** (equivalent configs ranged 80.7-85.3%) | $0.025 |
+| **videoctx v0.3** | **82.0%** | $0.025 |
+| videoctx v0.2 | 80.7% (equivalent configs ranged 80.7-85.3%) | $0.025 |
 | Uniform frame sampling | 74.0% | $0.0172 |
 | Gemini Flash-Lite native (pilot 30) | 70.0% | $0.0009 |
 | Gemini Flash native (pilot 30) | 53.3% | $0.0047 |
@@ -79,17 +82,22 @@ not the full benchmark; future splits will be domain-stratified.
 | Method | Accuracy | $/question |
 |---|---|---|
 | Uniform frame sampling | 80.0% | $0.081 |
-| videoctx | 66.7% (earlier run: 76.7%) | $0.053 |
+| videoctx v0.3 | 66.7% (zero flips vs v0.2) | $0.058 |
+| videoctx v0.2 | 66.7% (earlier run: 76.7%) | $0.053 |
 | Gemini Flash-Lite native | 70.0% | $0.0034 |
 
-Medium is our weakest, most variance-dominated cell and a named target for
-the next iteration.
+Medium is our weakest cell and the named target. The v0.3 text-evidence
+rules gained 4-7 points on a same-domain dev split (replicated three
+times) yet changed zero answers here; per-question receipts show this
+cell's failures concentrate in questions answered from the text layer
+without frame escalation, a class the dev split does not reproduce.
 
 **Long videos, 30-60 minutes (n=30):**
 
 | Method | Accuracy | $/question | Follow-up $/question |
 |---|---|---|---|
-| **videoctx** | **80.0%** (replicated exactly across runs) | $0.098 | **$0.019** |
+| **videoctx v0.2** | **80.0%** (replicated exactly across runs) | $0.098 | **$0.019** |
+| videoctx v0.3 | 76.7% (one question below v0.2, n=30 noise band) | $0.098 | $0.019 |
 | Uniform frame sampling (60-frame cap) | 70.0% | $0.133 | $0.133 |
 | Gemini Flash-Lite native | 76.7% | $0.022 | $0.022 (5-9 min latency/q) |
 | Native ingestion (published Pro rates, est.) | pending | ~$0.50 | ~$0.50 |

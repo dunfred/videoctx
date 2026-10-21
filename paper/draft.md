@@ -342,6 +342,28 @@ for interactive moment search), with no accuracy claim attached. Whether
 retrieval-based targeting reduces frame-path *variance* (7.4) on the dense
 short-video cells remains open.
 
+### 7.7 A replicated dev gain that did not transfer (v0.3)
+
+After the freeze, we added text-evidence rules to the query loop (verbatim
+transcript quotes for claims about what the video says, a gather-every-
+mention requirement, and a final check that the answer letter matches the
+model's own cited evidence). On a 45-question medium dev split built from
+fresh same-domain videos, the rules gained 4.4-6.7 points over base across
+three independent runs with zero per-question regressions, and gained 5.5
+points on the long dev split; a stronger variant adding exhaustive visual
+sweeps was rejected (it regressed ordering questions it was meant to fix).
+On the medium test cell, the frozen v0.3 run changed *zero* answers:
+66.7% in both configs, no flips. Per-question receipts explain the miss:
+the test cell's failures concentrate in questions answered from the text
+layer without frame escalation (26 of 30 questions fetched no frames;
+text-path accuracy 17/26), while the dev split's text path was already at
+35/38, so the dev-visible failure classes (evidence-letter mismatches,
+premature quote stops) are not the classes the test cell contains. We
+report this as a caution against exactly the inference we wanted to make:
+a replicated, zero-regression dev gain on a same-domain split predicted
+nothing about this test cell. Short moved +1.3 points and long -3.3
+points under v0.3, both inside the noise bands of 7.4.
+
 ## 8. Limitations
 
 Sample sizes are modest (n=150 test short, n=30 medium, n=30 long); the
