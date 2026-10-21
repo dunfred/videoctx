@@ -136,8 +136,10 @@ SYSTEM = (
     "Give the final answer directly and cite timestamps."
 )
 
-# Text-path evidence discipline, toggled by VIDEOCTX_TEXT_EVIDENCE=1 while
-# under dev A/B; mirrors the visual evidence rule for transcript claims.
+# Text-path evidence discipline, default-on since the v0.3 freeze
+# (disable with VIDEOCTX_NO_TEXT_EVIDENCE=1); mirrors the visual evidence
+# rule for transcript claims. Validated on medium dev2 (84.4% vs 80.0%,
+# replicated, zero regressions) and long-dev (94.4% vs 88.9%).
 TEXT_EVIDENCE_RULES = (
     "\n6. TEXT EVIDENCE RULE: claims about what the video says or mentions "
     "(names, numbers, dates, topic lists, 'which was/wasn't mentioned') must "
@@ -437,7 +439,7 @@ def ask(
         tools.append(FIND_MOMENTS_TOOL)
 
     extra_rules = ""
-    if os.environ.get("VIDEOCTX_TEXT_EVIDENCE") == "1":
+    if os.environ.get("VIDEOCTX_NO_TEXT_EVIDENCE") != "1":
         extra_rules += TEXT_EVIDENCE_RULES
     if sweep:
         extra_rules += SWEEP_RULES
