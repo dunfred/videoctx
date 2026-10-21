@@ -1,0 +1,1012 @@
+[
+  {
+    "qid": "321-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.039619,
+    "wall_s": 3.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 135,
+      "output_tokens": 47,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 6043,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.039619,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The screen text at [3:27] reads \"Gene activation by Vitamin D,\" with Vitamin D shown binding to the DNA."
+  },
+  {
+    "qid": "321-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.028747,
+    "wall_s": 7.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 157,
+      "output_tokens": 257,
+      "cache_read_tokens": 12086,
+      "cache_write_tokens": 2479,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "survey": 1
+      },
+      "usd": 0.028747,
+      "frames_fetched": 33
+    },
+    "answer_text": "The nucleus is introduced first (0:00), and base pairing appears later (4:34). Cell division isn't clearly present in the video; there's no scene of a cell dividing. Given the options, (a) comes before (b), and only options A and D match (a)...(b) order with (c) in the middle.\n\nA. (a.) The nucleus is introduced (0:00) comes first, and base pairing (4:34) comes later; with no distinct cell-division scene, the nucleus-then-base-pairing order corresponds to option A."
+  },
+  {
+    "qid": "321-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.005621,
+    "wall_s": 3.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 120,
+      "output_tokens": 80,
+      "cache_read_tokens": 6043,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.005621,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video repeatedly visualizes gene transcription and DNA copying/coding processes (e.g., \"Gene transcription,\" \"copying your DNA,\" \"Gene transcription mechanism\" at 0:17, 2:28, 4:02)."
+  },
+  {
+    "qid": "322-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.03348,
+    "wall_s": 1.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 126,
+      "output_tokens": 59,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 5020,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.03348,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video explicitly states at the start it wants \"to show the human immune system\" and covers macrophages, neutrophils, T-cells, B-cells, and antibodies throughout."
+  },
+  {
+    "qid": "322-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.040415,
+    "wall_s": 9.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 164,
+      "output_tokens": 529,
+      "cache_read_tokens": 10040,
+      "cache_write_tokens": 3416,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "get_frames": 2
+      },
+      "usd": 0.040415,
+      "frames_fetched": 6
+    },
+    "answer_text": "The sebum/oil from skin (b) occurs early (~0:38). The rolling/adhesion diapedesis event (a) occurs around 3:29-3:52. Plasma cell/B-cell division (c) is the latest at ~10:07. Hair follicles ooze oil is the skin/sebum segment early on.\n\nA. (b)(a)(c) \u2014 The skin sebum/oil follicle scene comes first (~0:38), the rolling T-cell adhesion/diapedesis comes next (~3:29), and plasma cell division comes last (~10:07)."
+  },
+  {
+    "qid": "322-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.054005,
+    "wall_s": 11.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 169,
+      "output_tokens": 605,
+      "cache_read_tokens": 18220,
+      "cache_write_tokens": 4628,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "get_frames": 2
+      },
+      "usd": 0.054005,
+      "frames_fetched": 8
+    },
+    "answer_text": "The actual opening isn't a blue bisected cell here. The \"blue bisected cell\" likely refers to a stem cell shown at the start of a section. Given the transcript emphasizes stem cells as the origin that develop into all immune cells, and the answer options, a bisected (dividing) blue cell that \"can differentiate into many kinds of cells\" matches a stem cell.\n\nD. The blue bisected cell is a stem cell, which\u2014as the transcript states \"a single stem cell becomes many immune cells\" and \"all immune cells have a stem cell as their origin\"\u2014can differentiate into many kinds of cells."
+  },
+  {
+    "qid": "323-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.036149,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 126,
+      "output_tokens": 64,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 5427,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.036149,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript at 3:20 states \"the Golgi apparatus, sometimes called the Golgi body, receives them,\" referring to proteins emerging from the endoplasmic reticulum."
+  },
+  {
+    "qid": "323-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.004693,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 146,
+      "output_tokens": 50,
+      "cache_read_tokens": 5427,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.004693,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The cytoskeleton is described at [4:43] as including \"the thread-like microfilaments... and microtubules,\" making these the two components of that structure."
+  },
+  {
+    "qid": "323-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.027235,
+    "wall_s": 13.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 164,
+      "output_tokens": 279,
+      "cache_read_tokens": 10854,
+      "cache_write_tokens": 2242,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "get_frames": 1
+      },
+      "usd": 0.027235,
+      "frames_fetched": 4
+    },
+    "answer_text": "The mice scene (c) appears early around 0:08. The order is: (c) mice/cells ~0:08, (b) protein folding/Golgi ~3:20, (a) lungs ~5:43.\n\nC. The mice/cells scene appears first (~0:08), then protein folding at the Golgi (~3:20), then human lungs (~5:43)."
+  },
+  {
+    "qid": "324-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.09213,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 144,
+      "output_tokens": 90,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 8916,
+      "tool_calls": {},
+      "usd": 0.09213,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video explains the lymphatic system, its three main functions (returning excess fluid, aiding immunity, absorbing fats), and how to keep it healthy, as stated at 0:19 \"This critical and often overlooked aspect of anatomy is the lymphatic system.\""
+  },
+  {
+    "qid": "324-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.006978,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 149,
+      "output_tokens": 71,
+      "cache_read_tokens": 8916,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.006978,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The transcript at 3:05 states lymph nodes have immune cells \"such as macrophages, dendritic cells, and lymphocytes, such as B cells and T cells, patrolling the node for any intruders.\""
+  },
+  {
+    "qid": "324-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.006843,
+    "wall_s": 2.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 177,
+      "output_tokens": 60,
+      "cache_read_tokens": 8916,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.006843,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript states \"Every time you move your body, the lymph within the vessels moves... It speeds up the rate at which lymph drains back into your blood\" (2:18\u20132:42)."
+  },
+  {
+    "qid": "325-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.206595,
+    "wall_s": 2.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 197,
+      "output_tokens": 72,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 20381,
+      "tool_calls": {},
+      "usd": 0.206595,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript states telepathy lets users \"control a smartphone or computer simply by thinking\" and that \"in theory, telepathy should allow the user to reach out and control pretty much anything\" connected to that device (1:58)."
+  },
+  {
+    "qid": "325-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.012235,
+    "wall_s": 2.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 129,
+      "output_tokens": 56,
+      "cache_read_tokens": 20381,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.012235,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The transcript at 10:01 states \"That is a total of 1,024 individual electrodes that are distributed across the circular hole that's been cut into the patient's skull.\""
+  },
+  {
+    "qid": "325-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.013066,
+    "wall_s": 3.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 120,
+      "output_tokens": 91,
+      "cache_read_tokens": 20381,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.013066,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. BlackRock Neurotech is introduced near the end of the video around [12:12] as the BCI company \"as close to Neuralink as anyone else has come,\" while Synchron and Neuralink appear earlier and Vanguard is only mentioned in passing as a co-owner."
+  },
+  {
+    "qid": "326-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.18236,
+    "wall_s": 2.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 133,
+      "output_tokens": 71,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 17992,
+      "tool_calls": {},
+      "usd": 0.18236,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video is explicitly titled \"The Future of Medicine\" (title card at 0:28) and covers emerging technologies like nanotechnology, regenerative medicine, gene editing, and personalized healthcare."
+  },
+  {
+    "qid": "326-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.012581,
+    "wall_s": 2.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 117,
+      "output_tokens": 120,
+      "cache_read_tokens": 17992,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.012581,
+      "frames_fetched": 0
+    },
+    "answer_text": "The topic definition slides appear in order: Nanotechnology [0:50], Bioengineering [1:58], Regenerative medicine [2:49], Gene editing [5:17].\n\nA. Regenerative medicine is the third future topic defined, following Nanotechnology [0:50] and Bioengineering [1:58], as shown by its definition slide at [2:49]."
+  },
+  {
+    "qid": "326-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.011756,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 147,
+      "output_tokens": 81,
+      "cache_read_tokens": 17992,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.011756,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video devotes the most time (roughly 5:14\u20137:38) to CRISPR/gene editing, with Dr. Alasdair Russell explaining \"a new breakthrough called CRISPR or genome editing\" in detail across many shots."
+  },
+  {
+    "qid": "328-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.027484,
+    "wall_s": 2.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 148,
+      "output_tokens": 70,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 3999,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.027484,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video is titled \"UNDERSTANDING PARKINSON'S DISEASE\" and focuses on how Parkinson's affects neurons and various areas of the nervous system (0:00, 0:09)."
+  },
+  {
+    "qid": "328-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.00337,
+    "wall_s": 1.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 134,
+      "output_tokens": 28,
+      "cache_read_tokens": 3999,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.00337,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The title card at 0:14 shows screen text \">6 million cases globally.\""
+  },
+  {
+    "qid": "328-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.00486,
+    "wall_s": 2.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 187,
+      "output_tokens": 77,
+      "cache_read_tokens": 3999,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.00486,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The transcript states that in Parkinson's \"these processes can be impaired, and mitochondria are unable to sustain proper neuronal function\" (2:21), indicating inefficient mitochondria leading to impaired neuronal function."
+  },
+  {
+    "qid": "329-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.19683,
+    "wall_s": 3.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 142,
+      "output_tokens": 106,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 19347,
+      "tool_calls": {},
+      "usd": 0.19683,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video centers on the development and production of durable artificial hearts (e.g., SynCardia, Carmat, and BiVACOR's rotary total artificial heart) to replace failing hearts, as stated early on: \"scientists have been working tirelessly to create a machine that can accurately mimic the function of a beating human heart.\""
+  },
+  {
+    "qid": "329-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.012658,
+    "wall_s": 2.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 272,
+      "output_tokens": 65,
+      "cache_read_tokens": 19347,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.012658,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript states \"nearly 6,000 heart transplants done annually,\" \"about a million requests for donor hearts each year,\" and \"600,000 of which are in the U.S. alone\" (1:09)."
+  },
+  {
+    "qid": "329-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.012323,
+    "wall_s": 2.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 200,
+      "output_tokens": 66,
+      "cache_read_tokens": 19347,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.012323,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. BiVACOR is developing a rotary total artificial heart with a magnetically levitated spinning disk designed to \"last forever\" and completely replace the native heart's function (5:59, 6:24)."
+  },
+  {
+    "qid": "330-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.169805,
+    "wall_s": 3.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 143,
+      "output_tokens": 114,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 16624,
+      "tool_calls": {},
+      "usd": 0.169805,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video traces the brain's entire life cycle\u2014from formation before birth through infancy, childhood, puberty, adulthood, aging, and even after death\u2014so it focuses on what happens to the brain as we age across the full lifespan, as stated at 0:24 (\"This is the life cycle of your brain\") and continuing through death at 7:38\u20138:26."
+  },
+  {
+    "qid": "330-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.039813,
+    "wall_s": 7.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 174,
+      "output_tokens": 333,
+      "cache_read_tokens": 33248,
+      "cache_write_tokens": 2239,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "get_frames": 1
+      },
+      "usd": 0.039813,
+      "frames_fetched": 4
+    },
+    "answer_text": "The children's chapter heavily features real-life video footage (classrooms, kids playing, trampolines, tablets) to illustrate brain development, which is consistent with how the video works throughout.\n\nD. The children's chapter (like the others) relies on cited real-life video scenes\u2014kids learning in classrooms, playing, and bouncing on trampolines\u2014to illustrate how the brain functions at that age, with the distinguishing feature being the demonstration of the synapse neurotransmitter model at this stage rather than the plain brain-slice anatomical models used elsewhere."
+  },
+  {
+    "qid": "330-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.036725,
+    "wall_s": 6.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 189,
+      "output_tokens": 209,
+      "cache_read_tokens": 33248,
+      "cache_write_tokens": 2229,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "get_frames": 1
+      },
+      "usd": 0.036725,
+      "frames_fetched": 4
+    },
+    "answer_text": "C. The transcript states the slowing process accelerates in the 60s and 70s as the cerebral cortex \"thins\" (shown highlighted at ~6:54\u20137:18), meaning the brain effectively becomes smaller/shrinks in those regions."
+  },
+  {
+    "qid": "331-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.052504,
+    "wall_s": 2.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 112,
+      "output_tokens": 100,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 7911,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.052504,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The audio mentions Coca-Cola, Apple, and Dairy Queen (\"Geico, Dairy Queen...stock in other companies like Apple and Coca-Cola\"), while American Express appears only visually (as \"America of America\"/Amex logo at [0:20]) but is never spoken."
+  },
+  {
+    "qid": "331-2",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.007725,
+    "wall_s": 2.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 219,
+      "output_tokens": 107,
+      "cache_read_tokens": 7911,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.007725,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. Under the stepped-up basis rule, John's cost basis becomes the $150 value at inheritance, so his taxable gain is $180 \u2212 $150 = $30 per share, taxed at 15% = $4.5 per share (as the video explains at 3:58\u20134:23, heirs only pay tax on gains after they inherit)."
+  },
+  {
+    "qid": "331-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.006915,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 182,
+      "output_tokens": 82,
+      "cache_read_tokens": 7911,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.006915,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. Warren Buffett appears first (0:02), then Jeff Bezos is mentioned at 3:09 (\"Amazon's Jeff Bezos, the richest man in America\"), followed by Elon Musk at 3:15\u20133:34."
+  },
+  {
+    "qid": "332-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.237035,
+    "wall_s": 12.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 129,
+      "output_tokens": 300,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 22889,
+      "tool_calls": {},
+      "usd": 0.237035,
+      "frames_fetched": 0
+    },
+    "answer_text": "All four options appear related to video content, so let me verify each against the transcript.\n\nThe transcript confirms: A (Venezuela inflation, 6:47 \"I went to Venezuela\"), C (supply chain, 3:38 \"Supply chain issue... pandemic\"), and B (Fed rate hike, 6:22 \"The Federal Reserve is raising interest rates\"). For D, the factory shutdown was about the village store owner's bike factory in a hypothetical, not a bicycle factory closing as a real event\u2014but let me check the framing.\n\nActually, the store owner \"has to shut down the factory\" (2:26) refers to an e-bikes factory, which is a bike factory\u2014so D is mentioned too. The distinction is subtler.\n\nD. The factory closure described in the video was an e-bikes (electric bike) factory in the hypothetical village, not a generic \"bicycle factory,\" making this the event not accurately mentioned as stated."
+  },
+  {
+    "qid": "332-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "A",
+    "correct": false,
+    "usd": 0.014665,
+    "wall_s": 4.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 109,
+      "output_tokens": 107,
+      "cache_read_tokens": 22889,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.014665,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video never specifies a numeric drop\u2014it only says the central bank \"lowered the interest rate\" during the pandemic\u2014so among the options, the example given (2% vs. 6% on loans, and a \"0%\" interest rate graphic at 4:50) best supports a low single-digit figure, making 1% the closest reasonable answer."
+  },
+  {
+    "qid": "332-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.013635,
+    "wall_s": 4.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 113,
+      "output_tokens": 65,
+      "cache_read_tokens": 22889,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.013635,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video explains that when the government drops cash and lowers interest rates, there's more money than goods, so businesses raise prices across all industries\u2014including apples\u2014due to excess money/demand (around 1:40)."
+  },
+  {
+    "qid": "333-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "D",
+    "correct": false,
+    "usd": 0.257495,
+    "wall_s": 11.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 113,
+      "output_tokens": 401,
+      "cache_read_tokens": 41486,
+      "cache_write_tokens": 5066,
+      "cache_write_1h_tokens": 19450,
+      "tool_calls": {
+        "get_frames": 2
+      },
+      "usd": 0.257495,
+      "frames_fetched": 8
+    },
+    "answer_text": "No name/title lower-third is visible. Based on the transcript context, this woman's commentary (\"as I learned from my reporting,\" \"We did find two consultants\") and her analytical narration throughout the piece indicate she is a journalist/reporter covering the SHEIN story.\n\nA. Journalist \u2014 Her narration (\"as I learned from my reporting,\" \"we did find two consultants who had studied the company\") identifies her as a CNBC reporter covering the story, not a company employee, executive, or counselor."
+  },
+  {
+    "qid": "333-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.012085,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 102,
+      "output_tokens": 74,
+      "cache_read_tokens": 19450,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.012085,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript at 2:22 states \"Even though Xi'en states it was founded in 2012, several sources say its origin story actually began in 2008\" in Eastern China, pointing to 2008 as the true founding/origin."
+  },
+  {
+    "qid": "333-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.01247,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 109,
+      "output_tokens": 88,
+      "cache_read_tokens": 19450,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.01247,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video repeatedly emphasizes Shein's secrecy, calling it \"a very secretive company\" that \"keeps an air of mystery\" (2:22) with a \"lack of transparency\" and manufacturing \"shrouded in mystery\" (9:09\u20139:30)."
+  },
+  {
+    "qid": "334-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.04056,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 117,
+      "output_tokens": 52,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 6188,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.04056,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The video uses Al Capone as an opener but focuses on explaining money laundering and its three steps\u2014placement, layering, and integration (1:36 onward)."
+  },
+  {
+    "qid": "334-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.005374,
+    "wall_s": 2.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 126,
+      "output_tokens": 66,
+      "cache_read_tokens": 6188,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.005374,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. Rigging casino games is described under layering, which is the second stage (\"The second step, layering... Casinos... are also popular venues for layering... work with employees to rig games\" at 2:18\u20132:38)."
+  },
+  {
+    "qid": "334-3",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.076212,
+    "wall_s": 14.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 170,
+      "output_tokens": 457,
+      "cache_read_tokens": 21061,
+      "cache_write_tokens": 8545,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "survey": 1,
+        "get_frames": 2
+      },
+      "usd": 0.076212,
+      "frames_fetched": 49
+    },
+    "answer_text": "The order is clear: dice at ~0:33, pizza parlor at ~2:26 (146s), and UN emblem at ~3:57 (237s).\n\nC. Dice appear first (~0:33), then pizza parlors (~2:26), then the United Nations emblem (~3:57)."
+  },
+  {
+    "qid": "335-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.176099,
+    "wall_s": 17.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 3,
+      "input_tokens": 104,
+      "output_tokens": 994,
+      "cache_read_tokens": 23050,
+      "cache_write_tokens": 5759,
+      "cache_write_1h_tokens": 10321,
+      "tool_calls": {
+        "survey": 1,
+        "get_frames": 3
+      },
+      "usd": 0.176099,
+      "frames_fetched": 38
+    },
+    "answer_text": "Jacob appears alone across the two main solo segments. Let me check the remaining Jacob-shots in the index: shot 2 (0:27, @27-36 is one continuous appearance covering shots 2 & 3), shot 20 (7:02-7:03), shot 24/25 (9:02, 9:04). Let me verify shots 7:02 and 9:02 are separate Jacob appearances.\n\nBased on my evidence, the distinct Jacob-alone speaking segments are: shot 2+3 (0:27\u20130:43), shot 20 (7:02), shot 24+25 (9:02\u20139:04). The index lists Jacob-alone shots as: 2, 3, 20, 24, 25. That's within these segments. The intro (shot 0) and city council (shot 1) have both presenters.\n\nLet me recount the individual Jacob-alone shots from the index: shot 2 (0:27), shot 3 (0:36), shot 20 (7:02), shot 24 (9:02), shot 25 (9:04). That's 5 shots. But as distinct appearances with cuts, let me reconsider\u2014the question likely counts shot-appearances. With options 4/6/8/10, and I count roughly 6 Jacob-alone shots.\n\nD. Jacob Clifford (the man in the navy/blue shirt) appears alone in shots 2 (0:27), 3 (0:36), 20 (7:02), 24 (9:02), and 25 (9:04)\u2014roughly 6 solo shot-appearances across the video, matching option D."
+  },
+  {
+    "qid": "335-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.008096,
+    "wall_s": 2.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 207,
+      "output_tokens": 76,
+      "cache_read_tokens": 10321,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.008096,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript states investors \"gobbled these mortgage-backed securities up\" because they \"paid a higher rate of return\" and \"looked like really safe bets\" (2:37), eagerly investing believing they were low-risk and high-return."
+  },
+  {
+    "qid": "335-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.007866,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 181,
+      "output_tokens": 72,
+      "cache_read_tokens": 10321,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.007866,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video describes predatory/subprime lending practices (3:37, \"PREDATORY LENDING PRACTICES\") and a housing bubble that burst (4:38\u20135:01), which are the key factors it identifies."
+  },
+  {
+    "qid": "336-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.244165,
+    "wall_s": 3.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 183,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 24175,
+      "tool_calls": {},
+      "usd": 0.244165,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. At 7:36 the narrator quotes Buffett's tip: \"Buy an S&P 500 low-cost index fund,\" which puts a little of your money in all companies in the index."
+  },
+  {
+    "qid": "336-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.015462,
+    "wall_s": 5.3,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 190,
+      "output_tokens": 97,
+      "cache_read_tokens": 24175,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.015462,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript states that short-term focus leads to cutting costs, buybacks, and dividends, \"which didn't leave much left to raise wages or expand or develop new products, things that are good for the economy in the long term\" (12:53), harming long-term corporate sustainability and economic growth (14:50)."
+  },
+  {
+    "qid": "336-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.015392,
+    "wall_s": 3.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 216,
+      "output_tokens": 89,
+      "cache_read_tokens": 24175,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.015392,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. Around 0:52 the narration states wages \"have hardly budged in decades\" and family net worth \"still hasn't recovered from the Great Recession\" even as the market keeps hitting record highs, exemplifying the booming-market-vs-stagnant-wages disparity."
+  }
+]
