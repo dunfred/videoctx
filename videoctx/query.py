@@ -53,6 +53,38 @@ SURVEY_TOOL = {
     "input_schema": {"type": "object", "properties": {}},
 }
 
+# Range-capable survey, enabled with VIDEOCTX_SWEEP=1 while under dev A/B.
+SURVEY_RANGED_TOOL = {
+    "name": "survey",
+    "description": (
+        "Get a low-resolution thumbnail of shots in order, each labeled with "
+        "its timestamp. Cheap (~50 tokens per shot). Covers the whole video "
+        "by default but subsamples to at most 24 shots; pass start_s/end_s "
+        "to survey a sub-range instead. The response header says how many "
+        "shots the range contains versus how many are shown, so you know "
+        "whether you have seen every shot."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "start_s": {"type": ["number", "string"], "description": "range start (seconds or 'm:ss')"},
+            "end_s": {"type": ["number", "string"], "description": "range end (seconds or 'm:ss')"},
+        },
+    },
+}
+
+SWEEP_RULES = (
+    "\n8. EXHAUSTIVE SWEEP: a full-video survey subsamples to at most 24 "
+    "shots. For counting or 'how many times' questions, and for ordering "
+    "questions on fast-cut videos, survey consecutive sub-ranges until the "
+    "coverage headers confirm you have seen EVERY shot, then count or order "
+    "from that complete timeline. Never count from a subsampled survey.\n"
+    "9. PEOPLE AND ROLES: to identify who a person is or their role, fetch "
+    "frames at their appearances and read on-screen name titles and captions "
+    "(lower thirds); prefer what the overlay says over inference from "
+    "context."
+)
+
 FIND_MOMENTS_TOOL = {
     "name": "find_moments",
     "description": (
@@ -209,14 +241,30 @@ def _thumb(index_dir: Path, kf: Keyframe, edge: int = 256) -> Path:
 MAX_SURVEY_THUMBS = 24
 
 
-def _survey_blocks(index_dir: Path, ctx: VideoContext) -> list[dict]:
+def _survey_blocks(index_dir: Path, ctx: VideoContext,
+                   start_s: float | None = None,
+                   end_s: float | None = None) -> list[dict]:
     shots = [s for s in ctx.shots if s.keyframes]
+    ranged = start_s is not None or end_s is not None
+    if ranged:
+        lo = max(0.0, start_s or 0.0)
+        hi = end_s if end_s is not None else ctx.video.duration_s
+        shots = [s for s in shots
+                 if lo <= s.keyframes[len(s.keyframes) // 2].t_s <= hi]
+    total = len(shots)
     # Fast-cut videos can have hundreds of shots; subsample evenly so a survey
     # stays ~1-2k tokens instead of blowing up the context.
     if len(shots) > MAX_SURVEY_THUMBS:
         step = (len(shots) - 1) / (MAX_SURVEY_THUMBS - 1)
         shots = [shots[round(i * step)] for i in range(MAX_SURVEY_THUMBS)]
     blocks: list[dict] = []
+    if ranged:
+        # Coverage header so exhaustive sweeps know when they have seen all
+        # shots; emitted only on ranged calls to keep the default survey
+        # output identical to the frozen config's.
+        blocks.append({"type": "text", "text":
+                       f"showing {len(shots)} of {total} shots in range"
+                       + (" (subsampled)" if len(shots) < total else " (complete)")})
     for shot in shots:
         kf = shot.keyframes[len(shot.keyframes) // 2]
         thumb = _thumb(index_dir, kf)
@@ -383,15 +431,21 @@ def ask(
         ],
     }]
 
-    tools = [GET_FRAMES_TOOL, SURVEY_TOOL]
+    sweep = os.environ.get("VIDEOCTX_SWEEP") == "1"
+    tools = [GET_FRAMES_TOOL, SURVEY_RANGED_TOOL if sweep else SURVEY_TOOL]
     if (index_dir / "embeddings.npz").exists() and os.environ.get("VIDEOCTX_NO_EMBED") != "1":
         tools.append(FIND_MOMENTS_TOOL)
 
-    system = SYSTEM
+    extra_rules = ""
     if os.environ.get("VIDEOCTX_TEXT_EVIDENCE") == "1":
+        extra_rules += TEXT_EVIDENCE_RULES
+    if sweep:
+        extra_rules += SWEEP_RULES
+    system = SYSTEM
+    if extra_rules:
         system = SYSTEM.replace(
             "\nGive the final answer directly and cite timestamps.",
-            TEXT_EVIDENCE_RULES + "\nGive the final answer directly and cite timestamps.")
+            extra_rules + "\nGive the final answer directly and cite timestamps.")
 
     for _ in range(MAX_TOOL_TURNS):
         response = client.messages.create(
@@ -435,11 +489,20 @@ def ask(
                                 "content": content or [{"type": "text", "text": "no matches"}]})
                 continue
             if block.name == "survey":
-                frames_fetched += len(ctx.shots)
+                if sweep:
+                    args = block.input or {}
+                    start = _parse_ts(args["start_s"]) if "start_s" in args else 0.0
+                    end = _parse_ts(args["end_s"]) if "end_s" in args else ctx.video.duration_s
+                    content = _survey_blocks(index_dir, ctx, start, end)
+                    # count thumbnails actually sent, not total shots
+                    frames_fetched += sum(1 for b in content if b["type"] == "image")
+                else:
+                    content = _survey_blocks(index_dir, ctx)
+                    frames_fetched += len(ctx.shots)
                 results.append({
                     "type": "tool_result",
                     "tool_use_id": block.id,
-                    "content": _survey_blocks(index_dir, ctx),
+                    "content": content,
                 })
                 continue
             args = block.input
