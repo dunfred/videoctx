@@ -1,0 +1,402 @@
+[
+  {
+    "qid": "611-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.29403,
+    "wall_s": 6.9,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 157,
+      "output_tokens": 55,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 29187,
+      "tool_calls": {},
+      "usd": 0.29403,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video says Daphne's \"feet take root\" while her \"fingertips sprout leaves\" (1:20), so it is her feet, not her fingertips, that took root."
+  },
+  {
+    "qid": "611-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.019369,
+    "wall_s": 6.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 315,
+      "output_tokens": 128,
+      "cache_read_tokens": 29187,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.019369,
+      "frames_fetched": 0
+    },
+    "answer_text": "The transcript at 8:51 lists them: \"Anais, Ancaius and Ascarnius fleeing Troy, David, the Rape of Persephone and Apollo and Daphne.\"\n\nD. The narration at 8:51 names them in order as \"Aeneas, Anchises, and Ascanius fleeing Troy, David, the Rape of Persephone and Apollo and Daphne.\""
+  },
+  {
+    "qid": "611-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.017159,
+    "wall_s": 3.5,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 168,
+      "output_tokens": 69,
+      "cache_read_tokens": 29187,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.017159,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video explicitly compares Michelangelo's and Bernini's Davids to \"get an idea of the move from Renaissance to Baroque\" (13:53\u201314:21), contrasting contemplation with action."
+  },
+  {
+    "qid": "612-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.35975,
+    "wall_s": 4.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 191,
+      "output_tokens": 75,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 35692,
+      "tool_calls": {},
+      "usd": 0.35975,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video says Goya came \"from a humble background who rose through the ranks to reach the upper echelons of high society\" (2:08), and later withdrew to live in isolation in a countryside farmhouse (0:20, 24:00)."
+  },
+  {
+    "qid": "612-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "B",
+    "correct": false,
+    "usd": 0.021281,
+    "wall_s": 2.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 187,
+      "output_tokens": 100,
+      "cache_read_tokens": 35692,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.021281,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The transcript states \"Goya and his liberal friends had initially supported the aims of the French Revolution\" and \"they saw French rule as the great hope of liberalisation and enlightenment,\" while A (Ferdinand declared himself absolute monarch and rejected modernization), B, and C contradict the narration."
+  },
+  {
+    "qid": "612-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.020476,
+    "wall_s": 3.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 196,
+      "output_tokens": 66,
+      "cache_read_tokens": 35692,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.020476,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The transcript states Clotho is usually seen spinning the thread but \"Goya has her holding a newborn baby\" (40:14\u201340:21), not the thread of life, making B the incorrect statement."
+  },
+  {
+    "qid": "613-1",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.3186,
+    "wall_s": 4.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 144,
+      "output_tokens": 60,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 31638,
+      "tool_calls": {},
+      "usd": 0.3186,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video centers on the Mona Lisa\u2014its techniques, history, identity, and fame\u2014using Leonardo's broader genius to explain why this specific masterpiece is so significant."
+  },
+  {
+    "qid": "613-2",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.019254,
+    "wall_s": 4.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 152,
+      "output_tokens": 107,
+      "cache_read_tokens": 31638,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.019254,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video says Lisa owned much jewellery (from Francesco's will) that is simply not shown, and that she came from a noble family lacking money\u2014not that she was bankrupt, so D is false; the video confirms A (\"It lacks drama\"), B (the Giacondo identity), and C (eyes/expression follow the viewer)."
+  },
+  {
+    "qid": "613-3",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.019529,
+    "wall_s": 4.0,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 162,
+      "output_tokens": 116,
+      "cache_read_tokens": 31638,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.019529,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The Spolvero technique was described as a tracing/copying method for transferring sketches to panel (used for the Prado apprentice copy), not as a contributor to the smile, whereas visual perception psychology (25:16), facial anatomy dissections (23:14), and sfumato/chiaroscuro (26:03) all shape the smile's mystery."
+  },
+  {
+    "qid": "615-1",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.32461,
+    "wall_s": 4.7,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 128,
+      "output_tokens": 56,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 32257,
+      "tool_calls": {},
+      "usd": 0.32461,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. At [3:35] she says \"I can sit down at my desk to read my e-mail,\" contrasting with how she'd \"accomplish nothing\" if she sat down to design."
+  },
+  {
+    "qid": "615-2",
+    "method": "videoctx",
+    "predicted": "C",
+    "gold": "C",
+    "correct": true,
+    "usd": 0.018659,
+    "wall_s": 3.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 146,
+      "output_tokens": 72,
+      "cache_read_tokens": 32257,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.018659,
+      "frames_fetched": 0
+    },
+    "answer_text": "C. The transcript states \"the beach looked unique from every place that you entered it... it looked different from 101st Street because the view was different\" (25:30\u201325:49), so the posters/scenery looked different\u2014not similar\u2014at each spot."
+  },
+  {
+    "qid": "615-3",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.018749,
+    "wall_s": 3.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 119,
+      "output_tokens": 81,
+      "cache_read_tokens": 32257,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.018749,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. The video shows she is hard-working (\"I can work to midnight or one or two in the morning\"), imaginative, and patient, but she explicitly says \"I never thought about myself as a feminist\" (30:51), so passion for feminism does not describe her."
+  },
+  {
+    "qid": "617-1",
+    "method": "videoctx",
+    "predicted": "A",
+    "gold": "A",
+    "correct": true,
+    "usd": 0.2778,
+    "wall_s": 3.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 186,
+      "output_tokens": 86,
+      "cache_read_tokens": 0,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 27472,
+      "tool_calls": {},
+      "usd": 0.2778,
+      "frames_fetched": 0
+    },
+    "answer_text": "A. At 20:44 the narrator says \"being occupiers doesn't make them the creators. The temples at Cambodia, Angkor Wat and Angkor Thom are perfect examples of this,\" using them to argue that occupying a site doesn't mean you built it."
+  },
+  {
+    "qid": "617-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.017871,
+    "wall_s": 5.1,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 162,
+      "output_tokens": 133,
+      "cache_read_tokens": 27472,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.017871,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The video states the material was quarried from the rock itself and the mystery is where it went, not that it was built with stones brought from elsewhere\u2014in fact modern workers had to import rock from a quarry 100 miles away, contrasting with the ancient site (\"with over 220,000 tons of basaltic rock painstakingly removed,\" 5:22; \"largest single monolithic rock excavation in the world,\" 5:14)."
+  },
+  {
+    "qid": "617-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "D",
+    "correct": true,
+    "usd": 0.016606,
+    "wall_s": 3.4,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 119,
+      "output_tokens": 91,
+      "cache_read_tokens": 27472,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.016606,
+      "frames_fetched": 0
+    },
+    "answer_text": "D. The video repeatedly emphasizes that no piles of stone or quarried debris can be found at Ellora (\"you won't find any large piles of rocks or quarried material,\" ~10:17), whereas Shiva statues, elephant statues, and Ramayana homage are all present."
+  },
+  {
+    "qid": "618-1",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.426238,
+    "wall_s": 6.8,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 133,
+      "output_tokens": 231,
+      "cache_read_tokens": 38104,
+      "cache_write_tokens": 3153,
+      "cache_write_1h_tokens": 38104,
+      "tool_calls": {
+        "get_frames": 1
+      },
+      "usd": 0.426238,
+      "frames_fetched": 6
+    },
+    "answer_text": "B. The expanding red lines on the map (179\u2013185s) trace the route labeled \"SILK ROAD,\" which the narration describes as the catalyst bringing people, goods, and ideas from India, Iran, and Central Asia into the Tang capital."
+  },
+  {
+    "qid": "618-2",
+    "method": "videoctx",
+    "predicted": "B",
+    "gold": "B",
+    "correct": true,
+    "usd": 0.021972,
+    "wall_s": 4.2,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 1,
+      "input_tokens": 189,
+      "output_tokens": 79,
+      "cache_read_tokens": 38104,
+      "cache_write_tokens": 0,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {},
+      "usd": 0.021972,
+      "frames_fetched": 0
+    },
+    "answer_text": "B. The verse contrasts the rich's wasted wine and rotting meat behind red gates with the frozen, starved corpses outside, highlighting the gap between the wealthy and the suffering poor (transcript ~24:42\u201324:55)."
+  },
+  {
+    "qid": "618-3",
+    "method": "videoctx",
+    "predicted": "D",
+    "gold": "C",
+    "correct": false,
+    "usd": 0.060383,
+    "wall_s": 13.6,
+    "detail": {
+      "model": "claude-opus-4-8",
+      "calls": 2,
+      "input_tokens": 167,
+      "output_tokens": 305,
+      "cache_read_tokens": 76208,
+      "cache_write_tokens": 2211,
+      "cache_write_1h_tokens": 0,
+      "tool_calls": {
+        "get_frames": 1
+      },
+      "usd": 0.060383,
+      "frames_fetched": 4
+    },
+    "answer_text": "The transcript shows this verse (\"Spring Prospect\"/\u300a\u6625\u671b\u300b) was written while Du Fu was a captive under rebel rule in the ruined capital, after being reunited with his family later. His daughter was born in Changsha much later (early 770), long after this poem.\n\nD. The verse is from \"Spring Prospect,\" written ~757 during the An Lushan rebellion while Du Fu was captive in the ruined capital, well before his baby daughter's birth in Changsha (~770), whereas he had already married and served the court by then, so only option D holds true."
+  }
+]
