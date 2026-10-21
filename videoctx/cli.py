@@ -61,14 +61,20 @@ def mcp():
 
 @main.command()
 @click.argument("index_dir", type=click.Path(exists=True, path_type=Path))
-def caption(index_dir: Path):
+@click.option("--dense", is_flag=True,
+              help="Also caption non-midpoint keyframes of long shots "
+                   "(one timestamped line per ~20s inside multi-minute shots)")
+def caption(index_dir: Path, dense: bool):
     """Add visual captions to an index's shots (one cheap VLM call per shot)."""
-    from .captions import caption_shots
+    from .captions import caption_dense, caption_shots
     from .indexer import load_index
 
     ctx = load_index(index_dir)
     meter = caption_shots(index_dir, ctx, progress=click.echo)
     click.echo(f"captioned; cost: {json.dumps(meter.summary())}")
+    if dense:
+        meter = caption_dense(index_dir, ctx, progress=click.echo)
+        click.echo(f"dense captions; cost: {json.dumps(meter.summary())}")
 
 
 @main.command()

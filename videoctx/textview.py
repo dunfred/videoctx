@@ -9,7 +9,8 @@ def _ts(seconds: float) -> str:
     return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
 
 
-def text_view(ctx: VideoContext, include_ocr: bool = True) -> str:
+def text_view(ctx: VideoContext, include_ocr: bool = True,
+              include_dense: bool = True) -> str:
     """Compact plain-text rendering of an index: shot structure interleaved
     with transcript segments by timestamp. This is the cheap path an agent
     reads before deciding whether it needs frames."""
@@ -30,6 +31,14 @@ def text_view(ctx: VideoContext, include_ocr: bool = True) -> str:
     captioned = [s for s in ctx.shots if s.caption]
     for shot in captioned:
         events.append((shot.start_s, f"[{_ts(shot.start_s)}] {shot.caption}"))
+
+    # Dense keyframe captions (enrichment): timestamped lines inside long
+    # shots, so minutes-long shots are visible to the text layer throughout.
+    if include_dense:
+        for shot in ctx.shots:
+            for kf in shot.keyframes:
+                if kf.caption:
+                    events.append((kf.t_s, f"[{_ts(kf.t_s)}] {kf.caption}"))
 
     # On-screen text (OCR), deduped across shots: screen recordings repeat the
     # same text for many consecutive shots; show each line when it first

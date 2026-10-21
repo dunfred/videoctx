@@ -353,7 +353,9 @@ def ask_cascade(
 
     client = client or anthropic.Anthropic()
     stage1 = CostMeter(model=CASCADE_MODEL)
-    tv = text_view(ctx, include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1")
+    tv = text_view(ctx,
+                   include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1",
+                   include_dense=os.environ.get("VIDEOCTX_NO_DENSE") != "1")
     response = client.messages.create(
         model=CASCADE_MODEL,
         max_tokens=2048,
@@ -423,7 +425,9 @@ def ask(
     # TTL was observed to lapse and force premium re-writes.
     import os
 
-    tv = text_view(ctx, include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1")
+    tv = text_view(ctx,
+                   include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1",
+                   include_dense=os.environ.get("VIDEOCTX_NO_DENSE") != "1")
     cache_ctl = {"type": "ephemeral", "ttl": "1h"} if len(tv) > 20000 else {"type": "ephemeral"}
     messages: list[dict] = [{
         "role": "user",

@@ -16,6 +16,9 @@ class Keyframe(BaseModel):
     file: str
     width: int
     height: int
+    # Optional dense caption (enrichment); shot midpoints are captioned on
+    # the Shot instead.
+    caption: str | None = None
 
 
 class Shot(BaseModel):
