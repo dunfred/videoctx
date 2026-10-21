@@ -104,6 +104,21 @@ SYSTEM = (
     "Give the final answer directly and cite timestamps."
 )
 
+# Text-path evidence discipline, toggled by VIDEOCTX_TEXT_EVIDENCE=1 while
+# under dev A/B; mirrors the visual evidence rule for transcript claims.
+TEXT_EVIDENCE_RULES = (
+    "\n6. TEXT EVIDENCE RULE: claims about what the video says or mentions "
+    "(names, numbers, dates, topic lists, 'which was/wasn't mentioned') must "
+    "be backed by a verbatim quote from the transcript or screen text; cite "
+    "the quote. Never substitute outside knowledge about the subject for "
+    "what the video itself says; when they conflict, the video wins.\n"
+    "7. FINAL CHECK: before giving the letter, restate exactly what quantity "
+    "or position the question asks for (a change vs a resulting value, "
+    "'third mentioned' vs 'third shown', mentioned vs not mentioned), then "
+    "confirm the letter against your own cited evidence. If your evidence "
+    "identifies option X, your answer must be X."
+)
+
 
 def extract_on_demand(
     index_dir: Path,
@@ -368,11 +383,17 @@ def ask(
     if (index_dir / "embeddings.npz").exists() and os.environ.get("VIDEOCTX_NO_EMBED") != "1":
         tools.append(FIND_MOMENTS_TOOL)
 
+    system = SYSTEM
+    if os.environ.get("VIDEOCTX_TEXT_EVIDENCE") == "1":
+        system = SYSTEM.replace(
+            "\nGive the final answer directly and cite timestamps.",
+            TEXT_EVIDENCE_RULES + "\nGive the final answer directly and cite timestamps.")
+
     for _ in range(MAX_TOOL_TURNS):
         response = client.messages.create(
             model=model,
             max_tokens=8192,
-            system=SYSTEM,
+            system=system,
             tools=tools,
             messages=messages,
         )
