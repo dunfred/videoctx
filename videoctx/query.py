@@ -429,12 +429,21 @@ def ask(
                    include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1",
                    include_dense=os.environ.get("VIDEOCTX_NO_DENSE") != "1")
     cache_ctl = {"type": "ephemeral", "ttl": "1h"} if len(tv) > 20000 else {"type": "ephemeral"}
+    prefix: list[dict] = [{"type": "text", "text": f"VIDEO INDEX:\n{tv}"}]
+    if os.environ.get("VIDEOCTX_CONTACT_SHEET") == "1":
+        # Unconditional visual grounding: a subsampled thumbnail strip baked
+        # into the cached prefix, so every question starts with the same
+        # coarse view of the whole video at cache-read prices instead of
+        # relying on the model's decision to survey.
+        prefix.append({"type": "text", "text":
+                       "CONTACT SHEET (one thumbnail per shot, subsampled "
+                       "evenly; timestamps label each):"})
+        prefix.extend(_survey_blocks(index_dir, ctx))
+    # The breakpoint on the final block caches the whole stable prefix.
+    prefix[-1]["cache_control"] = cache_ctl
     messages: list[dict] = [{
         "role": "user",
-        "content": [
-            {"type": "text", "text": f"VIDEO INDEX:\n{tv}", "cache_control": cache_ctl},
-            {"type": "text", "text": f"QUESTION: {question}"},
-        ],
+        "content": [*prefix, {"type": "text", "text": f"QUESTION: {question}"}],
     }]
 
     sweep = os.environ.get("VIDEOCTX_SWEEP") == "1"
