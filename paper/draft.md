@@ -1,7 +1,8 @@
 # Index Once, Ask Forever: A Model-Free Video Context Layer and an Accuracy-per-Dollar Benchmark for Video QA with LLM Agents
 
 **Fred Dunyo**
-*Draft v0.1, 2026-10-17. Numbers marked [PENDING] await runs in progress.*
+*Draft v0.2, 2026-10-21. Numbers marked [PENDING] await runs in progress
+(native Pro-tier columns, gated on paid API access).*
 
 ## Abstract
 
@@ -18,18 +19,22 @@ questions without fetched visual evidence. We also introduce an
 **accuracy-per-dollar** evaluation protocol for video QA that charges every
 token honestly, including prompt-cache write premiums, and measures cost as a
 function of questions asked per video. On Video-MME short videos (held-out
-test half, n=150), the frozen vctx configuration with Claude Opus 4.8 scores
-80.7% at $0.025 per question (equivalent configurations ranged 80.7-85.3%
-across runs), versus 74.0% at $0.0172 for a uniform frame-sampling baseline.
-On Video-MME long videos (n=30), vctx reaches 80.0% (replicated exactly
-across runs) at $0.098 per question versus 70.0% at $0.133 for sampling;
-follow-up questions on an already-warm index cost $0.019, roughly 25x below
-the estimated cost of native ingestion of the same hour-long video. We also
-quantify run-to-run variance and locate it almost entirely in the
-frame-fetching path, with consequences for how small accuracy deltas on this
-benchmark should be read. The format specification,
-reference implementation, MCP server, and evaluation harness are released
-under Apache-2.0.
+test half, n=150), the current frozen vctx configuration with Claude Opus
+4.8 scores 84.7% at $0.025 per question, versus 74.0% at $0.0172 for a
+uniform frame-sampling baseline. On Video-MME long videos (n=30), vctx with
+dense keyframe captions reaches 83.3% at $0.047 per question versus 70.0%
+at $0.133 for sampling; follow-up questions on an already-warm index cost
+about $0.02, roughly 25x below the estimated cost of native ingestion of
+the same hour-long video. On medium videos the sampling baseline retains
+the lead (80.0% vs 70.0%), a result we analyze in depth: the same 10
+questions failed under five successive configurations, isolating raw
+visual detail bandwidth at question time as the one advantage of stateless
+dense sampling. We also quantify run-to-run variance and locate it almost
+entirely in the frame-fetching path, report a replicated dev gain that
+transferred zero questions to its target test cell, and publish the full
+v0.2-to-v0.7 configuration ladder with per-question receipts. The format
+specification, reference implementation, MCP server, and evaluation
+harness are released under Apache-2.0.
 
 ## 1. Introduction
 
@@ -111,7 +116,11 @@ shots, long edge 768px), and faster-whisper [SYSTRAN], a CTranslate2 port of
 Whisper [Radford et al. 2022] (transcript with per-segment timestamps). An optional
 caption pass annotates up to 150 shots per video with one-line visual
 descriptions from a cheap VLM (we use Claude Haiku 4.5; ~$0.10 per hour-long
-video, one time). The manifest records every parameter and model used.
+video, one time); an optional dense pass extends this to the non-midpoint
+keyframes of shots longer than 45s, so a multi-minute shot contributes a
+timestamped caption roughly every 20s instead of one line total (the long
+cell's v0.5 gains in 6.3 come from this layer). The manifest records every
+parameter and model used.
 
 Indexing is idempotent, portable (plain JSON/JPEG), and cheap: roughly
 10-20% of video duration on a laptop CPU, dominated by transcription.
@@ -171,9 +180,12 @@ three-stage parser validated against manual reads; an earlier single-pass
 parser mis-scored 20% of one method's answers (Section 7.3).
 
 All experiments use Claude Opus 4.8 as the query model for vctx and naive;
-captions use Claude Haiku 4.5. Dev/test splits are by video. The vctx
-configuration was frozen on the pilot + dev half; the test half was touched
-once.
+captions use Claude Haiku 4.5. Dev/test splits are by video. Every vctx
+configuration was designed and validated on the pilot + dev half and
+frozen before evaluation; each frozen configuration touched the test half
+exactly once, and the complete sequence of frozen configurations with
+their test results is published as a ladder (7.8) rather than reporting
+only the best rung.
 
 ## 6. Results
 
@@ -181,9 +193,14 @@ once.
 
 | Method | Dev (150q) | Test (150q) | $/question (test) |
 |---|---|---|---|
-| vctx (frozen v0.2, one touch) | 84.0-86.0% band | **80.7%** | $0.025 |
+| vctx (frozen v0.4, one touch) | n/a | **84.7%** | $0.025 |
+| vctx (frozen v0.2, one touch) | 84.0-86.0% band | 80.7% | $0.025 |
 | Naive sampling | n/a | 74.0% | $0.0172 |
 | Native (Gemini 3 Flash)* | n/a | 53.3% | $0.0047 paid-equiv |
+
+v0.4 = v0.2 plus text-evidence rules (7.7) and a text-view bug fix (7.3g);
+each frozen config touched the test half exactly once (7.7 documents the
+full ladder).
 
 *Native column measured on the 30-question pilot subset (free-tier quota
 limits); on those same 30 questions vctx scores 76.7% and naive 60.0%. The
@@ -206,28 +223,40 @@ Our weakest cell, which we report rather than omit:
 | Method | Accuracy | $/question |
 |---|---|---|
 | Naive sampling | **80.0%** | $0.081 |
-| vctx (frozen v0.2, one touch) | 66.7% (earlier run: 76.7%) | $0.053 |
+| vctx v0.7 (contact sheet 60 thumbs @ 512px) | 70.0% | $0.092 first touch |
+| vctx v0.2 through v0.6 | 66.7% | $0.051-0.062 |
 | Native (Gemini Flash-Lite) | 70.0% | $0.0034 |
 
-At 4-15 minutes, a uniform frame grid still covers the video densely enough
-to answer most questions while the vctx text view is already summarizing
-away detail; the one-touch run and an earlier equivalent run differ by 10
-points (3 questions), making this the most variance-dominated cell (7.4).
-Medium is the named target for the next iteration; candidate levers are
-caption density and retrieval-stabilized frame targeting, to be evaluated
-on the medium dev split first.
+This cell resisted an entire improvement campaign, and we publish the
+ladder rather than only its best rung. The same 10 questions failed
+identically under five configurations spanning prompt rules, a text-view
+bug fix, dense keyframe captions, and a 24-thumbnail contact sheet; only
+the sixth, a 60-thumbnail 512px contact sheet baked into the cached
+prefix, recovered one (7.7). The receipts localize the residual gap:
+these videos are fast-cut and fully captioned, naive solves 7 of the 10
+stable failures from 60 full-resolution frames, and the loop answers
+26/30 questions without fetching a frame. What medium rewards is raw
+visual detail bandwidth at question time, the one structural advantage of
+stateless dense sampling. Medium remains the named target; the open lever
+is scaling prefix coverage toward naive's input while keeping it
+amortized, to be powered by a new dev instrument first.
 
 ### 6.3 Long videos (Video-MME long, 10 videos of 30-60 min, 30 questions)
 
 | Method | Accuracy | $/question | Wall-clock/question |
 |---|---|---|---|
-| vctx (ours) | **80.0%** | **$0.098** | median 4s |
+| vctx (frozen v0.5, one touch) | **83.3%** | **$0.047** | median 3s |
+| vctx (frozen v0.2, one touch) | 80.0% | $0.098 | median 4s |
 | Naive sampling (60-frame cap) | 70.0% | $0.133 | ~6s |
 | Native ingestion (Gemini 3.1 Pro, published rates) | [PENDING] | ~$0.50-0.70 est. | ~40s+ observed on Flash |
 
-vctx's text layer alone answered 28 of 30 questions (23 correct); the frame
-path handled 2. Accuracy on long videos (80.0%) matches short (83.3%),
-consistent with the index's size being decoupled from video duration.
+v0.5 adds dense keyframe captions: shots longer than 45s receive a
+timestamped caption roughly every 20s, so an hour-long video is visible to
+the text layer throughout. The effect is twofold: accuracy rose one
+question and cost halved, because 28 of 30 questions are now answered
+text-only (measured follow-up questions average $0.021). Accuracy on long
+videos staying at short-video levels is consistent with the index's size
+being decoupled from video duration.
 
 ### 6.4 Amortization: the central figure
 
@@ -250,6 +279,17 @@ between k=2 and k=3 and sits an order of magnitude below native from k=3
 onward (Figure 1). Agent
 workloads (an assistant discussing a lecture, a reviewer auditing a meeting
 recording) are precisely the k>>1 regime.
+
+The decomposition above uses the v0.2 receipts, whose first questions show
+clean cold-cache behavior (~25k cache-write tokens, zero reads). We do NOT
+use the v0.5 run for this figure: its per-video first questions show ~20k
+cache-*read* tokens that nothing in our pipeline wrote, most plausibly
+SDK-internal retries whose abandoned first attempt populated the cache
+without being metered. Until that is pinned down, v0.5 first-question
+costs would understate true cold-start spend, so we report only its
+overall average ($0.047) and measured follow-ups ($0.021). We flag this as
+a candidate addition to the accounting-trap list (7.3): client-side
+retries can convert unmetered cache writes into metered cache reads.
 
 ### 6.5 Latency
 
@@ -293,8 +333,14 @@ timestamps beyond video duration crashed extraction until server-side
 clamping was added (models do hallucinate timestamps); (f) our own first
 published short-video cost figure fell to trap (a) and was corrected from
 $0.0067 to ~$0.019 per question after remetering, a correction we record
-here rather than erase. Every one of these distorted either cost or accuracy
-before being caught by per-question audits.
+here rather than erase; (g) a shadowed variable in the text-view renderer
+silently deleted the header line (duration, shot count, transcript
+language) from every OCR-enriched index, so every benchmark number
+measured between the OCR layer shipping and 2026-10-21 was produced by a
+model that did not know the video's duration from its text layer. Fixing
+(g) was worth +2.7 points on the short test half by itself. Every one of
+these distorted either cost or accuracy before being caught by
+per-question audits.
 
 ### 7.4 Run-to-run variance lives in the frame path
 
@@ -364,6 +410,35 @@ a replicated, zero-regression dev gain on a same-domain split predicted
 nothing about this test cell. Short moved +1.3 points and long -3.3
 points under v0.3, both inside the noise bands of 7.4.
 
+### 7.8 The config ladder (v0.2 to v0.7)
+
+The full improvement campaign, every rung dev-validated first and granted
+exactly one test touch, with per-question receipts committed:
+
+| Config | Change | Short (150q) | Medium (30q) | Long (30q) |
+|---|---|---|---|---|
+| v0.2 | frozen baseline | 80.7% | 66.7% | 80.0% |
+| v0.3 | + text-evidence rules | 82.0% | 66.7% (0 flips) | 76.7% |
+| v0.4 | + text-view header fix (7.3g) | **84.7%** | 66.7% (0 flips) | 80.0% |
+| v0.5 | + dense keyframe captions | not re-run* | 66.7% (0 flips) | **83.3%** @ $0.047 |
+| v0.6 | + contact sheet 24 thumbs @ 256px | not re-run | 66.7% (2 flips) | not re-run |
+| v0.7 | sheet scaled to 60 thumbs @ 512px | not re-run | **70.0%** | not re-run |
+
+*Dense captions apply only to shots over 45s; short-video indexes no-op by
+criterion, so their v0.4 text views are byte-identical under v0.5.
+
+Three observations. First, gains arrived where the mechanism predicted:
+the header fix (text-layer integrity) moved the short cell, dense captions
+(text-layer coverage over long shots) moved the long cell, and only
+prefix-level visual coverage moved medium at all. Second, two levers were
+rejected on dev and never spent a test touch: exhaustive visual sweep
+rules (regressed the ordering questions they targeted) and CLIP retrieval
+(7.6). Third, the medium cell's 10-question failure set surviving five
+configurations unchanged is the strongest evidence we have that a
+low-variance cell can still be systematically unreachable by a method
+family; treating such a cell's single-run ranking as a method comparison
+would be exactly the error 7.4 warns against, in the opposite direction.
+
 ## 8. Limitations
 
 Sample sizes are modest (n=150 test short, n=30 medium, n=30 long); the
@@ -390,6 +465,17 @@ Spec (v0.1), reference implementation (CLI + Python), MCP server exposing
 `find_moments`, and
 the full evaluation harness including every result file referenced here.
 Apache-2.0. [Repository URL to be added.]
+
+Current release (0.1.4, PyPI and the MCP registry, 2026-10-21): the v0.4
+query configuration (text-evidence rules on by default, corrected text
+view), dense keyframe captioning via `caption --dense`, the `find_moments`
+semantic search tool on the MCP surface, per-tool call counts in cost
+receipts, and a `certifi>=2026.10.19` dependency floor responding to the
+eMudhra emSign CA key-compromise advisory (clients with earlier certifi
+builds trust roots that enable TLS interception). The contact-sheet prefix
+(v0.6/v0.7) ships behind environment toggles pending a properly powered
+dev evaluation; enrichment layers remain optional and provenance-recorded,
+and the indexer remains model-free.
 
 ## References
 
