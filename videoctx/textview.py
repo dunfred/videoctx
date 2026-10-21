@@ -39,9 +39,9 @@ def text_view(ctx: VideoContext, include_ocr: bool = True) -> str:
         if not shot.ocr:
             prev_lines = prev_lines if shot.ocr is None else set()
             continue
-        lines = [l.strip() for l in shot.ocr.split(" | ") if l.strip()]
-        fresh = [l for l in lines if l.lower() not in prev_lines]
-        prev_lines = {l.lower() for l in lines}
+        ocr_lines = [l.strip() for l in shot.ocr.split(" | ") if l.strip()]
+        fresh = [l for l in ocr_lines if l.lower() not in prev_lines]
+        prev_lines = {l.lower() for l in ocr_lines}
         if fresh:
             events.append((shot.start_s,
                            f"[{_ts(shot.start_s)}] screen text: {' | '.join(fresh)}"))

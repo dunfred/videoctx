@@ -16,6 +16,14 @@ tv = text_view(ctx)
 assert all(seg.text[:20] in tv for seg in ctx.transcript.segments), "transcript missing from text view"
 assert f"{len(ctx.shots)} shots" in tv
 
+# The header must survive OCR rendering (a shadowed variable once destroyed
+# it on every OCR-enriched index).
+ctx.shots[0].ocr = "SMOKE OCR LINE"
+tv_ocr = text_view(ctx)
+assert tv_ocr.startswith("VIDEO:"), "header lost when OCR present"
+assert "SMOKE OCR LINE" in tv_ocr
+ctx.shots[0].ocr = None
+
 # Frame selection: in-range, subsampled, and nearest-fallback.
 frames = select_frames(ctx, 8.0, 16.0, max_frames=4)
 assert frames and all(8.0 <= f.t_s <= 16.0 for f in frames), "in-range selection failed"
