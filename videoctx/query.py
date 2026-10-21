@@ -230,7 +230,10 @@ def _thumb(index_dir: Path, kf: Keyframe, edge: int = 256) -> Path:
     import subprocess
 
     src = index_dir / kf.file
-    dst = src.with_name(f"thumb_{src.name}")
+    # Edge size keys the cache file; the default keeps its legacy name so
+    # existing thumb caches stay valid.
+    stem = f"thumb_{src.name}" if edge == 256 else f"thumb{edge}_{src.name}"
+    dst = src.with_name(stem)
     if not dst.exists():
         subprocess.run(
             ["ffmpeg", "-v", "error", "-y", "-i", str(src),
@@ -434,11 +437,24 @@ def ask(
         # Unconditional visual grounding: a subsampled thumbnail strip baked
         # into the cached prefix, so every question starts with the same
         # coarse view of the whole video at cache-read prices instead of
-        # relying on the model's decision to survey.
+        # relying on the model's decision to survey. Density and resolution
+        # are config knobs: coverage belongs to the amortized index layer.
+        n_thumbs = int(os.environ.get("VIDEOCTX_SHEET_THUMBS", "24"))
+        edge = int(os.environ.get("VIDEOCTX_SHEET_EDGE", "256"))
+        sheet_shots = [s for s in ctx.shots if s.keyframes]
+        if len(sheet_shots) > n_thumbs:
+            step = (len(sheet_shots) - 1) / (n_thumbs - 1)
+            sheet_shots = [sheet_shots[round(i * step)] for i in range(n_thumbs)]
         prefix.append({"type": "text", "text":
                        "CONTACT SHEET (one thumbnail per shot, subsampled "
                        "evenly; timestamps label each):"})
-        prefix.extend(_survey_blocks(index_dir, ctx))
+        for shot in sheet_shots:
+            kf = shot.keyframes[len(shot.keyframes) // 2]
+            data = base64.standard_b64encode(
+                _thumb(index_dir, kf, edge=edge).read_bytes()).decode()
+            prefix.append({"type": "text", "text": f"shot {shot.id} @ {kf.t_s:.1f}s:"})
+            prefix.append({"type": "image", "source": {
+                "type": "base64", "media_type": "image/jpeg", "data": data}})
     # The breakpoint on the final block caches the whole stable prefix.
     prefix[-1]["cache_control"] = cache_ctl
     messages: list[dict] = [{
