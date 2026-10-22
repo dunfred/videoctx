@@ -7,12 +7,12 @@
     "url": "https://github.com/dunfred/videoctx",
     "source": "github"
   },
-  "version": "0.1.4",
+  "version": "0.1.5",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "videoctx",
-      "version": "0.1.4",
+      "version": "0.1.5",
       "runtimeHint": "uvx",
       "packageArguments": [
         {
