@@ -1,0 +1,46 @@
+name: release
+
+# Publish to PyPI via Trusted Publishing (OIDC) so releases carry
+# provenance attestations (the 0.1.4 local-token upload shows "No
+# provenance found" on PyPI's Security tab; this fixes that from 0.1.5 on).
+#
+# One-time setup on PyPI (project maintainer): videoctx -> Manage ->
+# Publishing -> add GitHub publisher: owner dunfred, repository videoctx,
+# workflow release.yml, environment pypi.
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          version: ">=0.13.4"
+      - name: Version must match the tag
+        run: |
+          pkg=$(uvx --from toml-cli toml get --toml-path pyproject.toml project.version)
+          [ "v$pkg" = "${GITHUB_REF_NAME}" ] || { echo "pyproject $pkg != tag ${GITHUB_REF_NAME}"; exit 1; }
+          grep -q "__version__ = \"$pkg\"" videoctx/__init__.py || { echo "__init__.py version mismatch"; exit 1; }
+      - name: Build
+        run: uv build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write  # OIDC for Trusted Publishing + attestations
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@release/v1
