@@ -33,6 +33,14 @@ from eval.methods import METHODS  # noqa: E402
               help="Resume: skip (question, method) pairs already in the out file")
 def main(questions_file: Path, methods_csv: str, out: Path, limit: int | None,
          skip_existing: bool):
+    import os
+
+    # Benchmark runs must be cache-cold per config: salt the cached prefix
+    # with the output filename so a run never inherits a predecessor config's
+    # live caches (resumes of the SAME run keep the same salt and still
+    # amortize within the run). Override with VIDEOCTX_CACHE_SALT.
+    os.environ.setdefault("VIDEOCTX_CACHE_SALT", out.name)
+
     questions = [json.loads(line) for line in questions_file.read_text().splitlines() if line.strip()]
     if limit:
         questions = questions[:limit]

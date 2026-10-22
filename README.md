@@ -106,9 +106,16 @@ unchanged).
 
 | Method | Accuracy | $/question | Follow-up $/question |
 |---|---|---|---|
-| **videoctx v0.5 (dense captions)** | **83.3%** | **$0.047** | **$0.019** |
+| **videoctx v0.5 (dense captions)** | **83.3%** | **$0.109** cold (measured $0.047, see note) | **$0.021** |
 | videoctx v0.4 | 80.0% | $0.099 | $0.019 |
 | videoctx v0.2 / v0.3 | 80.0% / 76.7% (n=30 noise band) | $0.098 | $0.019 |
+
+Cost correction (2026-10-22): the v0.5 long run started 57 minutes after
+the v0.4 run, and for the 7 of 10 videos whose text views were unchanged
+by dense captioning, it silently inherited v0.4's still-live 1-hour
+prompt caches, flattering first-question costs. $0.109/q is the
+cold-equivalent (first question $0.285, follow-ups $0.021 as measured).
+Benchmark runs are now cache-salted per config so this cannot recur.
 | Uniform frame sampling (60-frame cap) | 70.0% | $0.133 | $0.133 |
 | Gemini Flash-Lite native | 76.7% | $0.022 | $0.022 (5-9 min latency/q) |
 | Native ingestion (published Pro rates, est.) | pending | ~$0.50 | ~$0.50 |

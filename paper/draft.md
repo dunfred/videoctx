@@ -22,7 +22,7 @@ function of questions asked per video. On Video-MME short videos (held-out
 test half, n=150), the current frozen vctx configuration with Claude Opus
 4.8 scores 84.7% at $0.025 per question, versus 74.0% at $0.0172 for a
 uniform frame-sampling baseline. On Video-MME long videos (n=30), vctx with
-dense keyframe captions reaches 83.3% at $0.047 per question versus 70.0%
+dense keyframe captions reaches 83.3% at $0.109 per question versus 70.0%
 at $0.133 for sampling; follow-up questions on an already-warm index cost
 about $0.02, roughly 25x below the estimated cost of native ingestion of
 the same hour-long video. On medium videos the sampling baseline retains
@@ -245,18 +245,21 @@ amortized, to be powered by a new dev instrument first.
 
 | Method | Accuracy | $/question | Wall-clock/question |
 |---|---|---|---|
-| vctx (frozen v0.5, one touch) | **83.3%** | **$0.047** | median 3s |
+| vctx (frozen v0.5, one touch) | **83.3%** | **$0.109** cold-equivalent (7.3h) | median 3s |
 | vctx (frozen v0.2, one touch) | 80.0% | $0.098 | median 4s |
 | Naive sampling (60-frame cap) | 70.0% | $0.133 | ~6s |
 | Native ingestion (Gemini 3.1 Pro, published rates) | [PENDING] | ~$0.50-0.70 est. | ~40s+ observed on Flash |
 
 v0.5 adds dense keyframe captions: shots longer than 45s receive a
 timestamped caption roughly every 20s, so an hour-long video is visible to
-the text layer throughout. The effect is twofold: accuracy rose one
-question and cost halved, because 28 of 30 questions are now answered
-text-only (measured follow-up questions average $0.021). Accuracy on long
-videos staying at short-video levels is consistent with the index's size
-being decoupled from video duration.
+the text layer throughout. Accuracy rose one question, 28 of 30 questions
+are answered text-only, and measured follow-up questions average $0.021.
+The cost column is a cold-equivalent reconstruction: the run as measured
+averaged $0.047/q because it inherited its predecessor config's live
+prompt caches on the 7 videos whose text views dense captioning left
+unchanged (trap (h) in 7.3); first questions cost $0.285 when priced cold.
+Accuracy on long videos staying at short-video levels is consistent with
+the index's size being decoupled from video duration.
 
 ### 6.4 Amortization: the central figure
 
@@ -281,15 +284,19 @@ workloads (an assistant discussing a lecture, a reviewer auditing a meeting
 recording) are precisely the k>>1 regime.
 
 The decomposition above uses the v0.2 receipts, whose first questions show
-clean cold-cache behavior (~25k cache-write tokens, zero reads). We do NOT
-use the v0.5 run for this figure: its per-video first questions show ~20k
-cache-*read* tokens that nothing in our pipeline wrote, most plausibly
-SDK-internal retries whose abandoned first attempt populated the cache
-without being metered. Until that is pinned down, v0.5 first-question
-costs would understate true cold-start spend, so we report only its
-overall average ($0.047) and measured follow-ups ($0.021). We flag this as
-a candidate addition to the accounting-trap list (7.3): client-side
-retries can convert unmetered cache writes into metered cache reads.
+clean cold-cache behavior (~25k cache-write tokens, zero reads). The v0.5
+run is not used for this figure because its first-question costs were
+contaminated by cross-config cache inheritance, trap (h) in 7.3: it ran 57
+minutes after the v0.4 run, inside the 1-hour TTL, and the 7 of 10 videos
+whose text views dense captioning left unchanged hit their predecessor's
+still-live caches (full-prefix reads, zero writes, on questions that
+should have been cold). The per-question receipts made the contamination
+detectable and exactly correctable: cold-equivalent v0.5 costs are $0.285
+per first question and $0.021 per follow-up, an overall $0.109/q at k=3,
+which is what we report in 6.3. The initially suspected mechanism,
+client-retry cache conversion, was ruled out by the receipts themselves
+(every contaminated first question shows a single API call, and the warm
+set correlates perfectly with unchanged text views, not with timing).
 
 ### 6.5 Latency
 
@@ -338,7 +345,14 @@ silently deleted the header line (duration, shot count, transcript
 language) from every OCR-enriched index, so every benchmark number
 measured between the OCR layer shipping and 2026-10-21 was produced by a
 model that did not know the video's duration from its text layer. Fixing
-(g) was worth +2.7 points on the short test half by itself. Every one of
+(g) was worth +2.7 points on the short test half by itself; (h) successive
+frozen configs evaluated back-to-back can inherit each other's live prompt
+caches wherever the config change leaves a video's cached prefix
+byte-identical, flattering the later config's first-question costs (our
+v0.5 long run read 7 of 10 prefixes warm from the v0.4 run 57 minutes
+earlier, understating its cost 2.3x until corrected from receipts).
+Benchmark runs now salt the cached prefix with a per-run marker so every
+config evaluation is cold by construction. Every one of
 these distorted either cost or accuracy before being caught by
 per-question audits.
 
@@ -420,7 +434,7 @@ exactly one test touch, with per-question receipts committed:
 | v0.2 | frozen baseline | 80.7% | 66.7% | 80.0% |
 | v0.3 | + text-evidence rules | 82.0% | 66.7% (0 flips) | 76.7% |
 | v0.4 | + text-view header fix (7.3g) | **84.7%** | 66.7% (0 flips) | 80.0% |
-| v0.5 | + dense keyframe captions | not re-run* | 66.7% (0 flips) | **83.3%** @ $0.047 |
+| v0.5 | + dense keyframe captions | not re-run* | 66.7% (0 flips) | **83.3%** @ $0.109 cold (7.3h) |
 | v0.6 | + contact sheet 24 thumbs @ 256px | not re-run | 66.7% (2 flips) | not re-run |
 | v0.7 | sheet scaled to 60 thumbs @ 512px | not re-run | **70.0%** | not re-run |
 

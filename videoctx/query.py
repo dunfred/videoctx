@@ -432,7 +432,15 @@ def ask(
                    include_ocr=os.environ.get("VIDEOCTX_NO_OCR") != "1",
                    include_dense=os.environ.get("VIDEOCTX_NO_DENSE") != "1")
     cache_ctl = {"type": "ephemeral", "ttl": "1h"} if len(tv) > 20000 else {"type": "ephemeral"}
-    prefix: list[dict] = [{"type": "text", "text": f"VIDEO INDEX:\n{tv}"}]
+    # Benchmark cache isolation: an unchanged text view under a new config
+    # inherits the previous config's live cache (observed: a one-touch run
+    # 57 minutes after its predecessor read 7 of 10 prefixes warm, flattering
+    # first-question costs 2.6x). A salt line makes a run's prefix unique, so
+    # evals are cold by construction; product use leaves it unset, where
+    # cache reuse is the point.
+    salt = os.environ.get("VIDEOCTX_CACHE_SALT")
+    salt_line = f"RUN: {salt}\n" if salt else ""
+    prefix: list[dict] = [{"type": "text", "text": f"{salt_line}VIDEO INDEX:\n{tv}"}]
     if os.environ.get("VIDEOCTX_CONTACT_SHEET") == "1":
         # Unconditional visual grounding: a subsampled thumbnail strip baked
         # into the cached prefix, so every question starts with the same
